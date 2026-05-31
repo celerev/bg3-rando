@@ -1,0 +1,4 @@
+new entry "StillnessOfMind"
+type "PassiveData"
+using "StillnessOfMind"
+data "Boosts" "StatusImmunity(COL_RESONANCESTONE_BUFF)"
