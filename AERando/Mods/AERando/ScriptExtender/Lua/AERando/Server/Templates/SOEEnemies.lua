@@ -125,11 +125,6 @@ return {
 		Tier = "avatar",
 	},
 	{
-		Name = "MOD_ShadowDemon_Combt",
-		TemplateId = "6a449733-a7b6-4bc1-ab09-b6950c58bcb4",
-		Tier = "high",
-	},
-	{
 		Name = "MOD_AeorianPanther_Combat",
 		TemplateId = "c2ddf9ed-6909-4673-8c95-5a45083343a4",
 		Tier = "ultra",

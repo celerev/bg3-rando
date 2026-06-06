@@ -1,0 +1,200 @@
+{
+    "SchemaVersion": 1,
+    "Tabs": [
+        {
+            "TabName": "General",
+            "Handles": {
+                "NameHandle": "hc534b4cd37a04de1925ef57c22aac832bb32"
+            },
+            "TabId": "general",
+            "Sections": [
+                {
+                    "SectionId": "general_settings",
+                    "SectionName": "General settings",
+                    "Settings": [
+                        {
+                            "Id": "mod_enabled",
+                            "Name": "Enable mod",
+                            "Handles": {
+                                "NameHandle": "h345a77c4g57c5g429dg9607geb1b374f68f2",
+                                "DescriptionHandle": "h7d7413b2g2b2bg418fg82d2gf4e7988f4fe7"
+                            },
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Toggle the mod on/off without uninstalling it."
+                        },
+						{
+                            "Id": "rando_seed",
+                            "Name": "Game Seed",
+                            "Handles": {
+                                "NameHandle": "h5bc0f9d8g7304g4ceagbb59g5d27d26d76fe",
+                                "DescriptionHandle": "h4b668962g076dg47d4g8d06g2b058b527171"
+                            },
+                            "Type": "int",
+                            "Default": 0,
+                            "Description": "The seed for randomization."
+                        },
+						{
+                            "Id": "gm_mode",
+                            "Name": "GM Mode",
+                            "Handles": {
+                                "NameHandle": "hf3fe713fg994cg4a5fga97cgc09fa67c051b",
+                                "DescriptionHandle": "h950c4c95g3fbdg4bc6g837dg0ce957d43e22"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "mod_enabled",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Description": "(NOT IMPLEMENTED) Host controls monsters against other players. Not available yet."
+                        },
+						{
+                            "Id": "soe_loaded",
+                            "Name": "Spells of Exandria Loaded",
+                            "Handles": {
+                                "NameHandle": "h3c98f1cbgbb0eg42f4g9ddagf79a023cacf3",
+                                "DescriptionHandle": "h2febf983gac23g4bdfgb85cg6d3637e435e4"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "mod_enabled",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Description": "Debug: Making the SOE toggle visible"
+                        }
+                    ]
+                },
+                {
+                    "SectionId": "monster_lists",
+                    "SectionName": "Monsters Pools Enabled",
+                    "Settings": [
+                        {
+                            "Id": "vanilla_mon",
+                            "Name": "Vanilla BG3 Monsters",
+                            "Handles": {
+                                "NameHandle": "h22d859f3gadd6g4276ga522g560e46f7ea31",
+                                "DescriptionHandle": "h22808099ga671g43d7g9dc5g3f4b2549cedb"
+                            },
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Allow vanilla BG3 monsters to be in the randomization pool."
+                        },
+						{
+                            "Id": "att_mon",
+                            "Name": "Adapted D&D 5e Monsters",
+                            "Handles": {
+                                "NameHandle": "he117a99fg29dfg482dg8d7agebdc5d78c640",
+                                "DescriptionHandle": "hac2454e1g615bg4c43g85e4g806af2df7e71"
+                            },
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Allow monsters adapted from tabletop D&D 5e material to be in the randomization pool."
+                        },
+						{
+                            "Id": "soe_mon",
+                            "Name": "Adapted Exandria Monsters",
+                            "Handles": {
+                                "NameHandle": "h5716aae2g621cg43b8g8686gc02efbbec9d6",
+                                "DescriptionHandle": "h44c45dcdgd85cg4125gad6bg3893c2f85dca"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "soe_loaded",
+								  "Operator": "==",          
+								  "ExpectedValue": true
+								}
+							  ]
+							},
+                            "Description": "Allow monsters adapted from the Exandria setting to be in the randomization pool. (Requires Spells of Exandria to be installed.)"
+                        }
+                    ]
+                },
+				{
+                    "SectionId": "difficulty",
+                    "SectionName": "Difficulty Settings",
+                    "Settings": [
+                        {
+                            "Id": "chaos_mode",
+                            "Name": "Chaos Mode",
+                            "Handles": {
+                                "NameHandle": "h5a18549cgba44g4a78ga4a9gc2735ec197c5",
+                                "DescriptionHandle": "h2d6c9196g3897g43b7g9fd9gde60bd35486e"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "All enemies can be randomized to any monster of any level. Will not be fair or balanced."
+                        },
+						{
+                            "Id": "enemy_tier_variance",
+                            "Name": "Enemy Level Variance",
+                            "Type": "slider_int",
+                            "Default": 2,
+                            "Description": "How may tiers of difficulty an enemy can be removed from its randomized counterpart. Tiers:\nTier 1 (Low): Basic monsters\nTier 2 (Mid): Level 2-4 Classed NPCs\nTier 3 (High): Midgame monsters, specialized NPCs like Anders\nTier 4 (Ultra): Advanced monsters like Gish'ra, beginner bosses\nTier 5 (Epic): Advanced NPCs and Midgame bosses\nTier 6 (Legendary): Endgame boss NPCs and exceptionally powerful monsters.\nTier 7 (Mythical): Ansur, Netherbrain, and beings comparable to the strongest in the vanilla game\nTier 8 (Divine): Demigods, Tarrasque, creatures adapted from tabletop D&D5e beyond the experience of vanilla BG3\nTier 9 (Avatar): Challenge Rating 30 avatars of true deities, the upper ceiling of D&D5e material.",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 9
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h488d2378g3510g4f50gb319gf0c73c76e5d2",
+                                "DescriptionHandle": "h55258048g1195g4898gbc02ge7a6aee5059d"
+                            }
+                        },
+						{
+                            "Id": "boss_tier_variance",
+                            "Name": "Boss Level Variance",
+                            "Type": "slider_int",
+                            "Default": 4,
+                            "Description": "As above, except specifically for enemies marked 'bosses' by Larian. (This flag is used inconsistently by Larian, I may expand this to a custom list later.)",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 9
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h8dcc9fb6g3f49g4e1fgb75cg5c1d51edf8d9",
+                                "DescriptionHandle": "h8e1dfddeg208bg4240ga24dg6c946476a58f"
+                            }
+                        }
+                    ]
+                },
+            ]
+        },
+    ]
+}
