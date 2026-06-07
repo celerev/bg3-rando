@@ -32,7 +32,7 @@
                             },
                             "Type": "int",
                             "Default": 0,
-                            "Description": "The seed for randomization."
+                            "Description": "The seed for randomization. Reset to 0 to generate a random seed on next game load."
                         },
 						{
                             "Id": "gm_mode",
@@ -123,7 +123,7 @@
 								}
 							  ]
 							},
-                            "Description": "Allow monsters adapted from the Exandria setting to be in the randomization pool. (Requires Spells of Exandria to be installed.)"
+                            "Description": "Allow monsters adapted from the Exandria setting to be in the randomization pool. Note: Does not contain Tier 1 or Tier 2 monsters. (Requires Spells of Exandria to be installed)"
                         }
                     ]
                 },
@@ -140,16 +140,16 @@
                             },
                             "Type": "checkbox",
                             "Default": false,
-                            "Description": "All enemies can be randomized to any monster of any level. Will not be fair or balanced."
+                            "Description": "All enemies have an equal chance of being randomized to any monster of any level. Will not be fair or balanced."
                         },
 						{
                             "Id": "enemy_tier_variance",
                             "Name": "Enemy Level Variance",
                             "Type": "slider_int",
-                            "Default": 2,
-                            "Description": "How may tiers of difficulty an enemy can be removed from its randomized counterpart. Tiers:\nTier 1 (Low): Basic monsters\nTier 2 (Mid): Level 2-4 Classed NPCs\nTier 3 (High): Midgame monsters, specialized NPCs like Anders\nTier 4 (Ultra): Advanced monsters like Gish'ra, beginner bosses\nTier 5 (Epic): Advanced NPCs and Midgame bosses\nTier 6 (Legendary): Endgame boss NPCs and exceptionally powerful monsters.\nTier 7 (Mythical): Ansur, Netherbrain, and beings comparable to the strongest in the vanilla game\nTier 8 (Divine): Demigods, Tarrasque, creatures adapted from tabletop D&D5e beyond the experience of vanilla BG3\nTier 9 (Avatar): Challenge Rating 30 avatars of true deities, the upper ceiling of D&D5e material.",
+                            "Default": 1,
+                            "Description": "How may tiers of difficulty an enemy can be removed from its randomized counterpart. Tiers:\nTier 1 (Low): Basic monsters from Act 1\nTier 2 (Mid): Level 2-4 Classed NPCs, monsters have tricks\nTier 3 (High): Midgame monsters, specialized NPCs like Anders\nTier 4 (Ultra): Advanced monsters like Gish'ra, Earlygame bosses\nTier 5 (Epic): Advanced NPCs and Midgame bosses\nTier 6 (Legendary): Endgame boss NPCs and exceptionally powerful monsters.\nTier 7 (Mythical): Ansur, Netherbrain, and beings comparable to the strongest in the vanilla game\nTier 8 (Divine): Demigods, Tarrasque, creatures adapted from tabletop D&D5e beyond the experience of vanilla BG3\nTier 9 (Avatar): Challenge Rating 30 avatars of true deities, the upper ceiling of D&D5e material.",
                             "Options": {
-                                "Min": 1,
+                                "Min": 0,
                                 "Max": 9
                             },
 							"VisibleIf": {
@@ -168,13 +168,13 @@
                             }
                         },
 						{
-                            "Id": "boss_tier_variance",
-                            "Name": "Boss Level Variance",
+                            "Id": "boss_tier_boost",
+                            "Name": "Boss Tier Boost",
                             "Type": "slider_int",
-                            "Default": 4,
-                            "Description": "As above, except specifically for enemies marked 'bosses' by Larian. (This flag is used inconsistently by Larian, I may expand this to a custom list later.)",
+                            "Default": 2,
+                            "Description": "How many tiers to upgrade the randomization of creatures that Larian marked as 'bosses'.",
                             "Options": {
-                                "Min": 1,
+                                "Min": 0,
                                 "Max": 9
                             },
 							"VisibleIf": {

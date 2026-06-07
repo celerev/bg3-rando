@@ -5,6 +5,17 @@ local exandriaMonsterList = Ext.Require("AERando/Server/Templates/SOEEnemies.lua
 local C = Ext.Require("AERando/Constants.lua")
 local Hash = Ext.Require("AERando/Hash.lua")
 local RNG = Ext.Require("AERando/RNG.lua")
+local Channels = Ext.Require("AERando/Shared.lua")
+
+if not PersistentVars then
+	PersistentVars = {}
+end
+if not PersistentVars.currentlyRandomizedEnemyTable then
+	PersistentVars.currentlyRandomizedEnemyTable = {}
+end
+if not PersistentVars.spawnedEnemyTable then
+	PersistentVars.spawnedEnemyTable = {}
+end
 
 if Ext.Mod.IsModLoaded("a27fdbe3-4d1a-641d-d05f-1ba4ee529da8") then
 	MCM.Set("soe_loaded", true)
@@ -36,23 +47,24 @@ if MCM.Get("rando_seed") == 0 then
 	end
 	local seed = RNG:random(1, 4294967296)
 	MCM.Set("rando_seed", seed)
-	Hash.gameSeed = MCM.Get("rando_seed")
+	Hash.gameSeed = seed
 else
 	Hash.gameSeed = MCM.Get("rando_seed")
 end
 
-print(Hash.gameSeed)
+print("Seed:", Hash.gameSeed)
 
 activeMonsterList = {}
-currentlyRandomizedEnemyTable = {}
-spawnedEnemyTable = {}
+iconTable = {}
+currentlyRandomizedEnemyTable = PersistentVars.currentlyRandomizedEnemyTable
+spawnedEnemyTable = PersistentVars.spawnedEnemyTable
 
 difficultyTables = { 
 	{ name = "low", weight = 20, enemies = {}},
-	{ name = "mid", weight = 20, enemies = {}},
-	{ name = "high", weight = 15, enemies = {}},
-	{ name = "ultra", weight = 15, enemies = {}},
-	{ name = "epic", weight = 10, enemies = {}},
+	{ name = "mid", weight = 18, enemies = {}},
+	{ name = "high", weight = 17, enemies = {}},
+	{ name = "ultra", weight = 14, enemies = {}},
+	{ name = "epic", weight = 11, enemies = {}},
 	{ name = "legendary", weight = 7, enemies = {}},
 	{ name = "mythical", weight = 6, enemies = {}},
 	{ name = "divine", weight = 5, enemies = {}},
@@ -76,11 +88,36 @@ if MCM.Get("soe_mon") then
 end
 
 -- Utility functions
+function initialize()
+	currentlyRandomizedEnemyTable = PersistentVars.currentlyRandomizedEnemyTable
+	spawnedEnemyTable = PersistentVars.spawnedEnemyTable
+end
+
+function strip_uuid(uuid)
+	character_uuid = string.sub(uuid, -36)
+	return character_uuid
+end
+
+function clearIconTables()
+	if #iconTable > 0 then
+		for i, uuid in ipairs(iconTable) do
+			Channels.IconReplacer:Broadcast(uuid)
+		end
+		iconTable = {}
+	end
+end
+
 function loadMonsterTable(monsterTable)
 	for _, monster in ipairs(monsterTable) do	
 		table.insert(activeMonsterList, monster)
 	end
 end
+
+-- Error while dispatching user function call: [string "AERando/AERando/Server/Main.lua"]:111: String expected for argument 2, got nil
+-- stack traceback:
+        -- [C++ Code]: in field 'ApplyDamage'
+        -- AERando/AERando/Server/Main.lua:111: in function <AERando/AERando/Server/Main.lua:110>
+        -- [C++ Code]: in ?
 
 function unloadMonsterTable(monsterTable)
 	local monstersToRemove = {}
@@ -104,7 +141,6 @@ function setEnemyTables()
 		end
 	end
 end
-
 
 function getAsylum(region)
 	local asylum = {}
@@ -133,28 +169,40 @@ function getAsylum(region)
 end
 
 function trimTable(index, difficultyTables, range)
-    local dropList = {}
+	local newTable = {}
+	if range == 0 then
+		table.insert(newTable, difficultyTables[index])
+		return newTable
+	elseif range > 11 then
+		table.insert(newTable, difficultyTables[9])
+		return newTable
+	elseif range > 9 then
+		range = 9
+	end
+
+    local keepList = {}
 
     for i = 1, range do
         if index - i >= 1 then
-            table.insert(dropList, index - i)
+            table.insert(keepList, index - i)
         end
     end
+    
+    table.insert(keepList, index)
 
     for i = 1, range do
         if index + i <= #difficultyTables then
-            table.insert(dropList, index + i)
+            table.insert(keepList, index + i)
         end
     end
     
-    local dropSet = {}
-    for _, idx in ipairs(dropList) do
-        dropSet[idx] = true
+    local keepSet = {}
+    for _, idx in ipairs(keepList) do
+        keepSet[idx] = true
     end
     
-    local newTable = {}
     for i, tier in ipairs(difficultyTables) do
-        if not dropSet[i] then
+        if keepSet[i] then
             table.insert(newTable, tier)
         end
     end
@@ -163,19 +211,23 @@ function trimTable(index, difficultyTables, range)
 end
 
 
+
 function selectCreature(character)
-	-- figure out syntax
+	if MCM.Get("chaos_mode") then
+		return Hash:selectEnemy(character, difficultyTables, true)
+	end
+
 	local boss = false
-	if Ext.Entity.Get(character).CombatParticipant.Flags.IsBoss
+
+	if Ext.Entity.Get(character).CombatParticipant.Flags.IsBoss then
 		boss = true
 	end
-	
 	
 	local level = Osi.GetLevel(character)
 	local levelvar = MCM.Get("enemy_tier_variance")
 	
 	-- TODO Figure out a way to meaningfully gauge difficulty of NPC being replaced and base selection on it
-	local tier = low
+	local index = nil
 
 	if level < 4 then
 		index = 1
@@ -196,39 +248,42 @@ function selectCreature(character)
 	else
 		index = 9
 	end
-		
+
+	if boss then
+		index = index + MCM.Get("boss_tier_boost")
+	end
+
 	local newTable = trimTable(index, difficultyTables, levelvar)
 	
-	return Hash:selectEnemy(character, newTable)
+	return Hash:selectEnemy(character, newTable, false)
 end
 
 function spawnNewCreature(character, x, y, z)
 	spawnId = selectCreature(character)
 	
-	print("Spawn ID: ", spawnId)
 	x2, y2, z2 = Osi.FindValidPosition(x, y, z, 100, Osi.GetHostCharacter(), 1)
-	print("Correct coords: ", x2,y2,z2)
+
 	newCreatureId = Osi.CreateAt(spawnId, x2, y2, z2, 0, 1, "")
-	print("Is there an actual creature ID: ", newCreatureId)
+
 	return newCreatureId
 end
 
 function randomizeCreature(character)
 	x, y, z = Osi.GetPosition(character)
 	
-	print("Creature position", x," ", y," ", z)
 	local map = Osi.GetRegion(Osi.GetHostCharacter())
-	print("Map: ", map)
+
 	asylum = getAsylum(map)
-	print("Asylum: ", asylum)
 
 	newCreature = spawnNewCreature(character, x, y, z)
-	print("New: ", newCreature)
-	spawnedEnemyTable[Ext.Entity.Get(newCreature)] = true
+
+	spawnedEnemyTable[newCreature] = true
 	currentlyRandomizedEnemyTable[character] = {newCreature, x, y, z}
 	Osi.TeleportToPosition(character, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 1, 1, 1, 0, 1)
 	
-	print("Current table: ", currentlyRandomizedEnemyTable)
+	character_uuid = strip_uuid(character)
+	table.insert(iconTable, character_uuid)
+	Ext.Timer.WaitFor(1600, clearIconTables)
 	
 	return newCreature
 end
@@ -284,8 +339,9 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
     if Osi.IsPlayer(character) == 1 or Osi.IsPartyFollower(character) == 1 then
         return
     end
-
-	if spawnedEnemyTable[Ext.Entity.Get(character)] then
+	
+	character_uuid = strip_uuid(character)
+	if spawnedEnemyTable[character_uuid] then
 		return
 	end
 	
@@ -293,7 +349,6 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	playerFaction = Osi.GetFaction(Osi.GetHostCharacter())
 	
 	if Osi.GetRelation(creatureFaction, playerFaction) < 40 then
-		print("Randomizing ", character)
 		newCreature = randomizeCreature(character)
 		Osi.SetFaction(newCreature, creatureFaction)
 		Osi.SetHostileAndEnterCombat(creatureFaction, playerFaction, newCreature, Osi.GetHostCharacter())
@@ -302,29 +357,18 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 end)
 
 Ext.Osiris.RegisterListener("Died", 1, "after", function(character)
+	character_uuid = strip_uuid(character)
+
 	for key, val in pairs(currentlyRandomizedEnemyTable) do
-		if val[1] == character then
+		if val[1] == character_uuid then
 			Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 1, 1, 1, 0, 1)
-			Osi.Die(key, "DEATHTYPE.DoT", "NULL_00000000-0000-0000-0000-000000000000", 0, 1, 0.0)
+			Osi.Die(key, 0, "NULL_00000000-0000-0000-0000-000000000000", 0, 0)
 			currentlyRandomizedEnemyTable[key] = nil
 		end
 	end
-	if spawnedEnemyTable[character] then
-		spawnedEnemyTable[character] = nil
+	if spawnedEnemyTable[character_uuid] then
+		spawnedEnemyTable[character_uuid] = nil
 	end
 end)
 
--- GameState.OnLoad(function()
-	-- local attspells = Ext.Mod.IsModLoaded("fa49db03-caa7-49c8-7c76-e6c38b60267a")
-	-- if attspells then
-		-- attInfo = Ext.Mod.GetMod("fa49db03-caa7-49c8-7c76-e6c38b60267a").Info
-		-- if not (attInfo.ModVersion[1] == 1 and attInfo.ModVersion[2] == 1 and attInfo.ModVersion[3] == 9 and attInfo.ModVersion[4] >= 1) then
-			-- Player.AskConfirmation([[
--- The expected version of the required dependency, AdvancedTabletopSpells is not loaded. If your version is older than 1.1.9.1, please exit the game, then update to 1.1.9.1 or newer.]])
-		-- end
-	-- else
-		-- Player.AskConfirmation([[
--- AdvancedTabletopSpells is not loaded. The majority of AER's content will be missing, and the mod will be unstable.
--- Please exit the game, then install AdvancedTabletopSpells version 1.1.9.1 or newer.]])
-	-- end
--- end)
+Ext.Events.SessionLoaded:Subscribe(initialize)

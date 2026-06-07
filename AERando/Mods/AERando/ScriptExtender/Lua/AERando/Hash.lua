@@ -13,7 +13,7 @@ local function fnv1a(str)
 end
 
 
-function Hash:selectEnemy(UUID, difficultyTables)
+function Hash:selectEnemy(UUID, difficultyTables, chaos)
 	if self.gameSeed == nil then
 		error("Game seed must be set before generating enemies")
 	end
@@ -24,8 +24,21 @@ function Hash:selectEnemy(UUID, difficultyTables)
 	local totalWeight = 0
 	local cumulativeWeights = {}
 	
-	for i, tier in ipairs(difficultyTables) do
-		totalWeight = totalWeight + tier.weight
+	local validTiers = {}
+
+	for _, tier in ipairs(difficultyTables) do
+		if tier.enemies and #tier.enemies > 0 then
+			table.insert(validTiers, tier)
+		end
+	end
+
+	if #validTiers == 0 then
+		error("No valid tiers contain enemies. Did you only enable Exandria? It doesn't have Tier 1 or Tier 2 monsters.")
+	end
+	
+	for i, tier in ipairs(validTiers) do
+		local weight = chaos and 1 or tier.weight
+		totalWeight = totalWeight + weight
 		table.insert(cumulativeWeights, totalWeight)
 	end
 	
@@ -34,19 +47,13 @@ function Hash:selectEnemy(UUID, difficultyTables)
 	local selectedTier = nil
 	for i, cumulativeWeight in ipairs(cumulativeWeights) do
 		if normalizedHash < cumulativeWeight then
-			selectedTier = difficultyTables[i]
+			selectedTier = validTiers[i]
 			break
 		end
 	end
 	
 	local enemyHash = fnv1a(seedUUID .. "monster")
-	print("AAAH")
-	print(selectedTier)
-	print(#selectedTier.enemies)
-	print("AAAH")
 	local selectedEnemy = selectedTier.enemies[enemyHash % #selectedTier.enemies + 1]
-	print(selectedEnemy)
-	print("AAAH")
 	return selectedEnemy
 end
 
