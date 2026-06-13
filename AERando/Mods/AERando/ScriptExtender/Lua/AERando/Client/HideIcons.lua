@@ -21,6 +21,19 @@ local function RemoveHelperPortraits(character)
 	end
 end
 
+function seedReroller()
+	MCM.Set("rando_seed", 0)
+	Channels.SeedRoll:SendToServer()
+end
+
 Channels.IconReplacer:SetHandler(function(character, user)
 	RemoveHelperPortraits(character)
 end)
+
+Channels.SeedRoller:SetHandler(function(user)
+	if not MCM.EventButton.IsEnabled("reroll_button") then
+		MCM.EventButton.RegisterCallback("reroll_button", seedReroller)
+	end
+end)
+
+MCM.EventButton.RegisterCallback("reroll_button", seedReroller)

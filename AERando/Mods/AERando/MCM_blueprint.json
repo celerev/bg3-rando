@@ -11,6 +11,7 @@
                 {
                     "SectionId": "general_settings",
                     "SectionName": "General settings",
+					"SectionDescription": "Configuration is referenced at runtime, so all changes take effect immediately.",
                     "Settings": [
                         {
                             "Id": "mod_enabled",
@@ -21,7 +22,7 @@
                             },
                             "Type": "checkbox",
                             "Default": true,
-                            "Description": "Toggle the mod on/off without uninstalling it."
+                            "Description": "Toggle the mod on/off without uninstalling it. Warning: Do not disable in the middle of a randomized encounter."
                         },
 						{
                             "Id": "rando_seed",
@@ -32,7 +33,51 @@
                             },
                             "Type": "int",
                             "Default": 0,
-                            "Description": "The seed for randomization. Reset to 0 to generate a random seed on next game load."
+                            "Description": "The seed for randomization."
+                        },
+						{
+						  "Id": "reroll_button",
+						  "Name": "Reroll Game Seed",
+						  "Type": "event_button",
+						  "Description": "Generates new random seed. Takes effect immediately.",
+						  "Options": {
+							  "ConfirmDialog": {
+								  "Title": "Confirm Action",
+								  "Message": "Are you sure you want to perform this action? The old seed will be lost.",
+								  "ConfirmText": "Yes, do it",
+								  "CancelText": "No, cancel"
+							  },
+							  "Cooldown": 0,
+							  "Icon": {
+								  "Name": "Skill_Fighter_ActionSurge"
+							  },
+							  "Label": "Fallback Button"
+						  },
+						  "Tooltip": "Click this button and see a confirmation dialog.",
+						  "Handles": {
+								"NameHandle": "hb5290330gc1bfg4700gaddag69fda6bf9910",
+								"DescriptionHandle": "hhfb156f54g2022g450eg91cbgc80600590bc4",
+								"EventButtonHandles": {
+									"ConfirmDialogHandles": {
+										"TitleHandle": "h6260066egac28g4256gae0ag942cc0a6abbf",
+										"MessageHandle": "h69f38c24g333bg4d43g9dedg0a6f6a065797",
+										"ConfirmTextHandle": "h88fb75degb5cag4c61gbe56gfad09fe639d9",
+										"CancelTextHandle": "h573c58ebg258fg4d3egb943g22b0b7996a71"
+									},
+									"LabelHandle": "h40a6aefeg3b59g4a40g8ae4g7e1fa998a080"
+								}
+							}
+						},
+						{
+                            "Id": "randomize_summons",
+                            "Name": "Randomize Summons",
+                            "Handles": {
+                                "NameHandle": "h3e0843beg3369g4a95g93degec4f8e236315",
+                                "DescriptionHandle": "hc0bf9537g5577g4154g892cg63aa21959bcf"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Allow creatures summoned by enemies (e.g. Conjure Elementals) to be randomized."
                         },
 						{
                             "Id": "gm_mode",
@@ -123,13 +168,14 @@
 								}
 							  ]
 							},
-                            "Description": "Allow monsters adapted from the Exandria setting to be in the randomization pool. Note: Does not contain Tier 1 or Tier 2 monsters. (Requires Spells of Exandria to be installed)"
+                            "Description": "Allow monsters adapted from the Exandria setting to be in the randomization pool. Note: Does not contain Tier 0, 1, or 2 monsters. (Requires Spells of Exandria to be installed)"
                         }
                     ]
                 },
 				{
-                    "SectionId": "difficulty",
-                    "SectionName": "Difficulty Settings",
+                    "SectionId": "randomization",
+                    "SectionName": "Randomization Settings",
+					"SectionDescription": "Monster Tiers:\nTier 0 (Zero): The weakest monsters. Rats, spiderlings, weakened Imps.\nTier 1 (Low): Basic monsters from Act 1\nTier 2 (Mid): Level 2-4 Classed NPCs, monsters have tricks\nTier 3 (High): Midgame monsters, specialized NPCs like Anders\nTier 4 (Ultra): Advanced monsters like Gish'ra, Earlygame bosses\nTier 5 (Epic): Advanced NPCs and Midgame bosses\nTier 6 (Legendary): Endgame boss NPCs and exceptionally powerful monsters.\nTier 7 (Mythical): Ansur, Netherbrain, and beings comparable to the strongest in the vanilla game\nTier 8 (Divine): Demigods, Tarrasque, creatures adapted from tabletop D&D5e beyond the experience of vanilla BG3\nTier 9 (Avatar): Challenge Rating 30 avatars of true deities, the upper ceiling of D&D5e material.",
                     "Settings": [
                         {
                             "Id": "chaos_mode",
@@ -143,11 +189,11 @@
                             "Description": "All enemies have an equal chance of being randomized to any monster of any level. Will not be fair or balanced."
                         },
 						{
-                            "Id": "enemy_tier_variance",
-                            "Name": "Enemy Level Variance",
+                            "Id": "enemy_tier_max",
+                            "Name": "Enemy Randomization Ceiling",
                             "Type": "slider_int",
                             "Default": 1,
-                            "Description": "How may tiers of difficulty an enemy can be removed from its randomized counterpart. Tiers:\nTier 1 (Low): Basic monsters from Act 1\nTier 2 (Mid): Level 2-4 Classed NPCs, monsters have tricks\nTier 3 (High): Midgame monsters, specialized NPCs like Anders\nTier 4 (Ultra): Advanced monsters like Gish'ra, Earlygame bosses\nTier 5 (Epic): Advanced NPCs and Midgame bosses\nTier 6 (Legendary): Endgame boss NPCs and exceptionally powerful monsters.\nTier 7 (Mythical): Ansur, Netherbrain, and beings comparable to the strongest in the vanilla game\nTier 8 (Divine): Demigods, Tarrasque, creatures adapted from tabletop D&D5e beyond the experience of vanilla BG3\nTier 9 (Avatar): Challenge Rating 30 avatars of true deities, the upper ceiling of D&D5e material.",
+                            "Description": "Up to how many Tiers of difficulty an enemy can be randomized above its original difficulty.",
                             "Options": {
                                 "Min": 0,
                                 "Max": 9
@@ -168,11 +214,68 @@
                             }
                         },
 						{
+                            "Id": "enemy_tier_min",
+                            "Name": "Enemy Randomization Floor",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Description": "Up to how many Tiers of difficulty an enemy can be randomized below its original difficulty.",
+                            "Options": {
+                                "Min": 0,
+                                "Max": 9
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h8e6a94f9g381eg4b6eg92d4ga745d8685f80",
+                                "DescriptionHandle": "hf3749be5g6c02g4a7agbbcfg928c36775102"
+                            }
+                        },
+					]
+				},
+                {
+                  "SectionId": "difficulty",
+                    "SectionName": "Difficulty Settings",
+					"SectionDescription": "Boosts are added to the original Tier value of the mob, i.e. a Tier 2 NPC who gets Boost 2 will be treated as a Tier 4 NPC when randomized.\nIf set with a Randomization Ceiling of 1 and a Randomization Floor of 0, this example NPC could be randomized into either a Tier 4 or Tier 5 enemy.",
+                    "Settings": [
+						{
+                            "Id": "enemy_tier_boost",
+                            "Name": "Enemy Tier Boost",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Description": "Upgrade the difficulty Tier of regular enemies by this many steps.",
+                            "Options": {
+                                "Min": 0,
+                                "Max": 9
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h76098b8ag66b5g47a3g9748g8f2b64e810c5",
+                                "DescriptionHandle": "h104cad59g4695g4f46gb568gf34e3260983e"
+                            }
+                        },
+						{
                             "Id": "boss_tier_boost",
                             "Name": "Boss Tier Boost",
                             "Type": "slider_int",
-                            "Default": 2,
-                            "Description": "How many tiers to upgrade the randomization of creatures that Larian marked as 'bosses'.",
+                            "Default": 1,
+                            "Description": "Upgrade the difficulty Tier of NPCs Larian flagged as boss by this many steps.",
                             "Options": {
                                 "Min": 0,
                                 "Max": 9
@@ -190,6 +293,273 @@
                             "Handles": {
                                 "NameHandle": "h8dcc9fb6g3f49g4e1fgb75cg5c1d51edf8d9",
                                 "DescriptionHandle": "h8e1dfddeg208bg4240ga24dg6c946476a58f"
+                            }
+                        },
+                    ]
+                },
+				 {
+                    "SectionId": "tier_weights_list",
+                    "SectionName": "Relative Tier Weights",
+					"SectionDescription": "Relative weight of each Tier when rolled against each other. Do not change if you don't know what this means.",
+					"VisibleIf": {
+						"LogicalOperator": "and", 
+						"Conditions": [
+						{
+						  "SettingId": "chaos_mode",
+						  "Operator": "==",          
+						  "ExpectedValue": false
+						}
+					  ]
+					},
+                    "Settings": [
+                        {
+                            "Id": "zero_weight",
+                            "Name": "Tier Zero Weight",
+                            "Type": "slider_int",
+                            "Default": 20,
+                            "Description": "Relative Weight of Tier Zero being rolled with respect to other Tiers",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h40d76497gebf0g4913ga038gb1b74bb08e63",
+                                "DescriptionHandle": "h50c844c8g298eg499fg95afg91174d893547"
+                            }
+                        },
+						{
+                            "Id": "one_weight",
+                            "Name": "Tier One Weight",
+                            "Type": "slider_int",
+                            "Default": 20,
+                            "Description": "Relative Weight of Tier One being rolled with respect to other Tiers",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "hdf361152g5723g41f9g9795g16393f510f2c",
+                                "DescriptionHandle": "h53bbe4a5g543eg456cg8f09ged8f29e1b176"
+                            }
+                        },
+						{
+                            "Id": "two_weight",
+                            "Name": "Tier Two Weight",
+                            "Type": "slider_int",
+                            "Default": 18,
+                            "Description": "Relative Weight of Tier Two being rolled with respect to other Tiers",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "hc411ed93g9d39g49acg975eg903e014d59f3",
+                                "DescriptionHandle": "h9dc7f2eagcd69g400cgb23bg212599f169d0"
+                            }
+                        },
+						{
+                            "Id": "three_weight",
+                            "Name": "Tier Three Weight",
+                            "Type": "slider_int",
+                            "Default": 16,
+                            "Description": "Relative Weight of Tier Three being rolled with respect to other Tiers",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "hec98d4b3gdd54g4265gaaf8g0a7c9103f60d",
+                                "DescriptionHandle": "h3c8f5276g10d3g41edgb53ag521c63bb49f6"
+                            }
+                        },
+						{
+                            "Id": "four_weight",
+                            "Name": "Tier Four Weight",
+                            "Type": "slider_int",
+                            "Default": 14,
+                            "Description": "Relative Weight of Tier Four being rolled with respect to other Tiers",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h6e98a5aeg9290g4802gb540gb48f6ba8520f",
+                                "DescriptionHandle": "hd5458eaag06e3g45cdg9230gf4c6ab89a35c"
+                            }
+                        },
+						{
+                            "Id": "five_weight",
+                            "Name": "Tier Five Weight",
+                            "Type": "slider_int",
+                            "Default": 10,
+                            "Description": "Relative Weight of Tier Five being rolled with respect to other Tiers",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h12d93f47gb03fg46b7gbd11g1aec4a746ed0",
+                                "DescriptionHandle": "h233248aeg2edcg4032g913fg0f4112ef44dc"
+                            }
+                        },
+						{
+                            "Id": "six_weight",
+                            "Name": "Tier Six Weight",
+                            "Type": "slider_int",
+                            "Default": 6,
+                            "Description": "Relative Weight of Tier Six being rolled with respect to other Tiers",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h68c4fb12g5db1g41e6g915bgfdc5643bd291",
+                                "DescriptionHandle": "h48badb73g96f0g404fga0d3g952ffccb2907"
+                            }
+                        },
+						{
+                            "Id": "seven_weight",
+                            "Name": "Tier Seven Weight",
+                            "Type": "slider_int",
+                            "Default": 4,
+                            "Description": "Relative Weight of Tier Seven being rolled with respect to other Tiers",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h351c8560g1302g46cfgb92eg53fb9cbf0894",
+                                "DescriptionHandle": "h2be4a824g317eg4d68g81a7gff476c78f3a7"
+                            }
+                        },
+						{
+                            "Id": "eight_weight",
+                            "Name": "Tier Eight Weight",
+                            "Type": "slider_int",
+                            "Default": 2,
+                            "Description": "Relative Weight of Tier Eight being rolled with respect to other Tiers",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h897c49fdgdd63g4e7cga5d8g07ab6364dfe9",
+                                "DescriptionHandle": "h2894724egd7b2g4a46gac18gf2d21ed8bb87"
+                            }
+                        },
+						{
+                            "Id": "nine_weight",
+                            "Name": "Tier Nine Weight",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Description": "Relative Weight of Tier Nine being rolled with respect to other Tiers",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h98a83f85g0f4cg4a6cga952g7de2dde187d2",
+                                "DescriptionHandle": "h2c289b48g0c9dg45f4g8f6dgdcc55359c9ba"
                             }
                         }
                     ]

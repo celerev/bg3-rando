@@ -87,32 +87,32 @@ return {
 	{
 		Name = "AER_Regular_Rat",
 		TemplateId = "47c8d717-ac85-4d30-9c76-b942ae588aef",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "AER_Vampire_Rat",
 		TemplateId = "47bf3b23-20b9-4f95-8e67-fbdd6ef2ecba",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "AER_Cranium_Rat",
 		TemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "AER_Necro_Rat",
 		TemplateId = "03676e51-2c60-412a-8944-476557a3a5bb",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "AER_Sleep_Rat",
 		TemplateId = "162b7dc9-d4be-4e6e-970a-3c597498cbc3",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "MOD_CombustionSpider_Combat",
 		TemplateId = "270ab455-d847-454a-8563-b2217d871fd4",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "MOD_Myrkul_Combat",
@@ -247,7 +247,7 @@ return {
 	{
 		Name = "AER_FOR_PhaseSpider_Spawn",
 		TemplateId = "c1477e50-0395-4794-bc71-2fd5a4dffeb3",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "AER_Dwarves_Female_Hill_FlamingFist_Cleric",
@@ -277,7 +277,7 @@ return {
 	{
 		Name = "AER_Hyena_A_Black",
 		TemplateId = "e2a53f2c-2e2b-4fa2-a9b2-cee2c5e0578c",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 	 	Name = "AER_LOW_OskarsBeloved_MonstrousSpirit",
@@ -287,12 +287,12 @@ return {
 	{
 		Name = "AER_BIRD_BlueJay",
 		TemplateId = "7249b7f2-5d91-4bd3-9b45-04195ce3a69f",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "MOD_Quasit_Combat",
 		TemplateId = "8d1e1ba7-e2e5-4481-b435-dd6c4c9be768",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "AER_Humans_Female_Cultist_Bane_BlackGauntlet",
@@ -722,7 +722,7 @@ return {
 	{
 		Name = "AER_Hyena_A",
 		TemplateId = "2058acef-d9af-4f47-8b89-266e1b0e6b8d",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "MOD_DireRaven_Combat",
@@ -787,7 +787,7 @@ return {
 	{
 		Name = "AER_OX_A",
 		TemplateId = "1cdbd013-e977-4f8c-864c-630356da0772",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "MOD_Dhourn_Combat",
@@ -1982,7 +1982,7 @@ return {
 	{
 		Name = "AER_Imp_Weak",
 		TemplateId = "45e0ac63-42ce-453b-a731-191a640e71b7",
-		Tier = "low",
+		Tier = "zero",
 	},
 	{
 		Name = "MOD_ImpMelee_Combat",
