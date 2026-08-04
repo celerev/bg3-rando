@@ -5,8 +5,18 @@ return {
 		Tier = "mid",
 	},
 	{
+		Name = "MOD_Aelis_Combat",
+		TemplateId = "abedba73-0c1a-46f8-8c62-4b43b0606454",
+		Tier = "legendary",
+	},
+	{
 		Name = "MOD_Vlaakith_Combat",
 		TemplateId = "e0a624a2-55b3-4438-96b5-59de300940ac",
+		Tier = "mythical",
+	},
+	{
+		Name = "MOD_Elminster_Combat",
+		TemplateId = "f7e56aa4-f824-4185-b62c-0ebb700d7169",
 		Tier = "mythical",
 	},
 	{

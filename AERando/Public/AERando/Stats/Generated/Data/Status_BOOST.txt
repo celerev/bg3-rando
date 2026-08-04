@@ -33,6 +33,15 @@ data "OnTickRoll" "not SavingThrow(Ability.Constitution,CalculateSpellDC(context
 data "OnTickSuccess" "IF(not HasStatus('AER_MOONFIRE_TECHNICAL')):DealDamage(2d10,Radiant,Magical)"
 data "OnTickFail" "IF(not HasStatus('AER_MOONFIRE_TECHNICAL')):DealDamage(2d10/2,Radiant,Magical)"
 
+new entry "AER_TURNHELPER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "INVULNERABLE_NOT_SHOWN"
+data "DisplayName" "ha15fb238g0aa8g6739g5f24ga018132bf407;1"
+data "Description" "h7a618dffg8a06g8b65g3fb8gbb4cc5ee88a8;1"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "Boosts" "IgnoreFallDamage();Invulnerable();Resistance(Slashing,Immune);Resistance(Piercing,Immune);Resistance(Bludgeoning,Immune);Resistance(Acid,Immune);Resistance(Thunder,Immune);Resistance(Necrotic,Immune);Resistance(Fire,Immune);Resistance(Lightning,Immune);Resistance(Cold,Immune);Resistance(Psychic,Immune);Resistance(Poison,Immune);Resistance(Radiant,Immune);Resistance(Force,Immune);Attribute(Grounded);DetectDisturbancesBlock(true);Detach();Invulnerable();CanShootThrough(true);SightRangeOverride(0);ActionResourceBlock(ReactionActionPoint)"
+
 new entry "COL_RESONANCESTONE_BUFF"
 type "StatusData"
 data "StatusType" "BOOST"

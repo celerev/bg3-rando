@@ -1,0 +1,49 @@
+local regexStarts = {
+	"^DLC_",
+	"^LOOT_DLC_",
+	"^LOOT_Gold_A",
+	"^LOOT_GEM",
+	"^UNI_BOOK_",
+	"^BOOK_GEN_",
+	"^DEC_Dungeon_",
+	"^CONS_Elixir_Blood_",
+	"^LOOT_Dye",
+	"^S_SCL_SpidersLyre",
+	"^UNI_KEY",
+	"^S_QUEST_TWN_TollCollector",
+	"^S_UND_MushroomHunter_Noblestalk",
+	"^S_LOW_KarsusNotes",
+	"^S_GLO_PuzzleBox",
+	"^S_GLO_DevilishOx",
+	"^S_LOW_SerialKiller_DoppelgangerTargetList",
+	"^S_GLO_DriderMoonlantern",
+	"^S_GLO_GithRadar",
+	"^S_SHA_NightSpear",
+	"^S_GLO_CursedIronFlask",
+	"^S_GLO_PixieBell",
+	"^S_FOR_Courier_Ball",
+	"^S_UND_MonkAmulet_Amulet",
+	"^S_HAG_Wand_SummonHusband",
+	"^UNI_HAG_Wand_SummonHusband",
+}
+
+local regexContains = {
+	"CrownController",
+}
+
+local regexEnds = {
+	"_Destroyed_%d*$",
+	"_REF_%d*$",
+	"_Pact_%d*$",
+	"_Rusty_%d*$",
+	"_Key_%d*$",
+	"_Dart_%d*$",
+	"_Sling_%d*$",
+	"_Bonesaw_%d*$",
+	"_FlameBlade_%d*$",
+	"_ConjureElemental_%d*$",
+	"_WildShape_%d*$",
+	"_Myrmidon_%d*$",
+}
+
+return regexStarts, regexContains, regexEnds

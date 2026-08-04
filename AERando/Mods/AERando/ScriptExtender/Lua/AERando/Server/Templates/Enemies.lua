@@ -55,19 +55,9 @@ return {
 		Tier = "mythical",
 	},
 	{
-		Name = "MOD_Elminster_Combat",
-		TemplateId = "f7e56aa4-f824-4185-b62c-0ebb700d7169",
-		Tier = "mythical",
-	},
-	{
 		Name = "MOD_Mizora_Combat",
 		TemplateId = "b1d45242-e99e-4760-80da-889b2ae6e7b4",
 		Tier = "epic",
-	},
-	{
-		Name = "MOD_Aelis_Combat",
-		TemplateId = "abedba73-0c1a-46f8-8c62-4b43b0606454",
-		Tier = "legendary",
 	},
 	{
 		Name = "MOD_Lorroakan_Combat",
@@ -415,6 +405,11 @@ return {
 		Tier = "mid",
 	},
 	{
+		Name = "AER_Dolor",
+		TemplateId = "f3b04992-f073-449b-9191-0c059747adee",
+		Tier = "ultra",
+	},
+	{
 		Name = "AER_Tieflings_Male_Mephistopheles_Cultist_Bhaal_DeathsHead",
 		TemplateId = "d7fb5d3c-fd6e-49d4-a0fd-122f81ae324d",
 		Tier = "epic",
@@ -597,6 +592,11 @@ return {
 	{
 		Name = "AER_Mindflayer",
 		TemplateId = "1667ae07-e4ca-44d4-8d82-5e2f26e08aeb",
+		Tier = "ultra",
+	},
+	{
+		Name = "AER_UND_Omeluum",
+		TemplateId = "ba576a2a-90f7-45ab-8265-7fb11f58fa6c",
 		Tier = "ultra",
 	},
 	{
@@ -1195,9 +1195,19 @@ return {
 		Tier = "legendary",
 	},
 	{
+		Name = "AER_S_GLO_Elminster",
+		TemplateId = "5fcc27c1-a495-4437-a904-9b0954dc5c51",
+		Tier = "legendary",
+	},
+	{
 		Name = "AER_Githyanki_Male_Gishra_Caster",
 		TemplateId = "0cfbaf99-37c6-4a50-9709-ebe4c015b0fa",
 		Tier = "ultra",
+	},
+	{
+		Name = "AER_Githyanki_Gishra_Chief",
+		TemplateId = "6e966a6f-1e54-4307-842d-7cdebc0cc558",
+		Tier = "epic",
 	},
 	{
 		Name = "MOD_GithInquisitor_Combat",
@@ -1325,6 +1335,11 @@ return {
 		Tier = "legendary",
 	},
 	{
+		Name = "AER_LOW_Viconia",
+		TemplateId = "15d458c4-c51d-4312-8f5a-cf5ba9042e3f",
+		Tier = "epic",
+	},
+	{
 		Name = "MOD_Humans_Male_AbsoluteGuard_Melee",
 		TemplateId = "27ae82ef-42d4-484e-95fe-2b003bba9271",
 		Tier = "ultra",
@@ -1432,6 +1447,11 @@ return {
 	{
 		Name = "AER_S_GLO_Desire_Hooded",
 		TemplateId = "bee463e5-69ff-4426-9dc9-6d5f49b596d4",
+		Tier = "high",
+	},
+	{
+		Name = "AER_Rolan",
+		TemplateId = "cf75bc65-dbd2-4cb0-b0ba-289a8d5cd6c0",
 		Tier = "high",
 	},
 	{
@@ -1967,7 +1987,7 @@ return {
 	{
 		Name = "MOD_Ethel_Combat",
 		TemplateId = "7cce4717-c4bd-48b5-93cb-216014e9d547",
-		Tier = "legendary",
+		Tier = "epic",
 	},
 	{
 		Name = "MOD_Karniss_Combat",

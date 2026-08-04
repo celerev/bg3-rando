@@ -80,6 +80,39 @@
                             "Description": "Allow creatures summoned by enemies (e.g. Conjure Elementals) to be randomized."
                         },
 						{
+                            "Id": "randomize_allies",
+                            "Name": "Randomize Neutral and Allied Characters",
+                            "Handles": {
+                                "NameHandle": "h0c2e1961g12e2g4521gb839gf0e7e03c2e36",
+                                "DescriptionHandle": "h1d6169dbge44ag4928g893ag92c615f29eda"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "EXPERIMENTAL: Allow creatures who are not enemies to be randomized."
+                        },
+						{
+                            "Id": "randomize_loot",
+                            "Name": "Randomize Loot",
+                            "Handles": {
+                                "NameHandle": "h9975877fg7de3g4313g8c0bg6d33d14a58fe",
+                                "DescriptionHandle": "h71a2e2e4geed8g4b0ag9270ga76d82f4df1a"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "EXPERIMENTAL: Randomizes loot in the world. Unique items such as Phalar Aluve will only be randomized to other unique items. Leave disabled if using other loot randomization mods."
+                        },
+						{
+                            "Id": "unique_bosses",
+                            "Name": "Unique Bosses",
+                            "Handles": {
+                                "NameHandle": "hd997c57fg0f97g41dcgb5d1gcdbabc94cdfd",
+                                "DescriptionHandle": "h49bca7deg4db1g4459gb82eg83c0454ca259"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Story bosses will not share the same randomized counterpart."
+                        },
+						{
                             "Id": "gm_mode",
                             "Name": "GM Mode",
                             "Handles": {
@@ -88,17 +121,7 @@
                             },
                             "Type": "checkbox",
                             "Default": false,
-							"VisibleIf": {
-							  "LogicalOperator": "and", 
-							  "Conditions": [
-								{
-								  "SettingId": "mod_enabled",
-								  "Operator": "==",          
-								  "ExpectedValue": false
-								}
-							  ]
-							},
-                            "Description": "(NOT IMPLEMENTED) Host controls monsters against other players. Not available yet."
+                            "Description": "EXPERIMENTAL: Host controls monsters against other players."
                         },
 						{
                             "Id": "soe_loaded",
@@ -172,79 +195,119 @@
                         }
                     ]
                 },
-				{
-                    "SectionId": "randomization",
-                    "SectionName": "Randomization Settings",
-					"SectionDescription": "Monster Tiers:\nTier 0 (Zero): The weakest monsters. Rats, spiderlings, weakened Imps.\nTier 1 (Low): Basic monsters from Act 1\nTier 2 (Mid): Level 2-4 Classed NPCs, monsters have tricks\nTier 3 (High): Midgame monsters, specialized NPCs like Anders\nTier 4 (Ultra): Advanced monsters like Gish'ra, Earlygame bosses\nTier 5 (Epic): Advanced NPCs and Midgame bosses\nTier 6 (Legendary): Endgame boss NPCs and exceptionally powerful monsters.\nTier 7 (Mythical): Ansur, Netherbrain, and beings comparable to the strongest in the vanilla game\nTier 8 (Divine): Demigods, Tarrasque, creatures adapted from tabletop D&D5e beyond the experience of vanilla BG3\nTier 9 (Avatar): Challenge Rating 30 avatars of true deities, the upper ceiling of D&D5e material.",
-                    "Settings": [
-                        {
-                            "Id": "chaos_mode",
-                            "Name": "Chaos Mode",
-                            "Handles": {
-                                "NameHandle": "h5a18549cgba44g4a78ga4a9gc2735ec197c5",
-                                "DescriptionHandle": "h2d6c9196g3897g43b7g9fd9gde60bd35486e"
-                            },
-                            "Type": "checkbox",
-                            "Default": false,
-                            "Description": "All enemies have an equal chance of being randomized to any monster of any level. Will not be fair or balanced."
-                        },
-						{
-                            "Id": "enemy_tier_max",
-                            "Name": "Enemy Randomization Ceiling",
-                            "Type": "slider_int",
-                            "Default": 1,
-                            "Description": "Up to how many Tiers of difficulty an enemy can be randomized above its original difficulty.",
-                            "Options": {
-                                "Min": 0,
-                                "Max": 9
-                            },
-							"VisibleIf": {
-							  "LogicalOperator": "and", 
-							  "Conditions": [
-								{
-								  "SettingId": "chaos_mode",
-								  "Operator": "==",          
-								  "ExpectedValue": false
-								}
-							  ]
-							},
-                            "Handles": {
-                                "NameHandle": "h488d2378g3510g4f50gb319gf0c73c76e5d2",
-                                "DescriptionHandle": "h55258048g1195g4898gbc02ge7a6aee5059d"
-                            }
-                        },
-						{
-                            "Id": "enemy_tier_min",
-                            "Name": "Enemy Randomization Floor",
-                            "Type": "slider_int",
-                            "Default": 1,
-                            "Description": "Up to how many Tiers of difficulty an enemy can be randomized below its original difficulty.",
-                            "Options": {
-                                "Min": 0,
-                                "Max": 9
-                            },
-							"VisibleIf": {
-							  "LogicalOperator": "and", 
-							  "Conditions": [
-								{
-								  "SettingId": "chaos_mode",
-								  "Operator": "==",          
-								  "ExpectedValue": false
-								}
-							  ]
-							},
-                            "Handles": {
-                                "NameHandle": "h8e6a94f9g381eg4b6eg92d4ga745d8685f80",
-                                "DescriptionHandle": "hf3749be5g6c02g4a7agbbcfg928c36775102"
-                            }
-                        },
-					]
-				},
+            ]
+		},
+		{
+			"TabName": "Difficulty Settings",
+            "Handles": {
+                "NameHandle": "h58f81be3g6d1fg456bga978g4d9934df9b3e"
+            },
+            "TabId": "difficulty",
+			"Sections": [
                 {
                   "SectionId": "difficulty",
                     "SectionName": "Difficulty Settings",
-					"SectionDescription": "Boosts are added to the original Tier value of the mob, i.e. a Tier 2 NPC who gets Boost 2 will be treated as a Tier 4 NPC when randomized.\nIf set with a Randomization Ceiling of 1 and a Randomization Floor of 0, this example NPC could be randomized into either a Tier 4 or Tier 5 enemy.",
+					"SectionDescription": "Monster Tiers:\nTier 0 (Zero): The weakest monsters. Rats, spiderlings, weakened Imps.\nTier 1 (Low): Basic monsters from Act 1\nTier 2 (Mid): Level 2-4 Classed NPCs, monsters have tricks\nTier 3 (High): Midgame monsters, specialized NPCs like Anders\nTier 4 (Ultra): Advanced monsters like Gish'ra, Earlygame bosses\nTier 5 (Epic): Advanced NPCs and Midgame bosses\nTier 6 (Legendary): Endgame boss NPCs and exceptionally powerful monsters.\nTier 7 (Mythical): Ansur, Netherbrain, and beings comparable to the strongest in the vanilla game\nTier 8 (Divine): Demigods, Tarrasque, creatures adapted from tabletop D&D5e beyond the experience of vanilla BG3\nTier 9 (Avatar): Challenge Rating 30 avatars of true deities, the upper ceiling of D&D5e material.\n\nBoosts are added to the original Tier value of the mob, i.e. a Tier 2 NPC who gets Boost 2 will be treated as a Tier 4 NPC when randomized.\nIf set with a Randomization Ceiling of 1 and a Randomization Floor of 0, this example NPC could be randomized into either a Tier 4 or Tier 5 enemy.",
                     "Settings": [
+						{
+                            "Id": "preset_normal",
+                            "Name": "Preset Difficulty: Normal",
+                            "Description": "Randomized enemies will be closely bounded to the difficulty of their original counterparts.",
+                            "Type": "checkbox",
+                            "Default": true,
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "ha49b6976gee72g45e2g9af1gb77156a1133c",
+                                "DescriptionHandle": "hac20f179g1236g4f2fg9b0cg23321b3d070c"
+                            }
+                        },
+						{
+                            "Id": "preset_hard",
+                            "Name": "Preset Difficulty: Hard",
+                            "Description": "Randomized enemies may be mildly stronger than their original counterparts.",
+                            "Type": "checkbox",
+                            "Default": false,
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "he4efb1ffgb2bdg4971g90b8g6b01633f43fc",
+                                "DescriptionHandle": "h74ffec03gf184g4834gbd7eg07de3ea31760"
+                            }
+                        },
+						{
+                            "Id": "preset_extreme",
+                            "Name": "Preset Difficulty: Extreme",
+                            "Description": "Randomized enemies may be significantly stronger than their original counterparts.",
+                            "Type": "checkbox",
+                            "Default": false,
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h810b0cbbgb12bg431bg87f5g0a1b7e40b706",
+                                "DescriptionHandle": "h08dcf1fdg4f1fg4738g9075g48eb4d19c42e"
+                            }
+                        },
+						{
+                            "Id": "advanced_mode",
+                            "Name": "Advanced Settings",
+                            "Handles": {
+                                "NameHandle": "h76a6451cg87e5g480aga340ga2d1c56e96bd",
+                                "DescriptionHandle": "h3ae7c42bg19f3g473fg9c95ge8b70e166242"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Manually adjust the difficulty boost values.",
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                        },
 						{
                             "Id": "enemy_tier_boost",
                             "Name": "Enemy Tier Boost",
@@ -262,6 +325,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -287,6 +355,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -329,6 +402,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -354,6 +432,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -379,6 +462,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -404,6 +492,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -429,6 +522,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -454,6 +552,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -479,6 +582,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -504,6 +612,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -529,6 +642,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -554,6 +672,11 @@
 								  "SettingId": "chaos_mode",
 								  "Operator": "==",          
 								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
 								}
 							  ]
 							},
@@ -565,6 +688,114 @@
                     ]
                 },
             ]
-        },
+		},
+		{
+			"TabName": "Randomization Settings",
+            "Handles": {
+                "NameHandle": "ha22c46bdgabddg41dcgae78ga090cc245a5f"
+            },
+            "TabId": "randomization",
+			"Sections": [
+                {
+                    "SectionId": "randomization",
+                    "SectionName": "Randomization Settings",
+					"SectionDescription": "Monster Tiers:\nTier 0 (Zero): The weakest monsters. Rats, spiderlings, weakened Imps.\nTier 1 (Low): Basic monsters from Act 1\nTier 2 (Mid): Level 2-4 Classed NPCs, monsters have tricks\nTier 3 (High): Midgame monsters, specialized NPCs like Anders\nTier 4 (Ultra): Advanced monsters like Gish'ra, Earlygame bosses\nTier 5 (Epic): Advanced NPCs and Midgame bosses\nTier 6 (Legendary): Endgame boss NPCs and exceptionally powerful monsters.\nTier 7 (Mythical): Ansur, Netherbrain, and beings comparable to the strongest in the vanilla game\nTier 8 (Divine): Demigods, Tarrasque, creatures adapted from tabletop D&D5e beyond the experience of vanilla BG3\nTier 9 (Avatar): Challenge Rating 30 avatars of true deities, the upper ceiling of D&D5e material.",
+                    "Settings": [
+                        {
+                            "Id": "chaos_mode",
+                            "Name": "Chaos Mode",
+                            "Handles": {
+                                "NameHandle": "h5a18549cgba44g4a78ga4a9gc2735ec197c5",
+                                "DescriptionHandle": "h2d6c9196g3897g43b7g9fd9gde60bd35486e"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "All enemies have an equal chance of being randomized to any monster of any level. Will not be fair or balanced."
+                        },
+						{
+                            "Id": "advanced_rando_mode",
+                            "Name": "Advanced Settings",
+                            "Handles": {
+                                "NameHandle": "h82e3a9e6gde5ag42e0ga53fg9d54e34b58b3",
+                                "DescriptionHandle": "h12b1a26ag0469g4e02g8a63g7f83624eae1d"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Manually adjust the randomization values.",
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								}
+							  ]
+							},
+                        },
+						{
+                            "Id": "enemy_tier_max",
+                            "Name": "Enemy Randomization Ceiling",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Description": "Up to how many Tiers of difficulty an enemy can be randomized above its original difficulty.",
+                            "Options": {
+                                "Min": 0,
+                                "Max": 9
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_rando_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h488d2378g3510g4f50gb319gf0c73c76e5d2",
+                                "DescriptionHandle": "h55258048g1195g4898gbc02ge7a6aee5059d"
+                            }
+                        },
+						{
+                            "Id": "enemy_tier_min",
+                            "Name": "Enemy Randomization Floor",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Description": "Up to how many Tiers of difficulty an enemy can be randomized below its original difficulty.",
+                            "Options": {
+                                "Min": 0,
+                                "Max": 9
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "chaos_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": false
+								},
+								{
+								  "SettingId": "advanced_rando_mode",
+								  "Operator": "==",          
+								  "ExpectedValue": true
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h8e6a94f9g381eg4b6eg92d4ga745d8685f80",
+                                "DescriptionHandle": "hf3749be5g6c02g4a7agbbcfg928c36775102"
+                            }
+                        },
+					]
+				},
+            ]
+		},
     ]
 }

@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
 <contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <content contentuid="h456abae4gf81bg4527gb37dg0d01071cef90" version="1">Shadow Druid</content>
+	<content contentuid="heb165bbdgbb0fg4b80gad51gf637bec9bfe9" version="1">Turn Divider</content>
+	<content contentuid="h4df70569g7912g4c0ag843fg7f8451d86659" version="1">Simulacrum</content>
 </contentList>
