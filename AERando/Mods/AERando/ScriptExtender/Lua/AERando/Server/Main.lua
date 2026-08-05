@@ -70,6 +70,15 @@ difficultyTables = {
 	{ name = "avatar", weight = MCM.Get("nine_weight"), enemies = {}},
 }
 
+rarityTables = { 
+	{ name = "Common", weight = MCM.Get("common_weight"), items = {}},
+	{ name = "Uncommon", weight = MCM.Get("uncommon_weight"), items = {}},
+	{ name = "Rare", weight = MCM.Get("rare_weight"), items = {}},
+	{ name = "VeryRare", weight = MCM.Get("veryrare_weight"), items = {}},
+	{ name = "Legendary", weight = MCM.Get("legendary_weight"), items = {}},
+}
+
+
 if MCM.Get("vanilla_mon") then
 	for _, monster in ipairs(baseMonsterList) do	
 		table.insert(activeMonsterList, monster)
@@ -87,6 +96,28 @@ if MCM.Get("soe_mon") then
 end
 
 -- Utility functions
+function setEnemyTables()
+	for _, tier in ipairs(difficultyTables) do
+		tier.enemies = {}
+		for _, enemy in ipairs(activeMonsterList) do
+			if tier.name == enemy.Tier then
+				table.insert(tier.enemies, enemy.TemplateId)
+			end
+		end
+	end
+end
+
+function setRarityTables()
+	for _, tier in ipairs(rarityTables) do
+		tier.items = {}
+		for _, item in ipairs(nonUniqueItems) do
+			if tier.name == item.Rarity then
+				table.insert(tier.items, item.RootTemplate)
+			end
+		end
+	end
+end
+
 function initialize()
 	if MCM.Get("preset_normal") and not (MCM.Get("preset_hard") or MCM.Get("preset_extreme") or MCM.Get("advanced_mode")) then
 		MCM.Set("enemy_tier_boost", 0) 
@@ -178,6 +209,7 @@ function initializeItemMap()
 		end
 	end
 	mappedUniqueItems, nonUniqueItems = Hash:createUniqueItemMapping(rootTemplateItemList)
+	setRarityTables()
 end
 
 initializeItemMap()
@@ -199,6 +231,7 @@ function regenerateItemMap()
 		end
 	end
 	mappedUniqueItems, nonUniqueItems = Hash:createUniqueItemMapping(rootTemplateItemList)
+	setRarityTables()
 end
 
 function gameLoaded()
@@ -470,17 +503,6 @@ function startCombatNarrative()
 						end)
 					end
 				end
-			end
-		end
-	end
-end
-
-function setEnemyTables()
-	for _, tier in ipairs(difficultyTables) do
-		tier.enemies = {}
-		for _, enemy in ipairs(activeMonsterList) do
-			if tier.name == enemy.Tier then
-				table.insert(tier.enemies, enemy.TemplateId)
 			end
 		end
 	end
@@ -1214,6 +1236,7 @@ Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, o
 	if not MCM.Get("randomize_loot") then
 		return
 	end
+
 	-- I know it could be one list, I did this just to think about it in three parts
 	for _, pattern in ipairs(startRegex) do    
 		if string.match(object, pattern) then
@@ -1240,30 +1263,37 @@ Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, o
 		return
 	end
 
-	if Osi.IsEquipped(object) == 1 then
-		return
+	if PersistentVars.randomizedItemTable[root_template] or PersistentVars.existingMappedItemTable[object_uuid] then
+		return	
 	end
 
-	if PersistentVars.randomizedItemTable[root_template] or PersistentVars.existingMappedItemTable[object_uuid] then
-		return
-	end
 	local potentialCharacter = Osi.GetOriginalOwner(object)
+	local dead = Osi.IsDead(owner)
+	local partyMember = Osi.IsPartyMember(owner, 1)
+
+
 
 	if mappedUniqueItems[root_template] then
 		PersistentVars.randomizedItemTable[root_template] = true
 		local newItem = mappedUniqueItems[root_template].RootTemplate
 		linkingItems[newItem .. "|" .. owner] = true
-		Osi.RequestDelete(object)
-		Osi.TemplateAddTo(newItem, owner, 1, 1)
-	elseif potentialCharacter then
-		if Osi.IsPlayer(potentialCharacter) == 1 or Osi.IsPartyMember(potentialCharacter, 1) == 1 then
+		Ext.Timer.WaitFor(200, function()
+			Osi.RequestDelete(object)
+			Osi.TemplateAddTo(newItem, owner, 1, 1)
+		end)
+	elseif potentialCharacter and (Osi.IsPlayer(potentialCharacter) == 1 or Osi.IsPartyMember(potentialCharacter, 1) == 1) then
+		return
+	else
+		if addtype == "Regular" and dead == 0 and partyMember == 0 then
 			return
 		end
-	else
-		local newItem = Hash:selectItemByTemplate(object, nonUniqueItems).RootTemplate
+		local newItem = Hash:selectItemByTemplate(object, rarityTables)
+
 		linkingItems[newItem .. "|" .. owner] = true
-		Osi.RequestDelete(object)
-		Osi.TemplateAddTo(newItem, owner, 1, 1)
+		Ext.Timer.WaitFor(100, function()
+			Osi.RequestDelete(object)
+			Osi.TemplateAddTo(newItem, owner, 1, 1)
+		end)
 	end
 end)
 

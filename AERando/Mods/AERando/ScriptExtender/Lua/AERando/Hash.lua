@@ -57,13 +57,49 @@ function Hash:selectEnemy(UUID, difficultyTables, chaos)
 	return selectedEnemy
 end
 
-function Hash:selectItemByTemplate(UUID, itemTable)
+
+function Hash:selectItemByTemplate(UUID, rarityTable)
     local seedUUID = self.gameSeed .. ":" .. UUID
     local hash = fnv1a(seedUUID)
-  
-    local index = (hash % #itemTable) + 1
-    return itemTable[index]
+    
+    local totalWeight = 0
+    local cumulativeWeights = {}
+    local validRarities = {}
+    
+    for _, rarity in ipairs(rarityTable) do
+        if rarity.items and #rarity.items > 0 and rarity.weight and rarity.weight > 0 then
+            table.insert(validRarities, rarity)
+        end
+    end
+    
+    if #validRarities == 0 then
+        error("No valid rarities contain items with positive weight.")
+    end
+    
+    for i, rarity in ipairs(validRarities) do
+        totalWeight = totalWeight + rarity.weight
+        table.insert(cumulativeWeights, totalWeight)
+    end
+    
+    local normalizedHash = hash % totalWeight
+
+
+	local selectedRarity = validRarities[1]
+	for i, cumulativeWeight in ipairs(cumulativeWeights) do
+		if normalizedHash < cumulativeWeight then
+			selectedRarity = validRarities[i]
+			break
+		end
+	end
+
+    
+    local itemHash = fnv1a(seedUUID .. "item")
+    local selectedItem = selectedRarity.items[itemHash % #selectedRarity.items + 1]
+
+    return selectedItem
 end
+
+
 
 function Hash:createUniqueItemMapping(itemTable)
     local uniqueItemsByTemplate = {}

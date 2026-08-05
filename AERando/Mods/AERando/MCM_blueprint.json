@@ -797,5 +797,146 @@
 				},
             ]
 		},
+		{
+			"TabName": "Loot Settings",
+            "Handles": {
+                "NameHandle": "hbf0754e8g1669g4405gb373g0b44a86075dc"
+            },
+            "TabId": "loot",
+			"Sections": [
+                {
+                    "SectionId": "loot",
+                    "SectionName": "Loot Settings",
+					"SectionDescription": "Relative weights of each rarity being rolled when 'Randomize Loot' is enabled.",
+                    "Settings": [
+						{
+                            "Id": "common_weight",
+                            "Name": "Common Loot Weight",
+                            "Type": "slider_int",
+                            "Default": 24,
+                            "Description": "Relative Weight of Common loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "randomize_loot",
+								  "Operator": "==",          
+								  "ExpectedValue": true
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "heaf31151g1df6g4863g8e15g1662c180aeea",
+                                "DescriptionHandle": "h64beff57gbcb0g4502gbe8ag5495dbd2f964"
+                            },
+                        },
+						{
+                            "Id": "uncommon_weight",
+                            "Name": "Uncommon Loot Weight",
+                            "Type": "slider_int",
+                            "Default": 12,
+                            "Description": "Relative Weight of Uncommon loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "randomize_loot",
+								  "Operator": "==",          
+								  "ExpectedValue": true
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "hcc6900a8g8e46g4a94gabf5gee6a626c6fa8",
+                                "DescriptionHandle": "hfb167397g738cg4ad2g8720gddb8d36c0a95"
+                            },
+                        },
+						{
+                            "Id": "rare_weight",
+                            "Name": "Rare Loot Weight",
+                            "Type": "slider_int",
+                            "Default": 6,
+                            "Description": "Relative Weight of Rare loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "randomize_loot",
+								  "Operator": "==",          
+								  "ExpectedValue": true
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h0f3e9245g3e8ag4c9bg976fg12124fdd4510",
+                                "DescriptionHandle": "hb34733a7g3500g441bga36egee7cd9ddc1e4"
+                            },
+                        },
+						{
+                            "Id": "veryrare_weight",
+                            "Name": "Very Rare Loot Weight",
+                            "Type": "slider_int",
+                            "Default": 3,
+                            "Description": "Relative Weight of Very Rare loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "randomize_loot",
+								  "Operator": "==",          
+								  "ExpectedValue": true
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "h682a15f9gb03cg4c32g8757g20e6dac47152",
+                                "DescriptionHandle": "h2d46135fg2f4cg48deg8383gffb256ca3878"
+                            },
+                        },
+						{
+                            "Id": "legendary_weight",
+                            "Name": "Legendary Loot Weight",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Description": "Relative Weight of Legendary loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
+                            "Options": {
+                                "Min": 1,
+                                "Max": 30
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "randomize_loot",
+								  "Operator": "==",          
+								  "ExpectedValue": true
+								}
+							  ]
+							},
+                            "Handles": {
+                                "NameHandle": "he60ba61cg4de0g48f3g8e7bg92d3d4862d4b",
+                                "DescriptionHandle": "hc05c7dc3gc194g47e1ga03egc20b597a89b6"
+                            },
+                        },
+					]
+				},
+            ]
+		},
     ]
 }
