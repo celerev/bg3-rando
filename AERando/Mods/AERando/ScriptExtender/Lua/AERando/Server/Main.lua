@@ -12,6 +12,7 @@ local Channels = Ext.Require("AERando/Shared.lua")
 
 mappedUniqueItems = {}
 nonUniqueItems = {}
+linkingItems = {}
 
 Host = nil
 playerFaction = "6545a015-1b3d-66a4-6a0e-6ec62065cdb7"
@@ -43,11 +44,8 @@ end
 if not PersistentVars.randomizedItemTable then
 	PersistentVars.randomizedItemTable = {}
 end
-if not PersistentVars.generatedItemTable then
-	PersistentVars.generatedItemTable = {}
-end
-if not PersistentVars.existingUserItemTable then
-	PersistentVars.existingUserItemTable = {}
+if not PersistentVars.existingMappedItemTable then
+	PersistentVars.existingMappedItemTable = {}
 end
 
 activeMonsterList = {}
@@ -122,11 +120,8 @@ function initialize()
 	if not PersistentVars.randomizedItemTable then
 		PersistentVars.randomizedItemTable = {}
 	end
-	if not PersistentVars.generatedItemTable then
-		PersistentVars.generatedItemTable = {}
-	end
-	if not PersistentVars.existingUserItemTable then
-		PersistentVars.existingUserItemTable = {}
+	if not PersistentVars.existingMappedItemTable then
+		PersistentVars.existingMappedItemTable = {}
 	end
 end
 
@@ -178,7 +173,7 @@ function initializeItemMap()
 			local playerItems = Ext.Entity.Get(entry[1]).InventoryOwner.PrimaryInventory.InventoryContainer.Items
 			for _, item in ipairs(playerItems) do
 				local ownedItem = item.Item.Uuid.EntityUuid
-				PersistentVars.existingUserItemTable[ownedItem] = true
+				PersistentVars.existingMappedItemTable[ownedItem] = true
 			end
 		end
 	end
@@ -199,7 +194,7 @@ function regenerateItemMap()
 			local playerItems = Ext.Entity.Get(entry[1]).InventoryOwner.PrimaryInventory.InventoryContainer.Items
 			for _, item in ipairs(playerItems) do
 				local ownedItem = item.Item.Uuid.EntityUuid
-				PersistentVars.existingUserItemTable[ownedItem] = true
+				PersistentVars.existingMappedItemTable[ownedItem] = true
 			end
 		end
 	end
@@ -1235,13 +1230,21 @@ Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, o
 			return
 		end
 	end
+	
+	root_template = strip_uuid(template)
+	object_uuid = strip_uuid(object)
+
+	if linkingItems[root_template .. "|" .. owner] then
+		PersistentVars.existingMappedItemTable[object_uuid] = true
+		linkingItems[root_template .. "|" .. owner] = nil
+		return
+	end
 
 	if Osi.IsEquipped(object) == 1 then
 		return
 	end
-	root_template = strip_uuid(template)
-	object_uuid = strip_uuid(object)
-	if PersistentVars.generatedItemTable[root_template] or PersistentVars.randomizedItemTable[root_template] or PersistentVars.existingUserItemTable[object_uuid] then
+
+	if PersistentVars.randomizedItemTable[root_template] or PersistentVars.existingMappedItemTable[object_uuid] then
 		return
 	end
 	local potentialCharacter = Osi.GetOriginalOwner(object)
@@ -1249,7 +1252,7 @@ Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, o
 	if mappedUniqueItems[root_template] then
 		PersistentVars.randomizedItemTable[root_template] = true
 		local newItem = mappedUniqueItems[root_template].RootTemplate
-		PersistentVars.generatedItemTable[newItem] = true
+		linkingItems[newItem .. "|" .. owner] = true
 		Osi.RequestDelete(object)
 		Osi.TemplateAddTo(newItem, owner, 1, 1)
 	elseif potentialCharacter then
@@ -1258,7 +1261,7 @@ Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, o
 		end
 	else
 		local newItem = Hash:selectItemByTemplate(object, nonUniqueItems).RootTemplate
-		PersistentVars.generatedItemTable[newItem] = true
+		linkingItems[newItem .. "|" .. owner] = true
 		Osi.RequestDelete(object)
 		Osi.TemplateAddTo(newItem, owner, 1, 1)
 	end

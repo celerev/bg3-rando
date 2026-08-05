@@ -3,6 +3,7 @@ local regexStarts = {
 	"^LOOT_DLC_",
 	"^LOOT_Gold_A",
 	"^LOOT_GEM",
+	"^DEC_GEN",
 	"^UNI_BOOK_",
 	"^BOOK_GEN_",
 	"^DEC_Dungeon_",
@@ -25,6 +26,7 @@ local regexStarts = {
 	"^S_UND_MonkAmulet_Amulet",
 	"^S_HAG_Wand_SummonHusband",
 	"^UNI_HAG_Wand_SummonHusband",
+	"^S_HAV_AncientFist",
 }
 
 local regexContains = {
