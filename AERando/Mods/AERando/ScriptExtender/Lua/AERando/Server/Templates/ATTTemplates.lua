@@ -10,6 +10,11 @@ return {
 		Tier = "legendary",
 	},
 	{
+		Name = "MOD_Mizora_Combat",
+		TemplateId = "b1d45242-e99e-4760-80da-889b2ae6e7b4",
+		Tier = "epic",
+	},
+	{
 		Name = "MOD_Vlaakith_Combat",
 		TemplateId = "e0a624a2-55b3-4438-96b5-59de300940ac",
 		Tier = "mythical",

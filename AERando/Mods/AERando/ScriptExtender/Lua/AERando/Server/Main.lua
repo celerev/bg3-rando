@@ -839,6 +839,32 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
 			difficultyTables[10].weight = payload.value
 		end
     end
+
+	if payload.settingId == "common_weight" then
+        if payload.value and not payload.oldValue then
+			rarityTables[1].weight = payload.value
+		end
+    end
+	if payload.settingId == "uncommon_weight" then
+        if payload.value and not payload.oldValue then
+			rarityTables[2].weight = payload.value
+		end
+    end
+	if payload.settingId == "rare_weight" then
+        if payload.value and not payload.oldValue then
+			rarityTables[3].weight = payload.value
+		end
+    end
+	if payload.settingId == "veryrare_weight" then
+        if payload.value and not payload.oldValue then
+			rarityTables[4].weight = payload.value
+		end
+    end
+	if payload.settingId == "legendary_weight" then
+        if payload.value and not payload.oldValue then
+			rarityTables[5].weight = payload.value
+		end
+    end
 	
 	if payload.settingId == "preset_normal" then
 		if payload.value and not payload.oldValue then

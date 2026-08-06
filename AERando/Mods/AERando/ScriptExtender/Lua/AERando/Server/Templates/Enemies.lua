@@ -55,11 +55,6 @@ return {
 		Tier = "mythical",
 	},
 	{
-		Name = "MOD_Mizora_Combat",
-		TemplateId = "b1d45242-e99e-4760-80da-889b2ae6e7b4",
-		Tier = "epic",
-	},
-	{
 		Name = "MOD_Lorroakan_Combat",
 		TemplateId = "efd0109c-6a16-4cfd-8692-eb6ec8bcdac2",
 		Tier = "legendary",

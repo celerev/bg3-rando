@@ -807,7 +807,7 @@
                 {
                     "SectionId": "loot",
                     "SectionName": "Loot Settings",
-					"SectionDescription": "Relative weights of each rarity being rolled when 'Randomize Loot' is enabled.",
+					"SectionDescription": "Relative weights of each rarity being rolled when 'Randomize Loot' is enabled. This only applies to generic loot (consumables, +1 equipment, etc.), as every unique item maps to another unique item.\n\nNote that loot randomization must be enabled before the population of the item (i.e. entering a trader's shop for the first time) to function properly.",
                     "Settings": [
 						{
                             "Id": "common_weight",
