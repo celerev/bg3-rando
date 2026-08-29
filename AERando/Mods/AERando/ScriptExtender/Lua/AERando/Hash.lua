@@ -111,10 +111,10 @@ function Hash:createUniqueItemMapping(itemTable)
 		if string.find(item.Name, "Blessing_Spear$") then
 			table.insert(uniqueItemsList, item)
             uniqueItemsByTemplate[item.RootTemplate] = item
-		elseif exandriaCheck and (string.find(item.Name, "^MOD_Ishta") or string.find(item.Name, "^MOD_Scream")) then
+		elseif exandriaCheck and (string.find(item.Name, "^MOD_Ishta") or string.find(item.Name, "^MOD_Scream") or string.find(item.Name, "^MOD_Blood_Greataxe")) then
 			table.insert(uniqueItemsList, item)
             uniqueItemsByTemplate[item.RootTemplate] = item
-        elseif Ext.Stats.Get(item.Name).Unique == 1 then
+        elseif Ext.Stats.Get(item.Name).Unique == 1 then -- Something strange happens here
             table.insert(uniqueItemsList, item)
             uniqueItemsByTemplate[item.RootTemplate] = item
         end

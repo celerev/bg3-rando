@@ -2,7 +2,7 @@ local baseMonsterList = Ext.Require("AERando/Server/Templates/Enemies.lua")
 local tabletopMonsterList = Ext.Require("AERando/Server/Templates/ATTTemplates.lua")
 local exandriaMonsterList = Ext.Require("AERando/Server/Templates/SOEEnemies.lua")
 local uniqueMonsterLookup = Ext.Require("AERando/Server/Templates/uniqueMonsterLookup.lua")
-local localItemList, globalItemList, rootTemplateItemList = Ext.Require("AERando/Server/Templates/ItemList.lua")
+local rootTemplateItemList, aTTRootTemplateItemList, exandriaRootTemplateItemList = Ext.Require("AERando/Server/Templates/ItemList.lua")
 local startRegex, containsRegex, endsRegex = Ext.Require("AERando/Server/Templates/ItemBlacklist.lua")
 
 local C = Ext.Require("AERando/Constants.lua")
@@ -49,12 +49,16 @@ if not PersistentVars.existingMappedItemTable then
 end
 
 activeMonsterList = {}
+activeItemList = {}
 iconTable = {}
 statusTable = {}
 tempBattle = {}
+local exandriaCheck = Ext.Mod.IsModLoaded("a27fdbe3-4d1a-641d-d05f-1ba4ee529da8")
 
-if Ext.Mod.IsModLoaded("a27fdbe3-4d1a-641d-d05f-1ba4ee529da8") then
+if exandriaCheck then
 	MCM.Set("soe_loaded", true)
+else
+	MCM.Set("soe_loaded", false)
 end
 
 difficultyTables = { 
@@ -89,9 +93,22 @@ if MCM.Get("att_mon") then
 		table.insert(activeMonsterList, monster)
 	end
 end
-if MCM.Get("soe_mon") then
+if MCM.Get("soe_mon") and exandriaCheck then
 	for _, monster in ipairs(exandriaMonsterList) do	
 		table.insert(activeMonsterList, monster)
+	end
+end
+for _, item in ipairs(rootTemplateItemList) do	
+	table.insert(activeItemList, item)
+end
+if MCM.Get("att_loot") then
+	for _, item in ipairs(aTTRootTemplateItemList) do	
+		table.insert(activeItemList, item)
+	end
+end
+if MCM.Get("soe_loot") and exandriaCheck then
+	for _, item in ipairs(exandriaRootTemplateItemList) do	
+		table.insert(activeItemList, item)
 	end
 end
 
@@ -208,7 +225,7 @@ function initializeItemMap()
 			end
 		end
 	end
-	mappedUniqueItems, nonUniqueItems = Hash:createUniqueItemMapping(rootTemplateItemList)
+	mappedUniqueItems, nonUniqueItems = Hash:createUniqueItemMapping(activeItemList)
 	setRarityTables()
 end
 
@@ -230,7 +247,7 @@ function regenerateItemMap()
 			end
 		end
 	end
-	mappedUniqueItems, nonUniqueItems = Hash:createUniqueItemMapping(rootTemplateItemList)
+	mappedUniqueItems, nonUniqueItems = Hash:createUniqueItemMapping(activeItemList)
 	setRarityTables()
 end
 
@@ -278,6 +295,24 @@ function unloadMonsterTable(monsterTable)
 	for i = #activeMonsterList, 1, -1 do
 		if monstersToRemove[activeMonsterList[i].TemplateId] then
 			table.remove(activeMonsterList, i)
+		end
+	end
+end
+
+function loadItemTable(itemTable)
+	for _, item in ipairs(itemTable) do	
+		table.insert(activeItemList, item)
+	end
+end
+
+function unloadItemTable(itemTable)
+	local itemsToRemove = {}
+	for _, item in ipairs(itemTable) do
+		itemsToRemove[item.RootTemplate] = true
+	end
+	for i = #activeItemList, 1, -1 do
+		if itemsToRemove[activeItemList[i].RootTemplate] then
+			table.remove(activeItemList, i)
 		end
 	end
 end
@@ -347,45 +382,47 @@ function startCombat()
 	end
 	local map = Osi.GetRegion(Host)
 	for monster, _ in pairs(PersistentVars.spawnedEnemyTable) do
-		local missingHP = 0
+		if not PersistentVars.currentCombatMembers[monster] then
+			local missingHP = 0
 
-		local player, distance = Osi.GetClosestPlayer(monster)
-		if (distance and player) then
-			if distance > 220 and map ~= C.Regions.Act3c then
-				local x, y, z = Osi.GetPosition(player)
-				local x2, y2, z2 = Osi.FindValidPosition(x, y, z, 100, Host, 1)
-				Osi.TeleportToPosition(monster, x2, y2, z2, "", 1, 1, 1, 0, 1)
-			end
-			
-			for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
-				character_uuid = strip_uuid(monster)
-				if val[1] == character_uuid then
-					-- I know this is inefficient don't @ me
-					missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
-					if statusTable[key] then
-						Osi.ApplyStatus(monster, "SURPRISED", 6.0, 1, monster)
-						statusTable[key] = nil
+			local player, distance = Osi.GetClosestPlayer(monster)
+			if (distance and player) then
+				if distance > 220 and map ~= C.Regions.Act3c then
+					local x, y, z = Osi.GetPosition(player)
+					local x2, y2, z2 = Osi.FindValidPosition(x, y, z, 100, Host, 1)
+					Osi.TeleportToPosition(monster, x2, y2, z2, "", 0, 0, 0, 0, 1)
+				end
+				
+				for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
+					character_uuid = strip_uuid(monster)
+					if val[1] == character_uuid then
+						-- I know this is inefficient don't @ me
+						missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
+						if statusTable[key] then
+							Osi.ApplyStatus(monster, "SURPRISED", 6.0, 1, monster)
+							statusTable[key] = nil
+						end
 					end
 				end
-			end
-			
-			if missingHP > 0 and Osi.GetHitpointsPercentage(monster) == 100.0 then
-				Osi.ApplyDamage(monster,missingHP,"Force",Host)
-			end
 				
+				if missingHP > 0 and Osi.GetHitpointsPercentage(monster) == 100.0 then
+					Osi.ApplyDamage(monster,missingHP,"Force",Host)
+				end
+					
 
-			local creatureFaction = Osi.GetFaction(monster)
-			if not MCM.Get("gm_mode") then
-				Osi.SteerTo(monster, Host, 1)
-				Osi.SetHostileAndEnterCombat(creatureFaction, playerFaction, monster, Host)
-			else
-				local players = Osi.DB_Players:Get(nil)
-				Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
-				Osi.AddPartyFollower(monster, PersistentVars.gameMaster)
-				for _, entry in ipairs(players) do
-					local player = strip_uuid(entry[1])
-					if player ~= PersistentVars.gameMaster then
-						Osi.SetHostileAndEnterCombat(creatureFaction, "9fac6ec7-642b-3553-1bc8-6b8e0edae7d5", monster, player)
+				local creatureFaction = Osi.GetFaction(monster)
+				if not MCM.Get("gm_mode") then
+					Osi.SteerTo(monster, Host, 1)
+					Osi.SetHostileAndEnterCombat(creatureFaction, playerFaction, monster, Host)
+				else
+					local players = Osi.DB_Players:Get(nil)
+					Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
+					Osi.AddPartyFollower(monster, PersistentVars.gameMaster)
+					for _, entry in ipairs(players) do
+						local player = strip_uuid(entry[1])
+						if player ~= PersistentVars.gameMaster then
+							Osi.SetHostileAndEnterCombat(creatureFaction, "9fac6ec7-642b-3553-1bc8-6b8e0edae7d5", monster, player)
+						end
 					end
 				end
 			end
@@ -400,46 +437,48 @@ function startCombatTemp()
 	end
 	local map = Osi.GetRegion(Host)
 	for monster, _ in pairs(PersistentVars.spawnedEnemyTable) do
-		local missingHP = 0
+		if not PersistentVars.currentCombatMembers[monster] then
+			local missingHP = 0
 
-		local player, distance = Osi.GetClosestPlayer(monster)
-		if (distance and player) then
-			if distance > 220 and map ~= C.Regions.Act3c then
-				local x, y, z = Osi.GetPosition(player)
-				local x2, y2, z2 = Osi.FindValidPosition(x, y, z, 100, Host, 1)
-				Osi.TeleportToPosition(monster, x2, y2, z2, "", 1, 1, 1, 0, 1)
-			end
-			
-			for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
-				character_uuid = strip_uuid(monster)
-				if val[1] == character_uuid then
-					missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
-					if statusTable[key] then
-						Osi.ApplyStatus(monster, "SURPRISED", 6.0, 1, monster)
-						statusTable[key] = nil
+			local player, distance = Osi.GetClosestPlayer(monster)
+			if (distance and player) then
+				if distance > 220 and map ~= C.Regions.Act3c then
+					local x, y, z = Osi.GetPosition(player)
+					local x2, y2, z2 = Osi.FindValidPosition(x, y, z, 100, Host, 1)
+					Osi.TeleportToPosition(monster, x2, y2, z2, "", 0, 0, 0, 0, 1)
+				end
+				
+				for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
+					character_uuid = strip_uuid(monster)
+					if val[1] == character_uuid then
+						missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
+						if statusTable[key] then
+							Osi.ApplyStatus(monster, "SURPRISED", 6.0, 1, monster)
+							statusTable[key] = nil
+						end
 					end
 				end
-			end
-			
-			if missingHP > 0 and Osi.GetHitpointsPercentage(monster) == 100.0 then
-				Osi.ApplyDamage(monster,missingHP,"Force",Host)
-			end
 				
+				if missingHP > 0 and Osi.GetHitpointsPercentage(monster) == 100.0 then
+					Osi.ApplyDamage(monster,missingHP,"Force",Host)
+				end
+					
 
-			local creatureFaction = Osi.GetFaction(monster)
-			if not MCM.Get("gm_mode") then
-				Osi.SteerTo(monster, Host, 1)
-				Osi.PROC_SetRelationTemporaryHostile(monster,Host)
-				Osi.EnterCombat(monster,Host)
-				Osi.EnterCombat(Host,monster)
-			else
-				local players = Osi.DB_Players:Get(nil)
-				Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
-				Osi.AddPartyFollower(monster, PersistentVars.gameMaster)
-				for _, entry in ipairs(players) do
-					local player = strip_uuid(entry[1])
-					if player ~= PersistentVars.gameMaster then
-						Osi.SetHostileAndEnterCombat(creatureFaction, "9fac6ec7-642b-3553-1bc8-6b8e0edae7d5", monster, player)
+				local creatureFaction = Osi.GetFaction(monster)
+				if not MCM.Get("gm_mode") then
+					Osi.SteerTo(monster, Host, 1)
+					Osi.PROC_SetRelationTemporaryHostile(monster,Host)
+					Osi.EnterCombat(monster,Host)
+					Osi.EnterCombat(Host,monster)
+				else
+					local players = Osi.DB_Players:Get(nil)
+					Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
+					Osi.AddPartyFollower(monster, PersistentVars.gameMaster)
+					for _, entry in ipairs(players) do
+						local player = strip_uuid(entry[1])
+						if player ~= PersistentVars.gameMaster then
+							Osi.SetHostileAndEnterCombat(creatureFaction, "9fac6ec7-642b-3553-1bc8-6b8e0edae7d5", monster, player)
+						end
 					end
 				end
 			end
@@ -454,53 +493,55 @@ function startCombatNarrative()
 	end
 	local map = Osi.GetRegion(Host)
 	for monster, _ in pairs(PersistentVars.spawnedEnemyTable) do
-		local missingHP = 0
+		if not PersistentVars.currentCombatMembers[monster] then
+			local missingHP = 0
 
-		local player, distance = Osi.GetClosestPlayer(monster)
-		if (distance and player) then
-			if distance > 220 and map ~= C.Regions.Act3c then
-				local x, y, z = Osi.GetPosition(player)
-				local x2, y2, z2 = Osi.FindValidPosition(x, y, z, 100, Host, 1)
-				Osi.TeleportToPosition(monster, x2, y2, z2, "", 1, 1, 1, 0, 1)
-			end
-			
-			for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
-				character_uuid = strip_uuid(monster)
-				if val[1] == character_uuid then
-					missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
-					if statusTable[key] then
-						Osi.ApplyStatus(monster, "SURPRISED", 6.0, 1, monster)
-						statusTable[key] = nil
+			local player, distance = Osi.GetClosestPlayer(monster)
+			if (distance and player) then
+				if distance > 220 and map ~= C.Regions.Act3c then
+					local x, y, z = Osi.GetPosition(player)
+					local x2, y2, z2 = Osi.FindValidPosition(x, y, z, 100, Host, 1)
+					Osi.TeleportToPosition(monster, x2, y2, z2, "", 0, 0, 0, 0, 1)
+				end
+				
+				for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
+					character_uuid = strip_uuid(monster)
+					if val[1] == character_uuid then
+						missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
+						if statusTable[key] then
+							Osi.ApplyStatus(monster, "SURPRISED", 6.0, 1, monster)
+							statusTable[key] = nil
+						end
 					end
 				end
-			end
-			
-			if missingHP > 0 and Osi.GetHitpointsPercentage(monster) == 100.0 then
-				Osi.ApplyDamage(monster,missingHP,"Force",Host)
-			end
 				
+				if missingHP > 0 and Osi.GetHitpointsPercentage(monster) == 100.0 then
+					Osi.ApplyDamage(monster,missingHP,"Force",Host)
+				end
+					
 
-			local creatureFaction = Osi.GetFaction(monster)
-			if not MCM.Get("gm_mode") then
-				Osi.SteerTo(monster, Host, 1)
+				local creatureFaction = Osi.GetFaction(monster)
+				if not MCM.Get("gm_mode") then
+					Osi.SteerTo(monster, Host, 1)
 
-				pcall(function()
-					local entity = Ext.Entity.Get(Host)
-					local narrativeCombatId = entity.CombatParticipant.CombatHandle.CombatState.MyGuid
-					Osi.SetInNarrativeCombat(monster, narrativeCombatId, 1)
-				end)
-			else
-				local players = Osi.DB_Players:Get(nil)
-				Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
-				Osi.AddPartyFollower(monster, PersistentVars.gameMaster)
-				for _, entry in ipairs(players) do
-					local player = strip_uuid(entry[1])
-					if player ~= PersistentVars.gameMaster then
-						pcall(function()
-							local entity = Ext.Entity.Get(player)
-							local narrativeCombatId = entity.CombatParticipant.CombatHandle.CombatState.MyGuid
-							Osi.SetInNarrativeCombat(monster, narrativeCombatId, 1)
-						end)
+					pcall(function()
+						local entity = Ext.Entity.Get(Host)
+						local narrativeCombatId = entity.CombatParticipant.CombatHandle.CombatState.MyGuid
+						Osi.SetInNarrativeCombat(monster, narrativeCombatId, 1)
+					end)
+				else
+					local players = Osi.DB_Players:Get(nil)
+					Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
+					Osi.AddPartyFollower(monster, PersistentVars.gameMaster)
+					for _, entry in ipairs(players) do
+						local player = strip_uuid(entry[1])
+						if player ~= PersistentVars.gameMaster then
+							pcall(function()
+								local entity = Ext.Entity.Get(player)
+								local narrativeCombatId = entity.CombatParticipant.CombatHandle.CombatState.MyGuid
+								Osi.SetInNarrativeCombat(monster, narrativeCombatId, 1)
+							end)
+						end
 					end
 				end
 			end
@@ -631,9 +672,11 @@ function selectCreature(character)
 			index = 3 -- mid
 		elseif level < 8 then
 			index = 4 -- high
-		elseif level < 10 then
-			index = 5 -- ultra
+		elseif level < 9 and (map == C.Regions.Act3 or map == C.Regions.Act3b) then
+			index = 4 -- high
 		elseif level < 11 then
+			index = 5 -- ultra
+		elseif level < 13 then
 			index = 6 -- epic
 		elseif level < 14 then
 			index = 7 -- legendary
@@ -723,7 +766,7 @@ function randomizeCreature(character)
 	PersistentVars.spawnedEnemyTable[newCreature] = true
 	PersistentVars.currentlyRandomizedEnemyTable[character] = {newCreature, x, y, z}
 	Osi.ApplyStatus(character, "PARALYZED", -1.0, 1, character)
-	Osi.TeleportToPosition(character, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 1, 1, 1, 0, 1)
+	Osi.TeleportToPosition(character, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
 	
 	character_uuid = strip_uuid(character)
 	table.insert(iconTable, character_uuid)
@@ -735,7 +778,7 @@ function randomizeCreature(character)
 		Osi.ApplyStatus(newCreature, "AER_ZHALK_FIX", -1.0, 1, newCreature)
 	elseif character == "S_END_MindBrain_f8bb04a3-22e5-41b0-aed7-5dcf852343d1" then
 		-- send Netherbrain's random to the correct location
-		Osi.TeleportToPosition(newCreature, 219, -61, 4255, "", 1, 1, 1, 0, 1)
+		Osi.TeleportToPosition(newCreature, 219, -61, 4255, "", 0, 0, 0, 0, 1)
 	end
 	
 	if aggro then
@@ -772,7 +815,14 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
     end
 	if payload.settingId == "att_mon" then
         if payload.value and not payload.oldValue then
+			local soeCheck = MCM.Get("soe_mon")
+			if soeCheck then
+				unloadMonsterTable(exandriaMonsterList)
+			end
 			loadMonsterTable(tabletopMonsterList)
+			if soeCheck then
+				loadMonsterTable(exandriaMonsterList)
+			end
 			changeTables = true
 		elseif payload.oldValue and not payload.value then
 			unloadMonsterTable(tabletopMonsterList)
@@ -786,6 +836,33 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
 		elseif payload.oldValue and not payload.value then
 			unloadMonsterTable(exandriaMonsterList)
 			changeTables = true
+		end
+    end
+	-- Update item tables if toggles change
+	local changeItemTables = false
+	if payload.settingId == "att_loot" then
+        if payload.value and not payload.oldValue then
+			local soeCheck = MCM.Get("soe_loot")
+			if soeCheck then
+				unloadItemTable(exandriaRootTemplateItemList)
+			end
+			loadItemTable(aTTRootTemplateItemList)
+			if soeCheck then
+				loadItemTable(exandriaRootTemplateItemList)
+			end
+			changeItemTables = true
+		elseif payload.oldValue and not payload.value then
+			unloadItemTable(aTTRootTemplateItemList)
+			changeItemTables = true
+		end
+    end
+	if payload.settingId == "soe_loot" then
+        if payload.value and not payload.oldValue then
+			loadItemTable(exandriaRootTemplateItemList)
+			changeItemTables = true
+		elseif payload.oldValue and not payload.value then
+			unloadItemTable(exandriaRootTemplateItemList)
+			changeItemTables = true
 		end
     end
 	
@@ -918,6 +995,9 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
 	if changeTables then
 		setEnemyTables()
 	end
+	if changeItemTables then
+		regenerateItemMap()
+	end
 	
 	-- Update game seed if value changes
 	if payload.settingId == "rando_seed" and payload.value ~= payload.oldValue then
@@ -942,22 +1022,53 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	if Osi.IsSummon(character) == 1 and not MCM.Get("randomize_summons") then
 		return
 	end
-
-	if "3f0377a6-1bf5-4e9e-a186-d2a934f0a0c0" == strip_uuid(Osi.GetTemplate(character)) then -- Turn Divider
+	
+	local stripped_template = strip_uuid(Osi.GetTemplate(character))
+	if "3f0377a6-1bf5-4e9e-a186-d2a934f0a0c0" == stripped_template then -- Turn Divider
 		return
 	end
-	if "f7b54c47-dc24-47b7-89a8-cfdf72b32354" == strip_uuid(Osi.GetTemplate(character)) then -- Arcane Cannon
+	if "f7b54c47-dc24-47b7-89a8-cfdf72b32354" == stripped_template then -- Arcane Cannon
 		return
 	end
-	if "dc180f8b-9c3d-40e4-97f0-af6759781bcf" == strip_uuid(Osi.GetTemplate(character)) then -- Arcane Turret 
+	if "dc180f8b-9c3d-40e4-97f0-af6759781bcf" == stripped_template then -- Arcane Turret 
 		return
 	end
 	
+	
+	character_uuid = strip_uuid(character)
+	
+	if MCM.Get("derandomize_othermod") then
+		local success, result = pcall(function()
+			local fileName = Ext.Template.GetTemplate(character_uuid).FileName
+			for _, pattern in ipairs(C.fileNameRegex) do
+				if string.match(fileName, pattern) then
+					return true
+				end
+			end
+			return false
+		end)
+		if not success then
+			result = false
+			success, result = pcall(function()
+				local fileName = Ext.Template.GetTemplate(stripped_template).FileName
+				for _, pattern in ipairs(C.fileNameRegex) do
+					if string.match(fileName, pattern) then
+						return true
+					end
+				end
+				return false
+			end)
+		end
+		if success and not result then
+			return
+		end
+	end
+
 	local map = Osi.GetRegion(character)
 	local asylum = getAsylum(map)
 	
 	-- Handle Viconia's heartmap for the regular version
-	if "15d458c4-c51d-4312-8f5a-cf5ba9042e3f" == strip_uuid(Osi.GetTemplate(character)) then
+	if "15d458c4-c51d-4312-8f5a-cf5ba9042e3f" == stripped_template then
 		local players = Osi.DB_Players:Get(nil)
 		for _, entry in ipairs(players) do
 			local player = entry[1]
@@ -967,22 +1078,19 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	
 	if PersistentVars.currentlyRandomizedEnemyTable[character] then
 		Osi.ApplyStatus(character, "PARALYZED", -1.0, 1, character)
-		Osi.TeleportToPosition(character, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 1, 1, 1, 0, 1)
+		Osi.TeleportToPosition(character, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
 		local spawn = PersistentVars.currentlyRandomizedEnemyTable[character][1]
 		if Osi.IsDead(spawn) == 1 or Osi.IsInCombat(spawn) == 1 then
 			return
 		end
 	end
 	
-	character_uuid = strip_uuid(character)
-	
 	if PersistentVars.deadRandomTable[character_uuid] then
 		return
 	end
-	
-	PersistentVars.currentCombatMembers[character_uuid] = true
 
 	if PersistentVars.spawnedEnemyTable[character_uuid] then
+		PersistentVars.currentCombatMembers[character_uuid] = true
 		return
 	end
 	
@@ -1046,6 +1154,8 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 			Ext.Timer.WaitFor(2400, startCombatNarrative)
 		end
 	end
+	
+	PersistentVars.currentCombatMembers[character_uuid] = true
 end)
 
 Ext.Osiris.RegisterListener("Died", 1, "after", function(character)
@@ -1065,14 +1175,14 @@ Ext.Osiris.RegisterListener("Died", 1, "after", function(character)
 	for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
 		if key == character then
 			Osi.Die(val[1], 0, "NULL_00000000-0000-0000-0000-000000000000", 1, 0, 0.0)
-			Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 1, 1, 1, 0, 1)
+			Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 0, 0, 0, 0, 1)
 		elseif val[1] == character_uuid then
 			if Osi.IsImmortal(key) == 1 then
 				Osi.ApplyDamage(key,999,"Force",Host)
 			else
 				Osi.Die(key, 0, "NULL_00000000-0000-0000-0000-000000000000", 1, 0, 0.0)
 			end
-			Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 1, 1, 1, 0, 1)
+			Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 0, 0, 0, 0, 1)
 			Osi.SetOnStage(val[1], 0)
 			PersistentVars.currentlyRandomizedEnemyTable[key] = nil
 		end
@@ -1090,7 +1200,7 @@ Ext.Osiris.RegisterListener("Died", 1, "after", function(character)
 	
 	PersistentVars.currentCombatMembers[character_uuid] = nil
 	
-	if next(PersistentVars.currentCombatMembers) == nil then
+	if next(PersistentVars.currentCombatMembers) == nil and MCM.Get("gm_mode") then
 		Ext.Timer.WaitFor(2400, removeTurnHelperCheck)
 	end
 end)
@@ -1191,11 +1301,11 @@ Ext.Osiris.RegisterListener("CombatEnded", 1, "after", function(guid)
 
 	for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
 		if val.ally then
-			Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 1, 1, 1, 0, 1)
-			Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 1, 1, 1, 0, 1)
+			Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
+			Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 0, 0, 0, 0, 1)
 		elseif (Osi.HasActiveStatus(val[1], "KNOCKED_OUT_TEMPORARILY") == 1 or Osi.HasActiveStatus(val[1], "KNOCKED_OUT") == 1) then
-			Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 1, 1, 1, 0, 1)
-			Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 1, 1, 1, 0, 1)
+			Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
+			Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 0, 0, 0, 0, 1)
 		end
 		if Osi.HasActiveStatus(key, "PARALYZED") then
 			RemoveStatus(key, "PARALYZED", key)
@@ -1220,11 +1330,11 @@ Ext.Osiris.RegisterListener("LeftCombat", 2, "after", function(charId, combatId)
 	for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
 		if val[1] == character_uuid then
 			if val.ally then
-				Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 1, 1, 1, 0, 1)
-				Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 1, 1, 1, 0, 1)
+				Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
+				Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 0, 0, 0, 0, 1)
 			elseif (Osi.HasActiveStatus(val[1], "KNOCKED_OUT_TEMPORARILY") == 1 or Osi.HasActiveStatus(val[1], "KNOCKED_OUT") == 1) then
-				Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 1, 1, 1, 0, 1)
-				Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 1, 1, 1, 0, 1)
+				Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
+				Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 0, 0, 0, 0, 1)
 			end
 			if Osi.HasActiveStatus(key, "PARALYZED") then
 				RemoveStatus(key, "PARALYZED", key)
@@ -1238,7 +1348,7 @@ Ext.Osiris.RegisterListener("LeftCombat", 2, "after", function(charId, combatId)
 	
 	PersistentVars.currentCombatMembers[character_uuid] = nil
 	
-	if next(PersistentVars.currentCombatMembers) == nil then
+	if next(PersistentVars.currentCombatMembers) == nil and MCM.Get("gm_mode") then
 		Ext.Timer.WaitFor(4000, removeTurnHelperCheck)
 	end
 end)

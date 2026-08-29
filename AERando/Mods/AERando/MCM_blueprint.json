@@ -113,6 +113,17 @@
                             "Description": "Story bosses will not share the same randomized counterpart."
                         },
 						{
+                            "Id": "derandomize_othermod",
+                            "Name": "Deconflict Encounter Mods",
+                            "Handles": {
+                                "NameHandle": "h51ac90e4g27c4g4a21gb9a7g0880fc7e44a6",
+                                "DescriptionHandle": "h3eff05cag65cdg48bagaa57ga4e87f6cf188"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "EXPERIMENTAL: When enabled, AER attempts to distinguish between vanilla encounters and encounters added by other mods, only randomizing the vanilla encounters."
+                        },
+						{
                             "Id": "gm_mode",
                             "Name": "GM Mode",
                             "Handles": {
@@ -180,7 +191,7 @@
                                 "DescriptionHandle": "h44c45dcdgd85cg4125gad6bg3893c2f85dca"
                             },
                             "Type": "checkbox",
-                            "Default": false,
+                            "Default": true,
 							"VisibleIf": {
 							  "LogicalOperator": "and", 
 							  "Conditions": [
@@ -807,17 +818,71 @@
                 {
                     "SectionId": "loot",
                     "SectionName": "Loot Settings",
-					"SectionDescription": "Relative weights of each rarity being rolled when 'Randomize Loot' is enabled. This only applies to generic loot (consumables, +1 equipment, etc.), as every unique item maps to another unique item.\n\nNote that loot randomization must be enabled before the population of the item (i.e. entering a trader's shop for the first time) to function properly.",
+					"SectionDescription": "Note that loot randomization must be enabled before the population of the item (i.e. entering a trader's shop for the first time) to function properly.",
+                    "Settings": [
+						{
+                            "Id": "att_loot",
+                            "Name": "Enable ATTSpells Loot",
+                            "Handles": {
+                                "NameHandle": "hc8b2950egc48ag44a4ga111gf4c9110c86da",
+                                "DescriptionHandle": "h9725bcb8g67a8g45c5g8185g3640e0e6871e"
+                            },
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "randomize_loot",
+								  "Operator": "==",          
+								  "ExpectedValue": true
+								}
+							  ]
+							},
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Allow scrolls from the 7-9th level spells adapted from tabletop D&D 5e material to be in the loot randomization pool."
+                        },
+						{
+                            "Id": "soe_loot",
+                            "Name": "Enable Exandria Loot",
+                            "Handles": {
+                                "NameHandle": "h0d60009eg3424g48f6gbc4dga64e6a17f374",
+                                "DescriptionHandle": "h2f14aff3ga17bg4f29gaa4agaac398701311"
+                            },
+                            "Type": "checkbox",
+                            "Default": true,
+							"VisibleIf": {
+							  "LogicalOperator": "and", 
+							  "Conditions": [
+								{
+								  "SettingId": "soe_loaded",
+								  "Operator": "==",          
+								  "ExpectedValue": true
+								},
+								{
+								  "SettingId": "randomize_loot",
+								  "Operator": "==",          
+								  "ExpectedValue": true
+								}
+							  ]
+							},
+                            "Description": "Allow items and scrolls from adapted Exandria content to be in the loot randomization pool. (Requires Spells of Exandria)"
+                        },
+					],
+				},
+				{
+                    "SectionId": "loot_randomization_weights",
+                    "SectionName": "Loot Randomization Weights",
+					"SectionDescription": "Relative weights of each rarity being rolled when 'Randomize Loot' is enabled. This only applies to generic loot (consumables, +1 equipment, etc.), as every unique item maps to another unique item. Do not change if you don't know what this means.",
                     "Settings": [
 						{
                             "Id": "common_weight",
                             "Name": "Common Loot Weight",
                             "Type": "slider_int",
-                            "Default": 24,
+                            "Default": 271,
                             "Description": "Relative Weight of Common loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
-                                "Max": 30
+                                "Max": 300
                             },
 							"VisibleIf": {
 							  "LogicalOperator": "and", 
@@ -838,11 +903,11 @@
                             "Id": "uncommon_weight",
                             "Name": "Uncommon Loot Weight",
                             "Type": "slider_int",
-                            "Default": 12,
+                            "Default": 32,
                             "Description": "Relative Weight of Uncommon loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
-                                "Max": 30
+                                "Max": 300
                             },
 							"VisibleIf": {
 							  "LogicalOperator": "and", 
@@ -863,11 +928,11 @@
                             "Id": "rare_weight",
                             "Name": "Rare Loot Weight",
                             "Type": "slider_int",
-                            "Default": 6,
+                            "Default": 16,
                             "Description": "Relative Weight of Rare loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
-                                "Max": 30
+                                "Max": 300
                             },
 							"VisibleIf": {
 							  "LogicalOperator": "and", 
@@ -888,11 +953,11 @@
                             "Id": "veryrare_weight",
                             "Name": "Very Rare Loot Weight",
                             "Type": "slider_int",
-                            "Default": 3,
+                            "Default": 4,
                             "Description": "Relative Weight of Very Rare loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
-                                "Max": 30
+                                "Max": 300
                             },
 							"VisibleIf": {
 							  "LogicalOperator": "and", 
@@ -917,7 +982,7 @@
                             "Description": "Relative Weight of Legendary loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
-                                "Max": 30
+                                "Max": 300
                             },
 							"VisibleIf": {
 							  "LogicalOperator": "and", 

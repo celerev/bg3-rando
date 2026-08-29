@@ -65,6 +65,11 @@ return {
 		Tier = "divine",
 	},
 	{
+		Name = "MOD_Grazzt_Combat",
+		TemplateId = "39fb8aee-82b1-4637-a3d4-96e745717e80",
+		Tier = "divine",
+	},
+	{
 		Name = "MOD_Tarrasque_Combat",
 		TemplateId = "724b540d-0b5e-4d8f-b8a0-fbab3b3d811e",
 		Tier = "divine",
@@ -222,6 +227,11 @@ return {
 	{
 		Name = "MOD_Wight_Combat",
 		TemplateId = "3bab719c-9393-4102-95e5-3d84501403f5",
+		Tier = "high",
+	},
+	{
+		Name = "MOD_Flameskull_Combat",
+		TemplateId = "3f1cf407-21db-4c30-8bb6-8889b08e468e",
 		Tier = "high",
 	},
 	{

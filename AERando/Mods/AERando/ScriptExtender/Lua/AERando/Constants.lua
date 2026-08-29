@@ -57,6 +57,17 @@ Constants = {
         Act3c = "END_Main",
         Act3i = "IRN_Main_A",
     },
+	fileNameRegex = {
+		"Shared",
+		"SharedDev",
+		"Gustav",
+		"GustavDev",
+		"GustavX",
+		"Honour",
+		"HonourX",
+		"AdvancedTTSpells",
+		"SpellsOfExandria",
+	},
 }
 
 return Constants

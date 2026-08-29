@@ -1,7 +1,3 @@
-localItemList = {}
-
-globalItemList= {}
-
 rootTemplateItemList = {
     {
         Mod = {
@@ -2703,66 +2699,6 @@ rootTemplateItemList = {
         Tab = "Consumable",
         Type = "CombatObject"
     },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_SappingSting",
-        Rarity = "Common",
-        RootTemplate = "c40d90b4-d387-4f5a-ad4b-cf56c174c6c6",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_GiftOfAlacrity",
-        Rarity = "Common",
-        RootTemplate = "2129e6fb-b141-4746-b07e-eefddfc01e73",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_MagnifyGravity",
-        Rarity = "Common",
-        RootTemplate = "223844b7-01d1-469e-aa6c-9382968fcf50",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_FortuneFavour",
-        Rarity = "Common",
-        RootTemplate = "417f22a4-d41a-461e-a508-fe7dcc701f9e",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_ImmovableObject",
-        Rarity = "Common",
-        RootTemplate = "c16067f1-d963-4121-9263-0e8b33ab21b0",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
 	{
         Mod = {
             "ed539163-bb70-431b-96a7-f5b2eda5376b",
@@ -4155,30 +4091,6 @@ rootTemplateItemList = {
         Tab = "Magical",
         Type = "CombatObject"
     },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_PulseWave",
-        Rarity = "Rare",
-        RootTemplate = "2b74d08f-1eb6-4c22-bdf5-8299aa6f3a5e",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_GravitySinkhole",
-        Rarity = "Rare",
-        RootTemplate = "4c0b5c7f-ee39-499e-b039-dbc56f1dec89",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
 	{
         Mod = {
             "ed539163-bb70-431b-96a7-f5b2eda5376b",
@@ -4559,606 +4471,6 @@ rootTemplateItemList = {
         Name = "UNI_LOW_DethroneScroll",
         Rarity = "VeryRare",
         RootTemplate = "b2e1168a-021d-4a81-a041-6d2e1421a1fb",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_PrismaticSpray",
-        Rarity = "VeryRare",
-        RootTemplate = "aeefcc77-9aa7-4efb-b773-031daa0332ca",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_FingerofDeath",
-        Rarity = "VeryRare",
-        RootTemplate = "b4bb1206-2754-4754-91e5-1b92b4b5dd3f",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_FireStorm",
-        Rarity = "VeryRare",
-        RootTemplate = "a47e6ec4-5736-4b87-abde-80c3b2875243",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Regenerate",
-        Rarity = "VeryRare",
-        RootTemplate = "9b0165d5-aab9-4b6f-bc78-337f3dc44b4c",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_PowerWordFortify",
-        Rarity = "VeryRare",
-        RootTemplate = "9d36ba91-3ded-424d-ad18-e2dba5dedb10",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_ReverseGravity",
-        Rarity = "VeryRare",
-        RootTemplate = "1f1b81f1-5fde-49e5-86c6-0cc791cf20f9",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Etherealness",
-        Rarity = "VeryRare",
-        RootTemplate = "ca606318-d869-40f1-8d14-b16f679599d5",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Symbol",
-        Rarity = "VeryRare",
-        RootTemplate = "9d0eba53-a95e-4eb1-aa60-b94e55fd3225",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_PowerWordPain",
-        Rarity = "VeryRare",
-        RootTemplate = "81f7db15-f1fc-44c6-bdab-23407d71c8fa",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_DivineWord",
-        Rarity = "VeryRare",
-        RootTemplate = "0235a9cb-a4c7-4276-8d41-d6e8735430d5",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_CrownOfStars",
-        Rarity = "VeryRare",
-        RootTemplate = "97fbe64c-ec2c-4daa-981f-553dad17021a",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_DelayedBlastFireball",
-        Rarity = "VeryRare",
-        RootTemplate = "fa537365-7e00-46f3-9c9a-7004a0945fca",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Whirlwind",
-        Rarity = "VeryRare",
-        RootTemplate = "e34eaf01-c7c8-496e-81d6-6651b03e4774",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_FizbanTransformation",
-        Rarity = "VeryRare",
-        RootTemplate = "9116e4e4-78f9-4c02-9c46-47e3adc5dbc8",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_GravityFissure",
-        Rarity = "VeryRare",
-        RootTemplate = "42da5866-18d9-42e6-b093-8d002ff82a63",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_TetherEssence",
-        Rarity = "VeryRare",
-        RootTemplate = "35f9c7ce-4bb2-4bf6-8f3d-8ffb5e51d431",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-	{
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Foresight",
-        Rarity = "Legendary",
-        RootTemplate = "c95a50b2-2a10-4904-82e5-6caf6f8fae96",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_MeteorSwarm",
-        Rarity = "Legendary",
-        RootTemplate = "9fc71ffb-74a0-40b6-8fef-7eb9968c30e1",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_MassHeal",
-        Rarity = "Legendary",
-        RootTemplate = "2bf41d29-c81b-4c99-93f1-dad3b4cada5e",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_PowerWordHeal",
-        Rarity = "Legendary",
-        RootTemplate = "05c2abf7-0626-4618-9ed1-40789d77899f",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Shapechange",
-        Rarity = "Legendary",
-        RootTemplate = "4f632490-348b-4a10-8103-0baf79fa2367",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Gate",
-        Rarity = "Legendary",
-        RootTemplate = "31c62a9c-27d3-4d87-b30c-7194514b9116",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Invulnerability",
-        Rarity = "Legendary",
-        RootTemplate = "efcdb02e-1437-4832-a52f-2d60567024d8",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_BladeofDisaster",
-        Rarity = "Legendary",
-        RootTemplate = "cd07c800-093a-49c0-999d-34586342f2e7",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_TimeStop",
-        Rarity = "Legendary",
-        RootTemplate = "2a27ab00-b89f-4807-a597-8a194d0cdd06",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Wish",
-        Rarity = "Legendary",
-        RootTemplate = "cba38438-ccbc-41ef-b458-5b19846977de",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_PrismaticWall",
-        Rarity = "Legendary",
-        RootTemplate = "a0994d1d-6714-4d82-90a7-272ee30eef4d",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Weird",
-        Rarity = "Legendary",
-        RootTemplate = "87b65c47-aa87-4352-ab28-00dba4d15dd5",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_MassPolymorph",
-        Rarity = "Legendary",
-        RootTemplate = "e18c3d8f-7b3a-474b-8fd7-4550b6fc1ba2",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_PsychicScream",
-        Rarity = "Legendary",
-        RootTemplate = "699ba956-3745-4fa2-81d1-456a760ee203",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_PowerWordKill",
-        Rarity = "Legendary",
-        RootTemplate = "d30054bc-c4e7-43c0-9053-ca32c859139b",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_StormOfVengeance",
-        Rarity = "Legendary",
-        RootTemplate = "7ce8eb63-4ecf-4d8e-92ab-23d4841062a7",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Sunburst",
-        Rarity = "Legendary",
-        RootTemplate = "1aee6e34-e7de-49c5-b160-75e6c810fbba",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_HorridWilting",
-        Rarity = "Legendary",
-        RootTemplate = "6c97cb95-a694-4c7e-9192-97129567806c",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_IncendiaryCloud",
-        Rarity = "Legendary",
-        RootTemplate = "32471d7c-88bf-426c-be1f-a8cbced7ac19",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_MaddeningDarkness",
-        Rarity = "Legendary",
-        RootTemplate = "8d72ff9c-e0f9-465e-adee-122040a31085",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Maze",
-        Rarity = "Legendary",
-        RootTemplate = "a8a95366-943f-481f-ba40-b7ddede263ca",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_PowerWordStun",
-        Rarity = "Legendary",
-        RootTemplate = "ca5680ce-304e-49dc-99f4-66722bbff36f",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_MindBlank",
-        Rarity = "Legendary",
-        RootTemplate = "ca5680ce-304e-49dc-99f4-66722bbff36f",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_IllusoryDragon",
-        Rarity = "Legendary",
-        RootTemplate = "57954f54-a4ef-4de2-b989-029aee145788",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_AnimalShapes",
-        Rarity = "Legendary",
-        RootTemplate = "39316042-98c3-4466-8aa0-3e4dd52dd342",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_AntimagicField",
-        Rarity = "Legendary",
-        RootTemplate = "ec3065da-38e2-4c25-aa70-6acbb55fc5cd",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_HolyAura",
-        Rarity = "Legendary",
-        RootTemplate = "3e7fdeea-07c4-4d5a-9585-6517ae192312",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_DominateMonster",
-        Rarity = "Legendary",
-        RootTemplate = "9dbd3487-384d-495d-8f84-5a1c35198b73",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Feeblemind",
-        Rarity = "Legendary",
-        RootTemplate = "3da985de-9a71-44ff-862c-f2a2a9d5eefe",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
-            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
-        },
-        Name = "OBJ_Scroll_Glibness",
-        Rarity = "Legendary",
-        RootTemplate = "b94a2223-1a5d-4693-bfdb-ec9dd7e741d4",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_DarkStar",
-        Rarity = "Legendary",
-        RootTemplate = "5cbd452c-fa2c-40d3-8eee-9cc38de9c620",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_RealityBreak",
-        Rarity = "Legendary",
-        RootTemplate = "481e8ff7-e319-49aa-afb3-365a55f5d220",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_RavenousVoid",
-        Rarity = "Legendary",
-        RootTemplate = "c69ea708-0f2a-4bb3-bc5e-a7ea8f936e46",
-        Slot = "Scroll",
-        Tab = "Magical",
-        Type = "CombatObject"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "OBJ_Scroll_TimeRavage",
-        Rarity = "Legendary",
-        RootTemplate = "8fd9dd94-511a-485e-bec9-e52bae7cdae8",
         Slot = "Scroll",
         Tab = "Magical",
         Type = "CombatObject"
@@ -12327,90 +11639,6 @@ rootTemplateItemList = {
         Tab = "Equipment",
         Type = "Weapon"
     },
-    {
-        Mod = {
-            "3d0c5ff8-c95d-c907-ff3e-34b204f1c630",
-            "SharedDev"
-        },
-        Name = "WPN_Longsword_GuardianOfFaith_Good",
-        Rarity = "Common",
-        RootTemplate = "dd0e60fd-a334-411b-97cf-fa6a015c578b",
-        Slot = "Melee Main Weapon",
-        Tab = "Equipment",
-        Type = "Weapon"
-    },
-    {
-        Mod = {
-            "3d0c5ff8-c95d-c907-ff3e-34b204f1c630",
-            "SharedDev"
-        },
-        Name = "WPN_Longsword_GuardianOfFaith_Neutral",
-        Rarity = "Common",
-        RootTemplate = "82d42ba1-5488-49a7-b4db-32332cee7521",
-        Slot = "Melee Main Weapon",
-        Tab = "Equipment",
-        Type = "Weapon"
-    },
-    {
-        Mod = {
-            "3d0c5ff8-c95d-c907-ff3e-34b204f1c630",
-            "SharedDev"
-        },
-        Name = "WPN_Longsword_GuardianOfFaith_Evil",
-        Rarity = "Common",
-        RootTemplate = "083ddacf-e03c-4681-887b-80dee8158b26",
-        Slot = "Melee Main Weapon",
-        Tab = "Equipment",
-        Type = "Weapon"
-    },
-    {
-        Mod = {
-            "3d0c5ff8-c95d-c907-ff3e-34b204f1c630",
-            "SharedDev"
-        },
-        Name = "WPN_Club_WoodWoad_Conjure",
-        Rarity = "Common",
-        RootTemplate = "c71e2798-31ae-4f57-8073-c6195c2e9d02",
-        Slot = "Melee Main Weapon",
-        Tab = "Equipment",
-        Type = "Weapon"
-    },
-    {
-        Mod = {
-            "991c9c7a-fb80-40cb-8f0d-b92d4e80e9b1",
-            "Gustav"
-        },
-        Name = "Quest_GLO_DevilDeal_ResurrectRod",
-        Rarity = "Common",
-        RootTemplate = "3186796d-3ab3-4d49-bfc2-cba1aff0cf5a",
-        Slot = "Melee Main Weapon",
-        Tab = "Equipment",
-        Type = "Weapon"
-    },
-    {
-        Mod = {
-            "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8",
-            "GustavDev"
-        },
-        Name = "Quest_GLO_Moonlantern",
-        Rarity = "Common",
-        RootTemplate = "9aca1109-a59d-47d3-8f35-f248b70518f9",
-        Slot = "Melee Main Weapon",
-        Tab = "Equipment",
-        Type = "Weapon"
-    },
-    {
-        Mod = {
-            "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8",
-            "GustavDev"
-        },
-        Name = "Quest_SCL_MoonlanternWithPixie",
-        Rarity = "Common",
-        RootTemplate = "04838ed0-5989-4dc3-a9f8-f76402371a8f",
-        Slot = "Melee Main Weapon",
-        Tab = "Equipment",
-        Type = "Weapon"
-    },
 	{
         Mod = {
             "ed539163-bb70-431b-96a7-f5b2eda5376b",
@@ -15363,30 +14591,6 @@ rootTemplateItemList = {
         Tab = "Equipment",
         Type = "Weapon"
     },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "MOD_Scream_Needle",
-        Rarity = "VeryRare",
-        RootTemplate = "65387908-2911-43c6-8910-eecd74beb1e9",
-        Slot = "Melee Main Weapon",
-        Tab = "Equipment",
-        Type = "Weapon"
-    },
-    {
-        Mod = {
-            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
-            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
-        },
-        Name = "MOD_Blood_Greataxe",
-        Rarity = "VeryRare",
-        RootTemplate = "e259b3b7-e629-406b-8a36-a3bb5ebed6ec",
-        Slot = "Melee Main Weapon",
-        Tab = "Equipment",
-        Type = "Weapon"
-    },
 	{
         Mod = {
             "3d0c5ff8-c95d-c907-ff3e-34b204f1c630",
@@ -15542,6 +14746,721 @@ rootTemplateItemList = {
         Slot = "Melee Main Weapon",
         Tab = "Equipment",
         Type = "Weapon"
+    }
+}
+
+
+aTTRootTemplateItemList = {
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_PrismaticSpray",
+        Rarity = "VeryRare",
+        RootTemplate = "aeefcc77-9aa7-4efb-b773-031daa0332ca",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_FingerofDeath",
+        Rarity = "VeryRare",
+        RootTemplate = "b4bb1206-2754-4754-91e5-1b92b4b5dd3f",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_FireStorm",
+        Rarity = "VeryRare",
+        RootTemplate = "a47e6ec4-5736-4b87-abde-80c3b2875243",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Regenerate",
+        Rarity = "VeryRare",
+        RootTemplate = "9b0165d5-aab9-4b6f-bc78-337f3dc44b4c",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_PowerWordFortify",
+        Rarity = "VeryRare",
+        RootTemplate = "9d36ba91-3ded-424d-ad18-e2dba5dedb10",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_ReverseGravity",
+        Rarity = "VeryRare",
+        RootTemplate = "1f1b81f1-5fde-49e5-86c6-0cc791cf20f9",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Etherealness",
+        Rarity = "VeryRare",
+        RootTemplate = "ca606318-d869-40f1-8d14-b16f679599d5",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Symbol",
+        Rarity = "VeryRare",
+        RootTemplate = "9d0eba53-a95e-4eb1-aa60-b94e55fd3225",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_PowerWordPain",
+        Rarity = "VeryRare",
+        RootTemplate = "81f7db15-f1fc-44c6-bdab-23407d71c8fa",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_DivineWord",
+        Rarity = "VeryRare",
+        RootTemplate = "0235a9cb-a4c7-4276-8d41-d6e8735430d5",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_CrownOfStars",
+        Rarity = "VeryRare",
+        RootTemplate = "97fbe64c-ec2c-4daa-981f-553dad17021a",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_DelayedBlastFireball",
+        Rarity = "VeryRare",
+        RootTemplate = "fa537365-7e00-46f3-9c9a-7004a0945fca",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Whirlwind",
+        Rarity = "VeryRare",
+        RootTemplate = "e34eaf01-c7c8-496e-81d6-6651b03e4774",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_FizbanTransformation",
+        Rarity = "VeryRare",
+        RootTemplate = "9116e4e4-78f9-4c02-9c46-47e3adc5dbc8",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+	{
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Foresight",
+        Rarity = "Legendary",
+        RootTemplate = "c95a50b2-2a10-4904-82e5-6caf6f8fae96",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_MeteorSwarm",
+        Rarity = "Legendary",
+        RootTemplate = "9fc71ffb-74a0-40b6-8fef-7eb9968c30e1",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_MassHeal",
+        Rarity = "Legendary",
+        RootTemplate = "2bf41d29-c81b-4c99-93f1-dad3b4cada5e",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_PowerWordHeal",
+        Rarity = "Legendary",
+        RootTemplate = "05c2abf7-0626-4618-9ed1-40789d77899f",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Shapechange",
+        Rarity = "Legendary",
+        RootTemplate = "4f632490-348b-4a10-8103-0baf79fa2367",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Gate",
+        Rarity = "Legendary",
+        RootTemplate = "31c62a9c-27d3-4d87-b30c-7194514b9116",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Invulnerability",
+        Rarity = "Legendary",
+        RootTemplate = "efcdb02e-1437-4832-a52f-2d60567024d8",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_BladeofDisaster",
+        Rarity = "Legendary",
+        RootTemplate = "cd07c800-093a-49c0-999d-34586342f2e7",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_TimeStop",
+        Rarity = "Legendary",
+        RootTemplate = "2a27ab00-b89f-4807-a597-8a194d0cdd06",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Wish",
+        Rarity = "Legendary",
+        RootTemplate = "cba38438-ccbc-41ef-b458-5b19846977de",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_PrismaticWall",
+        Rarity = "Legendary",
+        RootTemplate = "a0994d1d-6714-4d82-90a7-272ee30eef4d",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Weird",
+        Rarity = "Legendary",
+        RootTemplate = "87b65c47-aa87-4352-ab28-00dba4d15dd5",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_MassPolymorph",
+        Rarity = "Legendary",
+        RootTemplate = "e18c3d8f-7b3a-474b-8fd7-4550b6fc1ba2",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_PsychicScream",
+        Rarity = "Legendary",
+        RootTemplate = "699ba956-3745-4fa2-81d1-456a760ee203",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_PowerWordKill",
+        Rarity = "Legendary",
+        RootTemplate = "d30054bc-c4e7-43c0-9053-ca32c859139b",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_StormOfVengeance",
+        Rarity = "Legendary",
+        RootTemplate = "7ce8eb63-4ecf-4d8e-92ab-23d4841062a7",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Sunburst",
+        Rarity = "Legendary",
+        RootTemplate = "1aee6e34-e7de-49c5-b160-75e6c810fbba",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_HorridWilting",
+        Rarity = "Legendary",
+        RootTemplate = "6c97cb95-a694-4c7e-9192-97129567806c",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_IncendiaryCloud",
+        Rarity = "Legendary",
+        RootTemplate = "32471d7c-88bf-426c-be1f-a8cbced7ac19",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_MaddeningDarkness",
+        Rarity = "Legendary",
+        RootTemplate = "8d72ff9c-e0f9-465e-adee-122040a31085",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Maze",
+        Rarity = "Legendary",
+        RootTemplate = "a8a95366-943f-481f-ba40-b7ddede263ca",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_PowerWordStun",
+        Rarity = "Legendary",
+        RootTemplate = "ca5680ce-304e-49dc-99f4-66722bbff36f",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_MindBlank",
+        Rarity = "Legendary",
+        RootTemplate = "ca5680ce-304e-49dc-99f4-66722bbff36f",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_IllusoryDragon",
+        Rarity = "Legendary",
+        RootTemplate = "57954f54-a4ef-4de2-b989-029aee145788",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_AnimalShapes",
+        Rarity = "Legendary",
+        RootTemplate = "39316042-98c3-4466-8aa0-3e4dd52dd342",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_AntimagicField",
+        Rarity = "Legendary",
+        RootTemplate = "ec3065da-38e2-4c25-aa70-6acbb55fc5cd",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_HolyAura",
+        Rarity = "Legendary",
+        RootTemplate = "3e7fdeea-07c4-4d5a-9585-6517ae192312",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_DominateMonster",
+        Rarity = "Legendary",
+        RootTemplate = "9dbd3487-384d-495d-8f84-5a1c35198b73",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Feeblemind",
+        Rarity = "Legendary",
+        RootTemplate = "3da985de-9a71-44ff-862c-f2a2a9d5eefe",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "fa49db03-caa7-49c8-7c76-e6c38b60267a",
+            "AdvancedTTSpells_fa49db03-caa7-49c8-7c76-e6c38b60267a"
+        },
+        Name = "OBJ_Scroll_Glibness",
+        Rarity = "Legendary",
+        RootTemplate = "b94a2223-1a5d-4693-bfdb-ec9dd7e741d4",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    }
+}
+
+exandriaRootTemplateItemList = {
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_SappingSting",
+        Rarity = "Common",
+        RootTemplate = "c40d90b4-d387-4f5a-ad4b-cf56c174c6c6",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_GiftOfAlacrity",
+        Rarity = "Common",
+        RootTemplate = "2129e6fb-b141-4746-b07e-eefddfc01e73",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_MagnifyGravity",
+        Rarity = "Common",
+        RootTemplate = "223844b7-01d1-469e-aa6c-9382968fcf50",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_FortuneFavour",
+        Rarity = "Common",
+        RootTemplate = "417f22a4-d41a-461e-a508-fe7dcc701f9e",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_ImmovableObject",
+        Rarity = "Common",
+        RootTemplate = "c16067f1-d963-4121-9263-0e8b33ab21b0",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_PulseWave",
+        Rarity = "Rare",
+        RootTemplate = "2b74d08f-1eb6-4c22-bdf5-8299aa6f3a5e",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_GravitySinkhole",
+        Rarity = "Rare",
+        RootTemplate = "4c0b5c7f-ee39-499e-b039-dbc56f1dec89",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_GravityFissure",
+        Rarity = "VeryRare",
+        RootTemplate = "42da5866-18d9-42e6-b093-8d002ff82a63",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_TetherEssence",
+        Rarity = "VeryRare",
+        RootTemplate = "35f9c7ce-4bb2-4bf6-8f3d-8ffb5e51d431",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_DarkStar",
+        Rarity = "Legendary",
+        RootTemplate = "5cbd452c-fa2c-40d3-8eee-9cc38de9c620",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_RealityBreak",
+        Rarity = "Legendary",
+        RootTemplate = "481e8ff7-e319-49aa-afb3-365a55f5d220",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_RavenousVoid",
+        Rarity = "Legendary",
+        RootTemplate = "c69ea708-0f2a-4bb3-bc5e-a7ea8f936e46",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "OBJ_Scroll_TimeRavage",
+        Rarity = "Legendary",
+        RootTemplate = "8fd9dd94-511a-485e-bec9-e52bae7cdae8",
+        Slot = "Scroll",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "MOD_Scream_Needle",
+        Rarity = "VeryRare",
+        RootTemplate = "65387908-2911-43c6-8910-eecd74beb1e9",
+        Slot = "Melee Main Weapon",
+        Tab = "Equipment",
+        Type = "Weapon"
+    },
+    {
+        Mod = {
+            "a27fdbe3-4d1a-641d-d05f-1ba4ee529da8",
+            "SpellsOfExandria_a27fdbe3-4d1a-641d-d05f-1ba4ee529da8"
+        },
+        Name = "MOD_Blood_Greataxe",
+        Rarity = "VeryRare",
+        RootTemplate = "e259b3b7-e629-406b-8a36-a3bb5ebed6ec",
+        Slot = "Melee Main Weapon",
+        Tab = "Equipment",
+        Type = "Weapon"
     },
     {
         Mod = {
@@ -15569,4 +15488,4 @@ rootTemplateItemList = {
     }
 }
 
-return localItemList, globalItemList, rootTemplateItemList
+return rootTemplateItemList, aTTRootTemplateItemList, exandriaRootTemplateItemList
