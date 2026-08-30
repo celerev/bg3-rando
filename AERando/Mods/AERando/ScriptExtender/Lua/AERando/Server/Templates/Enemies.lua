@@ -302,7 +302,7 @@ return {
 	{
 		Name = "AER_DeathKnight",
 		TemplateId = "37125077-5065-4616-b570-537bdea88d23",
-		Tier = "legendary",
+		Tier = "sublegend",
 	},
 	{
 		Name = "AER_Githyanki_Female_Raider",
@@ -1002,7 +1002,7 @@ return {
 	{
 		Name = "MOD_TollCollector_Combat",
 		TemplateId = "694fdd07-b517-4e35-95fa-8f299c936d5c",
-		Tier = "legendary",
+		Tier = "epic",
 	},
 	{
 		Name = "MOD_Thrall_Barbarian_Combat",
@@ -1182,17 +1182,17 @@ return {
 	{
 		Name = "AER_S_LOW_MurderTribunal_Sarevok",
 		TemplateId = "bb6e7858-fc25-4f0e-b10c-80e1deba0a12",
-		Tier = "legendary",
+		Tier = "sublegend",
 	},
 	{
 		Name = "MOD_Keene_Combat",
 		TemplateId = "26d18c80-cec7-453c-aaa4-e86f54d427f0",
-		Tier = "legendary",
+		Tier = "sublegend",
 	},
 	{
 		Name = "AER_S_GLO_Elminster",
 		TemplateId = "5fcc27c1-a495-4437-a904-9b0954dc5c51",
-		Tier = "legendary",
+		Tier = "sublegend",
 	},
 	{
 		Name = "AER_Githyanki_Male_Gishra_Caster",
@@ -1952,6 +1952,11 @@ return {
 	{
 		Name = "MOD_LiaraPortyr_Combat",
 		TemplateId = "52c9ee11-535e-401f-9d5d-eb04b7cfc046",
+		Tier = "ultra",
+	},
+	{
+		Name = "AER_LOW_Enforcer_Skoona",
+		TemplateId = "b9ea50e3-1033-4de8-b374-63c435a18fd4",
 		Tier = "ultra",
 	},
 	{
