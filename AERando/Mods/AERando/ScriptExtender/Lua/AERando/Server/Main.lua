@@ -611,6 +611,8 @@ function selectCreature(character)
 	local aggroFlag = false
 	local returnFlag = false
 	local countermeasureFlag = false
+	local actThreeMiniBossFlag = false
+	local superbossFlag = false
 	local boss = false
 	
 	local level = Osi.GetLevel(character)
@@ -650,6 +652,8 @@ function selectCreature(character)
 		aggroFlag = lookup.aggroFlag
 		returnFlag = lookup.returnFlag
 		countermeasureFlag = lookup.countermeasureFlag
+		actThreeMiniBossFlag = lookup.actThreeMiniBossFlag
+		superbossFlag = lookup.superbossFlag
 	end
 	
 	if returnFlag then
@@ -690,8 +694,6 @@ function selectCreature(character)
 
 	if map == C.Regions.Act0 and index > 1 then
 		levelmax = levelmax - 1
-	elseif map == C.Regions.Act2 and index > 5 and not apostleFlag then
-		levelmax = levelmax - 1
 	elseif map == C.Regions.Act3c and index < 5 then
 		levelmin = levelmin - 1
 	end
@@ -700,6 +702,14 @@ function selectCreature(character)
 		index = index + MCM.Get("boss_tier_boost")
 	else
 		index = index + MCM.Get("enemy_tier_boost")
+	end
+
+	if actThreeMiniBossFlag and not apostleFlag then
+		levelmax = levelmax - 1
+	end
+	
+	if superbossFlag then
+		levelmin = levelmin - 1
 	end
 
 	local newTable = trimTable(index, difficultyTables, levelmin, levelmax)
@@ -959,20 +969,20 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
 		if payload.value and not payload.oldValue then
 			MCM.Set("preset_normal", false)
 			MCM.Set("preset_extreme", false)
-			MCM.Set("enemy_tier_boost", 1)
-			MCM.Set("boss_tier_boost", 2)
-			MCM.Set("enemy_tier_min", 2)
-			MCM.Set("enemy_tier_max", 1)
+			MCM.Set("enemy_tier_boost", 0) 
+			MCM.Set("boss_tier_boost", 1)
+			MCM.Set("enemy_tier_min", 1)
+			MCM.Set("enemy_tier_max", 2)
 		end
 	end
 	if payload.settingId == "preset_extreme" then
 		if payload.value and not payload.oldValue then
 			MCM.Set("preset_normal", false)
 			MCM.Set("preset_hard", false)
-			MCM.Set("enemy_tier_boost", 2) 
-			MCM.Set("boss_tier_boost", 3)
-			MCM.Set("enemy_tier_min", 3)
-			MCM.Set("enemy_tier_max", 1)
+			MCM.Set("enemy_tier_boost", 0) 
+			MCM.Set("boss_tier_boost", 1)
+			MCM.Set("enemy_tier_min", 1)
+			MCM.Set("enemy_tier_max", 3)
 		end
 	end
 	if payload.settingId == "advanced_rando_mode" then
@@ -1288,13 +1298,19 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status
 		statusTable[target] = "SURPRISED"
 	elseif status == "MOO_KETHERIC_APOSTLEFORM" then
 		if not PersistentVars.currentlyRandomizedEnemyTable[target] then
+			local map = Osi.GetRegion(target)
+			local asylum = getAsylum(map)
+
 			newCreature = randomizeCreature(target)
-			if not newCreature then
-				print("ERROR: ", target, " failed to spawn the Apostle phase!")
-				return
+			while not newCreature do
+				print("ERROR: ", target, " failed to spawn the Apostle phase! Trying again.")
+				newCreature = randomizeCreature(target)
 			end
 			Osi.SetFaction(newCreature, "2762926d-2d97-4a9c-808f-1690f5f6a4dd")
 			Ext.Timer.WaitFor(1600, startCombat)
+			Ext.Timer.WaitFor(3000, function()
+				Osi.TeleportToPosition(target, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
+			end)
 		end
 	elseif status == "KNOCKED_OUT_TEMPORARILY" then
 		for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do

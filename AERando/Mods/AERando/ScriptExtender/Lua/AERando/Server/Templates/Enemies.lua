@@ -302,7 +302,7 @@ return {
 	{
 		Name = "AER_DeathKnight",
 		TemplateId = "37125077-5065-4616-b570-537bdea88d23",
-		Tier = "sublegend",
+		Tier = "legendary",
 	},
 	{
 		Name = "AER_Githyanki_Female_Raider",
@@ -1182,17 +1182,17 @@ return {
 	{
 		Name = "AER_S_LOW_MurderTribunal_Sarevok",
 		TemplateId = "bb6e7858-fc25-4f0e-b10c-80e1deba0a12",
-		Tier = "sublegend",
+		Tier = "legendary",
 	},
 	{
 		Name = "MOD_Keene_Combat",
 		TemplateId = "26d18c80-cec7-453c-aaa4-e86f54d427f0",
-		Tier = "sublegend",
+		Tier = "legendary",
 	},
 	{
 		Name = "AER_S_GLO_Elminster",
 		TemplateId = "5fcc27c1-a495-4437-a904-9b0954dc5c51",
-		Tier = "sublegend",
+		Tier = "legendary",
 	},
 	{
 		Name = "AER_Githyanki_Male_Gishra_Caster",

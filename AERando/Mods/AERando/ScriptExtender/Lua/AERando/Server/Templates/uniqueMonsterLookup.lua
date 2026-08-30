@@ -6,6 +6,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["307934b5-6fb5-4fdc-a7ff-433a7ba175b3"] = { -- Bulette
 		index = 4,
@@ -14,6 +16,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["5038c0f2-0022-4699-82ce-a319b30616bb"] = { -- Bernard
 		index = 3,
@@ -22,6 +26,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["e903a41f-8ef7-46dc-a847-7d0ec2804d08"] = { -- Owlbear
 		index = 3,
@@ -30,6 +36,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["a43d1d6c-d397-4d2d-adb4-ead3b10cb189"] = { -- Anders
 		index = 2,
@@ -38,6 +46,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["95eb2b0b-a522-4ea5-8167-c5f4d1418156"] = { -- Kagha
 		index = 4,
@@ -46,6 +56,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["11337af0-6a57-426b-a820-c4b00923dd54"] = { -- Dror Ragzlin
 		index = 3,
@@ -54,6 +66,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["b983c336-9a14-4e9b-adb9-4689e7e0afa9"] = { -- True Soul Gut
 		index = 3,
@@ -62,6 +76,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["25721313-0c15-4935-8176-9f134385451b"] = { -- Minthara
 		index = 4,
@@ -70,6 +86,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["34464430-fed8-4f50-86d5-bd35846920a0"] = { -- Flind
 		index = 3,
@@ -78,6 +96,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["e6b2f3ba-2d02-4507-8680-6047322e1a4b"] = { -- Phase Spider Matriarch
 		index = 3,
@@ -86,6 +106,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["39ff8241-fadd-4fbe-ab89-fc5a8b7638a0"] = { -- Underdark Spectator
 		index = 3,
@@ -94,6 +116,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["2c214b80-1d72-431d-bc0b-1997a646c99b"] = { -- Iron Flask Spectator
 		index = 4,
@@ -102,6 +126,8 @@ uniqueMonsterLookup = {
 		aggroFlag = true,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["9966c0db-819a-4873-bcd6-34595713d265"] = { -- High Hall Spectator
 		index = 5,
@@ -110,6 +136,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["c457d064-83fb-4ec6-b74d-1f30dfafd12d"] = { -- Ethel
 		index = 3,
@@ -118,6 +146,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["05c338d9-4590-4c4b-b87e-8c27ea2c2b18"] = { -- Gekh Coal
 		index = 3,
@@ -126,6 +156,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["06bf05c5-216b-4eaf-91f5-8f1dd3d57f30"] = { -- Nere
 		index = 3,
@@ -134,6 +166,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["2a5997fc-5f2a-4a13-b309-bed16da3b255"] = { -- Grym
 		index = 5,
@@ -142,6 +176,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["49eb5b4b-c6ed-4d37-8f68-97b1128b7d56"] = { -- Zlorb
 		index = 6,
@@ -150,6 +186,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["82af0858-d739-4c9d-84c8-5e6760e22e46"] = { -- Sovereign Glut
 		index = 3,
@@ -158,6 +196,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["ea0f222f-eaad-4d83-bbcd-cbae51ccf265"] = { -- Sovereign Spaw
 		index = 3,
@@ -166,6 +206,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["378ac93e-03a0-40b4-904c-f37989ac7a8c"] = { -- Ch'r'ai W'wargaz
 		index = 4,
@@ -174,6 +216,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["e4141a02-f5e7-4a0c-a7af-d3dda6610c1b"] = { -- Ch'r'ai Tska'an
 		index = 5,
@@ -182,6 +226,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["54467aa9-33dd-41c4-bd77-87a71ed22c16"] = { -- Ch'r'ai Har'rak
 		index = 5,
@@ -190,6 +236,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["91b6b200-7d00-4d62-8dc9-99e8339dfa1a"] = { -- Jaheira
 		index = 4,
@@ -198,6 +246,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["acb1dd9e-952b-4281-8e30-ec6f671493a6"] = { -- Marcus Falgor
 		index = 5,
@@ -206,6 +256,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["aa59ce01-3d2e-42e8-a539-c07e0ea292ab"] = { -- Kar'niss
 		index = 5,
@@ -214,6 +266,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["1b294fe0-f1a1-4e81-9d4c-8d86bbda7d2b"] = { -- Shambling Mound
 		index = 5,
@@ -222,6 +276,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["e58b8b34-038b-4858-b817-c2a8096a9381"] = { -- Malus Thorm
 		index = 5,
@@ -230,6 +286,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["3b460226-8ca2-4bbc-9bd7-8bb947aa2c06"] = { -- Gerringothe Thorm
 		index = 5,
@@ -238,6 +296,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["4d9e3db3-9a78-4f4b-8101-1dd73c0f3be5"] = { -- Thisobald Thorm
 		index = 5,
@@ -246,6 +306,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},	
 	["8e75eb3b-7551-485e-8f98-2bf2e51d3e84"] = { -- Disciple Z'rell
 		index = 4,
@@ -254,6 +316,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["1dc8091d-2af6-4d33-9268-998ef266d19c"] = { -- Yurgir
 		index = 4,
@@ -262,6 +326,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["594ba359-ce55-4b54-9efc-94eca306c540"] = { -- Lyrthindor
 		index = 4,
@@ -270,6 +336,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["53651a9f-7ea8-444f-ba2d-224390b72f7d"] = { -- Balthazar
 		index = 5,
@@ -278,6 +346,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["fd75dc6e-6a8d-4d9d-8cfc-ca4ff5da53d7"] = { -- Prelate Lir'i'c
 		index = 5,
@@ -286,6 +356,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["b1ea974d-96fb-47ca-b6d9-9c85fcb69313"] = { -- Viconia DeVir
 		index = 5,
@@ -294,6 +366,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["b878a854-f790-4999-95c4-3f20f00f65ac"] = { -- Gortash
 		index = 6,
@@ -302,6 +376,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["e9918f3e-5b87-40a3-a9bd-61545151573f"] = { -- Ketheric Thorm
 		index = 6,
@@ -310,22 +386,28 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["b003409c-364f-4065-94bf-7436001d890e"] = { -- Mystic Carrion
-		index = 5,
+		index = 6,
 		boss = true,
 		lookupFlag = true,
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["a9d4b71d-b0ef-429e-8210-6dc8be986ee9"] = { -- Lorroakan
-		index = 5,
+		index = 6,
 		boss = true,
 		lookupFlag = true,
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["10403a03-aa9c-4c68-8a52-cbb381627906"] = { -- Ptaris
 		index = 6,
@@ -334,6 +416,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["ef1b7a12-6439-470a-885c-fa47851728cd"] = { -- Nine Fingers Keene
 		index = 7,
@@ -342,6 +426,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["5a4f7f77-43c9-4f84-b3f4-4076d876ccde"] = { -- Aelis
 		index = 6,
@@ -350,6 +436,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["299a1c00-ff53-415e-ad8e-9bcbbae55597"] = { -- Helsik
 		index = 6,
@@ -358,6 +446,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["6c55edb0-901b-4ba4-b9e8-3475a8392d9b"] = { -- Dame Aylin
 		index = 5,
@@ -366,6 +456,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["54ab1644-1ae1-4d85-8bb7-e870dbc2ea8c"] = { -- Moonlight Sliver 001
 		index = 6,
@@ -374,6 +466,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["3d2a675a-a945-44e3-b363-6e5b9f8c52b0"] = { -- Moonlight Sliver 002
 		index = 6,
@@ -382,6 +476,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["0d53dbe4-9991-49c8-9370-1f71e70564d9"] = { -- Moonlight Sliver 003
 		index = 6,
@@ -390,6 +486,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["2f1880e6-1297-4ca3-a79c-9fabc7f179d3"] = { -- Cazador
 		index = 6,
@@ -398,6 +496,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["ae9f784a-ea64-4297-95a7-8377e85231b6"] = { -- Sarevok
 		index = 6,
@@ -406,6 +506,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["bf24e0ec-a3a6-4905-bd2d-45dc8edf8101"] = { -- Orin
 		index = 6,
@@ -414,22 +516,28 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["f65becd6-5cd7-4c88-b85e-6dd06b60f7b8"] = { -- Raphael
-		index = 7,
+		index = 6,
 		boss = true,
 		lookupFlag = true,
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = true,
 	},
 	["67770922-5e0a-40c5-b3f0-67e8eb50493a"] = { -- Ansur
-		index = 7,
+		index = 6,
 		boss = true,
 		lookupFlag = true,
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = true,
 	},
 	["73d49dc5-8b8b-45dc-a98c-927bb4e3169b"] = { -- Emperor
 		index = 5,
@@ -438,6 +546,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["823861a5-0132-4d15-b9f1-9bac2fa2e85e"] = { -- Dominated Red Dragon
 		index = 6,
@@ -446,14 +556,18 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = true,
 	},
 	["f8bb04a3-22e5-41b0-aed7-5dcf852343d1"] = { -- Netherbrain
-		index = 7,
+		index = 6,
 		boss = true,
 		lookupFlag = true,
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = true,
 	},
 	["70ef4f3f-c8bf-4b07-b473-8043699a6d5c"] = { -- Mind Flayer Arcanist A
 		index = 6,
@@ -462,6 +576,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["e5f0fcdf-8a9e-426a-96db-254f94898172"] = { -- Mind Flayer Arcanist B
 		index = 6,
@@ -470,6 +586,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["3868c215-f34f-4dfb-9c8a-1b06f2d5644d"] = { -- Mind Flayer Arcanist C
 		index = 6,
@@ -478,6 +596,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["c42ee756-319a-4ebd-b547-dceda6ef606d"] = { -- Mind Flayer Arcanist D
 		index = 6,
@@ -486,6 +606,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["939b84fb-5ea5-43cf-b73c-c1315f60fe3f"] = { -- Countermeasure A
 		index = 6,
@@ -494,6 +616,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = true,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["8eeb8999-4c72-43a4-b7b3-7e6cdc824d36"] = { -- Countermeasure B
 		index = 6,
@@ -502,6 +626,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = true,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["0f9dd1ac-6545-4919-9f2f-5fe1958c3419"] = { -- Countermeasure C
 		index = 6,
@@ -510,6 +636,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = true,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["ba226fbd-7a38-4f9d-8403-8b593a698cd6"] = { -- Countermeasure D
 		index = 6,
@@ -518,6 +646,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = true,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["d8e8b72e-4b21-4442-8e34-0ecab3f499ae"] = { -- Dream Guardian A
 		index = 6,
@@ -526,6 +656,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = true,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["7f8ba670-6749-457e-9aea-8169ab6d7a38"] = { --Dream Guardian B
 		index = 6,
@@ -534,6 +666,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = true,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["41900801-ad80-4e79-881a-b0f58f14aff4"] = { -- Dream Guardian C
 		index = 6,
@@ -542,6 +676,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = true,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["e7bc792c-09ab-4a42-972e-6798cb5927b5"] = { -- Dream Guardian D
 		index = 6,
@@ -550,6 +686,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = false,
 		countermeasureFlag = true,
+		actThreeMiniBossFlag = true,
+		superbossFlag = false,
 	},
 	["4f6e63a1-b143-46b1-ac0e-834494dfdc6a"] = { -- Don't randomize Oliver, the game will explode
 		index = 1,
@@ -558,6 +696,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["9e21fba4-5a6d-4ca0-9738-2add3c967b3f"] = { -- Don't randomize Qudenos, the players will explode
 		index = 1,
@@ -566,6 +706,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["0bdd9214-953c-427a-87fa-7fdc25ef3b73"] = { -- Don't randomize UND Scrying Eye
 		index = 1,
@@ -574,6 +716,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["7e80dd2a-19f6-4411-8a52-35c3878ef4c8"] = { -- Don't randomize GOB Scrying Eye
 		index = 1,
@@ -582,6 +726,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["89e223c3-52e8-4bbf-9a75-47cbb0b6b65e"] = { -- Don't randomize MOO Prison Scrying Eye C
 		index = 1,
@@ -590,6 +736,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["9bea6db5-8e9a-4277-9813-823b45248022"] = { -- Don't randomize MOO Prison Scrying Eye B
 		index = 1,
@@ -598,6 +746,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["bb378616-79a0-4b0c-b967-e650e3707b24"] = { -- Don't randomize MOO Ground Scrying Eye A
 		index = 1,
@@ -606,6 +756,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["e50cabc8-afb0-4e5b-a73c-166828488510"] = { -- Don't randomize MOO Ground Scrying Eye B
 		index = 1,
@@ -614,6 +766,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["fe9333ab-2bbe-4624-978e-56ca9b4c58da"] = { -- Don't randomize MOO Prison Scrying Eye A
 		index = 1,
@@ -622,6 +776,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["881081c0-8e1a-4033-9cb3-37532cd7f4ef"] = { -- Don't randomize MOO Upper Scrying Eye C
 		index = 1,
@@ -630,6 +786,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["6bbcbc71-91b2-499e-b42d-381eb729bad1"] = { -- Don't randomize MOO Upper Scrying Eye B
 		index = 1,
@@ -638,6 +796,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["be50f7cd-c14a-4131-82d3-29337f3a4759"] = { -- Don't randomize Netherbrain Helper
 		index = 1,
@@ -646,6 +806,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["998e2725-5022-43fd-87f7-2f64be3718f4"] = { -- Don't randomize Nautiloid Helper
 		index = 1,
@@ -654,6 +816,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 	["d3fed835-7758-48a8-9641-af8eae197203"] = { -- Don't randomize Bhaal Temple Helper
 		index = 1,
@@ -662,6 +826,8 @@ uniqueMonsterLookup = {
 		aggroFlag = false,
 		returnFlag = true,
 		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
 	},
 }
 
