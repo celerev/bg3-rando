@@ -1,0 +1,11 @@
+new entry "ProjectileStrike_AER_Ethel_Trickery_1"
+type "SpellData"
+data "SpellType" "ProjectileStrike"
+using "ProjectileStrike_MOD_Ethel_Trickery_2"
+data "SpellProperties" "AI_IGNORE:IF(Tagged('TOT_ETHEL_HELPER')):ApplyStatus(MOD_FakeHagDoubles,100,-1);AI_IGNORE:GROUND:Summon(8c85932d-12dd-4046-a694-6534071470a2,-1,Projectile_AiHelper_Summon_Strong,,,MOD_HagDoubles);AI_ONLY:CAST:ApplyStatus(SELF,AI_HELPER_BUFF_LARGE,100,3);"
+
+new entry "ProjectileStrike_AER_Ethel_Trickery_2"
+type "SpellData"
+data "SpellType" "ProjectileStrike"
+using "ProjectileStrike_MOD_Ethel_Trickery_3"
+data "SpellProperties" "AI_IGNORE:IF(Tagged('TOT_ETHEL_HELPER')):ApplyStatus(MOD_FakeHagDoubles,100,-1);AI_IGNORE:GROUND:Summon(8c85932d-12dd-4046-a694-6534071470a2,-1,Projectile_AiHelper_Summon_Strong,,,MOD_HagDoubles,INVISIBILITY);AI_ONLY:CAST:ApplyStatus(SELF,AI_HELPER_BUFF_LARGE,100,3);AI_IGNORE:CAST:ApplyStatus(SELF,INVISIBLE,100,-1)"

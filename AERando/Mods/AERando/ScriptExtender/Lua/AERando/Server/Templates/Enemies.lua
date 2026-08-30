@@ -1985,6 +1985,11 @@ return {
 		Tier = "epic",
 	},
 	{
+		Name = "AER_WeakEthel_Combat",
+		TemplateId = "af6550f1-6ed7-4dd3-9e1a-759c99cf6d4d",
+		Tier = "ultra",
+	},
+	{
 		Name = "MOD_Ethel_Combat",
 		TemplateId = "7cce4717-c4bd-48b5-93cb-216014e9d547",
 		Tier = "epic",

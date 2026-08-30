@@ -55,6 +55,7 @@ statusTable = {}
 tempBattle = {}
 local exandriaCheck = Ext.Mod.IsModLoaded("a27fdbe3-4d1a-641d-d05f-1ba4ee529da8")
 local kethericFlag = false
+local kethericRolledApostleFlag = false
 
 if exandriaCheck then
 	MCM.Set("soe_loaded", true)
@@ -140,10 +141,12 @@ function initialize()
 	if MCM.Get("preset_normal") and not (MCM.Get("preset_hard") or MCM.Get("preset_extreme") or MCM.Get("advanced_mode")) then
 		MCM.Set("enemy_tier_boost", 0) 
 		MCM.Set("boss_tier_boost", 1) 
+		MCM.Set("enemy_tier_min", 1)
+		MCM.Set("enemy_tier_max", 1)
 	end
 	
 	if not PersistentVars then
-	PersistentVars = {}
+		PersistentVars = {}
 	end
 	if not PersistentVars.currentlyRandomizedEnemyTable then
 		PersistentVars.currentlyRandomizedEnemyTable = {}
@@ -613,6 +616,7 @@ function selectCreature(character)
 	local countermeasureFlag = false
 	local actThreeMiniBossFlag = false
 	local superbossFlag = false
+	local aerTemplatelId = ""
 	local boss = false
 	
 	local level = Osi.GetLevel(character)
@@ -654,6 +658,7 @@ function selectCreature(character)
 		countermeasureFlag = lookup.countermeasureFlag
 		actThreeMiniBossFlag = lookup.actThreeMiniBossFlag
 		superbossFlag = lookup.superbossFlag
+		aerTemplatelId = lookup.aerTemplatelId
 	end
 	
 	if returnFlag then
@@ -731,14 +736,25 @@ function selectCreature(character)
 		end
 		PersistentVars.usedBossTable[newEnemy] = true
 	end
+	if apostleFlag and newEnemy == "30d6a794-fbf1-453d-9e3f-35b51058cd15" then
+		kethericRolledApostleFlag = true
+		return
+	elseif aerTemplatelId == newEnemy then
+		print(character, " rolled their own template: ", newEnemy, ". Exiting loop without randomizing.")
+		return "samecreature"
+	end
 	return newEnemy, aggroFlag
 end
 
 function spawnNewCreature(character, x, y, z)
 	local spawnId, aggro = selectCreature(character)
 	
+	
+	if spawnId == "samecreature" then
+		return "samecreature"
+	end
 	if not spawnId then
-		if Osi.IsCharacter(character) == 1 and Osi.IsHitProxy(character) == 0 then
+		if Osi.IsCharacter(character) == 1 and Osi.IsHitProxy(character) == 0 and not kethericRolledApostleFlag then
 			print("ERROR: ", character, " failed to randomize!")
 		end
 		return
@@ -766,6 +782,9 @@ function randomizeCreature(character)
 
 	local newCreature, aggro = spawnNewCreature(character, x, y, z)
 
+	if newCreature == "samecreature" then
+		return
+	end
 	if not newCreature then
 		if Osi.IsCharacter(character) == 1 and Osi.IsHitProxy(character) == 0 then
 			print("ERROR: ", character, " failed to spawn!")
@@ -991,6 +1010,17 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
 	if payload.settingId == "advanced_mode" then
 		MCM.Set("advanced_rando_mode", payload.value) 
 	end
+	if payload.settingId == "advanced_mode" or payload.settingId == "advanced_rando_mode" then
+		if payload.oldValue and not payload.value then
+			MCM.Set("preset_normal", true)
+			MCM.Set("preset_hard", false)
+			MCM.Set("preset_extreme", false)
+			MCM.Set("enemy_tier_boost", 0) 
+			MCM.Set("boss_tier_boost", 1)
+			MCM.Set("enemy_tier_min", 1)
+			MCM.Set("enemy_tier_max", 1)
+		end
+	end
 	
 	if payload.settingId == "gm_mode" then
 		if payload.value then
@@ -1049,6 +1079,9 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	character_uuid = strip_uuid(character)
 
 	if kethericFlag and character_uuid == "e9918f3e-5b87-40a3-a9bd-61545151573f" then
+		return
+	end
+	if kethericRolledApostleFlag and character_uuid == "fec67606-9665-4942-b5bb-c211e2e03499" then
 		return
 	end
 	
@@ -1302,15 +1335,19 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status
 			local asylum = getAsylum(map)
 
 			newCreature = randomizeCreature(target)
-			while not newCreature do
+			while not (newCreature or kethericRolledApostleFlag) do
 				print("ERROR: ", target, " failed to spawn the Apostle phase! Trying again.")
 				newCreature = randomizeCreature(target)
 			end
-			Osi.SetFaction(newCreature, "2762926d-2d97-4a9c-808f-1690f5f6a4dd")
-			Ext.Timer.WaitFor(1600, startCombat)
-			Ext.Timer.WaitFor(3000, function()
-				Osi.TeleportToPosition(target, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
-			end)
+			if kethericRolledApostleFlag then
+				print(target, " rolled the Apostle. Exit loop without randomizing.")
+			else
+				Osi.SetFaction(newCreature, "2762926d-2d97-4a9c-808f-1690f5f6a4dd")
+				Ext.Timer.WaitFor(1600, startCombat)
+				Ext.Timer.WaitFor(3000, function()
+					Osi.TeleportToPosition(target, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
+				end)
+			end
 		end
 	elseif status == "KNOCKED_OUT_TEMPORARILY" then
 		for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
@@ -1484,6 +1521,9 @@ Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, o
 
 
 	if mappedUniqueItems[root_template] then
+		if potentialCharacter and Osi.IsPlayer(potentialCharacter) == 0 and Osi.IsPartyMember(potentialCharacter, 1) == 0 and Osi.IsEquipped(object) == 1 then
+			return
+		end
 		PersistentVars.randomizedItemTable[root_template] = true
 		local newItem = mappedUniqueItems[root_template].RootTemplate
 		linkingItems[newItem .. "|" .. owner] = true

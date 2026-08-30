@@ -8,6 +8,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "cae26831-df7f-496d-858f-c462a2552257",
 	},
 	["307934b5-6fb5-4fdc-a7ff-433a7ba175b3"] = { -- Bulette
 		index = 4,
@@ -18,6 +19,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "91eb79c2-c3d3-4b74-a1c0-c2d6675a8192",
 	},
 	["5038c0f2-0022-4699-82ce-a319b30616bb"] = { -- Bernard
 		index = 3,
@@ -28,6 +30,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "0e4d6c80-f1a2-4757-9289-45ce7e209262",
 	},
 	["e903a41f-8ef7-46dc-a847-7d0ec2804d08"] = { -- Owlbear
 		index = 3,
@@ -38,6 +41,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "f2d065e9-b779-4fe5-9a23-4cca8faae822",
 	},
 	["a43d1d6c-d397-4d2d-adb4-ead3b10cb189"] = { -- Anders
 		index = 2,
@@ -48,6 +52,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "c7c4741a-9359-439a-8e46-d781085b21fe",
 	},
 	["95eb2b0b-a522-4ea5-8167-c5f4d1418156"] = { -- Kagha
 		index = 4,
@@ -58,6 +63,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "d19b713f-effc-4807-ad3a-6a8824facc4a",
 	},
 	["11337af0-6a57-426b-a820-c4b00923dd54"] = { -- Dror Ragzlin
 		index = 3,
@@ -68,6 +74,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "5ce17b17-3b36-4098-9ab8-39d808d8cd39",
 	},
 	["b983c336-9a14-4e9b-adb9-4689e7e0afa9"] = { -- True Soul Gut
 		index = 3,
@@ -78,6 +85,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "6f860ff6-15d7-4cd0-8b62-119e703b8ef0",
 	},
 	["25721313-0c15-4935-8176-9f134385451b"] = { -- Minthara
 		index = 4,
@@ -88,6 +96,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["34464430-fed8-4f50-86d5-bd35846920a0"] = { -- Flind
 		index = 3,
@@ -98,6 +107,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "f3de4821-6ad0-4b17-ab5e-2fe5827d3bfa",
 	},
 	["e6b2f3ba-2d02-4507-8680-6047322e1a4b"] = { -- Phase Spider Matriarch
 		index = 3,
@@ -108,6 +118,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "dad9ba2f-316b-4852-9ac2-07f17a197777",
 	},
 	["39ff8241-fadd-4fbe-ab89-fc5a8b7638a0"] = { -- Underdark Spectator
 		index = 3,
@@ -118,6 +129,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "6372af7a-392b-49a4-8d5f-8676c9a4f29d",
 	},
 	["2c214b80-1d72-431d-bc0b-1997a646c99b"] = { -- Iron Flask Spectator
 		index = 4,
@@ -128,6 +140,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "6372af7a-392b-49a4-8d5f-8676c9a4f29d",
 	},
 	["9966c0db-819a-4873-bcd6-34595713d265"] = { -- High Hall Spectator
 		index = 5,
@@ -138,6 +151,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "6372af7a-392b-49a4-8d5f-8676c9a4f29d",
 	},
 	["c457d064-83fb-4ec6-b74d-1f30dfafd12d"] = { -- Ethel
 		index = 3,
@@ -148,6 +162,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "af6550f1-6ed7-4dd3-9e1a-759c99cf6d4d",
 	},
 	["05c338d9-4590-4c4b-b87e-8c27ea2c2b18"] = { -- Gekh Coal
 		index = 3,
@@ -158,6 +173,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "31d56e04-71e8-4456-a45c-d3e35ff25248",
 	},
 	["06bf05c5-216b-4eaf-91f5-8f1dd3d57f30"] = { -- Nere
 		index = 3,
@@ -168,6 +184,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "75e93d9c-f3df-4cf4-9621-67dd3fca51bd",
 	},
 	["2a5997fc-5f2a-4a13-b309-bed16da3b255"] = { -- Grym
 		index = 5,
@@ -178,6 +195,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "cd218575-49ea-4a97-b49f-3db8e21c88d8",
 	},
 	["49eb5b4b-c6ed-4d37-8f68-97b1128b7d56"] = { -- Zlorb
 		index = 6,
@@ -188,6 +206,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "731ec423-2df9-459f-8b5d-7915191d3ada",
 	},
 	["82af0858-d739-4c9d-84c8-5e6760e22e46"] = { -- Sovereign Glut
 		index = 3,
@@ -198,6 +217,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "8cf290e2-5ad6-400c-8541-8180a7a60ae2",
 	},
 	["ea0f222f-eaad-4d83-bbcd-cbae51ccf265"] = { -- Sovereign Spaw
 		index = 3,
@@ -208,6 +228,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "8cf290e2-5ad6-400c-8541-8180a7a60ae2",
 	},
 	["378ac93e-03a0-40b4-904c-f37989ac7a8c"] = { -- Ch'r'ai W'wargaz
 		index = 4,
@@ -218,6 +239,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "2b343dfb-1530-4bea-b731-5b657e41404b",
 	},
 	["e4141a02-f5e7-4a0c-a7af-d3dda6610c1b"] = { -- Ch'r'ai Tska'an
 		index = 5,
@@ -228,6 +250,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "23059ca9-414d-42f1-bd2c-be14b36adaf6",
 	},
 	["54467aa9-33dd-41c4-bd77-87a71ed22c16"] = { -- Ch'r'ai Har'rak
 		index = 5,
@@ -238,6 +261,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "cdb997b0-c2ef-40cd-ba47-e10f402c18fd",
 	},
 	["91b6b200-7d00-4d62-8dc9-99e8339dfa1a"] = { -- Jaheira
 		index = 4,
@@ -248,6 +272,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["acb1dd9e-952b-4281-8e30-ec6f671493a6"] = { -- Marcus Falgor
 		index = 5,
@@ -258,6 +283,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "e3e8dcdb-0950-42c0-ad61-01c2175bf898",
 	},
 	["aa59ce01-3d2e-42e8-a539-c07e0ea292ab"] = { -- Kar'niss
 		index = 5,
@@ -268,6 +294,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "d788657b-aacf-48ad-a580-6aa60705ce46",
 	},
 	["1b294fe0-f1a1-4e81-9d4c-8d86bbda7d2b"] = { -- Shambling Mound
 		index = 5,
@@ -278,6 +305,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "960b3b1a-f7d8-4480-a196-2faa14e3bc94",
 	},
 	["e58b8b34-038b-4858-b817-c2a8096a9381"] = { -- Malus Thorm
 		index = 5,
@@ -288,6 +316,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "7d9ce9b8-b7ba-4c06-86d0-a493d642eb65",
 	},
 	["3b460226-8ca2-4bbc-9bd7-8bb947aa2c06"] = { -- Gerringothe Thorm
 		index = 5,
@@ -298,6 +327,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "694fdd07-b517-4e35-95fa-8f299c936d5c",
 	},
 	["4d9e3db3-9a78-4f4b-8101-1dd73c0f3be5"] = { -- Thisobald Thorm
 		index = 5,
@@ -308,6 +338,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "275169f0-8584-467e-a18a-787013592bfb",
 	},	
 	["8e75eb3b-7551-485e-8f98-2bf2e51d3e84"] = { -- Disciple Z'rell
 		index = 4,
@@ -318,6 +349,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "690361a5-940b-4b85-ad96-ac9cb4cc2b19",
 	},
 	["1dc8091d-2af6-4d33-9268-998ef266d19c"] = { -- Yurgir
 		index = 4,
@@ -328,6 +360,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "ba981e3b-5284-483d-9978-fcf12c13d708",
 	},
 	["594ba359-ce55-4b54-9efc-94eca306c540"] = { -- Lyrthindor
 		index = 4,
@@ -338,6 +371,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "417cd993-e290-4e44-bc29-fa719a9630f8",
 	},
 	["53651a9f-7ea8-444f-ba2d-224390b72f7d"] = { -- Balthazar
 		index = 5,
@@ -348,6 +382,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "adf53f5a-8054-48bc-bff8-23b237b8ff86",
 	},
 	["fd75dc6e-6a8d-4d9d-8cfc-ca4ff5da53d7"] = { -- Prelate Lir'i'c
 		index = 5,
@@ -358,6 +393,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "6e966a6f-1e54-4307-842d-7cdebc0cc558",
 	},
 	["b1ea974d-96fb-47ca-b6d9-9c85fcb69313"] = { -- Viconia DeVir
 		index = 5,
@@ -368,6 +404,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "15d458c4-c51d-4312-8f5a-cf5ba9042e3f",
 	},
 	["b878a854-f790-4999-95c4-3f20f00f65ac"] = { -- Gortash
 		index = 6,
@@ -378,6 +415,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "048c03b6-05a4-4f4b-9510-13bfe9d71c60",
 	},
 	["e9918f3e-5b87-40a3-a9bd-61545151573f"] = { -- Ketheric Thorm
 		index = 6,
@@ -388,6 +426,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "307d5a85-aa03-42ab-afba-2832300d3041",
 	},
 	["b003409c-364f-4065-94bf-7436001d890e"] = { -- Mystic Carrion
 		index = 6,
@@ -398,6 +437,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "d18bc581-008f-499a-a54f-32d4a05ab956",
 	},
 	["a9d4b71d-b0ef-429e-8210-6dc8be986ee9"] = { -- Lorroakan
 		index = 6,
@@ -408,6 +448,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "efd0109c-6a16-4cfd-8692-eb6ec8bcdac2",
 	},
 	["10403a03-aa9c-4c68-8a52-cbb381627906"] = { -- Ptaris
 		index = 6,
@@ -418,6 +459,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "b771e7eb-c0c9-4c5a-9c0b-ae5d12ea9c38",
 	},
 	["ef1b7a12-6439-470a-885c-fa47851728cd"] = { -- Nine Fingers Keene
 		index = 7,
@@ -428,6 +470,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "26d18c80-cec7-453c-aaa4-e86f54d427f0",
 	},
 	["5a4f7f77-43c9-4f84-b3f4-4076d876ccde"] = { -- Aelis
 		index = 6,
@@ -438,6 +481,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "abedba73-0c1a-46f8-8c62-4b43b0606454",
 	},
 	["299a1c00-ff53-415e-ad8e-9bcbbae55597"] = { -- Helsik
 		index = 6,
@@ -448,6 +492,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "a4cd1bd2-c019-410e-b9eb-740e9d129122",
 	},
 	["6c55edb0-901b-4ba4-b9e8-3475a8392d9b"] = { -- Dame Aylin
 		index = 5,
@@ -458,6 +503,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "c74a5a8d-97a6-41c5-ab95-a2e664fc9eda",
 	},
 	["54ab1644-1ae1-4d85-8bb7-e870dbc2ea8c"] = { -- Moonlight Sliver 001
 		index = 6,
@@ -468,6 +514,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "c74a5a8d-97a6-41c5-ab95-a2e664fc9eda",
 	},
 	["3d2a675a-a945-44e3-b363-6e5b9f8c52b0"] = { -- Moonlight Sliver 002
 		index = 6,
@@ -478,6 +525,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "c74a5a8d-97a6-41c5-ab95-a2e664fc9eda",
 	},
 	["0d53dbe4-9991-49c8-9370-1f71e70564d9"] = { -- Moonlight Sliver 003
 		index = 6,
@@ -488,6 +536,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "c74a5a8d-97a6-41c5-ab95-a2e664fc9eda",
 	},
 	["2f1880e6-1297-4ca3-a79c-9fabc7f179d3"] = { -- Cazador
 		index = 6,
@@ -498,6 +547,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "9ef2ca78-cdfa-4439-ba54-b76f380256f3",
 	},
 	["ae9f784a-ea64-4297-95a7-8377e85231b6"] = { -- Sarevok
 		index = 6,
@@ -508,6 +558,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "bb6e7858-fc25-4f0e-b10c-80e1deba0a12",
 	},
 	["bf24e0ec-a3a6-4905-bd2d-45dc8edf8101"] = { -- Orin
 		index = 6,
@@ -518,6 +569,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "6cd71603-354c-4c35-a2d9-199958a4beb3",
 	},
 	["f65becd6-5cd7-4c88-b85e-6dd06b60f7b8"] = { -- Raphael
 		index = 6,
@@ -528,6 +580,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = true,
+		aerTemplatelId = "cecb3b64-77b9-4eb4-b99f-8029ac168cd7",
 	},
 	["67770922-5e0a-40c5-b3f0-67e8eb50493a"] = { -- Ansur
 		index = 6,
@@ -538,6 +591,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = true,
+		aerTemplatelId = "409a2cf7-64d4-4789-bf07-7e49dee9b015",
 	},
 	["73d49dc5-8b8b-45dc-a98c-927bb4e3169b"] = { -- Emperor
 		index = 5,
@@ -548,6 +602,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["823861a5-0132-4d15-b9f1-9bac2fa2e85e"] = { -- Dominated Red Dragon
 		index = 6,
@@ -558,6 +613,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = true,
+		aerTemplatelId = "54ffc40f-9bde-49bc-8221-72b2d21d2515",
 	},
 	["f8bb04a3-22e5-41b0-aed7-5dcf852343d1"] = { -- Netherbrain
 		index = 6,
@@ -568,6 +624,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = true,
+		aerTemplatelId = "e3adba3f-742b-4024-8375-ef33349aa915",
 	},
 	["70ef4f3f-c8bf-4b07-b473-8043699a6d5c"] = { -- Mind Flayer Arcanist A
 		index = 6,
@@ -578,6 +635,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "cd6c6aef-d182-427b-b21f-1c5c1e38c3be",
 	},
 	["e5f0fcdf-8a9e-426a-96db-254f94898172"] = { -- Mind Flayer Arcanist B
 		index = 6,
@@ -588,6 +646,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "cd6c6aef-d182-427b-b21f-1c5c1e38c3be",
 	},
 	["3868c215-f34f-4dfb-9c8a-1b06f2d5644d"] = { -- Mind Flayer Arcanist C
 		index = 6,
@@ -598,6 +657,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "cd6c6aef-d182-427b-b21f-1c5c1e38c3be",
 	},
 	["c42ee756-319a-4ebd-b547-dceda6ef606d"] = { -- Mind Flayer Arcanist D
 		index = 6,
@@ -608,6 +668,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "cd6c6aef-d182-427b-b21f-1c5c1e38c3be",
 	},
 	["939b84fb-5ea5-43cf-b73c-c1315f60fe3f"] = { -- Countermeasure A
 		index = 6,
@@ -618,6 +679,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = true,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["8eeb8999-4c72-43a4-b7b3-7e6cdc824d36"] = { -- Countermeasure B
 		index = 6,
@@ -628,6 +690,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = true,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["0f9dd1ac-6545-4919-9f2f-5fe1958c3419"] = { -- Countermeasure C
 		index = 6,
@@ -638,6 +701,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = true,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["ba226fbd-7a38-4f9d-8403-8b593a698cd6"] = { -- Countermeasure D
 		index = 6,
@@ -648,6 +712,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = true,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["d8e8b72e-4b21-4442-8e34-0ecab3f499ae"] = { -- Dream Guardian A
 		index = 6,
@@ -658,6 +723,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = true,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["7f8ba670-6749-457e-9aea-8169ab6d7a38"] = { --Dream Guardian B
 		index = 6,
@@ -668,6 +734,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = true,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["41900801-ad80-4e79-881a-b0f58f14aff4"] = { -- Dream Guardian C
 		index = 6,
@@ -678,6 +745,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = true,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["e7bc792c-09ab-4a42-972e-6798cb5927b5"] = { -- Dream Guardian D
 		index = 6,
@@ -688,6 +756,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = true,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["4f6e63a1-b143-46b1-ac0e-834494dfdc6a"] = { -- Don't randomize Oliver, the game will explode
 		index = 1,
@@ -698,6 +767,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["9e21fba4-5a6d-4ca0-9738-2add3c967b3f"] = { -- Don't randomize Qudenos, the players will explode
 		index = 1,
@@ -708,6 +778,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["0bdd9214-953c-427a-87fa-7fdc25ef3b73"] = { -- Don't randomize UND Scrying Eye
 		index = 1,
@@ -718,6 +789,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["7e80dd2a-19f6-4411-8a52-35c3878ef4c8"] = { -- Don't randomize GOB Scrying Eye
 		index = 1,
@@ -728,6 +800,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["89e223c3-52e8-4bbf-9a75-47cbb0b6b65e"] = { -- Don't randomize MOO Prison Scrying Eye C
 		index = 1,
@@ -738,6 +811,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["9bea6db5-8e9a-4277-9813-823b45248022"] = { -- Don't randomize MOO Prison Scrying Eye B
 		index = 1,
@@ -748,6 +822,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["bb378616-79a0-4b0c-b967-e650e3707b24"] = { -- Don't randomize MOO Ground Scrying Eye A
 		index = 1,
@@ -758,6 +833,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["e50cabc8-afb0-4e5b-a73c-166828488510"] = { -- Don't randomize MOO Ground Scrying Eye B
 		index = 1,
@@ -768,6 +844,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["fe9333ab-2bbe-4624-978e-56ca9b4c58da"] = { -- Don't randomize MOO Prison Scrying Eye A
 		index = 1,
@@ -778,6 +855,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["881081c0-8e1a-4033-9cb3-37532cd7f4ef"] = { -- Don't randomize MOO Upper Scrying Eye C
 		index = 1,
@@ -788,6 +866,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["6bbcbc71-91b2-499e-b42d-381eb729bad1"] = { -- Don't randomize MOO Upper Scrying Eye B
 		index = 1,
@@ -798,6 +877,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["be50f7cd-c14a-4131-82d3-29337f3a4759"] = { -- Don't randomize Netherbrain Helper
 		index = 1,
@@ -808,6 +888,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["998e2725-5022-43fd-87f7-2f64be3718f4"] = { -- Don't randomize Nautiloid Helper
 		index = 1,
@@ -818,6 +899,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 	["d3fed835-7758-48a8-9641-af8eae197203"] = { -- Don't randomize Bhaal Temple Helper
 		index = 1,
@@ -828,6 +910,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
+		aerTemplatelId = "",
 	},
 }
 

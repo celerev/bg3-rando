@@ -223,7 +223,7 @@
 						{
                             "Id": "preset_normal",
                             "Name": "Preset Difficulty: Normal",
-                            "Description": "Randomized enemies will be closely bounded to the difficulty of their original counterparts.",
+                            "Description": "Randomized enemies will be closely bounded to the difficulty of their original counterparts. Ansur, Raphael, Myrkul, and Netherbrain will be the only enemies capable of rolling to Tier 7 at the highest. Nothing will reach Tier 8 or 9.",
                             "Type": "checkbox",
                             "Default": true,
 							"VisibleIf": {
@@ -249,7 +249,7 @@
 						{
                             "Id": "preset_hard",
                             "Name": "Preset Difficulty: Hard",
-                            "Description": "Randomized enemies may be mildly stronger than their original counterparts.",
+                            "Description": "Randomized enemies may be significantly stronger than their original counterparts. Ansur, Raphael, Myrkul, and Netherbrain will be capable of reaching Tier 8.",
                             "Type": "checkbox",
                             "Default": false,
 							"VisibleIf": {
@@ -275,7 +275,7 @@
 						{
                             "Id": "preset_extreme",
                             "Name": "Preset Difficulty: Extreme",
-                            "Description": "Randomized enemies may be significantly stronger than their original counterparts.",
+                            "Description": "Randomized enemies may be extremely more powerful than their original counterparts. Ansur, Raphael, Myrkul, and Netherbrain will be capable of reaching Tier 9.",
                             "Type": "checkbox",
                             "Default": false,
 							"VisibleIf": {
