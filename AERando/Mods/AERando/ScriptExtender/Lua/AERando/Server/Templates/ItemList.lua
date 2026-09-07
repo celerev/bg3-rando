@@ -1564,6 +1564,30 @@ rootTemplateItemList = {
             "ed539163-bb70-431b-96a7-f5b2eda5376b",
             "Shared"
         },
+        Name = "OBJ_Kit_ThievesTools",
+        Rarity = "Common",
+        RootTemplate = "e32a200c-5b63-414d-ae57-00e7b38f125b",
+        Slot = "None",
+        Tab = "Consumable",
+        Type = "Object"
+    },
+	{
+        Mod = {
+            "ed539163-bb70-431b-96a7-f5b2eda5376b",
+            "Shared"
+        },
+        Name = "OBJ_Kit_TrapDisarm",
+        Rarity = "Common",
+        RootTemplate = "22c74b5e-bef2-41b1-b9ed-f4acc766d4ee",
+        Slot = "None",
+        Tab = "Consumable",
+        Type = "Object"
+    },
+	{
+        Mod = {
+            "ed539163-bb70-431b-96a7-f5b2eda5376b",
+            "Shared"
+        },
         Name = "OBJ_Scroll_AnimateDead",
         Rarity = "Common",
         RootTemplate = "8b9b4657-93f3-4382-b6e0-a587902abcba",
@@ -2109,6 +2133,78 @@ rootTemplateItemList = {
         RootTemplate = "08c75e58-6e70-469a-a22e-44c184995e6c",
         Slot = "Grenade",
         Tab = "Magical",
+        Type = "CombatObject"
+    },
+	{
+        Mod = {
+            "ed539163-bb70-431b-96a7-f5b2eda5376b",
+            "Shared"
+        },
+        Name = "OBJ_Barrel_Filled", -- Acid
+        Rarity = "Common",
+        RootTemplate = "77cfc9e7-02ca-4be8-8e01-51ae3f873d60",
+        Slot = "Grenade",
+        Tab = "Misc",
+        Type = "CombatObject"
+    },
+	{
+        Mod = {
+            "ed539163-bb70-431b-96a7-f5b2eda5376b",
+            "Shared"
+        },
+        Name = "OBJ_Barrel_Filled_Alcohol",
+        Rarity = "Common",
+        RootTemplate = "79050068-7ce3-43f9-a9a3-1646f5eb39c3",
+        Slot = "Grenade",
+        Tab = "Misc",
+        Type = "CombatObject"
+    },
+	{
+        Mod = {
+            "ed539163-bb70-431b-96a7-f5b2eda5376b",
+            "Shared"
+        },
+        Name = "OBJ_Barrel_Filled", -- Brine
+        Rarity = "Common",
+        RootTemplate = "d6806561-2bd3-4333-ba90-dfbaf9474307",
+        Slot = "Grenade",
+        Tab = "Misc",
+        Type = "CombatObject"
+    },
+	{
+        Mod = {
+            "ed539163-bb70-431b-96a7-f5b2eda5376b",
+            "Shared"
+        },
+        Name = "OBJ_Barrel_Filled_Oil",
+        Rarity = "Common",
+        RootTemplate = "72e3f454-5a68-4bb2-acef-7b8d595b5015",
+        Slot = "Grenade",
+        Tab = "Misc",
+        Type = "CombatObject"
+    },
+	{
+        Mod = {
+            "ed539163-bb70-431b-96a7-f5b2eda5376b",
+            "Shared"
+        },
+        Name = "OBJ_Barrel_Filled_Smokepowder",
+        Rarity = "Common",
+        RootTemplate = "9c875b66-4024-487f-b67c-0c175538eb5c",
+        Slot = "Grenade",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+	{
+        Mod = {
+            "ed539163-bb70-431b-96a7-f5b2eda5376b",
+            "Shared"
+        },
+        Name = "OBJ_Barrel_Filled", -- Water
+        Rarity = "Common",
+        RootTemplate = "253b6d64-91f4-46a2-b05a-a606b0d7b342",
+        Slot = "Grenade",
+        Tab = "Misc",
         Type = "CombatObject"
     },
     {
@@ -4093,6 +4189,30 @@ rootTemplateItemList = {
     },
 	{
         Mod = {
+            "991c9c7a-fb80-40cb-8f0d-b92d4e80e9b1",
+            "Gustav"
+        },
+        Name = "UND_OBJ_Runepowder_Barrel",
+        Rarity = "VeryRare",
+        RootTemplate = "79dfb371-cd87-48f3-b542-26db2d39cfe2",
+        Slot = "Grenade",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+	{
+        Mod = {
+            "991c9c7a-fb80-40cb-8f0d-b92d4e80e9b1",
+            "Gustav"
+        },
+        Name = "OBJ_Runepowder_Timebomb",
+        Rarity = "VeryRare",
+        RootTemplate = "9a711e91-04d0-4300-8ca8-b4cc07529a56",
+        Slot = "Grenade",
+        Tab = "Magical",
+        Type = "CombatObject"
+    },
+	{
+        Mod = {
             "ed539163-bb70-431b-96a7-f5b2eda5376b",
             "Shared"
         },
@@ -5865,18 +5985,6 @@ rootTemplateItemList = {
         RootTemplate = "910ed403-38b3-4128-b07b-0de5d14da8f8",
         Slot = "Helmet",
         Tab = "Equipment",
-        Type = "Armor"
-    },
-    {
-        Mod = {
-            "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8",
-            "GustavDev"
-        },
-        Name = "SCL_SpidersLyre",
-        Rarity = "Common",
-        RootTemplate = "13739f15-7366-4d7f-9926-991e98b9e964",
-        Slot = "MusicalInstrument",
-        Tab = "Auto",
         Type = "Armor"
     },
     {
@@ -9918,7 +10026,7 @@ rootTemplateItemList = {
         },
         Name = "MAG_Gortash_Gloves",
         Rarity = "VeryRare",
-        RootTemplate = "f7d87a7a-e5aa-4bc9-ba51-4e2df3e0bae0",
+        RootTemplate = "6ea2650e-c12b-43d9-873e-f3d426d30d18",
         Slot = "Gloves",
         Tab = "Equipment",
         Type = "Armor"

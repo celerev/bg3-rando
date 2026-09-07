@@ -758,6 +758,17 @@ uniqueMonsterLookup = {
 		superbossFlag = false,
 		aerTemplatelId = "",
 	},
+	["0f18201e-2836-4642-8a26-d0a6e1a8a8cc"] = { -- Don't randomize Lookout Grush, the game will explode
+		index = 1,
+		boss = false,
+		lookupFlag = true,
+		aggroFlag = false,
+		returnFlag = true,
+		countermeasureFlag = false,
+		actThreeMiniBossFlag = false,
+		superbossFlag = false,
+		aerTemplatelId = "",
+	},
 	["4f6e63a1-b143-46b1-ac0e-834494dfdc6a"] = { -- Don't randomize Oliver, the game will explode
 		index = 1,
 		boss = false,

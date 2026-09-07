@@ -820,6 +820,16 @@ return {
 		Tier = "ultra",
 	},
 	{
+		Name = "AER_CRE_Caretaker",
+		TemplateId = "980f48ef-dfd0-48cc-8a24-a989b4b31df5",
+		Tier = "ultra",
+	},
+	{
+		Name = "AER_CRE_Teacher",
+		TemplateId = "30ace4d8-ece8-4e00-98c5-5eedc47b6e84",
+		Tier = "ultra",
+	},
+	{
 		Name = "AER_Boar_Raphael_BossFight",
 		TemplateId = "7d4089b2-62d0-4852-95c0-fa99921daa19",
 		Tier = "mid",
@@ -1446,7 +1456,7 @@ return {
 	},
 	{
 		Name = "AER_Rolan",
-		TemplateId = "cf75bc65-dbd2-4cb0-b0ba-289a8d5cd6c0",
+		TemplateId = "e55c1acf-1423-4350-8a4c-0fcd4e94e5de",
 		Tier = "high",
 	},
 	{

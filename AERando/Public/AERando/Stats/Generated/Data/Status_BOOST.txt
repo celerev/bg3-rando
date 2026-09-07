@@ -11,6 +11,12 @@ using "MF_PERILOUS_STAKES"
 data "StackId" "TOTPERILOUS"
 data "StackType" "Additive"
 
+new entry "AER_INVULNERABLE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "INVULNERABLE_NOT_SHOWN"
+data "Boosts" "IgnoreFallDamage();Invulnerable();Resistance(Slashing,Immune);Resistance(Piercing,Immune);Resistance(Bludgeoning,Immune);Resistance(Acid,Immune);Resistance(Thunder,Immune);Resistance(Necrotic,Immune);Resistance(Fire,Immune);Resistance(Lightning,Immune);Resistance(Cold,Immune);Resistance(Psychic,Immune);Resistance(Poison,Immune);Resistance(Radiant,Immune);Resistance(Force,Immune)"
+
 new entry "AER_MOONFIRE_TECHNICAL"
 type "StatusData"
 data "StatusType" "BOOST"

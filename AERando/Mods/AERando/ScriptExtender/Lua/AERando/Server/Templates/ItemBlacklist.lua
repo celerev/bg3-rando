@@ -3,12 +3,17 @@ local regexStarts = {
 	"^LOOT_DLC_",
 	"^LOOT_Gold_A",
 	"^LOOT_GEM",
+	"^LOOT_GEN_Backpack",
+	"^LOOT_GEN_Ore_Mithral_A",
 	"^DEC_GEN",
 	"^DEC_Dungeon_",
 	"^CONS_Elixir_Blood_",
+	"^CONT_Bag",
 	"^CONT_GEN_Keychain",
 	"^CONT_GEN_AlchemyPouch",
 	"^CONT_GEN_CampSupplySack",
+	"^CONT_GEN_Pouch",
+	"^CONT_GEN_Burlap",
 	"^LOOT_Dye",
 	"^S_SCL_SpidersLyre",
 	"^UNI_KEY",
@@ -42,12 +47,15 @@ local regexStarts = {
 }
 
 local regexContains = {
+	"Chest",
+	"Crate",
 	"CrownController",
 	"Note",
 	"Letter",
 	"Key",
 	"Book",
 	"BOOK",
+	"Barrel_A([^%a])",
 }
 
 local regexEnds = {
@@ -62,6 +70,8 @@ local regexEnds = {
 	"_ConjureElemental_%d*$",
 	"_WildShape_%d*$",
 	"_Myrmidon_%d*$",
+	"Barrel_A$",
+	"Bag$",
 }
 
 return regexStarts, regexContains, regexEnds
