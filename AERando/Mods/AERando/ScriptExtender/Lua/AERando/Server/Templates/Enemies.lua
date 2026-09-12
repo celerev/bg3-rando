@@ -505,6 +505,16 @@ return {
 		Tier = "high",
 	},
 	{
+		Name = "AER_S_WYR_SmugglersCave_StoneLord_Leader",
+		TemplateId = "436a4023-ccb6-4e6c-91be-694674f68db4",
+		Tier = "ultra",
+	},
+	{
+		Name = "AER_S_WYR_SmugglersCave_Guild_Leader",
+		TemplateId = "87ecdf17-9704-4d33-9852-4380b96933de",
+		Tier = "mid",
+	},
+	{
 		Name = "AER_S_WYR_MerchantsHouse_Thug_001",
 		TemplateId = "9a5cac1e-a448-4c35-9f20-e7c409b83164",
 		Tier = "mid",
@@ -1623,6 +1633,11 @@ return {
 		Name = "MOD_HalfOrcs_Female_AbsoluteGuard_Caster",
 		TemplateId = "a0ec3eb5-8546-4ce8-ae54-18631a037eba",
 		Tier = "high",
+	},
+	{
+		Name = "AER_S_MOO_GuardRoom_001",
+		TemplateId = "e5f9225a-b06a-42a0-a847-943520032411",
+		Tier = "low",
 	},
 	{
 		Name = "AER_VINE_Tentacle_Dark_Giant_A",

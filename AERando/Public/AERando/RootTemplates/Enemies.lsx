@@ -10604,9 +10604,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Acid" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -10637,9 +10637,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="CONS_Poison_Basic" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -11587,9 +11587,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Lightning" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -11620,9 +11620,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Fire" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -11653,9 +11653,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Detonation" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -11806,9 +11806,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="2" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="WPN_HUM_Javelin_A_0" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -14274,9 +14274,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ALCH_Soultion_Elixir_Barkskin" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -14526,9 +14526,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="2" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="OBJ_Potion_Healing_Superior" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -15245,9 +15245,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="CONS_Poison_Drow" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -15830,9 +15830,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="OBJ_Potion_Healing_Greater" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -15954,9 +15954,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="2" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="WPN_Javelin" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -16071,9 +16071,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="OBJ_Scroll_ScorchingRay" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -16222,9 +16222,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="2" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Fire" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -16831,9 +16831,6 @@
 								<node id="Tag">
 									<attribute id="Object" type="guid" value="91f4b379-63a2-40e9-a509-7b9b2f90e4c8" />
 								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="9787450d-f34d-43bd-be88-d2bac00bb8ee" />
-								</node>
 							</children>
 						</node>
 					</children>
@@ -16863,9 +16860,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="CONS_Potion_Healing_A_Greater" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -17060,9 +17057,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="CONS_Potion_Healing_A_Greater" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -17270,9 +17267,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="CONS_Potion_Healing_A_Greater" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -17303,9 +17300,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="2" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="WPN_Javelin" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -17974,9 +17971,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="CONS_Potion_Speed" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -18180,9 +18177,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ALCH_Solution_Elixir_Concentration" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -19052,9 +19049,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="2" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Fire" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -19085,9 +19082,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="2" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Acid" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -19118,9 +19115,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="2" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="CONS_Potion_Healing_A" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -19324,9 +19321,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="GRN_FireFlask_A" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -19579,9 +19576,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="CONS_Poison_Basic" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -19645,9 +19642,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="LOOT_SCROLL_BurningHands" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -19828,9 +19825,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="GRN_AcidBottle_A" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -20169,9 +20166,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="LOOT_SCROLL_Sleep" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -20202,9 +20199,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="LOOT_SCROLL_MirrorImage" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -20235,9 +20232,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="LOOT_SCROLL_MistyStep" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -20445,9 +20442,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Fire" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -20478,9 +20475,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="CONS_Poison_Basic" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -20596,9 +20593,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="3" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="WPN_Javelin" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -20898,9 +20895,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Ice" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -21363,9 +21360,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="2" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Detonation" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -21680,9 +21677,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="WPN_HUM_Handaxe_A_0" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -22500,13 +22497,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Tags">
-							<children>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="9787450d-f34d-43bd-be88-d2bac00bb8ee" />
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				
@@ -23243,9 +23233,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Acid" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -23276,9 +23266,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Fire" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -23349,12 +23339,12 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="CasualExplorer" type="bool" value="True" />
 									<attribute id="Classic" type="bool" value="True" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="HonorHardcore" type="bool" value="True" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradeable" type="bool" value="False" />
 									<attribute id="ItemName" type="LSString" value="UNI_CONS_Goodberry" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -23619,9 +23609,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="3" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="CONS_FOOD_Fruit_Goodberry" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -23728,9 +23718,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Lightning" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -24059,7 +24049,7 @@
 					<attribute id="DisplayName" type="TranslatedString" handle="h1bbfbaeeg0984g4e9cg86c1g24a3f5141192" version="1" />
 					<attribute id="Equipment" type="FixedString" value="GOB_DrowCommander" />
 					<attribute id="Faction" type="guid" value="a25829dd-772a-6b00-572f-e036f89471aa" />
-					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Flag" type="int32" value="0" />
 					<attribute id="Icon" type="FixedString" value="383236f9-c7ab-7163-4638-d2e2702ec513-GOB_DrowCommander_(Icon_Minthara)" />
 					<attribute id="IsBoss" type="bool" value="True" />
 					<attribute id="IsEquipmentLootable" type="bool" value="False" />
@@ -24119,9 +24109,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="WPN_Dagger" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -24259,9 +24249,9 @@
 								<node id="Item">
 									<attribute id="AIFlags" type="uint16" value="0" />
 									<attribute id="Amount" type="int32" value="1" />
-									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
 									<attribute id="IsTradable" type="uint8" value="0" />
 									<attribute id="ItemName" type="LSString" value="GRN_Bomb_A" />
 									<attribute id="LevelName" type="LSString" value="" />
@@ -24362,6 +24352,488 @@
 							<children>
 								<node id="TreasureItem">
 									<attribute id="Object" type="FixedString" value="Empty" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				
+				<node id="GameObjects">
+					<attribute id="AiHint" type="guid" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="AnubisConfigName" type="FixedString" value="DefaultCharacter" />
+					<attribute id="Archetype" type="FixedString" value="healer_ranged" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="a7609f1d-0b83-064b-e1d9-ab7813a5b359" />
+					<attribute id="DefaultDialog" type="FixedString" value="" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hcddd02a4gca19g467fgae9egb35086e95e38" version="2" />
+					<attribute id="Equipment" type="FixedString" value="EQP_Crossbow_Leather" />
+					<attribute id="Faction" type="guid" value="948faabe-f0e5-40e7-cfaf-e12211d5889b" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="Icon" type="FixedString" value="a7609f1d-0b83-064b-e1d9-ab7813a5b359-EQP_Crossbow_Leather_(Icon_Elf_Male)" />
+					<attribute id="IsEquipmentLootable" type="bool" value="False" />
+					<attribute id="IsLootable" type="bool" value="False" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="4" />
+					<attribute id="MapKey" type="FixedString" value="e5f9225a-b06a-42a0-a847-943520032411" />
+					<attribute id="Name" type="LSString" value="AER_S_MOO_GuardRoom_001" />
+					<attribute id="Stats" type="FixedString" value="MOO_AcolyteOfTheAbsolute_Elf" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f936a9de-f8b8-485a-aa47-a29bacd134f4" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="ItemList">
+							<children>
+								<node id="Item">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="Amount" type="int32" value="1" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
+									<attribute id="IsTradable" type="uint8" value="0" />
+									<attribute id="ItemName" type="LSString" value="ARR_Arrow_Of_Ice" />
+									<attribute id="LevelName" type="LSString" value="" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="TemplateID" type="FixedString" value="2e297d80-823b-4200-926e-6ca23f488090" />
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="UUID" type="FixedString" value="" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Target_Bless" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Target_SacredFlame" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Target_CureWounds" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="50" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				
+				<node id="GameObjects">
+					<attribute id="AnubisConfigName" type="FixedString" value="DefaultCharacter" />
+					<attribute id="Archetype" type="FixedString" value="melee" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="142a1787-618d-ef9d-2016-61147b8a96e6" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc006f824gfb91g450agaffdga4ee8e5cf7f1" version="1" />
+					<attribute id="Equipment" type="FixedString" value="EQP_WYR_Cairos" />
+					<attribute id="Faction" type="guid" value="121b4ea8-2394-46d2-92e4-3635eaf4a8a0" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="Icon" type="FixedString" value="142a1787-618d-ef9d-2016-61147b8a96e6-EQP_WYR_Cairos_(Icon_Tiefling_Male)" />
+					<attribute id="IsEquipmentLootable" type="bool" value="False" />
+					<attribute id="IsLootable" type="bool" value="False" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="9" />
+					<attribute id="MapKey" type="FixedString" value="436a4023-ccb6-4e6c-91be-694674f68db4" />
+					<attribute id="Name" type="LSString" value="AER_S_WYR_SmugglersCave_StoneLord_Leader" />
+					<attribute id="PortraitVisualResourceID" type="FixedString" value="" />
+					<attribute id="Stats" type="FixedString" value="WYR_SmugglersCave_StoneLord_Tiefling" />
+					<attribute id="ParentTemplateId" type="FixedString" value="80fa035d-5248-45c3-a9c2-1c74749833dc" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="ItemList">
+							<children>
+								<node id="Item">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="Amount" type="int32" value="1" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
+									<attribute id="IsTradable" type="uint8" value="0" />
+									<attribute id="ItemName" type="LSString" value="GRN_Bomb_A" />
+									<attribute id="LevelName" type="LSString" value="" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="TemplateID" type="FixedString" value="278271f9-3fbc-4cf7-a5dc-b36527f521b2" />
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="UUID" type="FixedString" value="" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Shout_SecondWind" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Target_DisarmingAttack_NPC" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Shout_ActionSurge" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="60" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="542b58f0-42ad-4157-a28e-27434e0e7b18" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				
+				<node id="GameObjects">
+					<attribute id="AnubisConfigName" type="FixedString" value="DefaultCharacter" />
+					<attribute id="Archetype" type="FixedString" value="rogue" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="df3531a0-f8a8-9183-17bf-b24bf6653767" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h2dfdce23g4a96g4942gb8f6g11fe0f3c2064" version="1" />
+					<attribute id="Equipment" type="FixedString" value="EQP_WYR_Farlin" />
+					<attribute id="Faction" type="guid" value="32963caf-28d5-4ccb-a82b-bae2a08778aa" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="Icon" type="FixedString" value="df3531a0-f8a8-9183-17bf-b24bf6653767-EQP_WYR_Farlin_(Icon_Gnomes_Female)" />
+					<attribute id="IsEquipmentLootable" type="bool" value="False" />
+					<attribute id="IsLootable" type="bool" value="False" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="7" />
+					<attribute id="MapKey" type="FixedString" value="87ecdf17-9704-4d33-9852-4380b96933de" />
+					<attribute id="Name" type="LSString" value="AER_S_WYR_SmugglersCave_Guild_Leader" />
+					<attribute id="Stats" type="FixedString" value="WYR_SmugglersCave_Guild_Gnome" />
+					<attribute id="ParentTemplateId" type="FixedString" value="e30cb6c6-0a79-4ca8-aabd-0bf993b5db93" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="ItemList">
+							<children>
+								<node id="Item">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="Amount" type="int32" value="1" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
+									<attribute id="IsTradable" type="uint8" value="0" />
+									<attribute id="ItemName" type="LSString" value="GRN_FireFlask_A" />
+									<attribute id="LevelName" type="LSString" value="" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="TemplateID" type="FixedString" value="0b1aa718-fe45-4e4c-8811-ced51c581075" />
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="UUID" type="FixedString" value="" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Item">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="Amount" type="int32" value="1" />
+									<attribute id="CanBePickpocketed" type="bool" value="False" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="False" />
+									<attribute id="IsTradable" type="uint8" value="0" />
+									<attribute id="ItemName" type="LSString" value="GRN_GreaseBottle_A" />
+									<attribute id="LevelName" type="LSString" value="" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="TemplateID" type="FixedString" value="e2968a2e-bc83-4d50-99ef-39ce78d2d630" />
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="UUID" type="FixedString" value="" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Target_SneakAttack" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Target_Invisibility" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Shout_Dash_CunningAction" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="542b58f0-42ad-4157-a28e-27434e0e7b18" />
 								</node>
 							</children>
 						</node>

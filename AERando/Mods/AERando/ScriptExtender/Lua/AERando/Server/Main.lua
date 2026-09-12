@@ -56,6 +56,7 @@ tempBattle = {}
 local exandriaCheck = Ext.Mod.IsModLoaded("a27fdbe3-4d1a-641d-d05f-1ba4ee529da8")
 local kethericFlag = false
 local kethericRolledApostleFlag = false
+local gmBroadcastProtection = false
 
 if exandriaCheck then
 	MCM.Set("soe_loaded", true)
@@ -285,8 +286,12 @@ function clearIconTables()
 end
 
 function clearHelperIconTable()
-	for i, uuid in ipairs(PersistentVars.turnHelperCollection) do
-		Channels.IconReplacer:Broadcast(uuid)
+	if not gmBroadcastProtection then
+		gmBroadcastProtection = true
+		for i, uuid in ipairs(PersistentVars.turnHelperCollection) do
+			Channels.IconReplacer:Broadcast(uuid)
+		end
+		gmBroadcastProtection = false
 	end
 end
 
@@ -334,9 +339,11 @@ function gmTurnHelper(index)
     if not turnhelper then
         return
     end
+	
+	local gmFaction = Osi.GetFaction(PersistentVars.gameMaster)
 
     Osi.SetTag(turnhelper, "9787450d-f34d-43bd-be88-d2bac00bb8ee") -- AI_UNPREFERRED_TARGET
-    Osi.SetFaction(turnhelper, "64321d50-d516-b1b2-cfac-2eb773de1ff6")
+    Osi.SetFaction(turnhelper, gmFaction)
 	
 	Osi.ApplyStatus(turnhelper, "AER_TURNHELPER", -1.0)
 	
@@ -344,7 +351,7 @@ function gmTurnHelper(index)
 	for _, entry in ipairs(players) do
 		local player = strip_uuid(entry[1])
 		if player ~= PersistentVars.gameMaster then
-			Osi.SetHostileAndEnterCombat("64321d50-d516-b1b2-cfac-2eb773de1ff6", "9fac6ec7-642b-3553-1bc8-6b8e0edae7d5", turnhelper, player)
+			Osi.SetHostileAndEnterCombat(gmFaction, "9fac6ec7-642b-3553-1bc8-6b8e0edae7d5", turnhelper, player)
 			Ext.Entity.Get(turnhelper).CombatParticipant.InitiativeRoll = index
 			Ext.Entity.Get(turnhelper):Replicate("CombatParticipant")
 		end
@@ -361,9 +368,11 @@ function removeHelpersFromCombat()
 end
 
 function createTurnHelperList()
-	for i = 1, 15 do
-		local turnhelper = gmTurnHelper(i)
-		table.insert(PersistentVars.turnHelperCollection, turnhelper)
+	if next(PersistentVars.turnHelperCollection) == nil then
+		for i = 1, 15 do
+			local turnhelper = gmTurnHelper(i)
+			PersistentVars.turnHelperCollection[i] = turnhelper
+		end
 	end
 	Ext.Timer.WaitFor(5000, removeHelpersFromCombat)
 end
@@ -386,7 +395,11 @@ end
 
 function startCombat()
 	if MCM.Get("gm_mode") and next(PersistentVars.turnHelperCollection) == nil then
-		createTurnHelperList()
+		if next(PersistentVars.turnHelperCollection) == nil then
+			Ext.Timer.WaitFor(400, function()
+				createTurnHelperList()
+			end)
+		end
 		Ext.Timer.WaitFor(4000, clearHelperIconTable)
 	end
 	local map = Osi.GetRegion(Host)
@@ -435,12 +448,16 @@ function startCombat()
 							end
 						end
 					else
-						Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
+						if creatureFaction then
+							Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
+						end
+						print("Adding GM minion: ", monster)
 						Osi.AddPartyFollower(monster, PersistentVars.gameMaster)
 						for _, entry in ipairs(players) do
 							local player = strip_uuid(entry[1])
+							local playerFaction = Osi.GetFaction(player)
 							if player ~= PersistentVars.gameMaster then
-								Osi.SetHostileAndEnterCombat(creatureFaction, "9fac6ec7-642b-3553-1bc8-6b8e0edae7d5", monster, player)
+								Osi.SetHostileAndEnterCombat(creatureFaction, playerFaction, monster, player)
 							end
 						end
 					end
@@ -452,7 +469,11 @@ end
 
 function startCombatTemp()
 	if MCM.Get("gm_mode") and next(PersistentVars.turnHelperCollection) == nil then
-		createTurnHelperList()
+		if next(PersistentVars.turnHelperCollection) == nil then
+			Ext.Timer.WaitFor(400, function()
+				createTurnHelperList()
+			end)
+		end
 		Ext.Timer.WaitFor(4000, clearHelperIconTable)
 	end
 	local map = Osi.GetRegion(Host)
@@ -501,12 +522,16 @@ function startCombatTemp()
 							end
 						end
 					else
-						Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
+						if creatureFaction then
+							Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
+						end
+						print("Adding GM minion: ", monster)
 						Osi.AddPartyFollower(monster, PersistentVars.gameMaster)
 						for _, entry in ipairs(players) do
 							local partymember = strip_uuid(entry[1])
+							local playerFaction = Osi.GetFaction(partymember)
 							if player ~= PersistentVars.gameMaster then
-								Osi.SetHostileAndEnterCombat(creatureFaction, "9fac6ec7-642b-3553-1bc8-6b8e0edae7d5", monster, partymember)
+								Osi.SetHostileAndEnterCombat(creatureFaction, playerFaction, monster, partymember)
 							end
 						end
 					end
@@ -518,19 +543,20 @@ end
 
 function startCombatNarrative()
 	if MCM.Get("gm_mode") and next(PersistentVars.turnHelperCollection) == nil then
-		createTurnHelperList()
+		if next(PersistentVars.turnHelperCollection) == nil then
+			Ext.Timer.WaitFor(400, function()
+				createTurnHelperList()
+			end)
+		end
 		Ext.Timer.WaitFor(4000, clearHelperIconTable)
 	end
 	local map = Osi.GetRegion(Host)
 	for monster, _ in pairs(PersistentVars.spawnedEnemyTable) do
-		print("In monster function")
 		if not PersistentVars.currentCombatMembers[monster] then
 			PersistentVars.currentCombatMembers[monster] = true
-			print("Removing Invulnerable from ", monster)
 			Ext.Timer.WaitFor(200, function()
 				Osi.RemoveStatus(monster, "AER_INVULNERABLE")
 			end)
-			print("In current combat members")
 			local success, result = false
 			local missingHP = 0
 			for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
@@ -565,7 +591,6 @@ function startCombatNarrative()
 				end)
 			end
 				
-			print("Above faction check")
 			local creatureFaction = Osi.GetFaction(monster)
 			if not MCM.Get("gm_mode") then
 				if not (success and result) then
@@ -576,9 +601,10 @@ function startCombatNarrative()
 					end)
 				end
 			else
-				print("Above player check")
 				local players = Osi.DB_PartyMembers:Get(nil)
-				Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
+				if creatureFaction then
+					Osi.SetFaction(PersistentVars.gameMaster, creatureFaction)
+				end
 				Osi.AddPartyFollower(monster, PersistentVars.gameMaster)
 				print("Adding GM minion: ", monster)
 				for _, entry in ipairs(players) do
@@ -875,8 +901,6 @@ function randomizeCreature(character)
 	local asylum = getAsylum(map)
 	local combatGroup = ""
 	
-	print("Beginning randomization of ", character)
-	
 	local entitySuccess, entityResult = pcall(function()
 		combatGroup = Ext.Entity.Get(character).CombatParticipant.CombatGroupId
 	end)
@@ -888,8 +912,6 @@ function randomizeCreature(character)
 	if PersistentVars.currentlyRandomizedEnemyTable[character] then
 		return PersistentVars.currentlyRandomizedEnemyTable[character][1]
 	end
-
-	print("Spawning new creature for ", character)
 
 	local newCreature = nil
 	local aggro = nil
@@ -910,8 +932,6 @@ function randomizeCreature(character)
 		end
 		return
 	end
-	
-	print(character, "spawned new creature: ", newCreature)
 
 	Ext.Entity.Get(newCreature).CombatParticipant.CombatGroupId = combatGroup
 	Ext.Entity.Get(newCreature):Replicate("CombatParticipant")
@@ -920,18 +940,15 @@ function randomizeCreature(character)
 	PersistentVars.currentlyRandomizedEnemyTable[character] = {newCreature, x, y, z}
 
 	if Osi.HasActiveStatus(character, "MOO_KETHERIC_INVULNERABLE") == 0 and not PersistentVars.currentCombatMembers[newCreature] then
-		print("Applying Invulnerable to ", newCreature)
 		Osi.ApplyStatus(newCreature, "AER_INVULNERABLE", -1.0,1)
 	else
 		local percentage = Osi.GetHitpointsPercentage("S_MOO_Ketheric_e9918f3e-5b87-40a3-a9bd-61545151573f")
 		Osi.SetHitpointsPercentage(newCreature, percentage)
 	end
-	print("Teleporting original ", character, "away.")
 	Osi.TeleportToPosition(character, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
 	
 	character_uuid = strip_uuid(character)
 	table.insert(iconTable, character_uuid)
-	print("Calling icon clearing function.")
 	Ext.Timer.WaitFor(2400, clearIconTables)
 	
 	-- heavily incentivise Zhalk to aggro Mind Flayer
@@ -1314,7 +1331,6 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 		local invulnCheckSuccess, invulnCheckResult = pcall(function()
 			Ext.Timer.WaitFor(4800, function()
 				if Osi.HasActiveStatus(character_uuid, "AER_INVULNERABLE") == 1 then
-					print("Getting combat with invulnerability still on? Why? ", character)
 					Osi.RemoveStatus(character_uuid, "AER_INVULNERABLE")
 				end
 			end)
@@ -1338,7 +1354,7 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 			end
 		end)
 		if not relationCheckSuccess then
-			print("Faction check failed for: ", player, ",", playerFaction, "-", relationCheckResult)
+			print("ERROR - Faction check failed for: ", player, ",", playerFaction, "-", relationCheckResult)
 		end
 		pcall(function()
 			local entity = Ext.Entity.Get(player)
@@ -1630,7 +1646,6 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status
 	if status == "AER_INVULNERABLE" then
 		Ext.Timer.WaitFor(8600, function()
 			if Osi.HasActiveStatus(target, "AER_INVULNERABLE") == 1 then
-				print("This should never be reached: ", target)
 				Osi.RemoveStatus(target, "AER_INVULNERABLE")
 			end
 		end)

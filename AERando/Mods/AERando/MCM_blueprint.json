@@ -77,18 +77,7 @@
                             },
                             "Type": "checkbox",
                             "Default": false,
-                            "Description": "Allow creatures summoned by enemies (e.g. Conjure Elementals) to be randomized."
-                        },
-						{
-                            "Id": "randomize_allies",
-                            "Name": "Randomize Neutral and Allied Characters",
-                            "Handles": {
-                                "NameHandle": "h0c2e1961g12e2g4521gb839gf0e7e03c2e36",
-                                "DescriptionHandle": "h1d6169dbge44ag4928g893ag92c615f29eda"
-                            },
-                            "Type": "checkbox",
-                            "Default": false,
-                            "Description": "EXPERIMENTAL: Allow creatures who are not enemies to be randomized."
+                            "Description": "Allow creatures summoned by enemies (e.g. Conjure Elementals) to be randomized. May dramatically increase difficulty."
                         },
 						{
                             "Id": "randomize_loot",
@@ -99,7 +88,7 @@
                             },
                             "Type": "checkbox",
                             "Default": false,
-                            "Description": "EXPERIMENTAL: Randomizes loot in the world. Unique items such as Phalar Aluve will only be randomized to other unique items. Leave disabled if using other loot randomization mods."
+                            "Description": "Randomizes loot. Unique items such as Phalar Aluve will only be randomized to other unique items. Leave disabled if using other loot randomization mods."
                         },
 						{
                             "Id": "unique_bosses",
@@ -111,6 +100,17 @@
                             "Type": "checkbox",
                             "Default": false,
                             "Description": "Story bosses will not share the same randomized counterpart."
+                        },
+						{
+                            "Id": "randomize_allies",
+                            "Name": "Randomize Neutral and Allied Characters",
+                            "Handles": {
+                                "NameHandle": "h0c2e1961g12e2g4521gb839gf0e7e03c2e36",
+                                "DescriptionHandle": "h1d6169dbge44ag4928g893ag92c615f29eda"
+                            },
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "EXPERIMENTAL: Allow creatures who are not enemies to be randomized."
                         },
 						{
                             "Id": "derandomize_othermod",
