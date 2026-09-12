@@ -127,12 +127,12 @@ return {
 	{
 		Name = "MOD_AeorianPanther_Combat",
 		TemplateId = "c2ddf9ed-6909-4673-8c95-5a45083343a4",
-		Tier = "ultra",
+		Tier = "epic",
 	},
 	{
 		Name = "MOD_AeorNull_Combat",
 		TemplateId = "091c0328-4c5f-46b0-8d2f-a5af25d5587d",
-		Tier = "ultra",
+		Tier = "epic",
 	},
 	{
 		Name = "MOD_AeorReverser_Combat",

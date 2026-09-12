@@ -12,7 +12,7 @@ return {
 	{
 		Name = "MOD_Mizora_Combat",
 		TemplateId = "b1d45242-e99e-4760-80da-889b2ae6e7b4",
-		Tier = "epic",
+		Tier = "legendary",
 	},
 	{
 		Name = "MOD_Vlaakith_Combat",
@@ -284,7 +284,17 @@ return {
 		TemplateId = "4116f2c2-9f84-4dd0-8e0c-ff9361fe7801",
 		Tier = "epic",
 	},
-			{
+	{
+		Name = "MOD_Lorlarrio_Combat",
+		TemplateId = "b5898e2f-c860-4175-a353-4eb39e6917b2",
+		Tier = "high",
+	},
+	{
+		Name = "MOD_MysterySpawn_Combat",
+		TemplateId = "149ac284-e091-4ea4-b475-4fe9ce54d108",
+		Tier = "high",
+	},
+	{
 		Name = "MOD_DrowHouseMage_Combat",
 		TemplateId = "8650200e-47b7-4069-8de6-791af6d11878",
 		Tier = "high",
@@ -312,7 +322,7 @@ return {
 	{
 		Name = "MOD_Yochlol_Combat",
 		TemplateId = "2a967977-d7e1-4c94-b7fc-8363cb0857ba",
-		Tier = "ultra",
+		Tier = "epic",
 	},
 	{
 		Name = "MOD_WinterWolf_Combat",

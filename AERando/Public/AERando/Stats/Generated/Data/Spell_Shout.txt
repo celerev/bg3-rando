@@ -1,0 +1,5 @@
+new entry "Shout_BlackHole_DarkVine_Giant"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_BlackHole_DarkVine_Giant"
+data "SpellAnimation" ",,;d8b7f668-db2b-43b0-9707-5da2ed2cf27e,,;7521e279-1bb3-4105-b32d-8206234836a3,,;d172e037-7041-4352-9a20-5f4b185f9ef1,,;,,;,,;,,;,,;,,"

@@ -9,3 +9,17 @@ type "SpellData"
 data "SpellType" "ProjectileStrike"
 using "ProjectileStrike_MOD_Ethel_Trickery_3"
 data "SpellProperties" "AI_IGNORE:IF(Tagged('TOT_ETHEL_HELPER')):ApplyStatus(MOD_FakeHagDoubles,100,-1);AI_IGNORE:GROUND:Summon(8c85932d-12dd-4046-a694-6534071470a2,-1,Projectile_AiHelper_Summon_Strong,,,MOD_HagDoubles,INVISIBILITY);AI_ONLY:CAST:ApplyStatus(SELF,AI_HELPER_BUFF_LARGE,100,3);AI_IGNORE:CAST:ApplyStatus(SELF,INVISIBLE,100,-1)"
+
+new entry "ProjectileStrike_MOD_Jatlo_Crabs"
+type "SpellData"
+data "SpellType" "ProjectileStrike"
+using "ProjectileStrike_MOD_Jatlo_Crabs"
+data "SpellProperties" "AI_ONLY:CAST:ApplyStatus(SELF,AI_HELPER_BUFF_LARGE, 100, 5);AI_IGNORE:GROUND:Summon(483d7ddf-fa40-4b61-8f67-9e5371a16fa0,-1,Projectile_AiHelper_Summon_Strong,,,,)"
+data "CastTargetHitDelay" "15"
+
+
+new entry "ProjectileStrike_ATT_ScionDanseMacabe"
+type "SpellData"
+data "SpellType" "ProjectileStrike"
+using "ProjectileStrike_ATT_ScionDanseMacabe"
+data "SpellProperties" "AI_IGNORE:GROUND:IF(HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(405e65e2-a6c9-4418-9de6-b06978d033b7,UntilLongRest,,,,UNDEADTHRALL_SUMMON,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);AI_IGNORE:GROUND:IF(not HasPassive('UndeadThrall_BetterSummon',context.Source)):Summon(405e65e2-a6c9-4418-9de6-b06978d033b7, UntilLongRest,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);AI_ONLY:CAST:ApplyStatus(SELF,AI_HELPER_BUFF_MASSIVE,100,3)"

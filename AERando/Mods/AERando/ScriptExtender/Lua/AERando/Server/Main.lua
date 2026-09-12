@@ -271,11 +271,16 @@ function clearIconTables()
 	for i, uuid in ipairs(PersistentVars.turnHelperCollection) do
 		Channels.IconReplacer:Broadcast(uuid)
 	end
-	if #iconTable > 0 then
-		for i, uuid in ipairs(iconTable) do
-			Channels.IconReplacer:Broadcast(uuid)
+	local success, result = pcall(function()
+		if #iconTable > 0 then
+			for i, uuid in ipairs(iconTable) do
+				Channels.IconReplacer:Broadcast(uuid)
+			end
+			iconTable = {}
 		end
-		iconTable = {}
+	end)
+	if not success then
+		print("ERROR during icon clearing: ", result)
 	end
 end
 
@@ -401,7 +406,9 @@ function startCombat()
 						character_uuid = strip_uuid(monster)
 						if val[1] == character_uuid then
 							-- I know this is inefficient don't @ me
-							missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
+							pcall(function()
+								missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
+							end)
 							if statusTable[key] then
 								Ext.Timer.WaitFor(300, function()
 									Osi.ApplyStatus(monster, "SURPRISED", 6.0, 1, monster)
@@ -412,7 +419,7 @@ function startCombat()
 					end
 					
 					if missingHP > 0 and Osi.GetHitpointsPercentage(monster) == 100.0 then
-						Ext.Timer.WaitFor(1100, function()
+						Ext.Timer.WaitFor(1200, function()
 							Osi.ApplyDamage(monster,missingHP,"Force",Host)
 						end)
 					end
@@ -420,7 +427,6 @@ function startCombat()
 
 					local creatureFaction = Osi.GetFaction(monster)
 					if not MCM.Get("gm_mode") then
-						Osi.SteerTo(monster, player, 1)
 						for _, entry in ipairs(players) do
 							local partymember = strip_uuid(entry[1])
 							if Osi.GetDistanceTo(partymember, monster) < 200 then
@@ -465,7 +471,9 @@ function startCombatTemp()
 					for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
 						character_uuid = strip_uuid(monster)
 						if val[1] == character_uuid then
-							missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
+							pcall(function()
+								missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
+							end)
 							if statusTable[key] then
 								Ext.Timer.WaitFor(300, function()
 									Osi.ApplyStatus(monster, "SURPRISED", 6.0, 1, monster)
@@ -476,7 +484,7 @@ function startCombatTemp()
 					end
 					
 					if missingHP > 0 and Osi.GetHitpointsPercentage(monster) == 100.0 then
-						Ext.Timer.WaitFor(1100, function()
+						Ext.Timer.WaitFor(1200, function()
 							Osi.ApplyDamage(monster,missingHP,"Force",Host)
 						end)
 					end
@@ -484,7 +492,6 @@ function startCombatTemp()
 
 					local creatureFaction = Osi.GetFaction(monster)
 					if not MCM.Get("gm_mode") then
-						Osi.SteerTo(monster, player, 1)
 						for _, entry in ipairs(players) do
 							local partymember = strip_uuid(entry[1])
 							if Osi.GetDistanceTo(partymember, monster) < 100 then
@@ -519,6 +526,7 @@ function startCombatNarrative()
 		print("In monster function")
 		if not PersistentVars.currentCombatMembers[monster] then
 			PersistentVars.currentCombatMembers[monster] = true
+			print("Removing Invulnerable from ", monster)
 			Ext.Timer.WaitFor(200, function()
 				Osi.RemoveStatus(monster, "AER_INVULNERABLE")
 			end)
@@ -539,7 +547,9 @@ function startCombatNarrative()
 							return false
 						end
 					end)
-					missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
+					pcall(function()
+						missingHP = Osi.GetMaxHitpoints(key) - Osi.GetHitpoints(key)				
+					end)
 					if statusTable[key] then
 						Ext.Timer.WaitFor(300, function()
 							Osi.ApplyStatus(monster, "SURPRISED", 6.0, 1, monster)
@@ -550,7 +560,7 @@ function startCombatNarrative()
 			end
 			
 			if missingHP > 0 and Osi.GetHitpointsPercentage(monster) == 100.0 then
-				Ext.Timer.WaitFor(1100, function()
+				Ext.Timer.WaitFor(1200, function()
 					Osi.ApplyDamage(monster,missingHP,"Force",Host)
 				end)
 			end
@@ -558,8 +568,6 @@ function startCombatNarrative()
 			print("Above faction check")
 			local creatureFaction = Osi.GetFaction(monster)
 			if not MCM.Get("gm_mode") then
-				Osi.SteerTo(monster, Host, 1)
-				
 				if not (success and result) then
 					pcall(function()
 						local entity = Ext.Entity.Get(Host)
@@ -655,7 +663,7 @@ function selectCreature(character)
 	local countermeasureFlag = false
 	local actThreeMiniBossFlag = false
 	local superbossFlag = false
-	local aerTemplatelId = ""
+	local aerTemplateId = ""
 	local boss = false
 	
 	local level = Osi.GetLevel(character)
@@ -697,15 +705,15 @@ function selectCreature(character)
 		countermeasureFlag = lookup.countermeasureFlag
 		actThreeMiniBossFlag = lookup.actThreeMiniBossFlag
 		superbossFlag = lookup.superbossFlag
-		aerTemplatelId = lookup.aerTemplatelId
+		aerTemplateId = lookup.aerTemplateId
 	end
 	
 	if returnFlag then
-		return
+		return "returnstring"
 	end
 	
 	if countermeasureFlag and Osi.DB_END_BrainBattle_DominationDone:Get(1)[1] then
-		return
+		return "returnstring"
 	end
 
 	if not lookupFlag then
@@ -717,17 +725,17 @@ function selectCreature(character)
 			index = 3 -- mid
 		elseif level < 8 then
 			index = 4 -- high
-		elseif level < 9 and (map == C.Regions.Act3 or map == C.Regions.Act3b) then
+		elseif level < 11 and (map == C.Regions.Act3 or map == C.Regions.Act3b) then
 			index = 4 -- high
-		elseif level < 11 then
-			index = 5 -- ultra
 		elseif level < 13 then
+			index = 5 -- ultra
+		elseif level < 15 then
 			index = 6 -- epic
-		elseif level < 14 then
+		elseif level < 18 then
 			index = 7 -- legendary
-		elseif level < 21 then
+		elseif level < 23 then
 			index = 8 -- mythical
-		elseif level < 28 then
+		elseif level < 27 then
 			index = 9 -- divine
 		else
 			index = 10 -- avatar
@@ -735,12 +743,23 @@ function selectCreature(character)
 	end
 
 	local apostleFlag = Osi.HasActiveStatus(character, "MOO_KETHERIC_APOSTLEFORM") == 1
+	local slayerFlag = Osi.HasActiveStatus(character, "LOW_BHAALTEMPLE_ORINSLAYER") == 1
 
 	if map == C.Regions.Act0 and index > 1 then
+		levelmax = levelmax - 1
+	elseif map == C.Regions.Act3i then
 		levelmax = levelmax - 1
 	elseif map == C.Regions.Act3c and index < 5 then
 		levelmin = levelmin - 1
 	end
+	
+	pcall(function()
+		local charTemplate = Osi.GetTemplate(character)
+		local charTemplateUUID = strip_uuid(charTemplate)
+		if charTemplateUUID == "27385ea6-d768-47ce-91b8-8d957c0aabd9" or charTemplateUUID == "70417e3e-9278-4f96-a1d8-5bd90bf5d07a" then
+			levelmax = levelmax - 1
+		end
+	end)
 
 	if boss then
 		index = index + MCM.Get("boss_tier_boost")
@@ -766,9 +785,13 @@ function selectCreature(character)
 	end
 
 	if boss and MCM.Get("unique_bosses") then
-		salt = 0
+		local salt = 0
 		if kethericFlag or not strippedUUID == "e9918f3e-5b87-40a3-a9bd-61545151573f" then
 			while PersistentVars.usedBossTable[newEnemy] == true do
+				if salt > 18650 then
+					print(character, " could not find an unused boss in acceptable ranges. Exiting loop without randomizing.")
+					return
+				end
 				salt = salt + 373
 				newEnemy = Hash:selectEnemy(salt, newTable, false)
 			end
@@ -778,19 +801,52 @@ function selectCreature(character)
 	if apostleFlag and newEnemy == "30d6a794-fbf1-453d-9e3f-35b51058cd15" then
 		kethericRolledApostleFlag = true
 		return
-	elseif aerTemplatelId == newEnemy then
+	elseif slayerFlag and newEnemy == "7201d8fd-f4b2-40b3-8416-714b156e2088" then
 		print(character, " rolled their own template: ", newEnemy, ". Exiting loop without randomizing.")
-		return "samecreature"
+		return "returnstring"
+	elseif aerTemplateId == newEnemy then
+		print(character, " rolled their own template: ", newEnemy, ". Exiting loop without randomizing.")
+		return "returnstring"
 	end
 	return newEnemy, aggroFlag
 end
 
-function spawnNewCreature(character, x, y, z)
+function spawnNewCreature(character, x, y, z, asylum)
 	local spawnId, aggro = selectCreature(character)
 	
 	
-	if spawnId == "samecreature" then
-		return "samecreature"
+	if spawnId == "returnstring" then
+		return "returnstring"
+	end
+	if not spawnId then
+		if Osi.IsCharacter(character) == 1 and Osi.IsHitProxy(character) == 0 and not kethericRolledApostleFlag then
+			print("ERROR: ", character, " failed to randomize!")
+		end
+		return
+	end
+	
+	local newCreatureId = Osi.CreateAt(spawnId, asylum.asylumX, asylum.asylumY, asylum.asylumZ, 0, 1, "")
+	
+	if not newCreatureId then
+		print("SPAWN ERROR: ", character, " failed to spawn randomized ", spawnId)
+		return
+	end
+	
+	local x2, y2, z2 = Osi.FindValidPosition(x, y, z, 100, Host, 1)
+	
+	Ext.Timer.WaitFor(300, function()
+		Osi.TeleportToPosition(newCreatureId, x2, y2, z2, "", 0, 0, 0, 0, 1)
+	end)
+
+	return newCreatureId, aggro
+end
+
+function spawnNewCreatureOnNautiloid(character, x, y, z)
+	local spawnId, aggro = selectCreature(character)
+	
+	
+	if spawnId == "returnstring" then
+		return "returnstring"
 	end
 	if not spawnId then
 		if Osi.IsCharacter(character) == 1 and Osi.IsHitProxy(character) == 0 and not kethericRolledApostleFlag then
@@ -800,11 +856,11 @@ function spawnNewCreature(character, x, y, z)
 	end
 	
 	local x2, y2, z2 = Osi.FindValidPosition(x, y, z, 100, Host, 1)
-
 	local newCreatureId = Osi.CreateAt(spawnId, x2, y2, z2, 0, 1, "")
 	
 	if not newCreatureId then
 		print("SPAWN ERROR: ", character, " failed to spawn randomized ", spawnId)
+		return
 	end
 
 	return newCreatureId, aggro
@@ -817,15 +873,34 @@ function randomizeCreature(character)
 	end
 	local map = Osi.GetRegion(Host)
 	local asylum = getAsylum(map)
-	local combatGroup = Ext.Entity.Get(character).CombatParticipant.CombatGroupId
+	local combatGroup = ""
+	
+	print("Beginning randomization of ", character)
+	
+	local entitySuccess, entityResult = pcall(function()
+		combatGroup = Ext.Entity.Get(character).CombatParticipant.CombatGroupId
+	end)
+	
+	if not entitySuccess then
+		print("ERROR while accessing entity for ", character, ":", entityResult)
+	end
 
 	if PersistentVars.currentlyRandomizedEnemyTable[character] then
 		return PersistentVars.currentlyRandomizedEnemyTable[character][1]
 	end
 
-	local newCreature, aggro = spawnNewCreature(character, x, y, z)
+	print("Spawning new creature for ", character)
 
-	if newCreature == "samecreature" then
+	local newCreature = nil
+	local aggro = nil
+
+	if map == C.Regions.Act0 then
+		newCreature, aggro = spawnNewCreatureOnNautiloid(character, x, y, z)
+	else
+		newCreature, aggro = spawnNewCreature(character, x, y, z, asylum)
+	end
+
+	if newCreature == "returnstring" then
 		return
 	end
 	-- TODO: set a loop here to catch terrain spawning problems
@@ -835,6 +910,8 @@ function randomizeCreature(character)
 		end
 		return
 	end
+	
+	print(character, "spawned new creature: ", newCreature)
 
 	Ext.Entity.Get(newCreature).CombatParticipant.CombatGroupId = combatGroup
 	Ext.Entity.Get(newCreature):Replicate("CombatParticipant")
@@ -842,17 +919,20 @@ function randomizeCreature(character)
 	PersistentVars.spawnedEnemyTable[newCreature] = true
 	PersistentVars.currentlyRandomizedEnemyTable[character] = {newCreature, x, y, z}
 
-	if Osi.HasActiveStatus(character, "MOO_KETHERIC_INVULNERABLE") == 0 then
+	if Osi.HasActiveStatus(character, "MOO_KETHERIC_INVULNERABLE") == 0 and not PersistentVars.currentCombatMembers[newCreature] then
+		print("Applying Invulnerable to ", newCreature)
 		Osi.ApplyStatus(newCreature, "AER_INVULNERABLE", -1.0,1)
 	else
 		local percentage = Osi.GetHitpointsPercentage("S_MOO_Ketheric_e9918f3e-5b87-40a3-a9bd-61545151573f")
 		Osi.SetHitpointsPercentage(newCreature, percentage)
 	end
+	print("Teleporting original ", character, "away.")
 	Osi.TeleportToPosition(character, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
 	
 	character_uuid = strip_uuid(character)
 	table.insert(iconTable, character_uuid)
-	Ext.Timer.WaitFor(1600, clearIconTables)
+	print("Calling icon clearing function.")
+	Ext.Timer.WaitFor(2400, clearIconTables)
 	
 	-- heavily incentivise Zhalk to aggro Mind Flayer
 	if character == "S_TUT_Helm_Devil_005_ed103005-fd71-457d-ae6c-39654bbd8f2e" then
@@ -1131,6 +1211,9 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	if Osi.IsSummon(character) == 1 and not MCM.Get("randomize_summons") then
 		return
 	end
+	if Osi.HasActiveStatus(character, "LOW_CAZADORSPALACE_RITUAL_CRYSTALLISED") == 1 then
+		return
+	end
 	
 	local stripped_template = strip_uuid(Osi.GetTemplate(character))
 	if "3f0377a6-1bf5-4e9e-a186-d2a934f0a0c0" == stripped_template then -- Turn Divider
@@ -1199,7 +1282,6 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 		local tempx, tempy, tempz = Osi.GetPosition(character)
 		Osi.TeleportToPosition(character, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
 		
-		
 		if Osi.IsInCombat(spawn) == 1 then
 			local success, mundane = pcall(function()
 				local entity = Ext.Entity.Get(character)
@@ -1229,6 +1311,17 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	end
 
 	if PersistentVars.spawnedEnemyTable[character_uuid] then
+		local invulnCheckSuccess, invulnCheckResult = pcall(function()
+			Ext.Timer.WaitFor(4800, function()
+				if Osi.HasActiveStatus(character_uuid, "AER_INVULNERABLE") == 1 then
+					print("Getting combat with invulnerability still on? Why? ", character)
+					Osi.RemoveStatus(character_uuid, "AER_INVULNERABLE")
+				end
+			end)
+		end)
+		if not invulnCheckSuccess then
+			print("ERROR IN INVULN CHECK: ", invulnCheckResult)
+		end
 		return
 	end
 	
@@ -1309,6 +1402,39 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	end)
 end)
 
+-- Ansur's arena
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if character == "S_WYR_SkeletalDragon_67770922-5e0a-40c5-b3f0-67e8eb50493a" then
+		-- probably unnecessary, but this feels unsafe
+		local success, result = pcall(function()
+			Ext.Timer.WaitFor(2400, function()
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_67511a5c-75f8-496c-81c6-17d4820c2b38", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_000_bdf56ccd-6990-4988-a9ee-792f9fc69a24", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_001_68f502f3-0833-4d48-ac34-38f800a54c63", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_002_342df486-09b7-4259-bc4e-ddc96a010571", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_003_2826c2c1-f846-4320-a76a-8b88558773dc", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_004_6bcdd409-9503-4b1b-a69f-b284b2e4b644", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_005_50bbde3b-48a2-4dcd-be67-f19f612372b3", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_006_e49292d1-3320-47ad-a0a1-c6aea3b839c1", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_007_7215d6ab-0c4f-4c6c-84fe-8a087152078d", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_008_a11d3452-8ac9-4441-8077-54e8d30c046e", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_009_e7162ac4-22f9-4c15-8afb-2a4817982c4d", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_010_b22845fa-8463-4b71-bb25-4e9bc68376e9", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_011_ada3a431-2465-40c6-a380-9afac2bcd128", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_012_c6a9a13e-3fb6-4b88-a6c9-5b7180d463ed", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_014_0ea74d6a-1644-40e2-9fb5-6e88b8445536", 0)
+				Osi.SetOnStage("S_WYR_SkeletalDragonBlocker_015_cf2f3042-76d5-4868-b8f5-20413f1b52e5", 0)
+			end)
+		end)
+		if not success then
+			print("ERROR preparing Ansur arena: ", result)
+		end
+	end
+end)
+
 Ext.Osiris.RegisterListener("Died", 1, "after", function(character)
 	if not MCM.Get("mod_enabled") then
 		return
@@ -1332,6 +1458,12 @@ Ext.Osiris.RegisterListener("Died", 1, "after", function(character)
 				if key == "S_WYR_SkeletalDragon_67770922-5e0a-40c5-b3f0-67e8eb50493a" then
 					Osi.RemoveStatus(key, "DEATH_WARD_DRAGON_SKELETAL", key)
 					Osi.RemoveStatus(key, "STORMHEART_RESOLVE", key)
+					Osi.PROC_WYR_SkeletalDragon_RemoveImmortality()
+					Ext.Timer.WaitFor(200, function()
+						if Osi.IsDead(key) == 0 then
+							Osi.ApplyDamage(key,999,"Force",Host)
+						end
+					end)
 				end
 				Osi.ApplyDamage(key,999,"Force",Host)
 				if key == "S_MOO_Ketheric_e9918f3e-5b87-40a3-a9bd-61545151573f" then
@@ -1340,6 +1472,10 @@ Ext.Osiris.RegisterListener("Died", 1, "after", function(character)
 					else
 						Osi.PROC_MOO_Assault_KethericLeaves()
 					end
+				elseif key == "S_GLO_Cazador_2f1880e6-1297-4ca3-a79c-9fabc7f179d3" then
+					Ext.Timer.WaitFor(1000, function()
+						Osi.PROC_LOW_CazadorsPalace_SendCazadorToCoffin()
+					end)
 				end
 			else
 				Osi.Die(key, 0, "NULL_00000000-0000-0000-0000-000000000000", 1, 0, 0.0)
@@ -1375,6 +1511,21 @@ Ext.Osiris.RegisterListener("LevelLoaded", 1, "after", function(level)
 	end
 end)
 
+-- Handling High Hall
+Ext.Osiris.RegisterListener("LevelLoaded", 1, "after", function(level)
+	if level == C.Regions.Act3c then
+		local success, result = pcall(function()
+			Ext.Timer.WaitFor(1000, function()
+				Osi.PROC_Reinforcements_CharactersCanFight()
+				Osi.DB_END_Reinforcements_Characters:Delete(nil,nil)
+			end)
+		end)
+		if not success then
+			print("ERROR processing High Hall: ", result)
+		end
+	end
+end)
+
 Ext.Osiris.RegisterListener("SavegameLoaded", 0, "after", function()
 	gameLoaded()
 end)
@@ -1393,6 +1544,7 @@ Ext.Osiris.RegisterListener("PROC_CRIME_SetRelationTemporaryHostile", 4, "before
 	tempBattle[char1] = true
 end)
 
+-- Surprise Rounds
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status, caster, storyId)
 	if not MCM.Get("mod_enabled") then
 		return
@@ -1400,8 +1552,34 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status
 	local targetId = strip_uuid(target)
 	if status == "SURPRISED" then
 		statusTable[target] = "SURPRISED"
-	elseif status == "MOO_KETHERIC_APOSTLEFORM" then
-		if not PersistentVars.currentlyRandomizedEnemyTable[target] then
+	end
+end)
+
+-- Other pre-combat statuses, 
+-- but this won't work because the timer is ticking for the original, 
+-- and the new one won't be attached to concentration
+-- Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status, caster, storyId)
+	-- if not MCM.Get("mod_enabled") then
+		-- return
+	-- end
+	-- Ext.Timer.WaitFor(2000, function()
+		-- if PersistentVars.currentlyRandomizedEnemyTable[target] and Osi.IsPartyMember(caster, 1) == 1 then
+			-- if Osi.HasActiveStatus(target, status) == 1 then
+				-- local turnCount = Osi.GetStatusCurrentLifetime(target, status)
+				-- Osi.ApplyStatus(target, status, turnCount, caster)
+			-- end
+		-- end
+	-- end)
+-- end)
+
+-- Ketheric
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status, caster, storyId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	local target_uuid = strip_uuid(target)
+	if status == "MOO_KETHERIC_APOSTLEFORM" then
+		if not PersistentVars.currentlyRandomizedEnemyTable[target] and not PersistentVars.spawnedEnemyTable[target_uuid] then
 			local map = Osi.GetRegion(target)
 			local asylum = getAsylum(map)
 
@@ -1420,7 +1598,16 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status
 				end)
 			end
 		end
-	elseif status == "KNOCKED_OUT_TEMPORARILY" then
+	end
+end)
+
+-- Knocked Out
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status, caster, storyId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	local targetId = strip_uuid(target)
+	if status == "KNOCKED_OUT_TEMPORARILY" then
 		for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
 			if val[1] == targetId then
 				Osi.ApplyStatus(key, "KNOCKED_OUT_TEMPORARILY", -1.0, 1, Host)
@@ -1430,6 +1617,52 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status
 		for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
 			if val[1] == targetId then
 				Osi.ApplyStatus(key, "KNOCKED_OUT", -1.0, 1, Host)
+			end
+		end
+	end
+end)
+
+-- Failsafe for spawn handling
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status, caster, storyId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if status == "AER_INVULNERABLE" then
+		Ext.Timer.WaitFor(8600, function()
+			if Osi.HasActiveStatus(target, "AER_INVULNERABLE") == 1 then
+				print("This should never be reached: ", target)
+				Osi.RemoveStatus(target, "AER_INVULNERABLE")
+			end
+		end)
+	end
+end)
+
+-- The easy fix for Myrkul if ATT is disabled
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status, caster, storyId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if status == "Mykrul_Aura" and not MCM.Get("att_mon") then
+		Ext.Timer.WaitFor(100, function()
+			Osi.RemoveStatus(target, "Mykrul_Aura")
+			Osi.ApplyStatus(target, "AER_WEAK_MYRKUL_AURA", -1.0, 1, target)
+		end)
+	end
+end)
+
+-- Orin's Ritual
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status, caster, storyId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if target == "S_GLO_Orin_bf24e0ec-a3a6-4905-bd2d-45dc8edf8101" then
+		if status == "DEATHSHEAD_UNSTOPPABLE_12" or status == "LOW_ORIN_BHAALBUFF_HARDCORE" then
+			if PersistentVars.currentlyRandomizedEnemyTable["S_GLO_Orin_bf24e0ec-a3a6-4905-bd2d-45dc8edf8101"] then
+				Osi.ApplyStatus(PersistentVars.currentlyRandomizedEnemyTable["S_GLO_Orin_bf24e0ec-a3a6-4905-bd2d-45dc8edf8101"][1] , "DEATHSHEAD_UNSTOPPABLE_12", -1.0, 1, caster)
+			end
+		elseif status == "DEATHSHEAD_UNSTOPPABLE_7" then
+			if PersistentVars.currentlyRandomizedEnemyTable["S_GLO_Orin_bf24e0ec-a3a6-4905-bd2d-45dc8edf8101"] then
+				Osi.ApplyStatus(PersistentVars.currentlyRandomizedEnemyTable["S_GLO_Orin_bf24e0ec-a3a6-4905-bd2d-45dc8edf8101"][1] , "DEATHSHEAD_UNSTOPPABLE_7", -1.0, 1, caster)
 			end
 		end
 	end
@@ -1481,7 +1714,7 @@ Ext.Osiris.RegisterListener("CombatEnded", 1, "after", function(guid)
 			Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
 			Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 0, 0, 0, 0, 1)
 		else
-			if not key == "S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d" then
+			if key ~= "S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d" then
 				Ext.Timer.WaitFor(4000, function()
 					if Osi.IsInCombat(val[1]) == 0 and not (val[5] or map == C.Regions.Act2b) then
 						Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 1, 1)
@@ -1516,7 +1749,7 @@ Ext.Osiris.RegisterListener("LeftCombat", 2, "after", function(charId, combatId)
 				Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
 				Osi.TeleportToPosition(key, val[2], val[3], val[4], "", 0, 0, 0, 0, 1)
 			else
-				if not key == "S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d" then
+				if key ~= "S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d" then
 					Ext.Timer.WaitFor(4000, function()
 						if Osi.IsInCombat(val[1]) == 0 and not (val[5] or map == C.Regions.Act2b) then
 							Osi.TeleportToPosition(val[1], asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 1, 1)
@@ -1536,6 +1769,39 @@ Ext.Osiris.RegisterListener("LeftCombat", 2, "after", function(charId, combatId)
 	
 	if next(PersistentVars.currentCombatMembers) == nil and MCM.Get("gm_mode") then
 		Ext.Timer.WaitFor(4000, removeTurnHelperCheck)
+	end
+end)
+
+Ext.Osiris.RegisterListener("PROC_LevelLoadedOnce", 1, "before", function(levelId)
+	-- lowkey worried about performance when we start iterating at endgame
+	if levelId == C.Regions.Act1 or levelId == C.Regions.Act3 or levelId == C.Regions.Act3c then
+		PersistentVars.currentlyRandomizedEnemyTable = {}
+		PersistentVars.spawnedEnemyTable = {}
+		PersistentVars.currentCombatMembers = {}
+	elseif levelId == C.Regions.Act2 then
+		if PersistentVars.currentlyRandomizedEnemyTable["S_GOB_DrowCommander_25721313-0c15-4935-8176-9f134385451b"] then
+			PersistentVars.currentlyRandomizedEnemyTable["S_GOB_DrowCommander_25721313-0c15-4935-8176-9f134385451b"] = nil
+		end
+	end
+end)
+
+-- Marcus
+Ext.Osiris.RegisterListener("PROC_HAV_SetupFactionsSpyAlly", 0, "after", function()
+	for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
+		local keyFaction = Osi.GetFaction(key)
+		if keyFaction == "Act2_HAV_FlamingSpy_Ally_e3da5c3f-056c-4391-83c9-7a78b0703856" then
+			Osi.SetFaction(val[1], "Act2_HAV_FlamingSpy_Ally_e3da5c3f-056c-4391-83c9-7a78b0703856")
+		end
+	end
+end)
+
+-- Minthara
+Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "before", function(charId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if PersistentVars.currentlyRandomizedEnemyTable[charId] then
+		PersistentVars.currentlyRandomizedEnemyTable[charId] = nil
 	end
 end)
 
@@ -1597,6 +1863,10 @@ Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, o
 	if PersistentVars.randomizedItemTable[root_template] or PersistentVars.existingMappedItemTable[object_uuid] then
 		return	
 	end
+	
+	if Osi.IsCharacter(object) == 1 then
+		return
+	end
 
 	local potentialCharacter = Osi.GetOriginalOwner(object)
 	local dead = Osi.IsDead(owner)
@@ -1613,6 +1883,10 @@ Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, o
 			Osi.RequestDelete(object)
 			Osi.TemplateAddTo(newItem, owner, 1, 1)
 		end)
+		
+		if newItem == "9ff968d4-08ff-4da1-a288-959ac8d7abe1" then
+			Osi.SetFlag("END_IllithidOptions_State_ArrivedWithOrphicHammer_a350e277-55a7-4e03-9c14-db154b6c682e")
+		end
 	elseif potentialCharacter and (Osi.IsPlayer(potentialCharacter) == 1 or Osi.IsPartyMember(potentialCharacter, 1) == 1) then
 		return
 	else
@@ -1625,6 +1899,31 @@ Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, o
 		Ext.Timer.WaitFor(100, function()
 			Osi.RequestDelete(object)
 			Osi.TemplateAddTo(newItem, owner, 1, 1)
+		end)
+	end
+end)
+
+-- Orin's Netherstone
+Ext.Osiris.RegisterListener("AddedTo", 3, "after", function(objectId, receieverId, addType)
+	if not MCM.Get("randomize_loot") then
+		return
+	end
+	if objectId	==  "S_GLO_Orin_Bhaalist_Dagger_51c312d5-ce5e-4f8c-a5ad-edc2beced3e6" and Osi.IsPartyMember(receieverId, 1) == 1 then
+		Ext.Timer.WaitFor(800, function()
+			Osi.PROC_GEN_OrinsAbduction_GiveStone(receieverId)
+			if Osi.IsInInventoryOf(objectId, receieverId) == 1 then
+				if PersistentVars.randomizedItemTable["d90abf24-3c4e-4bbf-84aa-def05ca9962a"] then
+					Osi.RequestDelete(objectId)
+				else
+					PersistentVars.randomizedItemTable["d90abf24-3c4e-4bbf-84aa-def05ca9962a"] = true
+					local newItem = mappedUniqueItems["d90abf24-3c4e-4bbf-84aa-def05ca9962a"].RootTemplate
+					linkingItems[newItem .. "|" .. receieverId] = true
+					Ext.Timer.WaitFor(200, function()
+						Osi.RequestDelete(objectId)
+						Osi.TemplateAddTo(newItem, receieverId, 1, 1)
+					end)
+				end
+			end
 		end)
 	end
 end)

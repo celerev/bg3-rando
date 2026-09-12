@@ -4,6 +4,7 @@ local regexStarts = {
 	"^LOOT_Gold_A",
 	"^LOOT_GEM",
 	"^LOOT_GEN_Backpack",
+	"^LOOT_GEN_Coin_Mammon_A",
 	"^LOOT_GEN_Ore_Mithral_A",
 	"^DEC_GEN",
 	"^DEC_Dungeon_",
@@ -17,6 +18,7 @@ local regexStarts = {
 	"^LOOT_Dye",
 	"^S_SCL_SpidersLyre",
 	"^UNI_KEY",
+	"^UNI_LOW_DevilsFee_InfernalMarble",
 	"^LOOT_Ketheric_Infernal",
 	"^S_SHA_Infernal",
 	"^S_UND_InfernalPlate",
@@ -34,6 +36,12 @@ local regexStarts = {
 	"^S_GLO_KarlachHead",
 	"^S_UND_MyconidRevenge",
 	"^S_LOW_SerialKiller_DoppelgangerTargetList",
+	"^S_LOW_DevilsFee_CoinOfMammon",
+	"^S_LOW_DevilsFee_RitualPouch",
+	"^S_LOW_SerialKiller_DolorBag",
+	"^S_LOW_SerialKiller_Hand",
+	"^S_GLO_Orin_Bhaalist_Dagger_Netherstone",
+	"^S_GLO_GortashsHand",
 	"^S_GLO_DriderMoonlantern",
 	"^S_GLO_GithRadar",
 	"^S_SHA_NightSpear",
@@ -44,6 +52,7 @@ local regexStarts = {
 	"^S_HAG_Wand_SummonHusband",
 	"^UNI_HAG_Wand_SummonHusband",
 	"^S_HAV_AncientFist",
+	"^S_UNI_LOW_GuildRing",
 }
 
 local regexContains = {

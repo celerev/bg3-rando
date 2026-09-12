@@ -1,0 +1,17 @@
+new entry "Target_AER_Banishment"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Banishment"
+data "RequirementConditions" "not IsConcentrating()"
+
+new entry "Target_AER_Banishment5"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Banishment_5_AI"
+data "RequirementConditions" "not IsConcentrating()"
+
+new entry "Target_AER_Blindness_4"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Blindness_4_AI"
+data "Cooldown" "OncePerCombat"

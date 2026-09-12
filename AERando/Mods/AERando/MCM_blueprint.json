@@ -710,7 +710,7 @@
                 {
                     "SectionId": "randomization",
                     "SectionName": "Randomization Settings",
-					"SectionDescription": "Monster Tiers:\nTier 0 (Zero): The weakest monsters. Rats, spiderlings, weakened Imps.\nTier 1 (Low): Basic monsters from Act 1\nTier 2 (Mid): Level 2-4 Classed NPCs, monsters have tricks\nTier 3 (High): Midgame monsters, specialized NPCs like Anders\nTier 4 (Ultra): Advanced monsters like Gish'ra, Earlygame bosses\nTier 5 (Epic): Advanced NPCs and Midgame bosses\nTier 6 (Legendary): Endgame boss NPCs and exceptionally powerful monsters.\nTier 7 (Mythical): Ansur, Netherbrain, and beings comparable to the strongest in the vanilla game\nTier 8 (Divine): Demigods, Tarrasque, creatures adapted from tabletop D&D5e beyond the experience of vanilla BG3\nTier 9 (Avatar): Challenge Rating 30 avatars of true deities, the upper ceiling of D&D5e material.",
+					"SectionDescription": "Monster Tiers:\nTier 0 (Zero): The weakest monsters. Rats, spiderlings, weakened Imps.\nTier 1 (Low): Basic monsters from Act 1\nTier 2 (Mid): Level 2-4 Classed NPCs, monsters have tricks\nTier 3 (High): Midgame monsters, specialized NPCs like Anders\nTier 4 (Ultra): Advanced monsters like Gish'ra, Earlygame bosses\nTier 5 (Epic): Advanced NPCs and Midgame bosses\nTier 6 (Legendary): Endgame boss NPCs and exceptionally powerful monsters.\nTier 7 (Mythical): Ansur, Netherbrain, and beings comparable to the strongest in the vanilla game\nTier 8 (Divine): Demigods, Tarrasque, creatures adapted from tabletop D&D5e beyond the experience of vanilla BG3\nTier 9 (Avatar): Challenge Rating 30 avatars of true deities, the upper ceiling of D&D5e material.\n\nBoosts are added to the original Tier value of the mob, i.e. a Tier 2 NPC who gets Boost 2 will be treated as a Tier 4 NPC when randomized.\nIf set with a Randomization Ceiling of 1 and a Randomization Floor of 0, this example NPC could be randomized into either a Tier 4 or Tier 5 enemy.",
                     "Settings": [
                         {
                             "Id": "chaos_mode",
@@ -878,7 +878,7 @@
                             "Id": "common_weight",
                             "Name": "Common Loot Weight",
                             "Type": "slider_int",
-                            "Default": 271,
+                            "Default": 268,
                             "Description": "Relative Weight of Common loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
@@ -903,7 +903,7 @@
                             "Id": "uncommon_weight",
                             "Name": "Uncommon Loot Weight",
                             "Type": "slider_int",
-                            "Default": 32,
+                            "Default": 36,
                             "Description": "Relative Weight of Uncommon loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
@@ -928,7 +928,7 @@
                             "Id": "rare_weight",
                             "Name": "Rare Loot Weight",
                             "Type": "slider_int",
-                            "Default": 16,
+                            "Default": 18,
                             "Description": "Relative Weight of Rare loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
@@ -953,7 +953,7 @@
                             "Id": "veryrare_weight",
                             "Name": "Very Rare Loot Weight",
                             "Type": "slider_int",
-                            "Default": 4,
+                            "Default": 6,
                             "Description": "Relative Weight of Very Rare loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
@@ -978,7 +978,7 @@
                             "Id": "legendary_weight",
                             "Name": "Legendary Loot Weight",
                             "Type": "slider_int",
-                            "Default": 1,
+                            "Default": 2,
                             "Description": "Relative Weight of Legendary loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
