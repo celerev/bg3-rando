@@ -1,7 +1,7 @@
 return {
 	{
 		Name = "AER_LOW_KurwinCoffin_Kobolds_Melee",
-		TemplateId = "d743f1ac-0934-4bf1-88a8-56aeb062ca2d",
+		TemplateId = "a5b80e84-50ec-4d8e-99f9-f42554c57b0c",
 		Tier = "mid",
 	},
 	{
@@ -26,7 +26,7 @@ return {
 	},
 	{
 		Name = "AER_Zombie_A",
-		TemplateId = "582034b4-14b5-4472-8425-469b84393bf3",
+		TemplateId = "7390484f-50e3-4d8b-852a-e6eb269cd7fd",
 		Tier = "low",
 	},
 	{
@@ -46,17 +46,17 @@ return {
 	},
 	{
 		Name = "AER_S_DEN_BackupLeader",
-		TemplateId = "30d4c77b-2868-4574-bc15-875dc5df2f46",
+		TemplateId = "b1722ec1-3466-45b1-9266-729993e52984",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_DEN_Tiefling_008",
-		TemplateId = "8c8a79d7-7299-4538-b2bb-2ff5bc4f2da9",
+		TemplateId = "2f84211c-98c2-4d13-954b-9ff233609c3a",
 		Tier = "low",
 	},
 	{
 		Name = "AER_S_DEN_Tiefling_011",
-		TemplateId = "2691692c-8ded-41ea-ab75-a71737ff4c89",
+		TemplateId = "73ee95f5-2536-4fbe-92f9-a7496e93d827",
 		Tier = "low",
 	},
 	{
@@ -86,27 +86,27 @@ return {
 	},
 	{
 		Name = "AER_Regular_Rat",
-		TemplateId = "47c8d717-ac85-4d30-9c76-b942ae588aef",
+		TemplateId = "c406ef45-840c-4ec4-802f-6dca3fab5353",
 		Tier = "zero",
 	},
 	{
 		Name = "AER_Vampire_Rat",
-		TemplateId = "47bf3b23-20b9-4f95-8e67-fbdd6ef2ecba",
+		TemplateId = "f60a3176-7e64-4296-b8b8-453fb9f8fb55",
 		Tier = "zero",
 	},
 	{
 		Name = "AER_Cranium_Rat",
-		TemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		TemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 		Tier = "zero",
 	},
 	{
 		Name = "AER_Necro_Rat",
-		TemplateId = "03676e51-2c60-412a-8944-476557a3a5bb",
+		TemplateId = "1dce1ebf-36d0-461e-9dd9-9a11343222e2",
 		Tier = "zero",
 	},
 	{
 		Name = "AER_Sleep_Rat",
-		TemplateId = "162b7dc9-d4be-4e6e-970a-3c597498cbc3",
+		TemplateId = "9f7d1ab4-108a-416d-a0b4-bdd6441ee69a",
 		Tier = "zero",
 	},
 	{
@@ -136,7 +136,7 @@ return {
 	},
 	{
 		Name = "AER_Githyanki_Female_Gishra_Melee",
-		TemplateId = "4c6748c9-e362-46d7-9ba1-1461be83cbf8",
+		TemplateId = "9187c87d-0ff9-4ac3-9815-de52b308dd3a",
 		Tier = "ultra",
 	},
 	{
@@ -171,17 +171,17 @@ return {
 	},
 	{
 		Name = "AER_LOW_OskarsBeloved_Nurse",
-		TemplateId = "741be379-40f0-42b2-8b7c-da0915add8dd",
+		TemplateId = "a151ae86-0cbd-431a-a4fc-8b04481177b4",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_UND_HookHorror_Hermit",
-		TemplateId = "0aabce7e-8c44-4fef-a3f1-5020fdc09399",
+		TemplateId = "6289821f-72b1-4698-90ac-e3aa7cc7451b",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_HookHorror_A",
-		TemplateId = "f3b6500b-0053-47c0-b062-4b67228ec34a",
+		TemplateId = "d9e7fe76-4758-4ca7-b3a0-de93b8aa0b05",
 		Tier = "high",
 	},
 	{
@@ -201,22 +201,22 @@ return {
 	},
 	{
 		Name = "AER_Dwarves_Male_Hill_FlamingFist_Melee_Attacker",
-		TemplateId = "67cdfec3-0c6f-4533-bdf3-ef252b5142b9",
+		TemplateId = "3d919302-6154-450f-a71c-6b78095c18c6",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Humans_Female_FlamingFist_Ranger_B",
-		TemplateId = "37664a06-f53f-4458-a613-4776d0fb031a",
+		TemplateId = "e096704f-c7f6-453b-8325-3501bd714314",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Shadow_Wraith_A",
-		TemplateId = "9a5d6e4f-707e-4091-831c-8dc819550805",
+		TemplateId = "806a5da1-643c-49ca-88e5-c8d2332c9ce9",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Undead_Skeleton_Blood",
-		TemplateId = "95048801-bbad-429d-bf84-4ecb9e4b0d29",
+		TemplateId = "6a1ee278-3030-4c6c-98e7-07aaf9012eff",
 		Tier = "mid",
 	},
 	{
@@ -226,17 +226,17 @@ return {
 	},
 	{
 		Name = "AER_GreaterZombie_A",
-		TemplateId = "94ed34fb-1e19-41dc-9c21-171967da9d3c",
+		TemplateId = "bedac391-f32e-4763-88a9-58b66078aa05",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Intellect_Devourer",
-		TemplateId = "79a71c7c-5381-45fd-abe5-fc22f4667c3e",
+		TemplateId = "4f8b3999-40f1-4c21-876e-98f9a712a7f9",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Elemental_Water_ConjureElemental",
-		TemplateId = "046e20d0-8775-40d5-a19b-a64d684d1f3c",
+		TemplateId = "2e4f7cee-141c-4e04-b9bd-f32136739ec7",
 		Tier = "high",
 	},
 	{
@@ -246,12 +246,12 @@ return {
 	},
 	{
 		Name = "AER_FOR_PhaseSpider_Spawn",
-		TemplateId = "c1477e50-0395-4794-bc71-2fd5a4dffeb3",
+		TemplateId = "4375c02d-94a4-4a5e-baef-51c089d62113",
 		Tier = "zero",
 	},
 	{
 		Name = "AER_Dwarves_Female_Hill_FlamingFist_Cleric",
-		TemplateId = "374535ec-df6a-49f0-8212-9e42dc6fa112",
+		TemplateId = "c9e81fe5-aede-422b-83df-a27791507c00",
 		Tier = "ultra",
 	},
 	{
@@ -266,27 +266,27 @@ return {
 	},
 	{
 		Name = "AER_Imp_Raphael",
-		TemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		TemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Myrmidon_Air",
-		TemplateId = "bd08bf83-7d6d-4953-875f-a14b37dfc6a6",
+		TemplateId = "88cd78f7-cb5d-4f25-9cd8-351cd8025a49",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Hyena_A_Black",
-		TemplateId = "e2a53f2c-2e2b-4fa2-a9b2-cee2c5e0578c",
+		TemplateId = "12033bae-60eb-4c9b-b0c5-c8df32b580c7",
 		Tier = "zero",
 	},
 	{
 	 	Name = "AER_LOW_OskarsBeloved_KerriSpirit",
-	 	TemplateId = "165534e4-433f-4757-9795-817c1ce38f0a",
+	 	TemplateId = "25fde287-dfb5-4768-9fb6-6db40d66f6cf",
 	 	Tier = "legendary",
 	 },
 	{
 		Name = "AER_BIRD_BlueJay",
-		TemplateId = "7249b7f2-5d91-4bd3-9b45-04195ce3a69f",
+		TemplateId = "1133a496-53e5-42b0-ba9d-2eb938f8e8a4",
 		Tier = "zero",
 	},
 	{
@@ -296,17 +296,17 @@ return {
 	},
 	{
 		Name = "AER_Humans_Female_Cultist_Bane_BlackGauntlet",
-		TemplateId = "ba92fd55-cb2e-4969-9fc8-284afe9458bc",
+		TemplateId = "1384ba2b-14f4-4f42-91d4-928c88229c7f",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_LOW_BasiliskGate_WolfCompanion_Summon_Final",
-		TemplateId = "91c18a76-bae6-4431-a7f4-c056252715dd",
+		TemplateId = "b1746c2c-b108-46d8-856d-70c432ad5762",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Goblins_Female_Ranger",
-		TemplateId = "19dd77de-5643-455c-80c0-c0b981259e66",
+		TemplateId = "0c0a78cb-4b4c-46c6-b15c-9454b722ce36",
 		Tier = "low",
 	},
 	{
@@ -316,12 +316,12 @@ return {
 	},
 	{
 		Name = "AER_DeathKnight",
-		TemplateId = "37125077-5065-4616-b570-537bdea88d23",
+		TemplateId = "7b748553-3598-4219-95a8-f8dd2f34c400",
 		Tier = "legendary",
 	},
 	{
 		Name = "AER_Githyanki_Female_Raider",
-		TemplateId = "2e706cbe-c2a8-4218-bf29-2f66c89aaf06",
+		TemplateId = "850df9d6-36c4-43b5-a3f3-f2ddb19cccc9",
 		Tier = "high",
 	},
 	{
@@ -331,27 +331,27 @@ return {
 	},
 	{
 		Name = "AER_Undead_Skeleton_Necromite",
-		TemplateId = "f361890f-135e-4d33-a100-5c144ece65b9",
+		TemplateId = "01ce8aa2-b411-499f-8bb2-a78dcae86214",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_SteelWatcher_Biped_A_Ranged",
-		TemplateId = "00a9c1d8-302f-452b-b444-bcffe3f6098b",
+		TemplateId = "50ebc999-6dbd-4bc6-908c-7d1d15c0eb2d",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Githyanki_Female_Gish_Strong",
-		TemplateId = "efe33532-dfc1-407b-8948-2ca89cbfc405",
+		TemplateId = "b59db692-5efc-4c1a-8eaf-fe61c4ee32da",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Sharran_Cultist_Human_Male_A",
-		TemplateId = "8e36ff7f-c13a-457c-8d6b-37851f5c3534",
+		TemplateId = "b4b1715a-fe27-40ea-9dad-fa923fd12fc2",
 		Tier = "high",
 	},
 	{
 		Name = "AER_WYR_Wyrmsway_Skeleton_Ranged",
-		TemplateId = "fd422aa6-6f22-4f82-8a2b-1a2beaea2562",
+		TemplateId = "be6a1436-ab87-4ac5-93e3-faf2f1babf04",
 		Tier = "mid",
 	},
 	{
@@ -366,7 +366,7 @@ return {
 	},
 	{
 		Name = "AER_S_PLA_ZhentDungeon_Zhent06",
-		TemplateId = "dfa33375-f51d-49ec-bd1f-722677be93d5",
+		TemplateId = "5fd39d0a-b354-47f4-b2d8-c45ca9a9de25",
 		Tier = "mid",
 	},
 	{
@@ -416,27 +416,27 @@ return {
 	},
 	{
 		Name = "AER_Dolor",
-		TemplateId = "f3b04992-f073-449b-9191-0c059747adee",
+		TemplateId = "808a8057-be52-4788-95fd-dc402a3ca6d3",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Tieflings_Male_Mephistopheles_Cultist_Bhaal_DeathsHead",
-		TemplateId = "d7fb5d3c-fd6e-49d4-a0fd-122f81ae324d",
+		TemplateId = "37a2d6ff-3447-4d1e-a32f-52716b0b995f",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Shadow_A_Summon",
-		TemplateId = "3a9a0e80-8da4-49b1-91f4-a90c4fbec84a",
+		TemplateId = "df69ffb1-c0b8-408c-b58d-785f59bbab4c",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Githyanki_Male_Warrior",
-		TemplateId = "ac7e71a0-fee4-4e35-adaa-d509a8dfbcb9",
+		TemplateId = "7a9357c6-d9fc-4756-b51d-fa4bb96b5a5e",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Redcap_Pirate_Melee",
-		TemplateId = "0fe83837-ee44-468c-aace-3f74830329a8",
+		TemplateId = "a3b5d4fd-6cbb-475c-a09a-b04908cf3ef2",
 		Tier = "high",
 	},
 	{
@@ -451,17 +451,17 @@ return {
 	},
 	{
 		Name = "AER_Dwarves_Male_Hill_FlamingFist_Cleric",
-		TemplateId = "07e193b9-e9b2-4328-8427-e09d8389c9cc",
+		TemplateId = "a99abf9b-94bf-4cc4-b068-5d7e27aa7bdb",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_HagSurvivors_Adrielle",
-		TemplateId = "e90113f1-3123-4691-83e5-31cd57a4b4e2",
+		TemplateId = "a62b9856-c198-47fe-9608-72e709728018",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Myrmidon_Water",
-		TemplateId = "dbe13a26-b5fa-4d81-8cac-1615e8835cb1",
+		TemplateId = "d24a8458-db13-46c2-bdce-0122c641f4b6",
 		Tier = "ultra",
 	},
 	{
@@ -471,7 +471,7 @@ return {
 	},
 	{
 		Name = "AER_Humans_Male_FlamingFist_Melee_Attacker",
-		TemplateId = "04556132-60a8-4de5-8115-675c0053d897",
+		TemplateId = "25373f61-7459-4396-bf43-ffe45ee8fd3c",
 		Tier = "high",
 	},
 	{
@@ -486,12 +486,12 @@ return {
 	},
 	{
 		Name = "AER_Dwarves_Male_Cultist_Bane_BlackGauntlet",
-		TemplateId = "e008d8eb-ccf9-44bd-b4cb-e55dfc6e9ee2",
+		TemplateId = "4013f036-1f32-4d7c-9b76-779269542de8",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Elemental_Earth_ConjureElemental",
-		TemplateId = "d7d00e85-41d7-43b8-927b-47cd536a4fdb",
+		TemplateId = "67ee64d8-a81e-4fcb-a7c1-c6a5f67625c0",
 		Tier = "high",
 	},
 	{
@@ -506,47 +506,47 @@ return {
 	},
 	{
 		Name = "AER_S_WYR_SmugglersCave_StoneLord_Leader",
-		TemplateId = "436a4023-ccb6-4e6c-91be-694674f68db4",
+		TemplateId = "3eeb9c42-0bd9-4586-8035-45b08202f14f",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_WYR_SmugglersCave_Guild_Leader",
-		TemplateId = "87ecdf17-9704-4d33-9852-4380b96933de",
+		TemplateId = "4d03bf17-c7e1-41ff-a1dd-dbb5e49291fb",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_WYR_MerchantsHouse_Thug_001",
-		TemplateId = "9a5cac1e-a448-4c35-9f20-e7c409b83164",
+		TemplateId = "0f921e8d-2323-49fc-b235-78bd1190e17e",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_WYR_SmugglersCave_Guild_Ranger_01",
-		TemplateId = "5d559523-f31d-4080-8555-51b102c88b1b",
+		TemplateId = "257c6c95-4aa1-4168-9138-02b6b372e108",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_LOW_CazadorsPalace_GuardTower_Guard_001",
-		TemplateId = "6e565618-319e-4030-b18b-3fb5fbabedb5",
+		TemplateId = "a7801c0c-8165-4d62-a614-98030799701a",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_LOW_CazadorsPalace_GuardTower_Guard_002",
-		TemplateId = "3669238d-444c-4f6c-94a6-8a231eae596a",
+		TemplateId = "108d3c7e-8933-4df8-8124-2e8d938e2bf1",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_LOW_CazadorsPalace_GuardTower_Guard_003",
-		TemplateId = "ac1453a9-541e-40ef-b6f0-0d8b75f5225e",
+		TemplateId = "edb927de-cde0-4470-9aa0-14d2da619454",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Humans_Male_Cultist_Bane_Fist",
-		TemplateId = "eb647b05-477b-4c68-92b8-be875b656319",
+		TemplateId = "53ec86b8-8c04-4cf8-92f6-398a46c293cc",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Undead_Mummy_CreateUndead",
-		TemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		TemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 		Tier = "high",
 	},
 	{
@@ -561,12 +561,12 @@ return {
 	},
 	{
 		Name = "AER_LOW_DevilsFee_Boar",
-		TemplateId = "6b280049-558c-473f-8506-1f1444e95c86",
+		TemplateId = "f4722cc6-ab5b-46a8-83a2-250fa5f93d0c",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Deva_Male_CursedTome",
-		TemplateId = "ac1795fc-cd91-472f-992c-9ff277de532c",
+		TemplateId = "2d89348f-86b5-4d4f-aa2f-2e343123d748",
 		Tier = "ultra",
 	},
 	{
@@ -576,7 +576,7 @@ return {
 	},
 	{
 		Name = "AER_Dwarves_Male_Hill_FlamingFist_Melee_Defender",
-		TemplateId = "5c38bdf9-e8a9-4a47-965d-2fe56c30d24b",
+		TemplateId = "7e126d20-da97-4f0d-8c60-992432975dbc",
 		Tier = "high",
 	},
 	{
@@ -591,32 +591,32 @@ return {
 	},
 	{
 		Name = "AER_WoodWoad_Dryad_ConjureWoodlandBeings",
-		TemplateId = "cd9d7499-adcb-440b-b05f-7f6141862645",
+		TemplateId = "dac35e3f-88fd-420b-b5f5-6e9711ecb617",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_UNI_TWN_LiftingTheCurse_MomShadow",
-		TemplateId = "2ce33bbe-e6f2-4219-a6b4-d53829707a16",
+		TemplateId = "bcbfc9b4-a52d-4ccd-a702-6c36f75e2660",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_SteelWatcher_Biped_B",
-		TemplateId = "3fde5190-6901-43ff-8740-1c1f1b445ed0",
+		TemplateId = "e5a8a620-9659-49d3-886c-62c20c7c542d",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_SteelWatcher_Quadruped_A",
-		TemplateId = "011210c0-744d-413f-beaf-a0d31d9fcf99",
+		TemplateId = "bd30ce9d-d759-407c-bf1b-dab540057c2e",
 		Tier = "legendary",
 	},
 	{
 		Name = "AER_VINE_Tentacle_Dark_A",
-		TemplateId = "581bf35c-e495-473b-9d56-512abdf6756c",
+		TemplateId = "8365dab5-0fb3-4e5b-acd6-b8c0dbe2a99f",
 		Tier = "low",
 	},
 	{
 		Name = "AER_Githyanki_Female_GateMaster",
-		TemplateId = "b220aa01-8eed-4752-b839-264b02941985",
+		TemplateId = "8133e7cc-0c76-4319-a308-f6941b515029",
 		Tier = "ultra",
 	},
 	{
@@ -626,47 +626,47 @@ return {
 	},
 	{
 		Name = "AER_Undead_Skeleton_Giant_Myrkul",
-		TemplateId = "40b04927-50fe-44c1-84a8-c3ad847f6d78",
+		TemplateId = "df4b6333-baa3-4dee-9b51-88fee5a55a3c",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_LOW_CazadorsPalace_Kennel_Skeleton",
-		TemplateId = "89ffd0db-d0fe-47ba-8f2b-0e8c64b30804",
+		TemplateId = "9fb78ac2-0b16-40c4-8db2-232ae60d6ddb",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Elemental_Air_ConjureElemental",
-		TemplateId = "ef0578b5-ac1e-460f-9dd2-a1d455a9e36d",
+		TemplateId = "b844404b-1b47-4c1a-ab43-802aac712d70",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Shadow_A",
-		TemplateId = "db37013f-eddc-4a77-a754-78498cb3853c",
+		TemplateId = "b4ada9b0-eaaa-4876-a991-e25165180b9a",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Mindflayer",
-		TemplateId = "1667ae07-e4ca-44d4-8d82-5e2f26e08aeb",
+		TemplateId = "42f0395a-109e-4a73-9cf0-827abba210b1",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_UND_Omeluum",
-		TemplateId = "ba576a2a-90f7-45ab-8265-7fb11f58fa6c",
+		TemplateId = "fa5fb914-75b8-4676-aaee-efc68304e436",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_Waveservant04",
-		TemplateId = "60088c81-5e06-44f7-9449-e580ae3453a6",
+		TemplateId = "79011108-1e1e-4dd8-bd17-e4a5f4363006",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_LOW_ChattyWaveservant",
-		TemplateId = "0f30ed41-c795-48b9-9fdb-590cf8f97a08",
+		TemplateId = "95c49653-9df8-41b3-a7db-4c89a428d31c",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_LOW_Waveservant03",
-		TemplateId = "5c8abafb-61da-4851-99b8-2c584ef495f0",
+		TemplateId = "63e85185-b0a5-496c-b9af-2f3bcf94deff",
 		Tier = "high",
 	},
 	{
@@ -676,82 +676,82 @@ return {
 	},
 	{
 		Name = "AER_S_WYR_Circus_Ringmaster",
-		TemplateId = "3cdd682c-f1a0-471f-a823-635e3388a6e6",
+		TemplateId = "f213880e-48cf-4201-a040-d05de0ccb9f2",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Humans_Female_CountingHouseGuard_Melee",
-		TemplateId = "749a88a1-5e26-4ddd-bd2b-650000148230",
+		TemplateId = "9eb43d24-7a3c-443d-8371-4f3d88ab21a0",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Deva_Male_PlanarAlly_Banite",
-		TemplateId = "5c4de267-050b-4d4e-8ad0-1b7602d4b8a6",
+		TemplateId = "013cff16-2ebb-4e65-b186-6332beffc690",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_LOW_Cemetery_Kobolds_Inventor",
-		TemplateId = "6bbdc782-e8e6-4bc4-a713-62fd1c3c7e22",
+		TemplateId = "509eda4c-b6a8-4c84-8864-62c6d439adf3",
 		Tier = "low",
 	},
 	{
 		Name = "AER_Goblins_Female_Warlock",
-		TemplateId = "c3c62c25-310e-4126-9614-7f468acc1a28",
+		TemplateId = "fff04f92-b9bb-410d-8bee-6a4c5db7dd88",
 		Tier = "low",
 	},
 	{
 		Name = "AER_HagFrog",
-		TemplateId = "522d7ca8-4abd-4fa0-a949-b54f1df9a6d6",
+		TemplateId = "151f861f-2e17-4c89-9041-e6375b0bcb21",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Olodan",
-		TemplateId = "75f8e959-3697-45e5-9ef6-55a937d231dc",
+		TemplateId = "3171a03d-4aa8-449e-9276-fd87ee753d32",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Pinta",
-		TemplateId = "d7b8b903-799c-4d39-b10b-655a6e621540",
+		TemplateId = "56f496fe-4857-4951-87be-5edca8b03ee1",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Wren",
-		TemplateId = "b3d5439b-7604-462c-9d69-1a5d9fc16453",
+		TemplateId = "e3e1f92a-c6b8-4f15-afee-ba16e611a8d5",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Gekh",
-		TemplateId = "31d56e04-71e8-4456-a45c-d3e35ff25248",
+		TemplateId = "bd2471f0-6060-42a0-ac9d-0a5dfbadee99",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Lurgan",
-		TemplateId = "93509c77-1fca-4758-9a39-4d9781418cd3",
+		TemplateId = "551efd8b-276b-40e1-92d3-036ccf024c3b",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Holvik",
-		TemplateId = "371bb362-a802-4782-b5e2-bca814af0fb9",
+		TemplateId = "daa7ec10-77f0-4f46-9b45-168756b62322",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Garmor",
-		TemplateId = "1040c374-ffde-4249-9524-ff65ccaa4692",
+		TemplateId = "4517d813-cad6-4827-a149-17af26b4117e",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Undead_DarkJusticiar_Melee_Scimitar_DW_Summon",
-		TemplateId = "b362e794-fb2a-4dd6-97c9-8b253a62e436",
+		TemplateId = "1f9571d6-8fe9-4a85-ac13-3c1626d5c0d6",
 		Tier = "high",
 	},
 	{
 		Name = "AER_LOW_HouseOfHope_Cambion_Male_Hellfire",
-		TemplateId = "8b0951b3-e77c-44ce-831b-3a85b6f51c85",
+		TemplateId = "c95c4add-a5ab-4062-917f-7cae6406b4b2",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Humans_Male_FlamingFist_Ranger_B",
-		TemplateId = "0624d186-08fa-4fbf-8c66-e59e5c77de48",
+		TemplateId = "a7ea0560-7e4c-4864-91a2-b8cb30d517a7",
 		Tier = "high",
 	},
 	{
@@ -781,12 +781,12 @@ return {
 	},
 	{
 		Name = "AER_S_WYR_GurCamp_Hunter_002",
-		TemplateId = "084ab9bf-10a6-499a-b1f5-418458c4e743",
+		TemplateId = "d8b4881f-ef65-49fd-925f-8cd67b4edf62",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_WYR_GurCamp_Hunter_003",
-		TemplateId = "03b1690c-0e1e-4ea2-a262-7424893592a8",
+		TemplateId = "029fd391-e9ba-440d-86c3-88d2e259b299",
 		Tier = "high",
 	},
 	{
@@ -796,27 +796,27 @@ return {
 	},
 	{
 		Name = "AER_S_LOW_CazadorsPalace_RitualRoom_Ritualist_01",
-		TemplateId = "938c2a7d-f6ff-4463-9fad-37bc055559f8",
+		TemplateId = "f301181c-4b8b-4a4f-8ad4-4fa8646f1cb8",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_GOB_Warlock",
-		TemplateId = "99849ed9-e8ae-4bce-852c-b980f826aeec",
+		TemplateId = "c746bd20-739c-4fdb-8277-cc6f6617b1b9",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Redcap_Caster_A",
-		TemplateId = "0a5f2e95-f372-4a1f-b409-f17fb24c37ba",
+		TemplateId = "666eac3e-f6c6-4455-8211-4b7031209002",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Bugbears_Male_Civil",
-		TemplateId = "547f11e9-db80-4476-9fe4-e10c5867773b",
+		TemplateId = "e0698e8b-845f-4754-8d44-648481ce2077",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Hyena_A",
-		TemplateId = "2058acef-d9af-4f47-8b89-266e1b0e6b8d",
+		TemplateId = "74f8a905-847d-47c0-93b6-6aa70381f4c8",
 		Tier = "zero",
 	},
 	{
@@ -826,17 +826,17 @@ return {
 	},
 	{
 		Name = "AER_Undead_DarkJusticiar_Melee",
-		TemplateId = "ea3860ad-a859-4ff7-9609-79b1551aeb4f",
+		TemplateId = "b1b654b7-2e21-4294-982d-8b191860a35d",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Dwarves_Female_Hill_FlamingFist_Melee_Defender",
-		TemplateId = "da285291-1a57-4bc2-be08-e58100d9ea66",
+		TemplateId = "634ca009-53ef-4d5f-92b5-98921c86c132",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Ogres_Female_A_NotMessingAround",
-		TemplateId = "52abf690-4823-46ff-b499-36a6436434e1",
+		TemplateId = "7a17066f-d937-44e6-808d-2b52a2d1313a",
 		Tier = "high",
 	},
 	{
@@ -846,7 +846,7 @@ return {
 	},
 	{
 		Name = "AER_Githyanki_Female_Raider_Strong",
-		TemplateId = "9aad468e-7131-438b-98c0-6e3e8aa99cc3",
+		TemplateId = "fe244844-6446-4fde-bb2e-064d68f1e436",
 		Tier = "ultra",
 	},
 	{
@@ -856,17 +856,17 @@ return {
 	},
 	{
 		Name = "AER_LOW_DevilsFee_Imp_Ranged",
-		TemplateId = "cbc6e851-19b9-480c-8184-b3ef468c99b1",
+		TemplateId = "b5a8edc6-cb23-4f12-833a-7b2cb1a0b7a4",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Goblins_Female_Melee_Tier2",
-		TemplateId = "369d8792-c70f-440f-8675-c3517a4d1b92",
+		TemplateId = "ff66acba-ece0-4479-9e07-004e9a80a3db",
 		Tier = "low",
 	},
 	{
 		Name = "AER_Goblins_Female_Guard_Melee_Tier2",
-		TemplateId = "7bda280e-9f58-4f30-a65d-e7a58b57cb9f",
+		TemplateId = "7864bc0a-dde3-4c55-b5aa-e71f45129ab5",
 		Tier = "mid",
 	},
 	{
@@ -881,12 +881,12 @@ return {
 	},
 	{
 		Name = "AER_LOW_OskarsBeloved_Mummy",
-		TemplateId = "2336e3fa-e28d-4f0d-8045-dc89a7080161",
+		TemplateId = "aa4d54a5-6869-40d6-8e4d-a7dd07c28f87",
 		Tier = "high",
 	},
 	{
 		Name = "AER_OX_A",
-		TemplateId = "1cdbd013-e977-4f8c-864c-630356da0772",
+		TemplateId = "72c68140-1ff3-434f-9202-685467355d40",
 		Tier = "zero",
 	},
 	{
@@ -906,52 +906,52 @@ return {
 	},
 	{
 		Name = "AER_Sharran_Cultist_Elf_Female_A",
-		TemplateId = "7ab7aa67-d7c8-4366-aa53-26b65da04482",
+		TemplateId = "150a4db7-77a1-4db6-8d71-7245740afab2",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Dwarves_Female_Hill_Cultist_Bhaal_Reaper",
-		TemplateId = "8140a8e9-d3ed-40cb-9d28-73008b209108",
+		TemplateId = "6f0d3bde-a94f-4d32-8e07-4f103c3323ec",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Humans_Female_FlamingFist_Cleric",
-		TemplateId = "b6033940-18c9-4bdc-bfe1-4f90f13402d2",
+		TemplateId = "9156e720-2bae-4d7b-8c6e-4e24f33ee152",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Githyanki_Male_Gish",
-		TemplateId = "a1e235d1-7a95-40c0-b2a4-823397a61057",
+		TemplateId = "1c9e6312-5740-4ca6-8843-6a4f57656d01",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_CRE_Caretaker",
-		TemplateId = "980f48ef-dfd0-48cc-8a24-a989b4b31df5",
+		TemplateId = "0d73a366-8e86-4a69-a410-7c03f93dd13d",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_CRE_Teacher",
-		TemplateId = "30ace4d8-ece8-4e00-98c5-5eedc47b6e84",
+		TemplateId = "7dfce056-d3d3-4a50-8832-86230c3a4465",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Boar_Raphael_BossFight",
-		TemplateId = "7d4089b2-62d0-4852-95c0-fa99921daa19",
+		TemplateId = "3a89ca29-856d-48b6-a9b6-81d09d808175",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Humans_Male_Cultist_Bhaal_NightBlade",
-		TemplateId = "ff851e85-4992-4ef8-8dd3-2b07be8f34dd",
+		TemplateId = "320d3b0b-65b0-4251-a465-f2e88afa6e4f",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Humans_Female_Cultist_Bhaal_Reaper",
-		TemplateId = "2eb03c5d-3bd7-4156-a14c-eb5b0743d627",
+		TemplateId = "d3002b6f-b829-4e47-bfa0-c6948b691690",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Tieflings_Female_Mephistopheles_Cultist_Bhaal_Reaper",
-		TemplateId = "b82ab26d-b6fe-46df-b354-ad8e63407fa4",
+		TemplateId = "a9b91053-0fb8-416a-8f28-0150ffd9f234",
 		Tier = "high",
 	},
 	{
@@ -961,22 +961,22 @@ return {
 	},
 	{
 		Name = "AER_Elemental_Fire_ConjureElemental",
-		TemplateId = "3084e5b8-e5a8-4b5a-bfbc-6603bff52176",
+		TemplateId = "17cbacfc-5f62-4741-be72-da57009cf583",
 		Tier = "high",
 	},
 	{
 		Name = "AER_LOW_AbandonedCistern_Doppelganger_Cultist_Bhaal_Reaper_01",
-		TemplateId = "d97aee1c-79fb-4dbd-a6df-4f154c903cea",
+		TemplateId = "217a82f5-94cd-4ff4-8877-19613323677d",
 		Tier = "high",
 	},
 	{
 		Name = "AER_TWN_VlaakithAttack_VlaakithForm",
-		TemplateId = "23059ca9-414d-42f1-bd2c-be14b36adaf6",
+		TemplateId = "0fdccd11-9a54-4b30-b1f4-0a4bf418d773",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Boar_Devil",
-		TemplateId = "a93759f7-7413-40e4-ad53-be2c99052cb7",
+		TemplateId = "95f3d20c-919b-4568-8a93-487009ff0db5",
 		Tier = "mid",
 	},
 	{
@@ -991,32 +991,32 @@ return {
 	},
 	{
 		Name = "AER_SteelWatcher_Biped_C",
-		TemplateId = "34dbd9ad-95ee-482d-8fe8-e5ff1358e1e7",
+		TemplateId = "dfe1cc25-c53b-4d98-af95-4795a91e5c21",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Githyanki_Female_Warrior_Strong",
-		TemplateId = "85de6d4c-ce26-43dc-9c60-e2d10f3047db",
+		TemplateId = "8a17617b-0499-49c3-944b-a3cab205c519",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Undead_DarkJusticiar_Ranger_Summon",
-		TemplateId = "c61dd73f-1dea-4bc3-8b7c-adc9106869db",
+		TemplateId = "a6424ee0-18ba-4b82-a8cc-3e4123c2a5d3",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Redcap_Pirate_Caster",
-		TemplateId = "4d71b61c-595a-4309-b6f4-e8a510e7ba31",
+		TemplateId = "783e5390-5912-4a1c-85c8-f007708ac3a8",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Githyanki_Female_Warrior",
-		TemplateId = "9b6d4500-8998-45c1-9cdf-f26cf47eac8b",
+		TemplateId = "0b9b63f3-ed08-4a23-8a01-476218064176",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Humans_Female_FlamingFist_Melee_Defender",
-		TemplateId = "f6529fc3-5583-434f-b108-cf56e84b06ae",
+		TemplateId = "9b74b837-e9f6-43b5-b56e-b7eff5ed0c22",
 		Tier = "high",
 	},
 	{
@@ -1026,72 +1026,72 @@ return {
 	},
 	{
 		Name = "AER_Goblins_Male_Melee",
-		TemplateId = "d7ee76e7-89da-46bc-a886-95d7e85b4c09",
+		TemplateId = "e76fe23a-d665-4067-b46d-e9a4fe104339",
 		Tier = "low",
 	},
 	{
 		Name = "AER_Humans_Male_FlamingFist_Caster_B",
-		TemplateId = "72035343-ae9e-4160-9ff7-6e797c6fa997",
+		TemplateId = "a02203ce-fbfd-478f-a31b-6ff37438914b",
 		Tier = "high",
 	},
 	{
 		Name = "AER_LOW_Deva_Male_StormshoreTabernacle_Curse",
-		TemplateId = "73ef0f34-765a-4156-842a-c04b8955f3c7",
+		TemplateId = "80833685-78bc-4bc0-b5fa-03eebace07e3",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Humans_Male_FlamingFist_Cleric",
-		TemplateId = "ac3228f8-93f5-4eb5-be40-61bdc71865ec",
+		TemplateId = "68c70307-d836-419b-8945-e7e684e2530f",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Humans_Female_Cultist_Bane_Fist",
-		TemplateId = "7c67672c-9575-49cc-8fd3-7d8cda0e6666",
+		TemplateId = "9bf95013-a902-4714-9e42-5c6f27fa28c3",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Goblins_Male_Ranger_Tier2",
-		TemplateId = "00138069-acf3-4a5e-833d-f9232d41f503",
+		TemplateId = "65229fba-9fd6-41f1-b7ab-24c6085e778d",
 		Tier = "low",
 	},
 	{
 		Name = "AER_Undead_DarkJusticiar_Ranger",
-		TemplateId = "da90a182-b525-421e-aa8b-1491308e2b13",
+		TemplateId = "d047952a-0768-4c66-852b-5966e3b9a33c",
 		Tier = "high",
 	},
 	{
 		Name = "AER_HalfOrcs_Male_Cultist_Bane_Fist",
-		TemplateId = "7f34cbad-8a5c-44fc-98ab-dda93d73bf45",
+		TemplateId = "ad586239-ffdd-4682-8c38-ace6d0510b52",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Kobolds_Melee_Drunk",
-		TemplateId = "e3db5c82-fdd9-491f-ba2c-b1192cb9b0a7",
+		TemplateId = "1a6dc84d-852f-46ce-912b-b8c8429e948e",
 		Tier = "low",
 	},
 	{
 		Name = "AER_LOW_KurwinCoffin_Kobolds_Ranger",
-		TemplateId = "dbce02d1-f74c-4dc7-bfb3-101009dfb458",
+		TemplateId = "15ba44b8-53b0-41f3-8343-2d6c0ef568b1",
 		Tier = "low",
 	},
 	{
 		Name = "AER_DeathKnight_Weak",
-		TemplateId = "67b06b4b-5620-4abb-b4cf-bce1579eeca9",
+		TemplateId = "701947b9-dd26-41d1-83cd-b81a19902f9f",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Werewolf",
-		TemplateId = "2f2aac10-bc02-4d24-be43-2b43d402e4e4",
+		TemplateId = "a84d09c6-64f8-4bd7-90c8-77a7952099a7",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Tieflings_Male_Mephistopheles_Cultist_Bhaal_Reaper",
-		TemplateId = "cdd42324-dd87-4795-b4cb-b4d25c3951b9",
+		TemplateId = "fb80bfd9-21e4-4aeb-9ed8-596d7913f5bd",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Humans_Male_Cultist_Bhaal_DeathsHead",
-		TemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		TemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 		Tier = "epic",
 	},
 	{
@@ -1111,7 +1111,7 @@ return {
 	},
 	{
 		Name = "AER_S_TWN_Hospital_ZealousAssistant",
-		TemplateId = "ac8bb369-1beb-4751-ab6f-651804212bc0",
+		TemplateId = "4c5337fb-edd2-417a-b89c-c25393a1be42",
 		Tier = "mid",
 	},
 	{
@@ -1176,12 +1176,12 @@ return {
 	},
 	{
 		Name = "AER_S_LOW_Golbraith",
-		TemplateId = "96466df4-a4ce-44d1-8b04-8dacfe70013d",
+		TemplateId = "a1ff233f-9be7-4931-9b43-f74d4dfb05bd",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_S_GLO_Emperor",
-		TemplateId = "fb532b7c-8fba-4ddc-94f8-0d4599276429",
+		TemplateId = "131a36ed-f31a-42e4-b5c7-875243ce4b91",
 		Tier = "epic",
 	},
 	{
@@ -1206,17 +1206,17 @@ return {
 	},
 	{
 		Name = "AER_WYR_Wyrmsway_Skeleton_Mage",
-		TemplateId = "bc312ce8-1abb-49a8-8448-6b5a88c86a35",
+		TemplateId = "58272721-0780-4f10-8ef0-9b9ad302e11d",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Ogres_Female_A",
-		TemplateId = "9f2869cb-936a-4830-8884-090d56b21beb",
+		TemplateId = "a07ed745-b5e3-4f1d-9124-b1210aa8a842",
 		Tier = "high",
 	},
 	{
 		Name = "AER_BLIGHT_VineBlight_Dark_A",
-		TemplateId = "fc8a7c6a-663d-45a1-8e89-c2670c514730",
+		TemplateId = "6920189d-438f-405b-aa4d-a0f1cb810f7b",
 		Tier = "high",
 	},
 	{
@@ -1231,12 +1231,12 @@ return {
 	},
 	{
 		Name = "AER_Kuotoa",
-		TemplateId = "59fb2e1d-2872-4386-a7ad-48697e164db0",
+		TemplateId = "38fbadd0-502b-45c3-a1db-a46bddacbb3e",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Deva_Male_PlanarAlly",
-		TemplateId = "a6ffd848-1c86-46ec-91e0-30d4e30212f9",
+		TemplateId = "c57ff291-d5b7-4433-9b2e-4b74ebbb6463",
 		Tier = "ultra",
 	},
 	{
@@ -1246,17 +1246,17 @@ return {
 	},
 	{
 		Name = "AER_JaheirasEldestDaughter",
-		TemplateId = "246e79cf-b897-4c21-8413-657af5b1d9fb",
+		TemplateId = "519e524f-6528-4bf7-bb62-ec60a54a9215",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_JaheirasEldestSon",
-		TemplateId = "1f650dea-d19f-42c8-883a-f65391cb4cee",
+		TemplateId = "e1a08197-a522-44e3-a001-de8e42f6829f",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_KurwinCoffin_Houndmaster",
-		TemplateId = "7cbdabf4-9249-461a-b92c-391e9fa9c281",
+		TemplateId = "45a9bda9-a0e8-42d2-88b1-f2c5766a4688",
 		Tier = "ultra",
 	},
 	{
@@ -1276,7 +1276,7 @@ return {
 	},
 	{
 		Name = "AER_LOW_Ghost_A",
-		TemplateId = "d0927393-ae34-412e-bf74-4125e4834a39",
+		TemplateId = "e98a13bb-f178-4f2e-8936-c909f0d5d96b",
 		Tier = "high",
 	},
 	{
@@ -1296,27 +1296,27 @@ return {
 	},
 	{
 		Name = "AER_Owlbear_Dad",
-		TemplateId = "f2d065e9-b779-4fe5-9a23-4cca8faae822",
+		TemplateId = "ca9db64d-7896-47e0-bd03-456344599b48",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_ShadowOwlbear",
-		TemplateId = "4dba9d5d-3191-40d6-a18c-c2e3014c194c",
+		TemplateId = "7123b8dc-c939-4b43-bbdd-c25222a20e9a",
 		Tier = "high",
 	},
 	{
 		Name = "AER_MindFlayer_Caster",
-		TemplateId = "cd6c6aef-d182-427b-b21f-1c5c1e38c3be",
+		TemplateId = "e9685002-c0ec-43db-95de-87942fb6c123",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Dwarves_Female_Hill_Cultist_Bhaal_DeathsHead",
-		TemplateId = "dd85b08a-7cbc-46b5-9a1b-f77305e34e71",
+		TemplateId = "726499d8-0806-4603-b2b1-ae17c22f54c4",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_S_LOW_MurderTribunal_Sarevok",
-		TemplateId = "bb6e7858-fc25-4f0e-b10c-80e1deba0a12",
+		TemplateId = "3ed62366-3a08-4468-8a5b-59f619d74034",
 		Tier = "legendary",
 	},
 	{
@@ -1326,17 +1326,17 @@ return {
 	},
 	{
 		Name = "AER_S_GLO_Elminster",
-		TemplateId = "5fcc27c1-a495-4437-a904-9b0954dc5c51",
+		TemplateId = "9184cafb-98c9-4c05-9cbb-a12be2f41fa6",
 		Tier = "legendary",
 	},
 	{
 		Name = "AER_Githyanki_Male_Gishra_Caster",
-		TemplateId = "0cfbaf99-37c6-4a50-9709-ebe4c015b0fa",
+		TemplateId = "04763768-0641-40e9-ac2c-7a1b2eef97ac",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Githyanki_Gishra_Chief",
-		TemplateId = "6e966a6f-1e54-4307-842d-7cdebc0cc558",
+		TemplateId = "af5222fc-49c4-4782-ba32-ca4f543634df",
 		Tier = "epic",
 	},
 	{
@@ -1351,62 +1351,62 @@ return {
 	},
 	{
 		Name = "AER_Ogres_Male_A_NotMessingAround",
-		TemplateId = "4fef0aa6-bdd7-4279-8194-d2a407fa8388",
+		TemplateId = "4a9f01e0-c2eb-4178-bc9a-14f5137986d9",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Humans_Male_Cultist_Bhaal_Invoker",
-		TemplateId = "dd4c9000-f021-4f37-89ca-7befae8748b8",
+		TemplateId = "d6a24adf-e79e-47cf-a891-7580ae0db144",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_HagSurvivors_Bandit_Warlock_01",
-		TemplateId = "36baeb96-2bba-443c-8b6e-96daf6833ad5",
+		TemplateId = "743b2141-3396-4d9c-bbca-ac43ed6ccd9b",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_HagSurvivors_Bandit_Paladin_01",
-		TemplateId = "80abab25-1290-4914-a889-7a530831ffdd",
+		TemplateId = "a9ba6452-cb13-4b8f-bbab-2b1f8b46ef96",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_HagSurvivors_Bandit_Fighter_01",
-		TemplateId = "d0a1380b-ab6f-4e8a-8e80-d9f3402c871d",
+		TemplateId = "6a345e63-86c3-429f-8e6e-5939e65d6454",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_HagSurvivors_Bandit_Barbarian_01",
-		TemplateId = "07fda02b-9f22-4503-92d1-100a07f6182d",
+		TemplateId = "191c5d03-aaf8-4dbd-b38b-216374211441",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_HagSurvivors_Bandit_Wizard_01",
-		TemplateId = "5f3ed544-3c32-4379-84ce-6e3e6ff99b5b",
+		TemplateId = "7fa11602-5e1b-4b51-9234-ae3b92ae1864",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_LOW_HagSurvivors_Bandit_Bard_01",
-		TemplateId = "ddbe4ce8-224e-4a9a-92c1-372a860746d6",
+		TemplateId = "c758bb75-8a37-467a-be99-6f63a9edd430",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_LOW_CountingHouse_HeadBanker",
-		TemplateId = "906b6773-74ca-4561-b69c-435568359715",
+		TemplateId = "cc4582b7-5615-4029-bd2a-95f45d67e452",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Goblins_Female_Melee",
-		TemplateId = "48fc3243-28fd-40a1-a38b-d904ff4ea2df",
+		TemplateId = "0db79da6-3729-4ed3-b416-f474b319d2df",
 		Tier = "low",
 	},
 	{
 		Name = "AER_AnimatedArmor",
-		TemplateId = "9e5f9fb3-db18-4a19-96e6-3af22c188337",
+		TemplateId = "74214dcf-e22e-48ba-b2dc-cd500ecfda35",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_AnimatedArmorRanged",
-		TemplateId = "5e5e2205-5ea3-4b22-a60e-6fc64a9be2d3",
+		TemplateId = "2aad61df-9c64-4208-a4db-034f9280629a",
 		Tier = "mid",
 	},
 	{
@@ -1421,7 +1421,7 @@ return {
 	},
 	{
 		Name = "AER_Githyanki_Male_Gish_Strong",
-		TemplateId = "543adbde-c8b7-48dd-962f-9faffa36da3c",
+		TemplateId = "7d3c1787-a143-488e-8381-4659b13d3ce1",
 		Tier = "ultra",
 	},
 	{
@@ -1431,7 +1431,7 @@ return {
 	},
 	{
 		Name = "AER_Humans_Female_FlamingFist_Caster_B",
-		TemplateId = "d2a59739-a6b2-4527-8e5d-0f974d7c68e4",
+		TemplateId = "3d24b2aa-9314-4ab9-8056-9219275330e7",
 		Tier = "high",
 	},
 	{
@@ -1441,17 +1441,17 @@ return {
 	},
 	{
 		Name = "AER_SteelWatcher_Biped_A",
-		TemplateId = "fcbe353e-198c-4fa6-b45b-300ff0e8e3cf",
+		TemplateId = "2e79537e-4036-449c-8929-210082a38466",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Dwarves_Male_Hill_Cultist_Bhaal_Reaper",
-		TemplateId = "1dd82bc3-8f1c-404a-b8c6-18126f094304",
+		TemplateId = "4b8bcbfe-b040-40a8-b48b-28a258b1dfce",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Goblins_Male_Boss",
-		TemplateId = "a664ae38-c3c4-45eb-8657-c94dd5817a1a",
+		TemplateId = "97c22263-75d0-4a80-88c2-92dea51de964",
 		Tier = "mid",
 	},
 	{
@@ -1466,52 +1466,52 @@ return {
 	},
 	{
 		Name = "AER_S_DEN_RitualDruid_001",
-		TemplateId = "7ffb3e5a-ebe8-4d75-8aa1-3050e326c01c",
+		TemplateId = "f6e64e10-a61a-4d49-82e5-fa3437585ac4",
 		Tier = "low",
 	},
 	{
 		Name = "AER_S_DEN_DruidGuard_003",
-		TemplateId = "889b0d48-9c40-4632-b660-93358823cc59",
+		TemplateId = "accee543-de81-4b72-994d-5e78f26aa2e5",
 		Tier = "low",
 	},
 	{
 		Name = "AER_S_DEN_Apprentice",
-		TemplateId = "6df78f7b-399c-439a-a289-a536193a2280",
+		TemplateId = "086bc046-6822-4f06-8746-be7a1d21bf4e",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_DEN_DruidOpposed",
-		TemplateId = "69231d7c-4b80-4611-9f59-ab12e9d230d4",
+		TemplateId = "ba18ba7c-d448-426e-a894-d67bd4c08eec",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Undead_DarkJusticiar_Caster",
-		TemplateId = "ecf29f3a-77cc-4a06-80ac-054ff84460f3",
+		TemplateId = "298f9e53-6133-4387-af49-20216e6a9637",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Humans_Male_CountingHouseGuard_Ranged",
-		TemplateId = "292092e8-d244-475f-b46e-0e85e0d37a63",
+		TemplateId = "55542643-a98d-49da-a22f-bafcdd4fb2a9",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Humans_Female_CountingHouseGuard_Ranged",
-		TemplateId = "d4635f8b-e535-461f-8964-bd62f4ab58a6",
+		TemplateId = "0853f5db-e06e-40b1-8145-1bf6da1abb11",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Hobgoblins_Male_Devastator",
-		TemplateId = "b4980397-be53-49f7-a18c-8ae380d32f45",
+		TemplateId = "35df7023-c104-48b0-b64f-ab341207de90",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Undead_Ghoul_Flying",
-		TemplateId = "6024b5b0-c254-4f9a-9a9b-d4c16fd462f2",
+		TemplateId = "23abf9c6-bafe-477e-a9ef-be79884785ae",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_MOO_Ketheric",
-		TemplateId = "307d5a85-aa03-42ab-afba-2832300d3041",
+		TemplateId = "8f6656cd-b51d-4096-b4be-218e1c4754f1",
 		Tier = "legendary",
 	},
 	{
@@ -1521,12 +1521,12 @@ return {
 	},
 	{
 		Name = "AER_LOW_Viconia",
-		TemplateId = "15d458c4-c51d-4312-8f5a-cf5ba9042e3f",
+		TemplateId = "7e62cec7-b0bc-4949-a3fc-771f0fa16b24",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_S_DEN_TieflingLeader",
-		TemplateId = "316fa3e9-9791-4d71-b688-829c1f44c4dc",
+		TemplateId = "1ee6168e-c87c-4745-9c85-03af4deed67a",
 		Tier = "ultra",
 	},
 	{
@@ -1571,37 +1571,37 @@ return {
 	},
 	{
 		Name = "AER_S_LOW_Guildhall_Bodyguard_001",
-		TemplateId = "1779785c-d010-400b-a1e4-7f658232bbe9",
+		TemplateId = "96642858-bbb0-4e15-84d1-cefb77457254",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_LOW_Guildhall_Bodyguard_002",
-		TemplateId = "4c8c5997-16a0-4ebc-b44a-069e050ab148",
+		TemplateId = "a8e03e1b-8fa6-4e75-bcc7-2f2ac420322b",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_LOW_Guildhall_Bodyguard_003",
-		TemplateId = "77a43791-ec59-4a37-a1d4-309e2d3ef232",
+		TemplateId = "8933725d-8e7f-44b2-b870-c68668deaca5",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_LOW_Guildhall_Bodyguard_004",
-		TemplateId = "0e6830bc-8494-4e0b-a19d-93c632135ed2",
+		TemplateId = "e94b4306-c4f2-489e-8848-9e38e14804ea",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_LOW_UndercellarEntranceGuard_003",
-		TemplateId = "2826dea6-2021-43a0-9dab-f3c606e6a315",
+		TemplateId = "5d55903c-0236-410c-87ef-8871e94eb042",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_WYR_MerchantsHouse_Thug_002",
-		TemplateId = "48e41953-36b1-4e01-a42c-94ac3663176c",
+		TemplateId = "432b2417-a6c2-4e1f-af49-224369b3363b",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_LOW_Tusgront",
-		TemplateId = "7b26d436-75d6-4be8-86d6-975adb0cbf33",
+		TemplateId = "c60cb0c3-069d-4ae4-a355-7b8e8b016f37",
 		Tier = "high",
 	},
 	{
@@ -1636,27 +1636,27 @@ return {
 	},
 	{
 		Name = "AER_S_MOO_GuardRoom_001",
-		TemplateId = "e5f9225a-b06a-42a0-a847-943520032411",
+		TemplateId = "382233a2-aa2b-4cbd-b02e-369ca7b8150d",
 		Tier = "low",
 	},
 	{
 		Name = "AER_VINE_Tentacle_Dark_Giant_A",
-		TemplateId = "22f1e223-bc15-4de4-b57d-17624e204085",
+		TemplateId = "c4c94f9e-8d68-40ce-aea5-2662527e6e6a",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Undead_Ghast",
-		TemplateId = "50efed0c-393c-4745-b487-e87742a7e719",
+		TemplateId = "9c0321a4-964a-4412-b4ce-041fd3f07d1c",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_GLO_GurHunter",
-		TemplateId = "1b36fb53-e3b0-4caf-9e93-e93bd0c1b333",
+		TemplateId = "f879e10a-a91a-4903-87d4-be297fe0f161",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Goblins_Male_Warlock",
-		TemplateId = "024d1cae-737a-4381-b5d3-3faea40f1de8",
+		TemplateId = "25a2d096-e81e-407f-8a8a-a4fb670c9082",
 		Tier = "low",
 	},
 	{
@@ -1671,62 +1671,62 @@ return {
 	},
 	{
 		Name = "AER_LOW_Undead_Mummy_FatherCarrion",
-		TemplateId = "d18bc581-008f-499a-a54f-32d4a05ab956",
+		TemplateId = "e2e18069-7d05-4f7b-be5c-9a9f131147f1",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Humans_Female_Cultist_Bane_IronConsul",
-		TemplateId = "7bf97a9f-3f60-4f7f-8465-dace413c464c",
+		TemplateId = "8b239520-ca01-4807-b620-b4113f41b166",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_FlorrickConfrontation_Goon01",
-		TemplateId = "ea783113-2d9e-48df-a40a-80a346f46cb4",
+		TemplateId = "acc2e5a3-24fe-41c6-a56e-56bd036cac72",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_FlorrickConfrontation_Goon02",
-		TemplateId = "13088ab3-3fe3-4657-b592-c69b68103559",
+		TemplateId = "61b9346c-ec06-48f2-9f6a-5b2c95bdabc4",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_GLO_Desire_Hooded",
-		TemplateId = "bee463e5-69ff-4426-9dc9-6d5f49b596d4",
+		TemplateId = "fd3d0845-a00a-4b42-81af-dc66c41592f7",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_GLO_Desire_Strong",
-		TemplateId = "a0851027-709e-4217-805b-59366d4b02f0",
+		TemplateId = "373cd2e4-7269-40c1-89e5-32559a6e0cdc",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_FlorrickConfrontation_Fallback",
-		TemplateId = "7de4edcd-a664-4c48-a953-d54dbec49dbb",
+		TemplateId = "d692e6f5-799b-45ae-b892-f80332c23040",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Rolan",
-		TemplateId = "e55c1acf-1423-4350-8a4c-0fcd4e94e5de",
+		TemplateId = "21de50c1-7e9f-4c2c-9f5e-c75dc25a188e",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_LOW_CazadorsPalace_Cells_Prisoner_003",
-		TemplateId = "9b5d887c-319a-4f8c-b0fa-c99de76a3543",
+		TemplateId = "d5a6328c-12f8-4548-9e3d-60047aaeeea5",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Undead_Hound_A",
-		TemplateId = "72cd2811-0c8b-4889-a547-7605251720d9",
+		TemplateId = "a4e59ec0-7622-494f-8eef-f9294b8ace6b",
 		Tier = "high",
 	},
 	{
 		Name = "AER_LOW_Dog_Ghost_Houndmasters",
-		TemplateId = "85278bd9-b87a-4303-a285-7344e15cb450",
+		TemplateId = "248ef6c8-7225-4a94-b4ce-e1caee33657e",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Dwarves_Female_Hill_FlamingFist_Ranger_B",
-		TemplateId = "5bbfa271-fae5-4b66-86d8-a93fdb8bc7b0",
+		TemplateId = "5285ec02-6402-4c79-b430-1e572e5e6059",
 		Tier = "high",
 	},
 	{
@@ -1741,42 +1741,42 @@ return {
 	},
 	{
 		Name = "AER_Githyanki_Male_Raider_Strong",
-		TemplateId = "31691536-78d3-4c3e-9ac8-3d1c71ab8cc0",
+		TemplateId = "03058dae-d79c-4304-8037-8da10d22ce31",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Undead_DarkJusticiar_Melee_Scimitar_Shield_Summon",
-		TemplateId = "429fdd08-70c4-4197-b0f0-9ad26b7b5b9c",
+		TemplateId = "970b8616-d7c0-4d5d-9e03-e128ca9a4086",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Githyanki_Female_Gish",
-		TemplateId = "fe18b71c-7932-46dc-8a57-bcd59d1169ad",
+		TemplateId = "2216e56d-4b68-486d-b6c7-448068b1b4d0",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Goblins_Male_Ranger",
-		TemplateId = "9932727e-b841-4044-9594-d0d5128852ce",
+		TemplateId = "ba298b0a-7d36-4272-ac6a-bd4cc7b774b7",
 		Tier = "low",
 	},
 	{
 		Name = "AER_Dwarves_Female_Hill_FlamingFist_Melee_Attacker",
-		TemplateId = "04a57ca2-b5f7-48b0-a5ec-596a5bf4cabb",
+		TemplateId = "b0955ef2-f8a0-4e1c-afa0-e024b1867832",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Sharran_Cultist_Human_Male_Caster_A",
-		TemplateId = "4bed4a1d-6963-43e2-ae6d-0d14f7c39faa",
+		TemplateId = "fad04776-5008-4ef9-96c4-941d430ca23e",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Ooze_Grease",
-		TemplateId = "3145d0d8-8a55-46e0-ba89-585e68aeb7d9",
+		TemplateId = "4ec92a0c-3c84-43c2-99ad-f52f52e1bd56",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Ooze_Fetid",
-		TemplateId = "414917b2-47c3-487c-99d5-45e86ef698fc",
+		TemplateId = "1c0ee3b8-1e25-4eeb-80ab-808931e4b003",
 		Tier = "high",
 	},
 	{
@@ -1786,17 +1786,17 @@ return {
 	},
 	{
 		Name = "AER_Tieflings_Male_Mephistopheles_Cultist_Bhaal_NightBlade",
-		TemplateId = "33d06509-5d36-4e83-9757-2e33b1e18c67",
+		TemplateId = "82ae6f3c-2ce8-4d66-9d70-20008c2d3585",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Merregon",
-		TemplateId = "bc0c426c-30d8-4036-911e-1b5d758add0f",
+		TemplateId = "14aee9d3-1794-45fc-90e0-66edc3a77ecc",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_LOW_BhaalCultist_Crow",
-		TemplateId = "2502e69f-2126-4a2c-a865-1b3af903ceef",
+		TemplateId = "9b66c3f3-c035-45c5-a374-3149cbbe98b4",
 		Tier = "mid",
 	},
 	{
@@ -1806,77 +1806,77 @@ return {
 	},
 	{
 		Name = "AER_LOW_HouseOfGrief_Wolf_Viconia",
-		TemplateId = "f451bac0-1523-41fa-a811-5a617a3382bc",
+		TemplateId = "d937103a-678a-4e0f-8b20-fdd76c8e858d",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_LOW_HouseOfHope_Cambion_Female_Hellfire",
-		TemplateId = "9fcd7d18-8870-4196-be4c-3d57431cfb4a",
+		TemplateId = "15c0aec4-f82e-41b8-b92a-c60dd9e4a378",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Humans_Female_FlamingFist_Melee_Attacker",
-		TemplateId = "241fb7f8-1b9e-4b23-bf1f-61de7bc79fa0",
+		TemplateId = "faa087f6-7a21-4a2b-8ba7-3f1557559b52",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Dwarves_Male_Hill_FlamingFist_Caster_B",
-		TemplateId = "ede23eec-0c6b-4b3b-bc4b-7115991d7d58",
+		TemplateId = "9c581f91-5dcc-420d-9a2b-07b2b6bd2980",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_GLO_OathbreakerKnight",
-		TemplateId = "65032d3c-3b75-4c82-9a5a-459c36e204a8",
+		TemplateId = "e942f4ef-9f85-44ee-a6ac-34691c19a743",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_LOW_RamazithsTower_Nightsong_Deva",
-		TemplateId = "c74a5a8d-97a6-41c5-ab95-a2e664fc9eda",
+		TemplateId = "74644930-1b2f-4f81-9cab-6b29ff5571a8",
 		Tier = "legendary",
 	},
 	{
 		Name = "AER_S_GLO_Nightsong",
-		TemplateId = "65124807-63fe-494a-a9cc-b98d41fd38ca",
+		TemplateId = "65f3b25c-aae7-4025-b1ac-066504dc8057",
 		Tier = "legendary",
 	},
 	{
 		Name = "AER_S_LOW_RealHope",
-		TemplateId = "b95c09b2-7325-4ec5-9644-dda3f725a371",
+		TemplateId = "8a82e7be-b1da-42ce-bd49-4be79c92d2c8",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Dwarves_Male_Hill_FlamingFist_Ranger_B",
-		TemplateId = "0da8462d-fd23-408c-b962-22468c3d9e30",
+		TemplateId = "c40f39d2-3083-4278-b86a-24c37b04020f",
 		Tier = "high",
 	},
 	{
 		Name = "AER_GLO_GithKnight_Act3",
-		TemplateId = "a7c21f62-2b3f-4ef5-9090-a89bc0dd987c",
+		TemplateId = "ceba46e4-756e-479a-81bb-7dbf01686452",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Humans_Male_FlamingFist_Melee_Defender",
-		TemplateId = "df4d2913-0ac6-4897-ae44-74aab55f584e",
+		TemplateId = "28b07d30-1ca1-4b0d-a999-d4db824ebc72",
 		Tier = "high",
 	},
 	{
 		Name = "AER_DarkVine_Tentacle_GraspingVine",
-		TemplateId = "37f257f9-cb02-4cf8-85fe-86e9fb1d8996",
+		TemplateId = "6c05eefb-27a1-49dc-9b97-944ed8e8e920",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Githyanki_Male_Raider",
-		TemplateId = "060ab468-ceb8-4dae-8f95-933dcd55e002",
+		TemplateId = "7755efd1-7b9c-47b1-aaf8-910ac179810e",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Fey_Dog_A",
-		TemplateId = "7df2970a-a779-4009-8914-9955055359f7",
+		TemplateId = "23aa32b2-3983-4837-9013-721857f27e9c",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Goblins_Male_Caster",
-		TemplateId = "5b723963-36c5-4d2c-8303-9df658d0e269",
+		TemplateId = "f6b8079d-e14c-41ff-841d-f9e41808d571",
 		Tier = "low",
 	},
 	{
@@ -1901,82 +1901,82 @@ return {
 	},
 	{
 		Name = "AER_S_CHA_FL1_BanditSanctum",
-		TemplateId = "9eff102d-4096-41ec-b297-b1ab771f7bae",
+		TemplateId = "470af168-2e00-4e50-a743-25f3e6696e10",
 		Tier = "low",
 	},
 	{
 		Name = "AER_S_CHA_FL1_BanditSanctum_02",
-		TemplateId = "a6e96a83-d2f9-4483-a822-d01611f106b1",
+		TemplateId = "514df229-d2d0-42e0-89cf-9bc88d775c20",
 		Tier = "low",
 	},
 	{
 		Name = "AER_S_CHA_FL1_BanditSanctum_03",
-		TemplateId = "01a1d5d3-f1e7-4b87-92a5-0af18e60e73d",
+		TemplateId = "353fd5d9-dadf-4ee6-b5b5-8f2a1af8e4b0",
 		Tier = "low",
 	},
 	{
 		Name = "AER_S_CHA_FL1_BanditLockpick",
-		TemplateId = "9759512b-4966-4e1a-ad78-e8ed52c9181b",
+		TemplateId = "95fb7dde-ca01-4adb-a9aa-3f3b262e01d8",
 		Tier = "low",
 	},
 	{
 		Name = "AER_S_CHA_Exterior_Bandit_Melee_02",
-		TemplateId = "af4e2da5-c147-432c-aa7b-9971de4fba2c",
+		TemplateId = "b8092bda-e49b-4226-8323-252f563ea584",
 		Tier = "zero",
 	},
 	{
 		Name = "AER_S_DEN_RobbedAdventurer",
-		TemplateId = "3c7a673e-65d2-4c4e-b654-1b414cfa55ec",
+		TemplateId = "41bf6eca-72b7-4cee-b1cb-816241823d35",
 		Tier = "zero",
 	},
 	{
 		Name = "AER_S_DEN_RaidAdventurer",
-		TemplateId = "93a22a83-d36a-4754-8620-c331a4629e20",
+		TemplateId = "d62fcda9-0396-4c9f-a21d-0f53cf506940",
 		Tier = "zero",
 	},
 	{
 		Name = "AER_S_FOR_PriestConqueringGod_001",
-		TemplateId = "30df92d3-c968-4ce6-bed1-5b0b4781d2c2",
+		TemplateId = "15e74f42-8c9d-4239-a584-0cc2fd477528",
 		Tier = "zero",
 	},
 	{
 		Name = "AER_S_FOR_PriestConqueringGod_002",
-		TemplateId = "91928d53-0a0c-489f-97f6-e4f334a86fd7",
+		TemplateId = "fd9fe879-1073-4f6e-a176-1cc720d076b0",
 		Tier = "zero",
 	},
 	{
 		Name = "AER_Dwarves_Duergar_Female_Cultist_Bane_Fist",
-		TemplateId = "54270769-fb55-468d-a08d-b71a543c6723",
+		TemplateId = "794b7f93-a857-4160-8ff2-14f7fcaa80e8",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_UNI_TWN_LiftingTheCurse_DadShadow",
-		TemplateId = "169a5f8f-6632-4825-8c08-7f7fe96dee49",
+		TemplateId = "bcdb0a8f-0884-4781-bfef-dfbeff75e6e7",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Shadow_Dog_Alpha",
-		TemplateId = "1429d267-aa32-4f2d-899a-2438bc1d2fce",
+		TemplateId = "7212b0de-8866-4e4e-89b2-0d82061e842d",
 		Tier = "high",
 	},
 	{
 		Name = "AER_SPIDER_Sword_A",
-		TemplateId = "ae0fc264-4074-411e-9b05-c4f4ab2acaf7",
+		TemplateId = "8c743e78-aed1-4b0e-b552-9459c5eccd2f",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Cloaker",
-		TemplateId = "c1cdbc8f-7adf-4b35-8449-968be8c72c92",
+		TemplateId = "4d8e1f9a-355f-46ff-bd2f-ef85890b02da",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Bugbears_Male",
-		TemplateId = "f73b7050-8af6-40ee-ab08-b5b971a4c83d",
+		TemplateId = "9792971e-c9e1-4722-b6be-0bcfd0214c5a",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Undead_Ghoul",
-		TemplateId = "a7b69d67-6f58-4b0f-ad1f-c94789032ee1",
+		TemplateId = "879764c6-29b3-4a78-8d91-fac2e57e96d9",
 		Tier = "mid",
 	},
 	{
@@ -1986,22 +1986,22 @@ return {
 	},
 	{
 		Name = "AER_Dog_Ghost",
-		TemplateId = "010c8451-9fec-4ccd-b979-8363ddd5d1a5",
+		TemplateId = "e07ca11f-bb49-4380-9a70-4fd340ccf08b",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_HalfOrcs_Male_Cultist_Bane_IronConsul",
-		TemplateId = "41023d7c-6d3f-4dca-a886-bb3cf81796fd",
+		TemplateId = "6b51c46d-a847-4a1c-acea-eb61581f080b",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_WYR_Wyrmsway_Skeleton_Hero",
-		TemplateId = "2cda8448-f136-4a6c-88bc-c0bf58d3e977",
+		TemplateId = "bced2fef-285a-4a4f-907f-91d45dd14b06",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Githyanki_Male_Gishra_Melee",
-		TemplateId = "7c5151fa-8bb5-473f-a89d-fc48cf1a1eda",
+		TemplateId = "15b77010-6a99-4fa9-b3a1-c8f7e437bf4c",
 		Tier = "ultra",
 	},
 	{
@@ -2031,32 +2031,32 @@ return {
 	},
 	{
 		Name = "AER_Shadow_Dog_A",
-		TemplateId = "b3bae5a3-1f56-48a5-b3b2-2e55bc7b12eb",
+		TemplateId = "f0eae548-bb30-458d-9dfd-76131a018dd9",
 		Tier = "high",
 	},
 	{
 		Name = "AER_LOW_HouseOfHope_Cambion_Female",
-		TemplateId = "c95bfd06-2786-4b60-aae9-9ca3b5182a59",
+		TemplateId = "cb0dec67-db1d-43cc-b6df-8c0dc9c5d841",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Goblins_Female_Caster",
-		TemplateId = "4d5ad91f-708a-4ab5-803e-dfe1060af166",
+		TemplateId = "618eee85-1c6a-4bcd-9fda-d74c639e13ad",
 		Tier = "low",
 	},
 	{
 		Name = "AER_Worg_A",
-		TemplateId = "fe070c15-7084-45a6-a65e-719f5adfe008",
+		TemplateId = "b029a916-5e57-4319-8099-9890dada260f",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Goblins_Female_Ranger_Tier2",
-		TemplateId = "efccedcd-1a42-4276-a21a-421e2132d790",
+		TemplateId = "e8103401-9198-40de-8ec0-d9cf73f54a90",
 		Tier = "low",
 	},
 	{
 		Name = "AER_LOW_Cemetery_Kobolds_Ranger",
-		TemplateId = "03e70894-c74d-4826-a32e-b471b5a415b1",
+		TemplateId = "071b70d5-a84b-424f-b221-e074dca8f7fa",
 		Tier = "low",
 	},
 	{
@@ -2066,42 +2066,42 @@ return {
 	},
 	{
 		Name = "AER_Goblins_Male_Devout",
-		TemplateId = "248b7033-e47f-4c55-acdc-6d0ee96668d2",
+		TemplateId = "dff6e3ca-8442-4eb8-8193-e9c55576905f",
 		Tier = "low",
 	},
 	{
 		Name = "AER_LOW_DevilsFee_Imp_Melee",
-		TemplateId = "d0fa33da-af36-4562-87d2-5b08ee6b3c3b",
+		TemplateId = "30c8e353-7073-4faf-b7bf-d6502c3784f8",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_LOW_KurwinCoffin_Kobolds_Inventor",
-		TemplateId = "51831a83-e0c9-40bc-bc15-b557e3bcd45a",
+		TemplateId = "64d6d53f-b595-4373-8b4a-f8cec357c705",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_HAV_FlamingFist_001",
-		TemplateId = "9b7359c9-2dcb-4ca5-a888-2189fbeb75c6",
+		TemplateId = "aed9136c-179a-4bef-b597-46374f50fe41",
 		Tier = "high",
 	},
 	{
 		Name = "AER_S_SCL_HarperScout_000",
-		TemplateId = "99a7bbba-d2f5-4a23-ae0b-0cb4bea0a5fc",
+		TemplateId = "442c0e3e-5756-400f-8f78-59bf7c338203",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_SCL_Drider_Harper_Ranger_001",
-		TemplateId = "9af66b98-dabd-4636-9373-55070f11c46a",
+		TemplateId = "6e6cf36f-5b9a-4eb3-a9a2-3a4ddc5b7e62",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_HAV_HavenOutcasts_DockGuard_Left_Ranger",
-		TemplateId = "ecd5a81a-d163-4205-b594-b954b391f4bf",
+		TemplateId = "3dad2917-3001-4706-a95b-f83d7f3388db",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_HAV_HavenOutcasts_BarricadeYeller_Ranger",
-		TemplateId = "a242240f-a53e-41ff-9099-0d225a66201f",
+		TemplateId = "036c9152-ac89-4475-b101-a3a06da62f32",
 		Tier = "mid",
 	},
 	{
@@ -2136,12 +2136,12 @@ return {
 	},
 	{
 		Name = "AER_Undead_DarkJusticiar_Boss",
-		TemplateId = "5beabcd8-d82c-4fc4-b131-d118dd032f75",
+		TemplateId = "1abad487-4720-4820-a317-3bee9d940f09",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_SHA_LastJusticiar",
-		TemplateId = "417cd993-e290-4e44-bc29-fa719a9630f8",
+		TemplateId = "671080f4-0020-40a2-989d-ba70e0323c9f",
 		Tier = "ultra",
 	},
 	{
@@ -2176,47 +2176,47 @@ return {
 	},
 	{
 		Name = "AER_Undead_DarkJusticiar_Melee_Mace_Shield_Summon",
-		TemplateId = "8bde5b9c-7c76-40ec-af91-e11b70ff32e4",
+		TemplateId = "d4c59919-0a35-4892-ae63-913a6ad84dd9",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Construct_FleshGolem",
-		TemplateId = "12086578-3e2e-4817-8ead-cb37bbf2fea9",
+		TemplateId = "63602c39-46d4-47ee-a5ed-9e9519b8fc0f",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Monstrosity_Mimic",
-		TemplateId = "94d23d3b-7af2-4059-8570-e8d22194e607",
+		TemplateId = "9623897f-c11b-4285-8116-82a3e8e6a69a",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Sharran_Cultist_Elf_Female_Caster_A",
-		TemplateId = "f864facf-37ff-441d-b69e-507130ca97d0",
+		TemplateId = "206bf1e1-33b0-4e81-90a7-ec025a47c8fb",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Myrmidon_Fire",
-		TemplateId = "0f8b7ae3-15e9-43bc-99a2-04837c629a27",
+		TemplateId = "9169610a-19f7-4755-a963-12f5b83673b6",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Humans_Male_Cultist_Bane_IronConsul",
-		TemplateId = "0005222b-128c-4b02-8045-525d79b5307e",
+		TemplateId = "7b605f3f-c986-41fd-b9d8-92d8614d532a",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_LOW_Cemetery_Kobolds_Melee",
-		TemplateId = "16b5f2f8-278a-44da-8621-88c8dbb9ee7f",
+		TemplateId = "9d00d479-e7f9-4b40-90a4-6169a82677a0",
 		Tier = "low",
 	},
 	{
 		Name = "AER_Humans_Male_Cultist_Bane_BlackGauntlet",
-		TemplateId = "26c8fe68-d252-43b6-88e1-15fa6cd62b1d",
+		TemplateId = "7f8cab6b-e253-4b1d-a38f-11a9190e6457",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Dwarves_Female_Hill_FlamingFist_Caster_B",
-		TemplateId = "1576feb8-ba00-4ca5-85dc-b65c86f17602",
+		TemplateId = "545eb0a0-9481-4801-9635-d7a934ed2c48",
 		Tier = "high",
 	},
 	{
@@ -2226,77 +2226,77 @@ return {
 	},
 	{
 		Name = "AER_Githyanki_Male_Warrior_Strong",
-		TemplateId = "eab6a810-4693-432f-a1a7-e8876b31acd7",
+		TemplateId = "2f4283dd-5d8e-4277-b651-188588ceaf21",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Merregon_Raphael",
-		TemplateId = "9fa1b15b-b6d6-4c55-8693-947433d3514e",
+		TemplateId = "88a59e7d-7b39-4470-ba06-dc5b8ff9141e",
 		Tier = "high",
 	},
 	{
 		Name = "AER_Myrmidon_Earth",
-		TemplateId = "01ac5949-4d57-4f13-b84d-5b008f3ffa49",
+		TemplateId = "fee03c4b-6d91-4f20-8b68-2a884bfe2631",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Goblins_Male_Melee_Tier2",
-		TemplateId = "fd78d37c-7fd0-4e71-ac85-bac113040a39",
+		TemplateId = "462de537-d62c-4850-882d-f42fff957c9b",
 		Tier = "low",
 	},
 	{
 		Name = "AER_Goblins_Male_Guard_Melee_Tier2",
-		TemplateId = "dee92e35-1d08-43aa-ba97-430643fd14fd",
+		TemplateId = "cb40d900-13df-4d95-8a45-aa2cfed3467d",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Ogres_Male_A",
-		TemplateId = "9bb85fbc-445c-415f-a761-94d81ead0b66",
+		TemplateId = "d861e821-7fe4-43fb-9618-2234d527fdab",
 		Tier = "high",
 	},
 	{
 		Name = "AER_LOW_HouseOfGrief_Wolf",
-		TemplateId = "c074cfcb-8cbd-446d-a6fc-629647ee6b3a",
+		TemplateId = "cd8ad8e6-3cce-46a5-b75a-7af8edf8d904",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Elemental_Grease",
-		TemplateId = "8b597b49-d42e-45e5-8312-145ac5d68b3b",
+		TemplateId = "b20516bf-af05-48ae-892c-fe1c62607552",
 		Tier = "high",
 	},
 	{
 		Name = "AER_WYR_Wyrmsway_Skeleton_Melee",
-		TemplateId = "4f64e2cb-5bcc-4393-a86f-c082647cce49",
+		TemplateId = "bb9ec489-8fe8-4a09-b584-a64ac62f467f",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_S_LOW_HouseOfHope_Nubaldin",
-		TemplateId = "2da5bf8c-9333-4632-a344-3849d716bed2",
+		TemplateId = "991a12ec-5f2b-4348-a59e-6be780e6bf8f",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Goblins_Female_Devout",
-		TemplateId = "795d9555-e04d-4423-ba6d-2e8ad35594c2",
+		TemplateId = "814bed71-afb3-4de2-9d62-1d7fcc0c8ef9",
 		Tier = "low",
 	},
 	{
 		Name = "AER_Elemental_Lava",
-		TemplateId = "1c0ab642-a9e6-4fa6-a7c2-b07eef286d45",
+		TemplateId = "64f8c1de-7175-4f42-bc07-f7284973b40a",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_LOW_HouseOfHope_Cambion_Male",
-		TemplateId = "0c773710-b795-4395-a4e8-b71b48db0e15",
+		TemplateId = "c7365f80-9ad5-4958-8891-ee676c4339c1",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Dwarves_Male_Cultist_Bane_IronConsul",
-		TemplateId = "842ea79f-e941-4ab4-a22c-f41214ee9ff8",
+		TemplateId = "162cb6ea-aff2-4966-895d-cf33dbfe11b6",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_BADGER",
-		TemplateId = "496ace27-fedc-4740-86a2-da4a40f3c88f",
+		TemplateId = "a396c459-5e0f-46ff-9e6d-cbf3e5eb70e0",
 		Tier = "low",
 	},
 	{
@@ -2306,7 +2306,7 @@ return {
 	},
 	{
 		Name = "AER_S_GLO_Ravengard",
-		TemplateId = "cb1b3ca3-1828-499d-98a7-ead1e2c56af0",
+		TemplateId = "895b0389-878e-42fc-bb8e-e149b152ac5e",
 		Tier = "epic",
 	},
 	{
@@ -2316,17 +2316,17 @@ return {
 	},
 	{
 		Name = "AER_S_LOW_BasiliskGate_Sergeant",
-		TemplateId = "6572e304-c61e-4d76-8477-4100057cf13e",
+		TemplateId = "911e5353-770e-461b-9a10-1cc18d0930ce",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_S_LOW_KurwinCoffin_KelemvorPriestess",
-		TemplateId = "a9eb1a9b-2b43-437f-be13-1194039e9e30",
+		TemplateId = "7998edce-8aa8-4b73-b070-2c9b0aed31df",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_LOW_Enforcer_Skoona",
-		TemplateId = "b9ea50e3-1033-4de8-b374-63c435a18fd4",
+		TemplateId = "d67a765d-a79c-44f5-8b94-49cf15b0a709",
 		Tier = "ultra",
 	},
 	{
@@ -2336,7 +2336,7 @@ return {
 	},
 	{
 		Name = "AER_SteelWatcher_Biped_B_Ranged",
-		TemplateId = "a6f89469-6e38-4374-82ca-6f97d46c7b38",
+		TemplateId = "02761030-f457-4618-bea9-f5ebf6a1efbe",
 		Tier = "epic",
 	},
 	{
@@ -2346,22 +2346,22 @@ return {
 	},
 	{
 		Name = "AER_Humans_Male_CountingHouseGuard_Melee",
-		TemplateId = "c22cf66b-1b83-4a44-a283-8aa6be5e83c2",
+		TemplateId = "4709e0d1-870f-4de7-a758-e111100f8b76",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_S_LOW_CountingHouse_LobbyMainGuard",
-		TemplateId = "0b305740-d8cc-48c2-8d2c-e0c57545df51",
+		TemplateId = "89d0662a-e36a-4e8e-8c34-52033a355510",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Orthon_A",
-		TemplateId = "ba981e3b-5284-483d-9978-fcf12c13d708",
+		TemplateId = "a31bf9b2-588e-4662-bc43-980b1f16d861",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_WeakEthel_Combat",
-		TemplateId = "af6550f1-6ed7-4dd3-9e1a-759c99cf6d4d",
+		TemplateId = "7644d341-3d4f-4ea5-9fe9-6a080285d956",
 		Tier = "ultra",
 	},
 	{
@@ -2381,7 +2381,7 @@ return {
 	},
 	{
 		Name = "AER_Imp_Weak",
-		TemplateId = "45e0ac63-42ce-453b-a731-191a640e71b7",
+		TemplateId = "a31713aa-cd4e-40ca-a92d-635c12440da1",
 		Tier = "zero",
 	},
 	{
@@ -2401,7 +2401,7 @@ return {
 	},
 	{
 		Name = "AER_Meazel",
-		TemplateId = "339defbb-7f0c-412c-9113-f6eba8198275",
+		TemplateId = "b46c11ff-bf4e-462f-af0b-ff59de83e8f9",
 		Tier = "high",
 	},
 	{
@@ -2416,7 +2416,7 @@ return {
 	},
 	{
 		Name = "AER_S_GOB_DrowCommander",
-		TemplateId = "d6a4e207-76eb-40af-8d57-ab86b097749a",
+		TemplateId = "6ecc4991-b488-4ccf-ba3a-0eb2ff4fd231",
 		Tier = "ultra",
 	},
 	{
@@ -2431,22 +2431,22 @@ return {
 	},
 	{
 		Name = "AER_S_UND_Bulette",
-		TemplateId = "91eb79c2-c3d3-4b74-a1c0-c2d6675a8192",
+		TemplateId = "3ad3f97c-fc8a-4504-a262-22409c1c1a60",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Beholder_Spectator",
-		TemplateId = "6372af7a-392b-49a4-8d5f-8676c9a4f29d",
+		TemplateId = "223f809c-a3d4-4d84-9fa2-4e70d47c4115",
 		Tier = "epic",
 	},
 	{
 		Name = "AER_Minotaur",
-		TemplateId = "30d80d13-aebe-495a-88cc-ee58f58f99ca",
+		TemplateId = "36ca6878-ce7d-470e-a682-418a1dbdb376",
 		Tier = "high",
 	},
 	{
 		Name = "AER_DevilsFee_Minotaur",
-		TemplateId = "7ca61e97-c6d6-48c3-a7bc-5f21ea8124ff",
+		TemplateId = "7e766eac-0b4b-4052-bb3a-46f40de91850",
 		Tier = "ultra",
 	},
 	{
@@ -2456,7 +2456,7 @@ return {
 	},
 	{
 		Name = "AER_Bird_Eagle",
-		TemplateId = "7b7f0163-311e-401e-ac5c-33de42f54dde",
+		TemplateId = "48d95af6-60c8-4dfe-928f-180b2c367a41",
 		Tier = "high",
 	},
 	{
@@ -2466,17 +2466,17 @@ return {
 	},
 	{
 		Name = "AER_Meenlock",
-		TemplateId = "a056e158-8ec0-4539-9e55-333866a0ff2c",
+		TemplateId = "bed081fd-8ef9-4c4f-b5b3-239538595d3b",
 		Tier = "ultra",
 	},
 	{
 		Name = "AER_Gremishka_Spawn",
-		TemplateId = "b71656d4-9039-4323-8308-52868ce7a672",
+		TemplateId = "6afd22bd-32b3-4542-aa72-0d7c5f5cc954",
 		Tier = "mid",
 	},
 	{
 		Name = "AER_Myconid_Slender_Black",
-		TemplateId = "66d2e9e8-119b-4fe5-9969-5afe61fbf241",
+		TemplateId = "d8448d97-fbde-4217-bb79-4f6e1443741a",
 		Tier = "mid",
 	},
 	{
@@ -2491,7 +2491,7 @@ return {
 	},
 	{
 		Name = "AER_Myconid_Slender_White",
-		TemplateId = "29fb7fd0-de0e-4c2e-8299-6932bb6156c2",
+		TemplateId = "ec1abb26-7ead-4a2f-b18c-a0ba41ccc6d0",
 		Tier = "mid",
 	},
 }

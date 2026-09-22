@@ -19,7 +19,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "0c773710-b795-4395-a4e8-b71b48db0e15",
+		aerTemplateId = "c7365f80-9ad5-4958-8891-ee676c4339c1",
 	},
 	["5a7d3c96-3b98-4601-85ba-67f6bea52959"] = { -- Zhalk's Backup Cambion 002
 		index = 4,
@@ -30,7 +30,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "0c773710-b795-4395-a4e8-b71b48db0e15",
+		aerTemplateId = "c7365f80-9ad5-4958-8891-ee676c4339c1",
 	},
 	["3939625d-86cc-4395-9d50-4f8b846c4231"] = { -- Oathbreaker Knight
 		index = 6,
@@ -41,7 +41,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "65032d3c-3b75-4c82-9a5a-459c36e204a8",
+		aerTemplateId = "e942f4ef-9f85-44ee-a6ac-34691c19a743",
 	},
 	["307934b5-6fb5-4fdc-a7ff-433a7ba175b3"] = { -- Bulette
 		index = 4,
@@ -52,7 +52,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "91eb79c2-c3d3-4b74-a1c0-c2d6675a8192",
+		aerTemplateId = "3ad3f97c-fc8a-4504-a262-22409c1c1a60",
 	},
 	["abede50d-0d73-412b-8912-c9a4b900493f"] = { -- BOOOAL
 		index = 4,
@@ -74,7 +74,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "1b36fb53-e3b0-4caf-9e93-e93bd0c1b333",
+		aerTemplateId = "f879e10a-a91a-4903-87d4-be297fe0f161",
 	},
 	["5038c0f2-0022-4699-82ce-a319b30616bb"] = { -- Bernard
 		index = 3,
@@ -96,7 +96,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "f2d065e9-b779-4fe5-9a23-4cca8faae822",
+		aerTemplateId = "ca9db64d-7896-47e0-bd03-456344599b48",
 	},
 	["a43d1d6c-d397-4d2d-adb4-ead3b10cb189"] = { -- Anders
 		index = 4,
@@ -184,7 +184,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "6372af7a-392b-49a4-8d5f-8676c9a4f29d",
+		aerTemplateId = "223f809c-a3d4-4d84-9fa2-4e70d47c4115",
 	},
 	["2c214b80-1d72-431d-bc0b-1997a646c99b"] = { -- Iron Flask Spectator
 		index = 5,
@@ -195,7 +195,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "6372af7a-392b-49a4-8d5f-8676c9a4f29d",
+		aerTemplateId = "223f809c-a3d4-4d84-9fa2-4e70d47c4115",
 	},
 	["9966c0db-819a-4873-bcd6-34595713d265"] = { -- High Hall Spectator
 		index = 6,
@@ -206,7 +206,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "6372af7a-392b-49a4-8d5f-8676c9a4f29d",
+		aerTemplateId = "223f809c-a3d4-4d84-9fa2-4e70d47c4115",
 	},
 	["d92a207c-874a-4409-9cad-4abcec33efa1"] = { -- Hope's Prison Spectator 001
 		index = 6,
@@ -217,7 +217,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "6372af7a-392b-49a4-8d5f-8676c9a4f29d",
+		aerTemplateId = "223f809c-a3d4-4d84-9fa2-4e70d47c4115",
 	},
 	["9089024f-e275-43a9-adec-f0923fab2f0c"] = { -- Hope's Prison Spectator 002
 		index = 6,
@@ -228,7 +228,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "6372af7a-392b-49a4-8d5f-8676c9a4f29d",
+		aerTemplateId = "223f809c-a3d4-4d84-9fa2-4e70d47c4115",
 	},
 	["c457d064-83fb-4ec6-b74d-1f30dfafd12d"] = { -- Ethel
 		index = 3,
@@ -239,7 +239,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "af6550f1-6ed7-4dd3-9e1a-759c99cf6d4d",
+		aerTemplateId = "7644d341-3d4f-4ea5-9fe9-6a080285d956",
 	},
 	["05c338d9-4590-4c4b-b87e-8c27ea2c2b18"] = { -- Gekh Coal
 		index = 3,
@@ -250,7 +250,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "31d56e04-71e8-4456-a45c-d3e35ff25248",
+		aerTemplateId = "bd2471f0-6060-42a0-ac9d-0a5dfbadee99",
 	},
 	["70866004-4b9d-4dde-a9c7-9891229c47c7"] = { -- Hook Horror 000
 		index = 4,
@@ -261,7 +261,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "f3b6500b-0053-47c0-b062-4b67228ec34a",
+		aerTemplateId = "d9e7fe76-4758-4ca7-b3a0-de93b8aa0b05",
 	},
 	["3d5a8ed5-771a-491b-93eb-9a65eb2dcf30"] = { -- Hook Horror 001
 		index = 4,
@@ -272,7 +272,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "f3b6500b-0053-47c0-b062-4b67228ec34a",
+		aerTemplateId = "d9e7fe76-4758-4ca7-b3a0-de93b8aa0b05",
 	},
 	["eda129f0-b54b-4b05-95a3-ba626e4b765a"] = { -- Oubliette Hook Horror 000
 		index = 4,
@@ -283,7 +283,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "f3b6500b-0053-47c0-b062-4b67228ec34a",
+		aerTemplateId = "d9e7fe76-4758-4ca7-b3a0-de93b8aa0b05",
 	},
 	["8a086aaf-a785-4f09-8e24-125206d060f1"] = { -- Oubliette Hook Horror 001
 		index = 4,
@@ -294,7 +294,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "f3b6500b-0053-47c0-b062-4b67228ec34a",
+		aerTemplateId = "d9e7fe76-4758-4ca7-b3a0-de93b8aa0b05",
 	},
 	["acf10865-b8a9-48cc-be8b-43945357b26d"] = { -- Backup Hook Horror 000
 		index = 4,
@@ -305,7 +305,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "f3b6500b-0053-47c0-b062-4b67228ec34a",
+		aerTemplateId = "d9e7fe76-4758-4ca7-b3a0-de93b8aa0b05",
 	},
 	["d62704dc-d1ee-4584-b27f-b7c834daebf0"] = { -- Backup Hook Horror 001
 		index = 4,
@@ -316,7 +316,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "f3b6500b-0053-47c0-b062-4b67228ec34a",
+		aerTemplateId = "d9e7fe76-4758-4ca7-b3a0-de93b8aa0b05",
 	},
 	["6ccbf16f-4c9f-4975-b43d-e8569fd1c566"] = { -- Myconid Hook Horror
 		index = 4,
@@ -327,7 +327,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "f3b6500b-0053-47c0-b062-4b67228ec34a",
+		aerTemplateId = "d9e7fe76-4758-4ca7-b3a0-de93b8aa0b05",
 	},
 	["2f00e363-09b2-4573-badc-f0995bef6610"] = { -- Filro
 		index = 4,
@@ -338,7 +338,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "0aabce7e-8c44-4fef-a3f1-5020fdc09399",
+		aerTemplateId = "6289821f-72b1-4698-90ac-e3aa7cc7451b",
 	},
 	["06bf05c5-216b-4eaf-91f5-8f1dd3d57f30"] = { -- Nere
 		index = 3,
@@ -404,7 +404,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5fcc27c1-a495-4437-a904-9b0954dc5c51",
+		aerTemplateId = "9184cafb-98c9-4c05-9cbb-a12be2f41fa6",
 	},
 	["378ac93e-03a0-40b4-904c-f37989ac7a8c"] = { -- Ch'r'ai W'wargaz
 		index = 4,
@@ -426,7 +426,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "23059ca9-414d-42f1-bd2c-be14b36adaf6",
+		aerTemplateId = "0fdccd11-9a54-4b30-b1f4-0a4bf418d773",
 	},
 	["54467aa9-33dd-41c4-bd77-87a71ed22c16"] = { -- Ch'r'ai Har'rak
 		index = 5,
@@ -448,7 +448,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "543adbde-c8b7-48dd-962f-9faffa36da3c",
+		aerTemplateId = "7d3c1787-a143-488e-8381-4659b13d3ce1",
 	},
 	["9d556b37-ea56-43ce-907f-a42505959279"] = { -- Elfsong Gish 002
 		index = 5,
@@ -459,7 +459,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "543adbde-c8b7-48dd-962f-9faffa36da3c",
+		aerTemplateId = "7d3c1787-a143-488e-8381-4659b13d3ce1",
 	},
 	["c8d0ee15-a8f5-469f-a949-244b5657590a"] = { -- Elfsong Raider 001
 		index = 5,
@@ -470,7 +470,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "31691536-78d3-4c3e-9ac8-3d1c71ab8cc0",
+		aerTemplateId = "03058dae-d79c-4304-8037-8da10d22ce31",
 	},
 	["2adce2df-0799-49dc-b867-ba7ca21e9aea"] = { -- Kith'rak Voss
 		index = 5,
@@ -481,7 +481,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "a7c21f62-2b3f-4ef5-9090-a89bc0dd987c",
+		aerTemplateId = "ceba46e4-756e-479a-81bb-7dbf01686452",
 	},
 	["91b6b200-7d00-4d62-8dc9-99e8339dfa1a"] = { -- Jaheira
 		index = 4,
@@ -624,7 +624,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "1667ae07-e4ca-44d4-8d82-5e2f26e08aeb",
+		aerTemplateId = "42f0395a-109e-4a73-9cf0-827abba210b1",
 	},
 	["ebfd7bc7-0fd5-4dee-8fd5-308ded4d0a65"] = { -- Rooftop Soul Mistress
 		index = 5,
@@ -657,7 +657,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "ba981e3b-5284-483d-9978-fcf12c13d708",
+		aerTemplateId = "a31bf9b2-588e-4662-bc43-980b1f16d861",
 	},
 	["594ba359-ce55-4b54-9efc-94eca306c540"] = { -- Lyrthindor
 		index = 4,
@@ -668,7 +668,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "417cd993-e290-4e44-bc29-fa719a9630f8",
+		aerTemplateId = "671080f4-0020-40a2-989d-ba70e0323c9f",
 	},
 	["53651a9f-7ea8-444f-ba2d-224390b72f7d"] = { -- Balthazar
 		index = 5,
@@ -690,7 +690,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "6e966a6f-1e54-4307-842d-7cdebc0cc558",
+		aerTemplateId = "af5222fc-49c4-4782-ba32-ca4f543634df",
 	},
 	["40756dfd-a16c-4586-b1c3-6f0de1c7f515"] = { -- Cairos
 		index = 4,
@@ -745,7 +745,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "15d458c4-c51d-4312-8f5a-cf5ba9042e3f",
+		aerTemplateId = "7e62cec7-b0bc-4949-a3fc-771f0fa16b24",
 	},
 	["1795ac19-6fe7-4382-a05c-aa854fab3832"] = { -- Somi
 		index = 4,
@@ -877,7 +877,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "3cdd682c-f1a0-471f-a823-635e3388a6e6",
+		aerTemplateId = "f213880e-48cf-4201-a040-d05de0ccb9f2",
 	},
 	["c95af77b-6fc3-4c73-ac7c-087124f4b1e4"] = { -- Alioramus 01
 		index = 5,
@@ -987,7 +987,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "ede23eec-0c6b-4b3b-bc4b-7115991d7d58",
+		aerTemplateId = "9c581f91-5dcc-420d-9a2b-07b2b6bd2980",
 	},
 	["f6620372-ebd0-4511-a39d-8c2d4ad03f03"] = { -- Duke Ravengard
 		index = 6,
@@ -998,7 +998,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "cb1b3ca3-1828-499d-98a7-ead1e2c56af0",
+		aerTemplateId = "895b0389-878e-42fc-bb8e-e149b152ac5e",
 	},
 	["b878a854-f790-4999-95c4-3f20f00f65ac"] = { -- Gortash
 		index = 6,
@@ -1020,7 +1020,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "307d5a85-aa03-42ab-afba-2832300d3041",
+		aerTemplateId = "8f6656cd-b51d-4096-b4be-218e1c4754f1",
 	},
 	["b7e59d50-dad4-40b3-88f7-e05d27134356"] = { -- Parasitical Wraith
 		index = 6,
@@ -1053,7 +1053,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["6f71be30-7cab-43a7-999d-12b9adde5a0e"] = { -- Mystic Carrion Lair Mummy 002
 		index = 4,
@@ -1064,7 +1064,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["6d04276b-aefd-43a2-a2f0-eb586bcfc881"] = { -- Mystic Carrion Lair Mummy 003
 		index = 4,
@@ -1075,7 +1075,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["d526d72a-599c-464e-b7fe-84128d496b3c"] = { -- Mystic Carrion Lair Mummy 004
 		index = 4,
@@ -1086,7 +1086,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["331ffe6e-00c9-4f79-94d4-c6d65b4a9093"] = { -- Mystic Carrion Lair Mummy 005
 		index = 4,
@@ -1097,7 +1097,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["d03067ac-43a7-435b-be97-558065b1f7d1"] = { -- Mystic Carrion Mummy 000
 		index = 4,
@@ -1108,7 +1108,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["d03067ac-43a7-435b-be97-558065b1f7d1"] = { -- Mystic Carrion Mummy 001
 		index = 4,
@@ -1119,7 +1119,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["2bb0196b-9bd6-4eb3-989f-29d14a8cd2d8"] = { -- Mystic Carrion Mummy 002
 		index = 4,
@@ -1130,7 +1130,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["1ada20fe-49b1-4663-a832-0e2c7126907d"] = { -- Mystic Carrion Mummy 003
 		index = 4,
@@ -1141,7 +1141,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["ca673f78-bf5a-4170-9a3d-86956fd7320b"] = { -- Mystic Carrion Mummy 004
 		index = 4,
@@ -1152,7 +1152,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["9ede4829-ec97-40b6-ac1c-ef14b9c6d14a"] = { -- Mystic Carrion Mummy 005
 		index = 4,
@@ -1163,7 +1163,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["e6bd5cec-2691-4dc4-99ae-2461c87bb6ba"] = { -- Mystic Carrion Mummy 006
 		index = 4,
@@ -1174,7 +1174,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["1138b56d-1cd2-4c7b-9147-ea77709a85bd"] = { -- Circus Mummy
 		index = 4,
@@ -1185,7 +1185,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7a3c3f58-66b4-47de-9ef1-9335039c1ed1",
+		aerTemplateId = "b587c66d-ffa5-4dd1-8ac2-ae258b684848",
 	},
 	["b003409c-364f-4065-94bf-7436001d890e"] = { -- Mystic Carrion
 		index = 6,
@@ -1196,7 +1196,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "d18bc581-008f-499a-a54f-32d4a05ab956",
+		aerTemplateId = "e2e18069-7d05-4f7b-be5c-9a9f131147f1",
 	},
 	["4f9f5fc9-45a7-412d-b388-f8e31a2d1c6b"] = { -- Lorroakan's Fire Myrmidon
 		index = 5,
@@ -1207,7 +1207,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "0f8b7ae3-15e9-43bc-99a2-04837c629a27",
+		aerTemplateId = "9169610a-19f7-4755-a963-12f5b83673b6",
 	},
 	["b9ed09f3-e67e-4498-aa24-5fecec718c07"] = { -- Lorroakan's Water Myrmidon
 		index = 5,
@@ -1218,7 +1218,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "dbe13a26-b5fa-4d81-8cac-1615e8835cb1",
+		aerTemplateId = "d24a8458-db13-46c2-bdce-0122c641f4b6",
 	},
 	["fb67df58-9801-4661-bfa7-460c5f02b0bc"] = { -- Lorroakan's Earth Myrmidon
 		index = 5,
@@ -1229,7 +1229,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "01ac5949-4d57-4f13-b84d-5b008f3ffa49",
+		aerTemplateId = "fee03c4b-6d91-4f20-8b68-2a884bfe2631",
 	},
 	["fe3ad530-4bc1-436b-bffa-0e3d83a75782"] = { -- Lorroakan's Air Myrmidon
 		index = 5,
@@ -1240,7 +1240,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "bd08bf83-7d6d-4953-875f-a14b37dfc6a6",
+		aerTemplateId = "88cd78f7-cb5d-4f25-9cd8-351cd8025a49",
 	},
 	["a9d4b71d-b0ef-429e-8210-6dc8be986ee9"] = { -- Lorroakan
 		index = 6,
@@ -1273,7 +1273,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "87ecdf17-9704-4d33-9852-4380b96933de",
+		aerTemplateId = "4d03bf17-c7e1-41ff-a1dd-dbb5e49291fb",
 	},
 	["40756dfd-a16c-4586-b1c3-6f0de1c7f515"] = { -- Cairos
 		index = 5,
@@ -1284,7 +1284,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "436a4023-ccb6-4e6c-91be-694674f68db4",
+		aerTemplateId = "3eeb9c42-0bd9-4586-8035-45b08202f14f",
 	},
 	["0de603c5-42e2-4811-9dad-f652de080eba"] = { -- Minsc
 		index = 6,
@@ -1317,7 +1317,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "6572e304-c61e-4d76-8477-4100057cf13e",
+		aerTemplateId = "911e5353-770e-461b-9a10-1cc18d0930ce",
 	},
 	["048defbd-d386-4272-a5b7-40c1a9e75b81"] = { -- Devella Fountainhead
 		index = 5,
@@ -1339,7 +1339,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "a9eb1a9b-2b43-437f-be13-1194039e9e30",
+		aerTemplateId = "7998edce-8aa8-4b73-b070-2c9b0aed31df",
 	},
 	["980f2182-100a-4c30-9965-5bbae804a511"] = { -- Edenosa Cracklewall
 		index = 5,
@@ -1350,7 +1350,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "374535ec-df6a-49f0-8212-9e42dc6fa112",
+		aerTemplateId = "c9e81fe5-aede-422b-83df-a27791507c00",
 	},
 	["8b9fa503-7205-4ddd-bdfa-bfaa781d9ea9"] = { -- Counsellor Florrick
 		index = 3,
@@ -1361,7 +1361,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "bee463e5-69ff-4426-9dc9-6d5f49b596d4",
+		aerTemplateId = "fd3d0845-a00a-4b42-81af-dc66c41592f7",
 	},
 	["6d0c04b2-81d4-4d34-96d5-d5304dc889e8"] = { -- Cordula Eltan
 		index = 5,
@@ -1372,7 +1372,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "7de4edcd-a664-4c48-a953-d54dbec49dbb",
+		aerTemplateId = "d692e6f5-799b-45ae-b892-f80332c23040",
 	},
 	["6d0c04b2-81d4-4d34-96d5-d5304dc889e8"] = { -- Pollo the Muscle
 		index = 5,
@@ -1383,9 +1383,9 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "13088ab3-3fe3-4657-b592-c69b68103559",
+		aerTemplateId = "61b9346c-ec06-48f2-9f6a-5b2c95bdabc4",
 	},
-	["ea783113-2d9e-48df-a40a-80a346f46cb4"] = { -- Wanda Tullermoor
+	["acc2e5a3-24fe-41c6-a56e-56bd036cac72"] = { -- Wanda Tullermoor
 		index = 5,
 		boss = false,
 		lookupFlag = true,
@@ -1394,7 +1394,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "ea783113-2d9e-48df-a40a-80a346f46cb4",
+		aerTemplateId = "acc2e5a3-24fe-41c6-a56e-56bd036cac72",
 	},
 	["22aaad49-98de-43a2-ab2f-c7ab9a8df922"] = { -- Savage Seawind 000
 		index = 4,
@@ -1405,7 +1405,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "60088c81-5e06-44f7-9449-e580ae3453a6",
+		aerTemplateId = "79011108-1e1e-4dd8-bd17-e4a5f4363006",
 	},
 	["3348c4ec-3218-4459-a288-3b8142add460"] = { -- Savage Seawind 001
 		index = 4,
@@ -1416,7 +1416,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "60088c81-5e06-44f7-9449-e580ae3453a6",
+		aerTemplateId = "79011108-1e1e-4dd8-bd17-e4a5f4363006",
 	},
 	["e76f27c5-0799-472c-a6a0-9d7e714d0114"] = { -- Savage Seawind 002
 		index = 4,
@@ -1427,7 +1427,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "60088c81-5e06-44f7-9449-e580ae3453a6",
+		aerTemplateId = "79011108-1e1e-4dd8-bd17-e4a5f4363006",
 	},
 	["cd6cb468-b077-48d0-a7e1-1e3758466d5f"] = { -- Savage Seawind 003
 		index = 4,
@@ -1438,7 +1438,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "60088c81-5e06-44f7-9449-e580ae3453a6",
+		aerTemplateId = "79011108-1e1e-4dd8-bd17-e4a5f4363006",
 	},
 	["28327055-7f42-4374-a483-3fd296fa26f6"] = { -- Savage Seawind 004
 		index = 4,
@@ -1449,7 +1449,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "60088c81-5e06-44f7-9449-e580ae3453a6",
+		aerTemplateId = "79011108-1e1e-4dd8-bd17-e4a5f4363006",
 	},
 	["f8b70d49-2ab7-4fcd-8203-aa7ae0fcd99c"] = { -- Savage Seawind 005
 		index = 4,
@@ -1460,7 +1460,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "60088c81-5e06-44f7-9449-e580ae3453a6",
+		aerTemplateId = "79011108-1e1e-4dd8-bd17-e4a5f4363006",
 	},
 	["1b06ea64-c030-4cbf-a870-a41e8adae30c"] = { -- Untaken 000
 		index = 3,
@@ -1471,7 +1471,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "0f30ed41-c795-48b9-9fdb-590cf8f97a08",
+		aerTemplateId = "95c49653-9df8-41b3-a7db-4c89a428d31c",
 	},
 	["582e2859-3602-4243-b7ec-c7d51d9c3b4a"] = { -- Untaken 001
 		index = 3,
@@ -1482,7 +1482,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "0f30ed41-c795-48b9-9fdb-590cf8f97a08",
+		aerTemplateId = "95c49653-9df8-41b3-a7db-4c89a428d31c",
 	},
 	["f9ee4d8f-0c1a-4b49-8859-7e3fab474c91"] = { -- Untaken 002
 		index = 3,
@@ -1493,7 +1493,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "0f30ed41-c795-48b9-9fdb-590cf8f97a08",
+		aerTemplateId = "95c49653-9df8-41b3-a7db-4c89a428d31c",
 	},
 	["b4e6e0fb-43e8-4656-bbba-9a9b78fe733c"] = { -- Untaken 003
 		index = 3,
@@ -1504,7 +1504,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "0f30ed41-c795-48b9-9fdb-590cf8f97a08",
+		aerTemplateId = "95c49653-9df8-41b3-a7db-4c89a428d31c",
 	},
 	["532cb053-c2c0-4b9e-b388-70b037b657d9"] = { -- Untaken 004
 		index = 3,
@@ -1515,7 +1515,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "0f30ed41-c795-48b9-9fdb-590cf8f97a08",
+		aerTemplateId = "95c49653-9df8-41b3-a7db-4c89a428d31c",
 	},
 	["aa6a6068-0825-4bd8-b696-7b82e7418911"] = { -- Dark Breaker 000
 		index = 4,
@@ -1526,7 +1526,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5c8abafb-61da-4851-99b8-2c584ef495f0",
+		aerTemplateId = "63e85185-b0a5-496c-b9af-2f3bcf94deff",
 	},
 	["eb2f1d87-9d15-45bc-8899-15415c6cf6d2"] = { -- Dark Breaker 001
 		index = 4,
@@ -1537,7 +1537,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5c8abafb-61da-4851-99b8-2c584ef495f0",
+		aerTemplateId = "63e85185-b0a5-496c-b9af-2f3bcf94deff",
 	},
 	["0126336d-159d-4556-ba11-ac3f45075a4b"] = { -- Dark Breaker 002
 		index = 4,
@@ -1548,7 +1548,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5c8abafb-61da-4851-99b8-2c584ef495f0",
+		aerTemplateId = "63e85185-b0a5-496c-b9af-2f3bcf94deff",
 	},
 	["8f087672-72c6-4bfb-a10c-e15182a012e4"] = { -- Dark Breaker 003
 		index = 4,
@@ -1559,7 +1559,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5c8abafb-61da-4851-99b8-2c584ef495f0",
+		aerTemplateId = "63e85185-b0a5-496c-b9af-2f3bcf94deff",
 	},
 	["f362518e-a204-48b5-8400-f8e61e9323aa"] = { -- Dark Breaker 004
 		index = 4,
@@ -1570,7 +1570,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5c8abafb-61da-4851-99b8-2c584ef495f0",
+		aerTemplateId = "63e85185-b0a5-496c-b9af-2f3bcf94deff",
 	},
 	["3995ac03-7410-468a-8b04-37d03409259d"] = { -- Dark Breaker 005
 		index = 4,
@@ -1581,7 +1581,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5c8abafb-61da-4851-99b8-2c584ef495f0",
+		aerTemplateId = "63e85185-b0a5-496c-b9af-2f3bcf94deff",
 	},
 	["3e0733be-8f92-415d-b437-b4d6ffd0799b"] = { -- Dark Breaker 006
 		index = 4,
@@ -1592,7 +1592,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5c8abafb-61da-4851-99b8-2c584ef495f0",
+		aerTemplateId = "63e85185-b0a5-496c-b9af-2f3bcf94deff",
 	},
 	["ab993a69-39be-47f4-9330-49d3e4958e12"] = { -- Dark Breaker 007
 		index = 4,
@@ -1603,7 +1603,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5c8abafb-61da-4851-99b8-2c584ef495f0",
+		aerTemplateId = "63e85185-b0a5-496c-b9af-2f3bcf94deff",
 	},
 	["da84f4e2-8b4f-478e-b101-fa2865f6aa53"] = { -- Dark Breaker 008
 		index = 4,
@@ -1614,7 +1614,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5c8abafb-61da-4851-99b8-2c584ef495f0",
+		aerTemplateId = "63e85185-b0a5-496c-b9af-2f3bcf94deff",
 	},
 	["eddd4c99-74bb-45d6-902b-f866f88e3f84"] = { -- Dark Breaker 009
 		index = 4,
@@ -1625,7 +1625,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5c8abafb-61da-4851-99b8-2c584ef495f0",
+		aerTemplateId = "63e85185-b0a5-496c-b9af-2f3bcf94deff",
 	},
 	["32d78583-07c6-4160-9ec7-3a24b15149c8"] = { -- Allandra Grey
 		index = 5,
@@ -1713,7 +1713,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "906b6773-74ca-4561-b69c-435568359715",
+		aerTemplateId = "cc4582b7-5615-4029-bd2a-95f45d67e452",
 	},
 	["9a307843-3958-4c07-ace9-f1c04b5af558"] = { -- Zhentarim Phase
 		index = 5,
@@ -1900,7 +1900,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "292092e8-d244-475f-b46e-0e85e0d37a63",
+		aerTemplateId = "55542643-a98d-49da-a22f-bafcdd4fb2a9",
 	},
 	["600ae933-d6d3-443f-b400-8ed440874ff6"] = { -- Counting House Artillerist 001
 		index = 4,
@@ -1911,7 +1911,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "292092e8-d244-475f-b46e-0e85e0d37a63",
+		aerTemplateId = "55542643-a98d-49da-a22f-bafcdd4fb2a9",
 	},
 	["52504043-35b8-47ec-8ea4-4ac40593654e"] = { -- Counting House Artillerist 002
 		index = 4,
@@ -1922,7 +1922,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "292092e8-d244-475f-b46e-0e85e0d37a63",
+		aerTemplateId = "55542643-a98d-49da-a22f-bafcdd4fb2a9",
 	},
 	["b07c79ad-9c9c-4131-a7c2-70e898e5e984"] = { -- Counting House Artillerist 003
 		index = 4,
@@ -1933,7 +1933,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "292092e8-d244-475f-b46e-0e85e0d37a63",
+		aerTemplateId = "55542643-a98d-49da-a22f-bafcdd4fb2a9",
 	},
 	["474ad061-b260-4866-bcea-64ec99e29968"] = { -- Counting House Artillerist 004
 		index = 4,
@@ -1944,7 +1944,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "292092e8-d244-475f-b46e-0e85e0d37a63",
+		aerTemplateId = "55542643-a98d-49da-a22f-bafcdd4fb2a9",
 	},
 	["0aadf193-523e-40ef-80b6-fcfd5e56143f"] = { -- Counting House Artillerist 005
 		index = 4,
@@ -1955,7 +1955,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "d4635f8b-e535-461f-8964-bd62f4ab58a6",
+		aerTemplateId = "0853f5db-e06e-40b1-8145-1bf6da1abb11",
 	},
 	["41a0b028-9e14-4781-8a06-cb3cb8a9ee4f"] = { -- Counting House Artillerist 006
 		index = 4,
@@ -1966,7 +1966,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "d4635f8b-e535-461f-8964-bd62f4ab58a6",
+		aerTemplateId = "0853f5db-e06e-40b1-8145-1bf6da1abb11",
 	},
 	["2eb23f41-9a39-4b28-b2e5-3409f6669b70"] = { -- Counting House Artillerist 007
 		index = 4,
@@ -1977,7 +1977,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "d4635f8b-e535-461f-8964-bd62f4ab58a6",
+		aerTemplateId = "0853f5db-e06e-40b1-8145-1bf6da1abb11",
 	},
 	["4316b95f-6624-4601-bceb-bdddb8e0ba62"] = { -- Counting House Artillerist 008
 		index = 4,
@@ -1988,7 +1988,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "d4635f8b-e535-461f-8964-bd62f4ab58a6",
+		aerTemplateId = "0853f5db-e06e-40b1-8145-1bf6da1abb11",
 	},
 	["459e4fa3-c9f3-478a-ba56-e09431674e32"] = { -- Counting House Artillerist 009
 		index = 4,
@@ -1999,7 +1999,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "d4635f8b-e535-461f-8964-bd62f4ab58a6",
+		aerTemplateId = "0853f5db-e06e-40b1-8145-1bf6da1abb11",
 	},
 	["4ed00592-af13-4eb4-8bfc-e337135b8b87"] = { -- Counting House Artillerist 010
 		index = 4,
@@ -2010,7 +2010,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "d4635f8b-e535-461f-8964-bd62f4ab58a6",
+		aerTemplateId = "0853f5db-e06e-40b1-8145-1bf6da1abb11",
 	},
 	["6cf1730a-50af-49e2-b7f4-1ff52d448071"] = { -- Counting House Artillerist 011
 		index = 4,
@@ -2021,7 +2021,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "d4635f8b-e535-461f-8964-bd62f4ab58a6",
+		aerTemplateId = "0853f5db-e06e-40b1-8145-1bf6da1abb11",
 	},
 	["e4ff4283-9c1c-4fd7-8e7c-b7fa27b789a8"] = { -- Counting House Artillerist 012
 		index = 4,
@@ -2032,7 +2032,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "d4635f8b-e535-461f-8964-bd62f4ab58a6",
+		aerTemplateId = "0853f5db-e06e-40b1-8145-1bf6da1abb11",
 	},
 	["33446759-12f2-41ed-aba7-4a4f4408c5fe"] = { -- Counting House Artillerist 013
 		index = 4,
@@ -2043,7 +2043,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "d4635f8b-e535-461f-8964-bd62f4ab58a6",
+		aerTemplateId = "0853f5db-e06e-40b1-8145-1bf6da1abb11",
 	},
 	["400c9176-b9b5-448c-a283-156b15125eec"] = { -- Counting House Artillerist 014
 		index = 4,
@@ -2054,7 +2054,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "d4635f8b-e535-461f-8964-bd62f4ab58a6",
+		aerTemplateId = "0853f5db-e06e-40b1-8145-1bf6da1abb11",
 	},
 	["ff490513-7296-4512-8040-239f9e824f2b"] = { -- Counting House Guard 000
 		index = 5,
@@ -2065,7 +2065,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c22cf66b-1b83-4a44-a283-8aa6be5e83c2",
+		aerTemplateId = "4709e0d1-870f-4de7-a758-e111100f8b76",
 	},
 	["316f2520-fe74-4287-869b-88eea90c983d"] = { -- Counting House Guard 001
 		index = 5,
@@ -2076,7 +2076,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c22cf66b-1b83-4a44-a283-8aa6be5e83c2",
+		aerTemplateId = "4709e0d1-870f-4de7-a758-e111100f8b76",
 	},
 	["cbfc2698-d7bc-403c-a861-8c9dbdec010b"] = { -- Counting House Guard 002
 		index = 5,
@@ -2087,7 +2087,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c22cf66b-1b83-4a44-a283-8aa6be5e83c2",
+		aerTemplateId = "4709e0d1-870f-4de7-a758-e111100f8b76",
 	},
 	["9bbb4f10-bbb8-4fd5-a38a-55581bc2c3c9"] = { -- Counting House Guard 003
 		index = 5,
@@ -2098,7 +2098,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c22cf66b-1b83-4a44-a283-8aa6be5e83c2",
+		aerTemplateId = "4709e0d1-870f-4de7-a758-e111100f8b76",
 	},
 	["ae3168fe-dd18-421b-aa51-4d86d1245871"] = { -- Counting House Guard 004
 		index = 5,
@@ -2109,7 +2109,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c22cf66b-1b83-4a44-a283-8aa6be5e83c2",
+		aerTemplateId = "4709e0d1-870f-4de7-a758-e111100f8b76",
 	},
 	["8e3c3b8b-a809-4423-8cf6-cea702b070ec"] = { -- Counting House Guard 005
 		index = 5,
@@ -2120,7 +2120,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c22cf66b-1b83-4a44-a283-8aa6be5e83c2",
+		aerTemplateId = "4709e0d1-870f-4de7-a758-e111100f8b76",
 	},
 	["936953b6-059b-4ed6-b03a-5d1b340f8889"] = { -- Counting House Guard 006
 		index = 5,
@@ -2131,7 +2131,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "749a88a1-5e26-4ddd-bd2b-650000148230",
+		aerTemplateId = "9eb43d24-7a3c-443d-8371-4f3d88ab21a0",
 	},
 	["f5d6f408-f7d0-4d36-aef9-44e578727fd9"] = { -- Counting House Guard 007
 		index = 5,
@@ -2142,7 +2142,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "749a88a1-5e26-4ddd-bd2b-650000148230",
+		aerTemplateId = "9eb43d24-7a3c-443d-8371-4f3d88ab21a0",
 	},
 	["4544476d-1260-4ddb-8155-64712ad44950"] = { -- Counting House Guard 008
 		index = 5,
@@ -2153,7 +2153,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "749a88a1-5e26-4ddd-bd2b-650000148230",
+		aerTemplateId = "9eb43d24-7a3c-443d-8371-4f3d88ab21a0",
 	},
 	["b2e920a0-0ca6-463c-beed-6fee81a6bb0b"] = { -- Counting House Guard 009
 		index = 5,
@@ -2164,7 +2164,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "749a88a1-5e26-4ddd-bd2b-650000148230",
+		aerTemplateId = "9eb43d24-7a3c-443d-8371-4f3d88ab21a0",
 	},
 	["812a2565-3c84-4c47-9255-5d66d840ede4"] = { -- Counting House Guard 010
 		index = 5,
@@ -2175,7 +2175,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "749a88a1-5e26-4ddd-bd2b-650000148230",
+		aerTemplateId = "9eb43d24-7a3c-443d-8371-4f3d88ab21a0",
 	},
 	["812a2565-3c84-4c47-9255-5d66d840ede4"] = { -- Counting House Captain
 		index = 6,
@@ -2186,7 +2186,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "0b305740-d8cc-48c2-8d2c-e0c57545df51",
+		aerTemplateId = "89d0662a-e36a-4e8e-8c34-52033a355510",
 	},
 	["21359690-36ec-43d3-bfed-98c24f523fc7"] = { -- Avery Sonshal
 		index = 4,
@@ -2230,7 +2230,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "f3b04992-f073-449b-9191-0c059747adee",
+		aerTemplateId = "808a8057-be52-4788-95fd-dc402a3ca6d3",
 	},
 	["9a4e3f08-739f-4576-a50c-e051ce5126d1"] = { -- Enforcer Skoona
 		index = 5,
@@ -2241,7 +2241,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "b9ea50e3-1033-4de8-b374-63c435a18fd4",
+		aerTemplateId = "d67a765d-a79c-44f5-8b94-49cf15b0a709",
 	},
 	["ae950485-c1c8-45ed-9420-e14007f53cd6"] = { -- Houndsmaster Pol
 		index = 5,
@@ -2252,7 +2252,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7cbdabf4-9249-461a-b92c-391e9fa9c281",
+		aerTemplateId = "45a9bda9-a0e8-42d2-88b1-f2c5766a4688",
 	},
 	["ebfe9029-2a74-40eb-bbd1-8e5d0ec8fe1f"] = { -- Jord
 		index = 5,
@@ -2263,7 +2263,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "1f650dea-d19f-42c8-883a-f65391cb4cee",
+		aerTemplateId = "e1a08197-a522-44e3-a001-de8e42f6829f",
 	},
 	["8f5ab254-2d62-4115-a4d4-3b84e6d1896c"] = { -- Rion
 		index = 5,
@@ -2274,7 +2274,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "246e79cf-b897-4c21-8413-657af5b1d9fb",
+		aerTemplateId = "519e524f-6528-4bf7-bb62-ec60a54a9215",
 	},
 	["aa38af5c-9c75-4b2e-89e3-0cc1b995dbd6"] = { -- Adrielle
 		index = 5,
@@ -2285,7 +2285,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "e90113f1-3123-4691-83e5-31cd57a4b4e2",
+		aerTemplateId = "a62b9856-c198-47fe-9608-72e709728018",
 	},
 	["0cb0a73b-1f97-4481-b320-b8fff88cfe0f"] = { -- Jatlo
 		index = 5,
@@ -2384,7 +2384,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "96466df4-a4ce-44d1-8b04-8dacfe70013d",
+		aerTemplateId = "a1ff233f-9be7-4931-9b43-f74d4dfb05bd",
 	},
 	["600b2316-722c-4316-b19e-0dbf77b8651a"] = { -- Gilded Minotaur 001
 		index = 5,
@@ -2395,7 +2395,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7ca61e97-c6d6-48c3-a7bc-5f21ea8124ff",
+		aerTemplateId = "7e766eac-0b4b-4052-bb3a-46f40de91850",
 	},
 	["be15933c-0123-4892-9160-ac2cefb5f9d9"] = { -- Gilded Minotaur 001
 		index = 5,
@@ -2406,7 +2406,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "7ca61e97-c6d6-48c3-a7bc-5f21ea8124ff",
+		aerTemplateId = "7e766eac-0b4b-4052-bb3a-46f40de91850",
 	},
 	["299a1c00-ff53-415e-ad8e-9bcbbae55597"] = { -- Helsik
 		index = 6,
@@ -2428,7 +2428,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "2da5bf8c-9333-4632-a344-3849d716bed2",
+		aerTemplateId = "991a12ec-5f2b-4348-a59e-6be780e6bf8f",
 	},
 	["b8c31050-f17e-46a8-bae6-ac98481e3d5a"] = { -- Vengeful Imp 000 
 		index = 3,
@@ -2439,7 +2439,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["0e3d4128-0bd4-4c05-a6a3-3d654b75043b"] = { -- Vengeful Imp 001
 		index = 3,
@@ -2450,7 +2450,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["3a9e98f5-fe4c-46b2-a129-1e67fe92512b"] = { -- Vengeful Imp 002
 		index = 3,
@@ -2461,7 +2461,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["4a793e6c-572c-4541-a10e-ce75b1e62255"] = { -- Vengeful Imp 003
 		index = 3,
@@ -2472,7 +2472,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["4adcf56c-e1cc-4441-8e3f-0761172407d4"] = { -- Vengeful Imp 004
 		index = 3,
@@ -2483,7 +2483,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["502cb8ab-7c8d-4465-b0cb-abab76da524a"] = { -- Vengeful Imp 005
 		index = 3,
@@ -2494,7 +2494,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["55c88dba-6d2d-4082-b5dc-be1590c0e326"] = { -- Vengeful Imp 006
 		index = 3,
@@ -2505,7 +2505,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["5849cd14-4f4a-4742-bb0c-056c3ef7f90e"] = { -- Vengeful Imp 007
 		index = 3,
@@ -2516,7 +2516,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["5ceed225-db6e-4652-bd4b-88c250550193"] = { -- Vengeful Imp 008
 		index = 3,
@@ -2527,7 +2527,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["ad2d83ec-102b-4f92-b98a-5ca981a23421"] = { -- Vengeful Imp 009
 		index = 3,
@@ -2538,7 +2538,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["d41533a3-b1d9-4cd3-b495-5732c989bd25"] = { -- Vengeful Imp 010
 		index = 3,
@@ -2549,7 +2549,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["401761d3-a021-4a8a-968f-85c7e7e8675c"] = { -- Vengeful Imp 011
 		index = 3,
@@ -2560,7 +2560,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["74282535-2053-4a8d-98ff-6413ea2136dd"] = { -- Vengeful Imp 012
 		index = 3,
@@ -2571,7 +2571,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["7f9717a3-16c6-4323-9976-a31d27e36495"] = { -- Vengeful Imp 013
 		index = 3,
@@ -2582,7 +2582,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["b5d6b288-45d1-497b-8339-cead5e16133d"] = { -- Vengeful Imp 014
 		index = 3,
@@ -2593,7 +2593,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["095fbaa2-51c3-47fe-8626-22f28f1bece8"] = { -- Vengeful Imp 013
 		index = 3,
@@ -2604,7 +2604,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "9123a836-698a-45a3-be1e-d7e5c3e1a55f",
+		aerTemplateId = "7b612b1f-fc9a-4585-a689-6bc477219c78",
 	},
 	["5e20448a-8824-4f0f-83e8-d31824894c9e"] = { -- Vengeful Merregon 000
 		index = 4,
@@ -2615,7 +2615,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "9fa1b15b-b6d6-4c55-8693-947433d3514e",
+		aerTemplateId = "88a59e7d-7b39-4470-ba06-dc5b8ff9141e",
 	},
 	["ba11228c-c75e-4df9-bd55-8091e1d48d36"] = { -- Vengeful Merregon 001
 		index = 4,
@@ -2626,7 +2626,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "9fa1b15b-b6d6-4c55-8693-947433d3514e",
+		aerTemplateId = "88a59e7d-7b39-4470-ba06-dc5b8ff9141e",
 	},
 	["f1c77e06-f470-4fdc-b191-3be213f2043f"] = { -- Vengeful Merregon 002
 		index = 4,
@@ -2637,7 +2637,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "9fa1b15b-b6d6-4c55-8693-947433d3514e",
+		aerTemplateId = "88a59e7d-7b39-4470-ba06-dc5b8ff9141e",
 	},
 	["4535facb-487c-4ab8-82e2-0f28558a7d16"] = { -- Vengeful Cambion 001
 		index = 5,
@@ -2648,7 +2648,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "0c773710-b795-4395-a4e8-b71b48db0e15",
+		aerTemplateId = "c7365f80-9ad5-4958-8891-ee676c4339c1",
 	},
 	["3164499e-24cd-4417-baca-5f057b4d9518"] = { -- Vengeful Cambion 002
 		index = 5,
@@ -2659,7 +2659,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c95bfd06-2786-4b60-aae9-9ca3b5182a59",
+		aerTemplateId = "cb0dec67-db1d-43cc-b6df-8c0dc9c5d841",
 	},
 	["abc96d0e-846e-4986-ae72-39befabb128b"] = { -- Vengeful Cambion 003
 		index = 5,
@@ -2670,7 +2670,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c95bfd06-2786-4b60-aae9-9ca3b5182a59",
+		aerTemplateId = "cb0dec67-db1d-43cc-b6df-8c0dc9c5d841",
 	},
 	["25c6573c-acb8-437f-9fcf-81a80c56f540"] = { -- Vengeful Cambion 004
 		index = 5,
@@ -2681,7 +2681,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c95bfd06-2786-4b60-aae9-9ca3b5182a59",
+		aerTemplateId = "cb0dec67-db1d-43cc-b6df-8c0dc9c5d841",
 	},
 	["f7b77fc8-d732-4cf7-a541-34d16ad01dc6"] = { -- Vengeful Cambion 005
 		index = 5,
@@ -2692,7 +2692,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c95bfd06-2786-4b60-aae9-9ca3b5182a59",
+		aerTemplateId = "cb0dec67-db1d-43cc-b6df-8c0dc9c5d841",
 	},
 	["c9c4475f-a2e7-43d6-8df9-de081fef3f89"] = { -- Vengeful Cambion 006
 		index = 5,
@@ -2703,7 +2703,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "0c773710-b795-4395-a4e8-b71b48db0e15",
+		aerTemplateId = "c7365f80-9ad5-4958-8891-ee676c4339c1",
 	},
 	["d432aafd-f728-4d9d-9707-732e1cdd8297"] = { -- Korrilla
 		index = 4,
@@ -2714,7 +2714,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "99849ed9-e8ae-4bce-852c-b980f826aeec",
+		aerTemplateId = "c746bd20-739c-4fdb-8277-cc6f6617b1b9",
 	},
 	["3947e0e2-3b4c-4a39-ac53-454e95665b26"] = { -- Haarlep
 		index = 6,
@@ -2736,7 +2736,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "65124807-63fe-494a-a9cc-b98d41fd38ca",
+		aerTemplateId = "65f3b25c-aae7-4025-b1ac-066504dc8057",
 	},
 	["54ab1644-1ae1-4d85-8bb7-e870dbc2ea8c"] = { -- Moonlight Sliver 001
 		index = 6,
@@ -2747,7 +2747,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c74a5a8d-97a6-41c5-ab95-a2e664fc9eda",
+		aerTemplateId = "74644930-1b2f-4f81-9cab-6b29ff5571a8",
 	},
 	["3d2a675a-a945-44e3-b363-6e5b9f8c52b0"] = { -- Moonlight Sliver 002
 		index = 6,
@@ -2758,7 +2758,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c74a5a8d-97a6-41c5-ab95-a2e664fc9eda",
+		aerTemplateId = "74644930-1b2f-4f81-9cab-6b29ff5571a8",
 	},
 	["0d53dbe4-9991-49c8-9370-1f71e70564d9"] = { -- Moonlight Sliver 003
 		index = 6,
@@ -2769,7 +2769,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "c74a5a8d-97a6-41c5-ab95-a2e664fc9eda",
+		aerTemplateId = "74644930-1b2f-4f81-9cab-6b29ff5571a8",
 	},
 	["a612de01-a750-491a-bacd-e09a67fc0de3"] = { -- Vampire Spawn Aurelia
 		index = 6,
@@ -2780,7 +2780,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "9b5d887c-319a-4f8c-b0fa-c99de76a3543",
+		aerTemplateId = "d5a6328c-12f8-4548-9e3d-60047aaeeea5",
 	},
 	["062ff971-d709-4f54-bb03-51c02844eacb"] = { -- Vampire Spawn Leon
 		index = 5,
@@ -2791,7 +2791,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "9b5d887c-319a-4f8c-b0fa-c99de76a3543",
+		aerTemplateId = "d5a6328c-12f8-4548-9e3d-60047aaeeea5",
 	},
 	["52ede1c9-6caf-4f7a-8d97-984c0e90e9cf"] = { -- Vampire Spawn Yousen
 		index = 5,
@@ -2802,7 +2802,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "9b5d887c-319a-4f8c-b0fa-c99de76a3543",
+		aerTemplateId = "d5a6328c-12f8-4548-9e3d-60047aaeeea5",
 	},
 	["a4dc8e21-833c-4469-a72b-1969c688b8a4"] = { -- Vampire Spawn Violet
 		index = 5,
@@ -2813,7 +2813,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "9b5d887c-319a-4f8c-b0fa-c99de76a3543",
+		aerTemplateId = "d5a6328c-12f8-4548-9e3d-60047aaeeea5",
 	},
 	["20ff3b11-d07a-4ecc-ae23-41fc09966ba5"] = { -- Ritual Werewolf 001
 		index = 4,
@@ -2824,7 +2824,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "2f2aac10-bc02-4d24-be43-2b43d402e4e4",
+		aerTemplateId = "a84d09c6-64f8-4bd7-90c8-77a7952099a7",
 	},
 	["79138f67-ed4a-4d3a-8fb7-1e4c4d6c8620"] = { -- Ritual Werewolf 002
 		index = 4,
@@ -2835,7 +2835,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "2f2aac10-bc02-4d24-be43-2b43d402e4e4",
+		aerTemplateId = "a84d09c6-64f8-4bd7-90c8-77a7952099a7",
 	},
 	["471eff9e-66df-468c-919a-d7160f02e46e"] = { -- Ritual Werewolf 003
 		index = 4,
@@ -2846,7 +2846,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "2f2aac10-bc02-4d24-be43-2b43d402e4e4",
+		aerTemplateId = "a84d09c6-64f8-4bd7-90c8-77a7952099a7",
 	},
 	["f8eb826d-9071-4fc4-aeee-9383fab42bac"] = { -- Ritual Werewolf 004
 		index = 4,
@@ -2857,7 +2857,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "2f2aac10-bc02-4d24-be43-2b43d402e4e4",
+		aerTemplateId = "a84d09c6-64f8-4bd7-90c8-77a7952099a7",
 	},
 	["59ee488e-b73a-4501-8a2d-4cb2a079e4d6"] = { -- Ballroom Werewolf 001
 		index = 5,
@@ -2868,7 +2868,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "2f2aac10-bc02-4d24-be43-2b43d402e4e4",
+		aerTemplateId = "a84d09c6-64f8-4bd7-90c8-77a7952099a7",
 	},
 	["278ba30a-5902-4802-a569-89da39d3ab3a"] = { -- Ballroom Werewolf 002
 		index = 4,
@@ -2879,7 +2879,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "2f2aac10-bc02-4d24-be43-2b43d402e4e4",
+		aerTemplateId = "a84d09c6-64f8-4bd7-90c8-77a7952099a7",
 	},
 	["f21aa31f-4b01-405d-a54e-4fa1ca0b64ab"] = { -- Ballroom Werewolf 003
 		index = 4,
@@ -2890,7 +2890,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "2f2aac10-bc02-4d24-be43-2b43d402e4e4",
+		aerTemplateId = "a84d09c6-64f8-4bd7-90c8-77a7952099a7",
 	},
 	["faa297b1-c4c4-40fc-978a-420656b78771"] = { -- Ballroom Wolf 001
 		index = 4,
@@ -2901,7 +2901,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "91c18a76-bae6-4431-a7f4-c056252715dd",
+		aerTemplateId = "b1746c2c-b108-46d8-856d-70c432ad5762",
 	},
 	["92a49cfd-1ddf-485d-b885-44d2c611258a"] = { -- Ballroom Wolf 002
 		index = 4,
@@ -2912,7 +2912,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "91c18a76-bae6-4431-a7f4-c056252715dd",
+		aerTemplateId = "b1746c2c-b108-46d8-856d-70c432ad5762",
 	},
 	["f2a457d8-f2e5-430b-9a53-85746171482f"] = { -- Godey
 		index = 5,
@@ -2923,7 +2923,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "89ffd0db-d0fe-47ba-8f2b-0e8c64b30804",
+		aerTemplateId = "9fb78ac2-0b16-40c4-8db2-232ae60d6ddb",
 	},
 	["f2a457d8-f2e5-430b-9a53-85746171482f"] = { -- Chatterteeth
 		index = 5,
@@ -2934,7 +2934,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "938c2a7d-f6ff-4463-9fad-37bc055559f8",
+		aerTemplateId = "f301181c-4b8b-4a4f-8ad4-4fa8646f1cb8",
 	},
 	["2f1880e6-1297-4ca3-a79c-9fabc7f179d3"] = { -- Cazador
 		index = 6,
@@ -2967,7 +2967,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "37125077-5065-4616-b570-537bdea88d23",
+		aerTemplateId = "7b748553-3598-4219-95a8-f8dd2f34c400",
 	},
 	["6470d294-1bf3-4057-acad-8a86041867ed"] = { -- Stalker Svignee
 		index = 6,
@@ -2978,7 +2978,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "37125077-5065-4616-b570-537bdea88d23",
+		aerTemplateId = "7b748553-3598-4219-95a8-f8dd2f34c400",
 	},
 	["2aa53835-a143-4435-9794-1ec6a949eed8"] = { -- Death's Head of Bhaal 000
 		index = 5,
@@ -2989,7 +2989,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		aerTemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 	},
 	["336fe388-afbe-4b9b-a86e-aec927658019"] = { -- Death's Head of Bhaal 001
 		index = 5,
@@ -3000,7 +3000,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		aerTemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 	},
 	["dbe51b4f-c46c-4ded-a9d2-6bb4e0a92f22"] = { -- Death's Head of Bhaal 002
 		index = 5,
@@ -3011,7 +3011,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		aerTemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 	},
 	["7a82cf11-57a2-4796-8b3a-d3409c0cbe9e"] = { -- Death's Head of Bhaal 003
 		index = 5,
@@ -3022,7 +3022,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		aerTemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 	},
 	["db8e11fc-5f93-4dae-9abb-a8223317fa29"] = { -- Death's Head of Bhaal 004
 		index = 5,
@@ -3033,7 +3033,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		aerTemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 	},
 	["3eef8b7b-f06e-4afb-b4c7-c21bb6dd0268"] = { -- Death's Head of Bhaal 005
 		index = 5,
@@ -3044,7 +3044,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		aerTemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 	},
 	["692c037a-b660-4461-abb5-7599b1d12702"] = { -- Death's Head of Bhaal 006
 		index = 5,
@@ -3055,7 +3055,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		aerTemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 	},
 	["e20ee46e-ea8e-4781-95fd-5f1f72211703"] = { -- Death's Head of Bhaal 007
 		index = 5,
@@ -3066,7 +3066,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		aerTemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 	},
 	["6217b97e-3715-4e88-ae20-7ba1aa9da1aa"] = { -- Death's Head of Bhaal 008
 		index = 5,
@@ -3077,7 +3077,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		aerTemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 	},
 	["725e41cf-6e8c-4b64-be4d-6932c07b3d7b"] = { -- Death's Head of Bhaal 009
 		index = 5,
@@ -3088,7 +3088,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		aerTemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 	},
 	["e4850669-6ea6-4a69-ad4e-150ee2dcc3b3"] = { -- Death's Head of Bhaal 010
 		index = 5,
@@ -3099,7 +3099,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "05fc343a-d114-4dde-bc50-320a50da2976",
+		aerTemplateId = "ab918102-fdd7-46ff-b2a2-abd033366678",
 	},
 	["dea45c58-9690-4d8b-9918-7a2e6f7fdb6d"] = { -- Bhaalist Invoker 000
 		index = 5,
@@ -3110,7 +3110,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "dd4c9000-f021-4f37-89ca-7befae8748b8",
+		aerTemplateId = "d6a24adf-e79e-47cf-a891-7580ae0db144",
 	},
 	["adf3d591-4442-4543-86fd-9ca5b1cb73d2"] = { -- Bhaalist Invoker 001
 		index = 5,
@@ -3121,7 +3121,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "dd4c9000-f021-4f37-89ca-7befae8748b8",
+		aerTemplateId = "d6a24adf-e79e-47cf-a891-7580ae0db144",
 	},
 	["09b965d0-49f7-4b00-a8ab-20f19e4a563b"] = { -- Bhaalist Invoker 002
 		index = 5,
@@ -3132,7 +3132,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "dd4c9000-f021-4f37-89ca-7befae8748b8",
+		aerTemplateId = "d6a24adf-e79e-47cf-a891-7580ae0db144",
 	},
 	["464de2ba-ac0b-4fa8-bfa5-d8349ccbebf8"] = { -- Bhaalist Invoker 003
 		index = 5,
@@ -3143,7 +3143,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "dd4c9000-f021-4f37-89ca-7befae8748b8",
+		aerTemplateId = "d6a24adf-e79e-47cf-a891-7580ae0db144",
 	},
 	["dc5d659c-8703-4e41-bf3e-0eeae60d919b"] = { -- Bhaalist Invoker 004
 		index = 5,
@@ -3154,7 +3154,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "dd4c9000-f021-4f37-89ca-7befae8748b8",
+		aerTemplateId = "d6a24adf-e79e-47cf-a891-7580ae0db144",
 	},
 	["0d291d3e-bf25-49ab-a15e-ed7a8b115a13"] = { -- Bhaalist Invoker 005
 		index = 5,
@@ -3165,7 +3165,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "dd4c9000-f021-4f37-89ca-7befae8748b8",
+		aerTemplateId = "d6a24adf-e79e-47cf-a891-7580ae0db144",
 	},
 	["72d472ba-5e32-4922-ab0b-b5a554c6dcab"] = { -- Orin's Ritual Reaper 001
 		index = 4,
@@ -3176,7 +3176,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "2eb03c5d-3bd7-4156-a14c-eb5b0743d627",
+		aerTemplateId = "d3002b6f-b829-4e47-bfa0-c6948b691690",
 	},
 	["ef16770b-0590-457f-8475-712f2c491be2"] = { -- Orin's Ritual Reaper 002
 		index = 4,
@@ -3187,7 +3187,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "2eb03c5d-3bd7-4156-a14c-eb5b0743d627",
+		aerTemplateId = "d3002b6f-b829-4e47-bfa0-c6948b691690",
 	},
 	["97c90688-1181-4893-a497-141e816a4c4a"] = { -- Orin's Ritual Reaper 003
 		index = 4,
@@ -3198,7 +3198,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "2eb03c5d-3bd7-4156-a14c-eb5b0743d627",
+		aerTemplateId = "d3002b6f-b829-4e47-bfa0-c6948b691690",
 	},
 	["c01e3dc3-4323-4a50-a378-ae6c0b8a062a"] = { -- Orin's Ritual Reaper 004
 		index = 4,
@@ -3209,7 +3209,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "2eb03c5d-3bd7-4156-a14c-eb5b0743d627",
+		aerTemplateId = "d3002b6f-b829-4e47-bfa0-c6948b691690",
 	},
 	["a2bcb302-7a7b-4206-ac93-54b755bcb4d8"] = { -- Orin's Ritual Reaper 005
 		index = 4,
@@ -3220,7 +3220,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "2eb03c5d-3bd7-4156-a14c-eb5b0743d627",
+		aerTemplateId = "d3002b6f-b829-4e47-bfa0-c6948b691690",
 	},
 	["646eaea2-2329-4d75-acc7-feddad951066"] = { -- Orin's Ritual Reaper 006
 		index = 4,
@@ -3231,7 +3231,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "2eb03c5d-3bd7-4156-a14c-eb5b0743d627",
+		aerTemplateId = "d3002b6f-b829-4e47-bfa0-c6948b691690",
 	},
 	["68a568cd-1e5e-46f1-9c5f-53d3eed23bd5"] = { -- Echo of Abazigal
 		index = 6,
@@ -3286,7 +3286,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = true,
-		aerTemplateId = "bb6e7858-fc25-4f0e-b10c-80e1deba0a12",
+		aerTemplateId = "3ed62366-3a08-4468-8a5b-59f619d74034",
 	},
 	["bf24e0ec-a3a6-4905-bd2d-45dc8edf8101"] = { -- Orin
 		index = 6,
@@ -3330,7 +3330,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "dbe13a26-b5fa-4d81-8cac-1615e8835cb1",
+		aerTemplateId = "d24a8458-db13-46c2-bdce-0122c641f4b6",
 	},
 	["df015249-8648-46a7-9fe7-8ea64342eb59"] = { -- Ansur's Water Myrmidon 002
 		index = 6,
@@ -3341,7 +3341,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "dbe13a26-b5fa-4d81-8cac-1615e8835cb1",
+		aerTemplateId = "d24a8458-db13-46c2-bdce-0122c641f4b6",
 	},
 	["67770922-5e0a-40c5-b3f0-67e8eb50493a"] = { -- Ansur
 		index = 6,
@@ -3363,7 +3363,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["15de1c45-e58e-49c6-b9da-24381ebb67f1"] = { -- Cranium Rat 001
 		index = 2,
@@ -3374,7 +3374,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["1993b3a4-aca7-4f6e-9e44-1d008cba5925"] = { -- Cranium Rat 002
 		index = 2,
@@ -3385,7 +3385,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["1bfaef69-a11a-4907-9537-1e711d1152ff"] = { -- Cranium Rat 003
 		index = 2,
@@ -3396,7 +3396,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["21c5a902-a6b9-4753-94c6-b4ca7ea07999"] = { -- Cranium Rat 004
 		index = 2,
@@ -3407,7 +3407,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["25483bfb-bafa-4b88-97f3-cb68d7ee7ba4"] = { -- Cranium Rat 005
 		index = 2,
@@ -3418,7 +3418,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["2d605fac-5550-4e77-a96d-e5ba4d343770"] = { -- Cranium Rat 006
 		index = 2,
@@ -3429,7 +3429,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["47cda73e-883e-490d-9e6b-ba0563de3f33"] = { -- Cranium Rat 007
 		index = 2,
@@ -3440,7 +3440,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["4aec2da1-3ed6-4c6b-985e-346ca5b0f13b"] = { -- Cranium Rat 008
 		index = 2,
@@ -3451,7 +3451,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["4af978ee-f201-45c2-9a1a-7f8c01a9409e"] = { -- Cranium Rat 009
 		index = 2,
@@ -3462,7 +3462,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["566ab018-36b1-4a7b-8da5-b0dcdb6829a1"] = { -- Cranium Rat 010
 		index = 2,
@@ -3473,7 +3473,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["600d04b2-4bb4-48c1-9206-0907953280a4"] = { -- Cranium Rat 011
 		index = 2,
@@ -3484,7 +3484,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["65b3698b-8d85-4aa1-b540-9c469fcc82fc"] = { -- Cranium Rat 012
 		index = 2,
@@ -3495,7 +3495,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["6682ce76-998b-4c25-9bb1-e2f78705b251"] = { -- Cranium Rat 013
 		index = 2,
@@ -3506,7 +3506,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["6cd2f459-f6e1-49e3-9bbe-6f533dd82dec"] = { -- Cranium Rat 014
 		index = 2,
@@ -3517,7 +3517,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["6e3b680c-da12-4f88-a65e-01c95570b27c"] = { -- Cranium Rat 015
 		index = 2,
@@ -3528,7 +3528,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["78f48734-de26-4f29-8fd6-c793ca96514a"] = { -- Cranium Rat 016
 		index = 2,
@@ -3539,7 +3539,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["7957d07d-4cbb-4911-8153-d52fe068526d"] = { -- Cranium Rat 017
 		index = 2,
@@ -3550,7 +3550,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["93219095-1914-42ea-a60a-3e3b9cc9df1b"] = { -- Cranium Rat 018
 		index = 2,
@@ -3561,7 +3561,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["b1221105-affd-4dd3-81ff-f12d5ae30f7f"] = { -- Cranium Rat 019
 		index = 2,
@@ -3572,7 +3572,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["b778eda2-b8f1-4dde-a38a-9a46881ade35"] = { -- Cranium Rat 020
 		index = 2,
@@ -3583,7 +3583,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["bcaca036-31eb-4814-82da-001ae1e65abf"] = { -- Cranium Rat 021
 		index = 2,
@@ -3594,7 +3594,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["c3894816-5b27-475a-903d-4a0777311d34"] = { -- Cranium Rat 022
 		index = 2,
@@ -3605,7 +3605,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["c7a7004e-cfa9-451c-b7f7-e95aa68db79f"] = { -- Cranium Rat 023
 		index = 2,
@@ -3616,7 +3616,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["ca3a751f-646a-4e5e-b157-31c10b4fb816"] = { -- Cranium Rat 024
 		index = 2,
@@ -3627,7 +3627,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["cdd759a1-86cb-4fa7-bdff-e309914c0f6e"] = { -- Cranium Rat 025
 		index = 2,
@@ -3638,7 +3638,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["d1c2647f-0a06-4e32-85f5-965ec9e6c1c2"] = { -- Cranium Rat 026
 		index = 2,
@@ -3649,7 +3649,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["d2697a3b-6dc4-4b04-a29c-66c71b524316"] = { -- Cranium Rat 027
 		index = 2,
@@ -3660,7 +3660,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	[""] = { -- Cranium Rat 028
 		index = 2,
@@ -3671,7 +3671,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["d77d3cb8-94a6-45b0-9342-fbab7ba216fa"] = { -- Cranium Rat 029
 		index = 2,
@@ -3682,7 +3682,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["dbcfa2c4-da6c-4a5b-80f2-ebcec2253c26"] = { -- Cranium Rat 030
 		index = 2,
@@ -3693,7 +3693,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["e4785575-56ee-4947-845a-7ef352cce8ee"] = { -- Cranium Rat 031
 		index = 2,
@@ -3704,7 +3704,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["e66ff0d8-4e6a-4639-8f4b-5add63b22d75"] = { -- Cranium Rat 032
 		index = 2,
@@ -3715,7 +3715,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["f6675ad4-f814-4ef1-bd1f-91e88ad4d17b"] = { -- Cranium Rat 033
 		index = 2,
@@ -3726,7 +3726,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["f7604b2b-2f77-4182-bd54-350dba5ae4af"] = { -- Cranium Rat 034
 		index = 2,
@@ -3737,7 +3737,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["fb4c37df-e951-4e0b-bac6-1cafb78df623"] = { -- Cranium Rat 035
 		index = 2,
@@ -3748,7 +3748,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["48e88717-0014-4a56-91f1-ba22bebcfee4"] = { -- Cranium Rat 036
 		index = 2,
@@ -3759,7 +3759,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["640f7818-19e2-4701-874c-e666c8edfe5d"] = { -- Cranium Rat 037
 		index = 2,
@@ -3770,7 +3770,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["bb1b1cbf-ca8c-4d00-a1ee-05bedbd361cc"] = { -- Cranium Rat 038
 		index = 2,
@@ -3781,7 +3781,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["1b1f1fff-c60d-4318-b757-5946b51800b1"] = { -- Cranium Rat 039
 		index = 2,
@@ -3792,7 +3792,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["45d8ce11-b524-438b-bf6a-3fc09ba796ed"] = { -- Cranium Rat 040
 		index = 2,
@@ -3803,7 +3803,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "5ff6a1b5-6c6d-447b-ab6c-f9a4bea20ff5",
+		aerTemplateId = "784125e0-2442-48f2-93ae-8967135e8459",
 	},
 	["dfb87024-ac7e-4cd7-a006-da866b30055d"] = { -- END Standing Guard 004
 		index = 4,
@@ -3891,7 +3891,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = false,
 		superbossFlag = false,
-		aerTemplateId = "fb532b7c-8fba-4ddc-94f8-0d4599276429",
+		aerTemplateId = "131a36ed-f31a-42e4-b5c7-875243ce4b91",
 	},
 	["823861a5-0132-4d15-b9f1-9bac2fa2e85e"] = { -- Dominated Red Dragon
 		index = 6,
@@ -3924,7 +3924,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "cd6c6aef-d182-427b-b21f-1c5c1e38c3be",
+		aerTemplateId = "e9685002-c0ec-43db-95de-87942fb6c123",
 	},
 	["e5f0fcdf-8a9e-426a-96db-254f94898172"] = { -- Mind Flayer Arcanist B
 		index = 5,
@@ -3935,7 +3935,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "cd6c6aef-d182-427b-b21f-1c5c1e38c3be",
+		aerTemplateId = "e9685002-c0ec-43db-95de-87942fb6c123",
 	},
 	["3868c215-f34f-4dfb-9c8a-1b06f2d5644d"] = { -- Mind Flayer Arcanist C
 		index = 5,
@@ -3946,7 +3946,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "cd6c6aef-d182-427b-b21f-1c5c1e38c3be",
+		aerTemplateId = "e9685002-c0ec-43db-95de-87942fb6c123",
 	},
 	["c42ee756-319a-4ebd-b547-dceda6ef606d"] = { -- Mind Flayer Arcanist D
 		index = 5,
@@ -3957,7 +3957,7 @@ uniqueMonsterLookup = {
 		countermeasureFlag = false,
 		actThreeMiniBossFlag = true,
 		superbossFlag = false,
-		aerTemplateId = "cd6c6aef-d182-427b-b21f-1c5c1e38c3be",
+		aerTemplateId = "e9685002-c0ec-43db-95de-87942fb6c123",
 	},
 	["939b84fb-5ea5-43cf-b73c-c1315f60fe3f"] = { -- Countermeasure A
 		index = 6,
