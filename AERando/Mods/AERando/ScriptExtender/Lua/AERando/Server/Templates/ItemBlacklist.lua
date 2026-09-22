@@ -20,6 +20,9 @@ local regexStarts = {
 	"^UNI_KEY",
 	"^UNI_LOW_DevilsFee_InfernalMarble",
 	"^LOOT_Ketheric_Infernal",
+	"^LOOT_MF_Tadpole_Astral_A",
+	"^S_DEN_WolfRune",
+	"^S_DEN_AppCirclet",
 	"^S_SHA_Infernal",
 	"^S_UND_InfernalPlate",
 	"^S_ORI_Infernal",
@@ -30,11 +33,16 @@ local regexStarts = {
 	"^S_WYR_Circus_Dribbles",
 	"^S_QUEST_TWN_TollCollector",
 	"^S_UND_MushroomHunter_Noblestalk",
+	"^S_UND_MushroomHunter_Backpack",
+	"^S_UND_MushroomHunter_MistyStepScroll_000",
+	"^S_UND_MushroomHunter_MistyStepScroll_001",
 	"^S_LOW_KarsusNotes",
 	"^S_GLO_PuzzleBox",
 	"^S_GLO_DevilishOx",
 	"^S_GLO_KarlachHead",
 	"^S_UND_MyconidRevenge",
+	"^S_MOO_DockVat_000",
+	"^S_LOW_LabRoomTadpole",
 	"^S_LOW_SerialKiller_DoppelgangerTargetList",
 	"^S_LOW_DevilsFee_CoinOfMammon",
 	"^S_LOW_DevilsFee_RitualPouch",
@@ -65,6 +73,7 @@ local regexContains = {
 	"Book",
 	"BOOK",
 	"Barrel_A([^%a])",
+	"TadpolePowerJar",
 }
 
 local regexEnds = {
@@ -79,8 +88,10 @@ local regexEnds = {
 	"_ConjureElemental_%d*$",
 	"_WildShape_%d*$",
 	"_Myrmidon_%d*$",
+	"_Noble[sS]talk_A$",
 	"Barrel_A$",
 	"Bag$",
+	"TadpoleJar$",
 }
 
 return regexStarts, regexContains, regexEnds

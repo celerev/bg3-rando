@@ -953,7 +953,7 @@
                             "Id": "veryrare_weight",
                             "Name": "Very Rare Loot Weight",
                             "Type": "slider_int",
-                            "Default": 6,
+                            "Default": 4,
                             "Description": "Relative Weight of Very Rare loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
@@ -978,7 +978,7 @@
                             "Id": "legendary_weight",
                             "Name": "Legendary Loot Weight",
                             "Type": "slider_int",
-                            "Default": 2,
+                            "Default": 1,
                             "Description": "Relative Weight of Legendary loot being rolled with respect to other Rarities when 'Randomize Loot' is enabled.",
                             "Options": {
                                 "Min": 1,
