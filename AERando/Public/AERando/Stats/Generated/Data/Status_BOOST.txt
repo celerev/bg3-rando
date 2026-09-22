@@ -8,7 +8,7 @@ new entry "MF_PERILOUS_STAKES"
 type "StatusData"
 data "StatusType" "BOOST"
 using "MF_PERILOUS_STAKES"
-data "StackId" "TOTPERILOUS"
+data "StackId" "AERPERILOUS"
 data "StackType" "Additive"
 
 new entry "AER_INVULNERABLE"

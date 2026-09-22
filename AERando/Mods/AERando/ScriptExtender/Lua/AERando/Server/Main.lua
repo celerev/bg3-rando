@@ -1282,15 +1282,6 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	local map = Osi.GetRegion(character)
 	local asylum = getAsylum(map)
 	
-	-- Handle Viconia's heartmap for the regular version
-	if "15d458c4-c51d-4312-8f5a-cf5ba9042e3f" == stripped_template then
-		local players = Osi.DB_Players:Get(nil)
-		for _, entry in ipairs(players) do
-			local player = entry[1]
-			Osi.SetTag(player, "8d2d234e-a25a-4a92-b1a1-df5e90b08ebd")
-		end
-	end
-	
 	if PersistentVars.currentlyRandomizedEnemyTable[character] then
 		local spawn = PersistentVars.currentlyRandomizedEnemyTable[character][1]
 		if Osi.IsDead(spawn) == 1 then
@@ -1416,6 +1407,29 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	Ext.Timer.WaitFor(3600, function()
 		PersistentVars.currentCombatMembers[character_uuid] = true
 	end)
+end)
+
+-- character handling
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	
+	local stripped_template = strip_uuid(Osi.GetTemplate(character))
+	
+	-- Handle Viconia's heartmap for the regular version
+	if "15d458c4-c51d-4312-8f5a-cf5ba9042e3f" == stripped_template then
+		local players = Osi.DB_Players:Get(nil)
+		for _, entry in ipairs(players) do
+			local player = entry[1]
+			Osi.SetTag(player, "8d2d234e-a25a-4a92-b1a1-df5e90b08ebd")
+		end
+	-- Handle Keene's daggers, which started breaking for some reason (yes they must be separate)
+	elseif "26d18c80-cec7-453c-aaa4-e86f54d427f0" == stripped_template then
+		for i = 1, 18 do
+			Osi.TemplateAddTo("569b0f3d-abcd-4b01-aaf0-979091288163", character, 1, 0)
+		end
+	end
 end)
 
 -- Ansur's arena

@@ -1749,8 +1749,8 @@ uniqueMonsterLookup = {
 		aerTemplateId = "fe303578-cd68-405b-bb02-83310ea5189b",
 	},
 	["ef1b7a12-6439-470a-885c-fa47851728cd"] = { -- Nine Fingers Keene
-		index = 6,
-		boss = false,
+		index = 5,
+		boss = true,
 		lookupFlag = true,
 		aggroFlag = false,
 		returnFlag = false,
