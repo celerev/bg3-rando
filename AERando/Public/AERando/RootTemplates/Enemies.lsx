@@ -3889,7 +3889,7 @@
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="Type" type="FixedString" value="character" />
 					<attribute id="ParentTemplateId" type="FixedString" value="c151fed8-8992-424d-b76b-6ba0e2d5bb5d" />
-					<attribute id="DisplayName" type="TranslatedString" handle="h456abae4gf81bg4527gb37dg0d01071cef90" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc7e1e677g33abg43f1g9a13gce01a9b68b72" version="1" />
 					<attribute id="Icon" type="FixedString" value="474defc8-81f9-b564-3bd1-442c2276a20c-EQP_Shortbow_Dagger_Leather_(Icon_Halfling_Female)" />
 					<attribute id="Stats" type="FixedString" value="DEN_ShadowDruid_Ranger_Strong" />
 					<attribute id="Equipment" type="FixedString" value="EQP_Shortbow_Dagger_Leather" />
@@ -4100,7 +4100,7 @@
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="Type" type="FixedString" value="character" />
 					<attribute id="ParentTemplateId" type="FixedString" value="80b1bc17-0f70-4ec5-a16a-19c117f07b0c" />
-					<attribute id="DisplayName" type="TranslatedString" handle="heb165bbdgbb0fg4b80gad51gf637bec9bfe9" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h99b18c4dg9969g4f5cgb43bg19bfb99aba04" version="1" />
 					<attribute id="Icon" type="FixedString" value="Portrait_Obliteration_Orb" />
 					<attribute id="IsLootable" type="bool" value="False" />
 					<attribute id="IsEquipmentLootable" type="bool" value="False" />
@@ -7394,7 +7394,7 @@
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="Type" type="FixedString" value="character" />
 					<attribute id="ParentTemplateId" type="FixedString" value="c151fed8-8992-424d-b76b-6ba0e2d5bb5d" />
-					<attribute id="DisplayName" type="TranslatedString" handle="h456abae4gf81bg4527gb37dg0d01071cef90" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc7e1e677g33abg43f1g9a13gce01a9b68b72" version="1" />
 					<attribute id="Icon" type="FixedString" value="1cd56a39-9e2c-2590-ff66-7e81ff5bace5-EQP_Shortbow_Dagger_Leather_(Icon_Halfling_Female)" />
 					<attribute id="Stats" type="FixedString" value="DEN_ShadowDruid_Ranger" />
 					<attribute id="Equipment" type="FixedString" value="EQP_Shortbow_Dagger_Leather" />
@@ -13965,7 +13965,7 @@
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="Type" type="FixedString" value="character" />
 					<attribute id="ParentTemplateId" type="FixedString" value="a429dd99-a0e9-44b2-87cf-f5284dae8b9b" />
-					<attribute id="DisplayName" type="TranslatedString" handle="h4df70569g7912g4c0ag843fg7f8451d86659" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc4091355gdecag43c5g84c6gb09f29f872fa" version="1" />
 					<attribute id="Icon" type="FixedString" value="04e02621-cca8-b689-b15e-8484cc99f4d6-EQP_Staff_Robe_(Icon_Elminster)" />
 					<attribute id="Stats" type="FixedString" value="GLO_Elminster" />
 					<attribute id="SpellSet" type="FixedString" value="CommonNPCActions" />
@@ -20446,7 +20446,7 @@
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="Type" type="FixedString" value="character" />
 					<attribute id="ParentTemplateId" type="FixedString" value="a693fefc-49e7-42f0-b661-064bb0974527" />
-					<attribute id="DisplayName" type="TranslatedString" handle="h456abae4gf81bg4527gb37dg0d01071cef90" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc7e1e677g33abg43f1g9a13gce01a9b68b72" version="1" />
 					<attribute id="Icon" type="FixedString" value="e11e0f5d-1d94-b87c-b45b-214cfecf5f49-EQP_Greatclub_Leather_(Icon_Halfling_Male)" />
 					<attribute id="Stats" type="FixedString" value="DEN_ShadowDruid_Melee" />
 					<attribute id="Equipment" type="FixedString" value="EQP_Greatclub_Leather" />

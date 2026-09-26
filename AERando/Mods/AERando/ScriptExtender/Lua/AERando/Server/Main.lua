@@ -899,6 +899,10 @@ function randomizeCreature(character)
 	end
 	local map = Osi.GetRegion(Host)
 	local asylum = getAsylum(map)
+	if next(asylum) == nil then
+		print("ERROR: Asylum not found. The randomizer cannot support an unknown map.")
+		return
+	end
 	local combatGroup = ""
 	
 	local entitySuccess, entityResult = pcall(function()

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <content contentuid="h456abae4gf81bg4527gb37dg0d01071cef90" version="1">Shadow Druid</content>
-	<content contentuid="heb165bbdgbb0fg4b80gad51gf637bec9bfe9" version="1">Turn Divider</content>
-	<content contentuid="h4df70569g7912g4c0ag843fg7f8451d86659" version="1">Simulacrum</content>
+    <content contentuid="hc7e1e677g33abg43f1g9a13gce01a9b68b72" version="1">Shadow Druid</content>
+	<content contentuid="h99b18c4dg9969g4f5cgb43bg19bfb99aba04" version="1">Turn Divider</content>
+	<content contentuid="hc4091355gdecag43c5g84c6gb09f29f872fa" version="1">Simulacrum</content>
 	<content contentuid="h2a149ae2g385ag4fe3g8624gdf5ab9d3c890" version="1">Githyanki Varsh</content>
 	<content contentuid="h25e952b2gff2fg4aa6gba35g5a9bbe474732" version="1">Githyanki Savarsh</content>
 	<content contentuid="hf7fa46abg9876g4a2bg95d7g11e171445ff2" version="1">Flaming Fist Mortarch</content>
