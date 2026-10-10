@@ -400,7 +400,7 @@
                             "Id": "zero_weight",
                             "Name": "Tier Zero Weight",
                             "Type": "slider_int",
-                            "Default": 20,
+                            "Default": 14,
                             "Description": "Relative Weight of Tier Zero being rolled with respect to other Tiers",
                             "Options": {
                                 "Min": 1,
@@ -430,7 +430,7 @@
                             "Id": "one_weight",
                             "Name": "Tier One Weight",
                             "Type": "slider_int",
-                            "Default": 20,
+                            "Default": 18,
                             "Description": "Relative Weight of Tier One being rolled with respect to other Tiers",
                             "Options": {
                                 "Min": 1,
@@ -460,7 +460,7 @@
                             "Id": "two_weight",
                             "Name": "Tier Two Weight",
                             "Type": "slider_int",
-                            "Default": 18,
+                            "Default": 16,
                             "Description": "Relative Weight of Tier Two being rolled with respect to other Tiers",
                             "Options": {
                                 "Min": 1,

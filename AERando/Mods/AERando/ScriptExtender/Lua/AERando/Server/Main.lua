@@ -53,7 +53,9 @@ activeItemList = {}
 iconTable = {}
 statusTable = {}
 tempBattle = {}
+
 local exandriaCheck = Ext.Mod.IsModLoaded("a27fdbe3-4d1a-641d-d05f-1ba4ee529da8")
+local ethelFlag = false
 local kethericFlag = false
 local kethericRolledApostleFlag = false
 local gmBroadcastProtection = false
@@ -144,6 +146,19 @@ function initialize()
 		MCM.Set("boss_tier_boost", 1) 
 		MCM.Set("enemy_tier_min", 1)
 		MCM.Set("enemy_tier_max", 1)
+	end
+	
+	if not MCM.Get("advanced_mode") then
+		MCM.Set("zero_weight", 14)
+		MCM.Set("one_weight", 18)
+		MCM.Set("two_weight", 16)
+		MCM.Set("three_weight", 16)
+		MCM.Set("four_weight", 14)
+		MCM.Set("five_weight", 10)
+		MCM.Set("six_weight", 6)
+		MCM.Set("seven_weight", 4)
+		MCM.Set("eight_weight", 2)
+		MCM.Set("nine_weight", 1)
 	end
 	
 	if not PersistentVars then
@@ -684,6 +699,7 @@ end
 
 function selectCreature(character)
 	local lookupFlag = false
+	local ethelLookupFlag = false
 	local aggroFlag = false
 	local returnFlag = false
 	local countermeasureFlag = false
@@ -726,6 +742,7 @@ function selectCreature(character)
 		index = lookup.index
 		boss = lookup.boss
 		lookupFlag = lookup.lookupFlag
+		ethelLookupFlag = lookup.ethelLookupFlag
 		aggroFlag = lookup.aggroFlag
 		returnFlag = lookup.returnFlag
 		countermeasureFlag = lookup.countermeasureFlag
@@ -767,6 +784,14 @@ function selectCreature(character)
 			index = 10 -- avatar
 		end
 	end
+	
+	if ethelLookupFlag then
+		if map == C.Regions.Act3b then
+			index = 6
+		else
+			levelmin = levelmin - 1
+		end
+	end
 
 	local apostleFlag = Osi.HasActiveStatus(character, "MOO_KETHERIC_APOSTLEFORM") == 1
 	local slayerFlag = Osi.HasActiveStatus(character, "LOW_BHAALTEMPLE_ORINSLAYER") == 1
@@ -789,6 +814,16 @@ function selectCreature(character)
 
 	if boss then
 		index = index + MCM.Get("boss_tier_boost")
+		if not superbossFlag then
+			local nextIndex = index + 1
+			local nextNextIndex = index + 2
+			if nextIndex < 11 then
+				difficultyTables[nextIndex].weight = difficultyTables[nextIndex].weight + 6
+			end
+			if nextNextIndex < 11 then
+				difficultyTables[nextNextIndex].weight = difficultyTables[nextNextIndex].weight + 4
+			end
+		end
 	else
 		index = index + MCM.Get("enemy_tier_boost")
 	end
@@ -799,9 +834,30 @@ function selectCreature(character)
 	
 	if superbossFlag then
 		levelmin = levelmin - 1
+		difficultyTables[8].weight = difficultyTables[8].weight * 4
+		difficultyTables[9].weight = difficultyTables[9].weight * 5
+		difficultyTables[10].weight = (difficultyTables[10].weight * 6) + 6
 	end
 
 	local newTable = trimTable(index, difficultyTables, levelmin, levelmax)
+	
+	if boss and not superbossFlag then
+		local nextIndex = index + 1
+		local nextNextIndex = index + 2
+		if nextIndex < 11 then
+			difficultyTables[nextIndex].weight = difficultyTables[nextIndex].weight - 6
+		end
+		if nextNextIndex < 11 then
+			difficultyTables[nextNextIndex].weight = difficultyTables[nextNextIndex].weight - 4
+		end
+	end
+	
+	if superbossFlag then
+		difficultyTables[8].weight = difficultyTables[8].weight / 4
+		difficultyTables[9].weight = difficultyTables[9].weight / 5
+		difficultyTables[10].weight = (difficultyTables[10].weight - 6)  / 6
+	end
+
 	local newEnemy = nil
 
 	if apostleFlag then
@@ -810,9 +866,9 @@ function selectCreature(character)
 		newEnemy = Hash:selectEnemy(character, newTable, false)
 	end
 
-	if boss and MCM.Get("unique_bosses") then
+	if boss and MCM.Get("unique_bosses") and not ethelFlag then
 		local salt = 0
-		if kethericFlag or not strippedUUID == "e9918f3e-5b87-40a3-a9bd-61545151573f" then
+		if kethericFlag or strippedUUID ~= "e9918f3e-5b87-40a3-a9bd-61545151573f" then
 			while PersistentVars.usedBossTable[newEnemy] == true do
 				if salt > 18650 then
 					print(character, " could not find an unused boss in acceptable ranges. Exiting loop without randomizing.")
@@ -1259,7 +1315,7 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	if MCM.Get("derandomize_othermod") then
 		local success, result = pcall(function()
 			local fileName = Ext.Template.GetTemplate(character_uuid).FileName
-			for _, pattern in ipairs(C.fileNameRegex) do
+			for _, pattern in ipairs(C.FileNameRegex) do
 				if string.match(fileName, pattern) then
 					return true
 				end
@@ -1270,7 +1326,7 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 			result = false
 			success, result = pcall(function()
 				local fileName = Ext.Template.GetTemplate(stripped_template).FileName
-				for _, pattern in ipairs(C.fileNameRegex) do
+				for _, pattern in ipairs(C.FileNameRegex) do
 					if string.match(fileName, pattern) then
 						return true
 					end
@@ -1292,7 +1348,10 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 			return
 		end
 		local tempx, tempy, tempz = Osi.GetPosition(character)
-		Osi.TeleportToPosition(character, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
+		
+		if not C.DoNotTeleportList[character] then
+			Osi.TeleportToPosition(character, asylum.asylumX, asylum.asylumY, asylum.asylumZ, "", 0, 0, 0, 0, 1)
+		end
 		
 		if Osi.IsInCombat(spawn) == 1 then
 			local success, mundane = pcall(function()
@@ -1436,6 +1495,119 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	end
 end)
 
+-- Zlorb in Last Light
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	
+	if character == "S_GLO_DevilishOx_49eb5b4b-c6ed-4d37-8f68-97b1128b7d56" then
+		Ext.Timer.WaitFor(1400, function()
+			Osi.PROC_SetRelationToPlayers("Act2_HAV_Phasm_9fec6a42-f208-436d-904c-0a3b1843838b", 0)
+			Osi.SetFaction("S_GLO_DevilishOx_49eb5b4b-c6ed-4d37-8f68-97b1128b7d56", "Act2_HAV_Phasm_9fec6a42-f208-436d-904c-0a3b1843838b")
+			Osi.SetFlag("HAV_DevilishOx_State_MonsterRevealed_32e50fb0-ab45-44cf-86af-3984de34f338", "NULL_00000000-0000-0000-0000-000000000000")
+			
+			if PersistentVars.currentlyRandomizedEnemyTable["S_GLO_DevilishOx_49eb5b4b-c6ed-4d37-8f68-97b1128b7d56"] then
+				local randoZlorb = PersistentVars.currentlyRandomizedEnemyTable["S_GLO_DevilishOx_49eb5b4b-c6ed-4d37-8f68-97b1128b7d56"][1]
+				Osi.SetFaction(randoZlorb, "Act2_HAV_Phasm_9fec6a42-f208-436d-904c-0a3b1843838b")
+			end
+			
+			Ext.Timer.WaitFor(2800, function()
+				Osi.PROC_SetRelationToPlayers("Act2_HAV_Haven_e52bfc8c-7826-470d-a9f5-f6fae80dde82", 100)
+				Osi.PROC_SetRelationToPlayers("Act2_HAV_Tieflings_f4ff1850-c9fc-4ee5-80e7-fa6b2a958d39", 100)
+				Osi.PROC_SetRelationToPlayers("ACT2_SCL_HarpersAmbush_f9940d88-f049-4522-a2ae-4b8304e4563c", 100)
+				Osi.PROC_SetRelationToPlayers("Act2_HAV_RealOxen_f81a448a-46e0-4d4d-ab72-267f5338d8ce", 100)
+				for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
+					local keyFaction = Osi.GetFaction(key)
+					if keyFaction == "Act2_HAV_Haven_e52bfc8c-7826-470d-a9f5-f6fae80dde82" then
+						Osi.SetFaction(val[1], "Act2_HAV_Haven_e52bfc8c-7826-470d-a9f5-f6fae80dde82")
+					elseif keyFaction == "Act2_HAV_Tieflings_f4ff1850-c9fc-4ee5-80e7-fa6b2a958d39" then
+						Osi.SetFaction(val[1], "Act2_HAV_Tieflings_f4ff1850-c9fc-4ee5-80e7-fa6b2a958d39")
+					elseif keyFaction == "ACT2_SCL_HarpersAmbush_f9940d88-f049-4522-a2ae-4b8304e4563c" then
+						Osi.SetFaction(val[1], "ACT2_SCL_HarpersAmbush_f9940d88-f049-4522-a2ae-4b8304e4563c")
+					elseif keyFaction == "Act2_HAV_RealOxen_f81a448a-46e0-4d4d-ab72-267f5338d8ce" then
+						Osi.SetFaction(val[1], "Act2_HAV_RealOxen_f81a448a-46e0-4d4d-ab72-267f5338d8ce")
+					end
+				end
+			end)
+		end)
+	end
+end)
+
+-- Gerringothe Visages
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	
+	if character == "S_TWN_Tollhouse_Face_Heartlessness_f335ce62-1d8b-4f70-969d-ef75f0dd78b1" then
+		Ext.Timer.WaitFor(4800, function()
+			Osi.ApplyStatus(character, "AER_VISAGE_ICON", -1.0, 1, character)
+			Osi.TeleportTo(character, "S_TWN_Tollhouse_Face_Heartlessness_CombatPosition_e430bf7a-c9d8-451c-bb32-c49a85d92894", "", 0, 0, 0, 0, 1)
+		end)
+	end
+end)
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	
+	if character == "S_TWN_Tollhouse_Face_Guilt_2321affc-6302-4800-87dc-bcd220642920" then
+		Ext.Timer.WaitFor(4800, function()
+			Osi.ApplyStatus(character, "AER_VISAGE_ICON", -1.0, 1, character)
+			Osi.TeleportTo(character, "S_TWN_Tollhouse_Face_Guilt_CombatPosition_1e2717e9-63f6-4760-bf64-620098361d57", "", 0, 0, 0, 0, 1)
+		end)
+	end
+end)
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	
+	if character == "S_TWN_Tollhouse_Face_Obedience_0e35df6f-31f8-4ebb-a44f-e472c2e6a9c9" then
+		Ext.Timer.WaitFor(4800, function()
+			Osi.ApplyStatus(character, "AER_VISAGE_ICON", -1.0, 1, character)
+			Osi.TeleportTo(character, "S_TWN_Tollhouse_Face_Obedience_CombatPosition_a842e8e6-0f54-4560-9785-ad6412af5c3f", "", 0, 0, 0, 0, 1)
+		end)
+	end
+end)
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	
+	if character == "S_TWN_Tollhouse_Face_Cowardice_efea0b12-68eb-4329-8fd9-14078e983607" then
+		Ext.Timer.WaitFor(4800, function()
+			Osi.ApplyStatus(character, "AER_VISAGE_ICON", -1.0, 1, character)
+			Osi.TeleportTo(character, "S_TWN_Tollhouse_Face_Cowardice_CombatPosition_06b03415-2e55-48b9-b3f4-5060dc88ab28", "", 0, 0, 0, 0, 1)
+		end)
+	end
+end)
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	
+	if character == "S_TWN_Tollhouse_Face_Greed_46e0f41a-6603-43ee-8e99-5dd91e7e9bb9" then
+		Ext.Timer.WaitFor(4800, function()
+			Osi.ApplyStatus(character, "AER_VISAGE_ICON", -1.0, 1, character)
+			Osi.TeleportTo(character, "S_TWN_Tollhouse_Face_Greed_CombatPosition_1ea0f0c4-cc31-4db1-866d-5150836a0047", "", 0, 0, 0, 0, 1)
+		end)
+	end
+end)
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	
+	if character == "S_TWN_Tollhouse_Face_Regret_f5206c52-e481-4c2c-b24b-f186904d768d" then
+		Ext.Timer.WaitFor(4800, function()
+			Osi.ApplyStatus(character, "AER_VISAGE_ICON", -1.0, 1, character)
+			Osi.TeleportTo(character, "S_TWN_Tollhouse_Face_Regret_CombatPosition_73f38710-090c-4642-b03e-02ef8fc8f9d5", "", 0, 0, 0, 0, 1)
+		end)
+	end
+end)
+
 -- Ansur's arena
 Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 	if not MCM.Get("mod_enabled") then
@@ -1539,6 +1711,30 @@ Ext.Osiris.RegisterListener("Died", 1, "after", function(character)
 	end
 end)
 
+-- Zlorb death handling
+Ext.Osiris.RegisterListener("Died", 1, "after", function(character)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	
+	if character == "S_GLO_DevilishOx_49eb5b4b-c6ed-4d37-8f68-97b1128b7d56" and Osi.IsDead(character) == 1 then
+		Osi.SetOnStage("S_GLO_DevilishOx_49eb5b4b-c6ed-4d37-8f68-97b1128b7d56", 1)
+	end
+end)
+
+-- Courage Trial Cleanup
+Ext.Osiris.RegisterListener("PROC_WYR_CourageTrial_Cleanup", 0, "after", function()
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+
+	for key, val in pairs(PersistentVars.currentlyRandomizedEnemyTable) do
+		if C.CourageTrialEnemies[key] then
+			Osi.Die(val[1], 0, "NULL_00000000-0000-0000-0000-000000000000", 1, 0, 0.0)
+		end
+	end
+end)
+
 Ext.Osiris.RegisterListener("LevelLoaded", 1, "after", function(level)
 	if level == C.Regions.Act0 then
 		gameLoaded()
@@ -1634,6 +1830,172 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status
 		end
 	end
 end)
+
+-- Ethel
+Ext.Osiris.RegisterListener("DialogStarted", 2, "after", function(dialogId, charId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if dialogId == "HAG_Hag_Lair_a70f5acb-ecbe-8d0a-ae9c-be07a532e2d8" then
+		Osi.TeleportTo("S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d","HAG_Lair_HagSpot_fdd01e3a-b187-4109-8444-195574033955","",1,1,1)
+	end
+end)
+
+Ext.Osiris.RegisterListener("FlagSet", 3, "after", function(flag, speaker, dialogId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if flag == "HAG_Hag_State_ToLairBecauseCombat_256770d9-04b6-4cdb-92db-e14e30b2700d" then
+		if PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"] then
+			local rando = PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"][1]
+			local success, result = pcall(function()
+				if Osi.IsDead("ff840420-d46a-4837-868b-ac02f45e4586") == 0 then
+					local tempX,tempY,tempZ = Osi.FindValidPosition(-35, 4.8, 269, 30, "ff840420-d46a-4837-868b-ac02f45e4586", 1)
+					Osi.TeleportToPosition("ff840420-d46a-4837-868b-ac02f45e4586", tempX, tempY, tempZ, "", 0, 0, 0, 0, 1)
+					Osi.PlayEffectAtPosition("VFX_Script_Stub_Poof_01_f0cf792a-0f74-d17e-ad0d-6052a6131416",tempX,tempY,tempZ)
+				end
+				if Osi.IsDead("2b08981e-5cb0-496d-98cf-15e6a92121ec") == 0 then
+					local tempX,tempY,tempZ = Osi.FindValidPosition(-39.78, 4.2, 271.52, 30, "2b08981e-5cb0-496d-98cf-15e6a92121ec", 1)
+					Osi.TeleportToPosition("2b08981e-5cb0-496d-98cf-15e6a92121ec", tempX, tempY, tempZ, "", 0, 0, 0, 0, 1)
+					Osi.PlayEffectAtPosition("VFX_Script_Stub_Poof_01_f0cf792a-0f74-d17e-ad0d-6052a6131416",tempX,tempY,tempZ)
+				end
+				if Osi.IsDead("14026955-2546-4d31-bc0c-4bfe0c34bd8a") == 0 then
+					local tempX,tempY,tempZ = Osi.FindValidPosition(-37.5, 4.58, 264.76, 30, "14026955-2546-4d31-bc0c-4bfe0c34bd8a", 1)
+					Osi.TeleportToPosition("14026955-2546-4d31-bc0c-4bfe0c34bd8a", tempX, tempY, tempZ, "", 0, 0, 0, 0, 1)
+					Osi.PlayEffectAtPosition("VFX_Script_Stub_Poof_01_f0cf792a-0f74-d17e-ad0d-6052a6131416",tempX,tempY,tempZ)
+				end
+				if Osi.IsDead("30a871b1-9df3-42bb-87cb-c284cafd32eb") == 0 then
+					local tempX,tempY,tempZ = Osi.FindValidPosition(-35.25, 4.92, 272.3, 30, "30a871b1-9df3-42bb-87cb-c284cafd32eb", 1)
+					Osi.TeleportToPosition("30a871b1-9df3-42bb-87cb-c284cafd32eb", tempX, tempY, tempZ, "", 0, 0, 0, 0, 1)
+					Osi.PlayEffectAtPosition("VFX_Script_Stub_Poof_01_f0cf792a-0f74-d17e-ad0d-6052a6131416",tempX,tempY,tempZ)
+				end
+			end)
+			if not success then
+				print("ERROR moving Redcaps: ", result)
+			end
+			Ext.Timer.WaitFor(1600, function()
+				Osi.TeleportToPosition(rando, C.Asylum.Act1.asylumX, C.Asylum.Act1.asylumY, C.Asylum.Act1.asylumZ, "", 0, 0, 1, 1, 1)
+			end)
+			Ext.Timer.WaitFor(3600, function()
+				Osi.TeleportTo("S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d","HAG_Lair_HagSpot_fdd01e3a-b187-4109-8444-195574033955","",1,1,1)
+				local randoTemplate = Osi.GetTemplate(rando)
+				local strippedTemplate = strip_uuid(randoTemplate)
+				PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"] = nil
+				PersistentVars.usedBossTable[strippedTemplate] = nil
+				PersistentVars.spawnedEnemyTable[strippedTemplate] = nil
+				Osi.SetOnStage(rando, 0)
+			end)
+		end
+	end
+end)
+
+Ext.Osiris.RegisterListener("CastSpell", 5, "before", function(caster, spell, spellType, spellElement, storyActionID)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	
+	if spell == "Target_LOW_HagShroom_Resurrect" then
+		ethelFlag = true
+	end
+end)
+
+Ext.Osiris.RegisterListener("CastedSpell", 5, "after", function(caster, spell, spellType, spellElement, storyActionID)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	
+	if spell == "Target_LOW_HagShroom_Resurrect" then
+		Ext.Timer.WaitFor(2000, function()
+			ethelFlag = false
+		end)
+	end
+end)
+
+Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function(target, status, cause, storyId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if target == "S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d" and PersistentVars.currentlyRandomizedEnemyTable[target] then
+		local rando = PersistentVars.currentlyRandomizedEnemyTable[target][1]
+		local ethelHP = Osi.GetHitpointsPercentage(target)
+		if status == "KNOCKED_OUT" or status == "KNOCKED_OUT_TEMPORARILY" then
+			Osi.SetHitpointsPercentage(rando, ethelHP)
+			Osi.RemoveStatus(rando, status)
+		end
+	end
+end)
+
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status, caster, storyId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if target == "S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d" and status == "KNOCKED_OUT" and Osi.IsInTrigger(caster, "S_HAG_HagLair_SUB_CombatArea_0ace1ca2-9f1b-44d2-ae49-5bde98e1d251") == 1 then
+		Osi.SetHitpointsPercentage(target, 2.0)
+		Osi.RemoveStatus(target, status)
+		Osi.SetCanJoinCombat(target, 0)
+		Ext.Timer.WaitFor(200, function()
+			Osi.PROC_ForceStopDialog(caster)
+			Osi.PROC_ForceStopDialog(target)
+			Osi.QRY_StartDialogCustom("HAG_HagLair_HagBegsForMercy_071783af-7275-172e-a255-aa0b600b9a0f", target, "S_HAG_Hagspawn_SurrogateMother_08c970d7-3138-45e8-8965-68eadf4b07cd", caster, 0, 0, -1, 0)
+			Osi.SetFlag("HAG_HagLair_Event_HagBegsForMercy_591edd40-4668-4eca-99d1-3a41a4189bbf", "NULL_00000000-0000-0000-0000-000000000000", 0)
+		end)
+		Ext.Timer.WaitFor(400, function()
+			Osi.PROC_HAG_Surrender_TeleportMayrina("S_HAG_Hagspawn_SurrogateMother_08c970d7-3138-45e8-8965-68eadf4b07cd")
+		end)
+	end
+end)
+
+Ext.Osiris.RegisterListener("DialogEnded", 2, "after", function(dialogId, charId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if dialogId == "HAG_HagLair_HagBegsForMercy_071783af-7275-172e-a255-aa0b600b9a0f" then
+		if Osi.GetFlag("HAG_Hag_State_HagGivenMercy_a3c0a36a-ccce-4f35-7b54-9ab22d6ac534", "NULL_00000000-0000-0000-0000-000000000000") == 1 then
+			Ext.Timer.WaitFor(8000, function()
+				Osi.SetCanJoinCombat("S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d", 1)
+			end)
+		else
+			Osi.SetCanJoinCombat("S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d", 1)
+			Osi.PROC_SetRelationToPlayers("GLO_Hag_313edae9-c797-2c65-9f7c-47e1f4e3221e", 0)
+		end
+	end
+end)
+
+Ext.Osiris.RegisterListener("FlagSet", 3, "after", function(flag, speaker, dialogId)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+
+	if flag == "HAG_Hag_State_HagGivenMercy_a3c0a36a-ccce-4f35-7b54-9ab22d6ac534" then
+		Osi.ClearFlag("HAG_Hag_State_HagDefeated_7a1acad0-589f-ae02-f712-f0d24080d720", "NULL_00000000-0000-0000-0000-000000000000")
+	end
+end)
+
+Ext.Osiris.RegisterListener("PROC_State_Progress", 3, "after", function(hag, sequence, event)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if hag == "S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d" and event == "AfterLairScene" then
+		Osi.SetFlag("HAG_Hag_SummonedVictims_755d8269-7864-b72c-f355-b00aa02cd17e", "NULL_00000000-0000-0000-0000-000000000000")
+	end
+end)
+
+Ext.Osiris.RegisterListener("PROC_LOW_HagRetreatsToOrlop", 0, "after", function()
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"] then
+		local rando = PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"][1]
+		Ext.Timer.WaitFor(800, function()
+			Osi.TeleportToPosition(rando, C.Asylum.Act3b.asylumX, C.Asylum.Act3b.asylumY, C.Asylum.Act3b.asylumZ, "", 0, 0, 1, 1, 1)
+		end)
+		Ext.Timer.WaitFor(3600, function()
+			Osi.TeleportTo("S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d","S_LOW_BlushingMermaid_HagCellarTeleportSpot_78b85f90-81ba-4509-a7d5-b30b836f212c","LOW_HagTeleportedToCellar",1,1,1,1,1)
+			Osi.SetCombatGroupID(rando,"LOW_HagBossFight")
+		end)
+	end
+end)
+
 
 -- Knocked Out
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status, caster, storyId)
@@ -1853,15 +2215,6 @@ Ext.Osiris.RegisterListener("TurnStarted", 1, "before", function(charId)
 	end
 end)
 
-Ext.Osiris.RegisterListener("DialogStarted", 2, "after", function(dialogueId, charId)
-	if not MCM.Get("mod_enabled") then
-		return
-	end
-	if dialogueId == "HAG_Hag_Lair_a70f5acb-ecbe-8d0a-ae9c-be07a532e2d8" then
-		Osi.TeleportTo("S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d","HAG_Lair_HagSpot_fdd01e3a-b187-4109-8444-195574033955","",1,1,1)
-	end
-end)
-
 Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, object, owner, addtype)
 	if not MCM.Get("randomize_loot") then
 		return
@@ -1956,6 +2309,89 @@ Ext.Osiris.RegisterListener("AddedTo", 3, "after", function(objectId, receieverI
 						Osi.TemplateAddTo(newItem, receieverId, 1, 1)
 					end)
 				end
+			end
+		end)
+	end
+end)
+
+-- Blood of Lathander
+Ext.Osiris.RegisterListener("AddedTo", 3, "after", function(objectId, receieverId, addType)
+	if not MCM.Get("randomize_loot") then
+		return
+	end
+	if objectId	==  "S_CRE_BloodOfLathander_e26f0c19-6185-43a7-b7f7-7155b936c59c" and Osi.IsPartyMember(receieverId, 1) == 1 then
+		Ext.Timer.WaitFor(1400, function()
+			if Osi.IsInInventoryOf(objectId, receieverId) == 1 then
+				PersistentVars.randomizedItemTable["96a35552-0c05-4df0-9974-2a8f142e4be6"] = true
+				local newItem = mappedUniqueItems["96a35552-0c05-4df0-9974-2a8f142e4be6"].RootTemplate
+				linkingItems[newItem .. "|" .. receieverId] = true
+				Ext.Timer.WaitFor(200, function()
+					Osi.RequestDelete(objectId)
+					Osi.TemplateAddTo(newItem, receieverId, 1, 1)
+				end)
+			end
+		end)
+	end
+end)
+
+-- Flawed Helldusk Armor
+Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "after", function(templateId, objectId, receieverId, addType)
+	if not MCM.Get("randomize_loot") then
+		return
+	end
+	
+	if templateId == "QUEST_HAV_InfernalReward_001_d9863839-e955-47a2-8a06-070f5c3c9541" and Osi.IsPartyMember(receieverId, 1) == 1 then
+		Ext.Timer.WaitFor(1400, function()
+			if Osi.IsInInventoryOf(objectId, receieverId) == 1 then
+				PersistentVars.randomizedItemTable["d76dd47b-e1bf-4e30-b366-6069d9eb9e22"] = true
+				local newItem = mappedUniqueItems["d76dd47b-e1bf-4e30-b366-6069d9eb9e22"].RootTemplate
+				linkingItems[newItem .. "|" .. receieverId] = true
+				Ext.Timer.WaitFor(200, function()
+					Osi.RequestDelete(objectId)
+					Osi.TemplateAddTo(newItem, receieverId, 1, 1)
+				end)
+			end
+		end)
+	end
+end)
+
+-- Flawed Helldusk Helmet
+Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "after", function(templateId, objectId, receieverId, addType)
+	if not MCM.Get("randomize_loot") then
+		return
+	end
+
+	if templateId == "QUEST_HAV_InfernalReward_002_6d60fcbb-e7a5-47ad-9cca-44565cbc0856" and Osi.IsPartyMember(receieverId, 1) == 1 then
+		Ext.Timer.WaitFor(1400, function()
+			if Osi.IsInInventoryOf(objectId, receieverId) == 1 then
+				PersistentVars.randomizedItemTable["2b69a73f-0d1b-4514-bdae-5565a8045e26"] = true
+				local newItem = mappedUniqueItems["2b69a73f-0d1b-4514-bdae-5565a8045e26"].RootTemplate
+				linkingItems[newItem .. "|" .. receieverId] = true
+				Ext.Timer.WaitFor(200, function()
+					Osi.RequestDelete(objectId)
+					Osi.TemplateAddTo(newItem, receieverId, 1, 1)
+				end)
+			end
+		end)
+	end
+end)
+
+-- Flawed Helldusk Gloves
+Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "after", function(templateId, objectId, receieverId, addType)
+	if not MCM.Get("randomize_loot") then
+		return
+	end
+	
+	if templateId == "QUEST_HAV_InfernalReward_003_b673f1dc-d925-4811-a78e-53adcce847e8" and Osi.IsPartyMember(receieverId, 1) == 1 then
+		Ext.Timer.WaitFor(1400, function()
+			if Osi.IsInInventoryOf(objectId, receieverId) == 1 then
+				PersistentVars.randomizedItemTable["cbc9b5dd-76e5-4e22-b0cf-26e957033a9d"] = true
+				local newItem = mappedUniqueItems["cbc9b5dd-76e5-4e22-b0cf-26e957033a9d"].RootTemplate
+				linkingItems[newItem .. "|" .. receieverId] = true
+				Ext.Timer.WaitFor(200, function()
+					Osi.RequestDelete(objectId)
+					Osi.TemplateAddTo(newItem, receieverId, 1, 1)
+				end)
 			end
 		end)
 	end

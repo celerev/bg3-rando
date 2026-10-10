@@ -1327,7 +1327,7 @@ return {
 	{
 		Name = "AER_S_GLO_Elminster",
 		TemplateId = "9184cafb-98c9-4c05-9cbb-a12be2f41fa6",
-		Tier = "legendary",
+		Tier = "epic",
 	},
 	{
 		Name = "AER_Githyanki_Male_Gishra_Caster",
