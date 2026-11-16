@@ -1735,15 +1735,36 @@ Ext.Osiris.RegisterListener("PROC_WYR_CourageTrial_Cleanup", 0, "after", functio
 	end
 end)
 
+-- Level Handling
 Ext.Osiris.RegisterListener("LevelLoaded", 1, "after", function(level)
 	if level == C.Regions.Act0 then
 		gameLoaded()
-	end
-end)
-
--- Handling High Hall
-Ext.Osiris.RegisterListener("LevelLoaded", 1, "after", function(level)
-	if level == C.Regions.Act3c then
+	elseif level == C.Regions.Act1 then
+		local success, result = pcall(function()
+			Ext.Timer.WaitFor(3000, function()
+				for _, zone in ipairs(C.GoblinCampZones) do
+					for _, lookout in ipairs(C.GoblinCampLookouts) do
+						Osi.TriggerUnregisterForCharacter(zone, lookout)
+					end
+				end
+			end)
+		end)
+		if not success then
+			print("ERROR processing Goblin Camp: ", result)
+		end
+	elseif level == C.Regions.Act2 then
+		local success, result = pcall(function()
+			Ext.Timer.WaitFor(1000, function()
+				Osi.TriggerUnregisterForCharacter("S_MOO_Docks_SUB_b4608370-46b8-4ba3-a3e7-192a6aa509ee", "S_MOO_DockJumper_fd7e05e2-3d4a-4de9-baf5-2be25b21441f")
+				Osi.TriggerUnregisterForCharacter("S_MOO_Docks_SUB_b4608370-46b8-4ba3-a3e7-192a6aa509ee", "S_MOO_DockObserver_5d1de164-5969-4593-87b7-1fcb5b54f00f")
+				Osi.TriggerUnregisterForCharacter("S_MOO_Docks_SUB_b4608370-46b8-4ba3-a3e7-192a6aa509ee", "S_MOO_DockPatroller_000_646fba8c-6972-4162-aa7a-f0df28bb1f51")
+				Osi.TriggerUnregisterForCharacter("S_MOO_Docks_SUB_b4608370-46b8-4ba3-a3e7-192a6aa509ee", "S_MOO_DockPatroller_001_352693eb-0ef0-4949-86c5-ba78081d9fb4")
+			end)
+		end)
+		if not success then
+			print("ERROR processing Moonrise: ", result)
+		end
+	elseif level == C.Regions.Act3c then
 		local success, result = pcall(function()
 			Ext.Timer.WaitFor(1000, function()
 				Osi.PROC_Reinforcements_CharactersCanFight()
@@ -1851,21 +1872,41 @@ Ext.Osiris.RegisterListener("FlagSet", 3, "after", function(flag, speaker, dialo
 			local success, result = pcall(function()
 				if Osi.IsDead("ff840420-d46a-4837-868b-ac02f45e4586") == 0 then
 					local tempX,tempY,tempZ = Osi.FindValidPosition(-35, 4.8, 269, 30, "ff840420-d46a-4837-868b-ac02f45e4586", 1)
+					if PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_01_ff840420-d46a-4837-868b-ac02f45e4586"] then
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_01_ff840420-d46a-4837-868b-ac02f45e4586"][2] = tempX
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_01_ff840420-d46a-4837-868b-ac02f45e4586"][3] = tempY
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_01_ff840420-d46a-4837-868b-ac02f45e4586"][4] = tempZ
+					end
 					Osi.TeleportToPosition("ff840420-d46a-4837-868b-ac02f45e4586", tempX, tempY, tempZ, "", 0, 0, 0, 0, 1)
 					Osi.PlayEffectAtPosition("VFX_Script_Stub_Poof_01_f0cf792a-0f74-d17e-ad0d-6052a6131416",tempX,tempY,tempZ)
 				end
 				if Osi.IsDead("2b08981e-5cb0-496d-98cf-15e6a92121ec") == 0 then
 					local tempX,tempY,tempZ = Osi.FindValidPosition(-39.78, 4.2, 271.52, 30, "2b08981e-5cb0-496d-98cf-15e6a92121ec", 1)
+					if PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_02_2b08981e-5cb0-496d-98cf-15e6a92121ec"] then
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_02_2b08981e-5cb0-496d-98cf-15e6a92121ec"][2] = tempX
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_02_2b08981e-5cb0-496d-98cf-15e6a92121ec"][3] = tempY
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_02_2b08981e-5cb0-496d-98cf-15e6a92121ec"][4] = tempZ
+					end
 					Osi.TeleportToPosition("2b08981e-5cb0-496d-98cf-15e6a92121ec", tempX, tempY, tempZ, "", 0, 0, 0, 0, 1)
 					Osi.PlayEffectAtPosition("VFX_Script_Stub_Poof_01_f0cf792a-0f74-d17e-ad0d-6052a6131416",tempX,tempY,tempZ)
 				end
 				if Osi.IsDead("14026955-2546-4d31-bc0c-4bfe0c34bd8a") == 0 then
 					local tempX,tempY,tempZ = Osi.FindValidPosition(-37.5, 4.58, 264.76, 30, "14026955-2546-4d31-bc0c-4bfe0c34bd8a", 1)
+					if PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_03_14026955-2546-4d31-bc0c-4bfe0c34bd8a"] then
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_03_14026955-2546-4d31-bc0c-4bfe0c34bd8a"][2] = tempX
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_03_14026955-2546-4d31-bc0c-4bfe0c34bd8a"][3] = tempY
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_03_14026955-2546-4d31-bc0c-4bfe0c34bd8a"][4] = tempZ
+					end
 					Osi.TeleportToPosition("14026955-2546-4d31-bc0c-4bfe0c34bd8a", tempX, tempY, tempZ, "", 0, 0, 0, 0, 1)
 					Osi.PlayEffectAtPosition("VFX_Script_Stub_Poof_01_f0cf792a-0f74-d17e-ad0d-6052a6131416",tempX,tempY,tempZ)
 				end
 				if Osi.IsDead("30a871b1-9df3-42bb-87cb-c284cafd32eb") == 0 then
 					local tempX,tempY,tempZ = Osi.FindValidPosition(-35.25, 4.92, 272.3, 30, "30a871b1-9df3-42bb-87cb-c284cafd32eb", 1)
+					if PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_04_30a871b1-9df3-42bb-87cb-c284cafd32eb"] then
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_04_30a871b1-9df3-42bb-87cb-c284cafd32eb"][2] = tempX
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_04_30a871b1-9df3-42bb-87cb-c284cafd32eb"][3] = tempY
+						PersistentVars.currentlyRandomizedEnemyTable["S_HAG_ForestIllusion_Redcap_04_30a871b1-9df3-42bb-87cb-c284cafd32eb"][4] = tempZ
+					end
 					Osi.TeleportToPosition("30a871b1-9df3-42bb-87cb-c284cafd32eb", tempX, tempY, tempZ, "", 0, 0, 0, 0, 1)
 					Osi.PlayEffectAtPosition("VFX_Script_Stub_Poof_01_f0cf792a-0f74-d17e-ad0d-6052a6131416",tempX,tempY,tempZ)
 				end
@@ -1916,9 +1957,9 @@ Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function(target, status
 		return
 	end
 	if target == "S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d" and PersistentVars.currentlyRandomizedEnemyTable[target] then
-		local rando = PersistentVars.currentlyRandomizedEnemyTable[target][1]
-		local ethelHP = Osi.GetHitpointsPercentage(target)
 		if status == "KNOCKED_OUT" or status == "KNOCKED_OUT_TEMPORARILY" then
+			local rando = PersistentVars.currentlyRandomizedEnemyTable[target][1]
+			local ethelHP = Osi.GetHitpointsPercentage(target)
 			Osi.SetHitpointsPercentage(rando, ethelHP)
 			Osi.RemoveStatus(rando, status)
 		end
@@ -1976,6 +2017,26 @@ Ext.Osiris.RegisterListener("PROC_State_Progress", 3, "after", function(hag, seq
 		return
 	end
 	if hag == "S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d" and event == "AfterLairScene" then
+		if PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim1_d2832662-4a12-4565-bfe2-094b93ae8af8"] then
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim1_d2832662-4a12-4565-bfe2-094b93ae8af8"][2] = -399.87155
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim1_d2832662-4a12-4565-bfe2-094b93ae8af8"][3] = -5.1963577
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim1_d2832662-4a12-4565-bfe2-094b93ae8af8"][4] = 562.39404
+		end
+		if PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim2_535f23bc-2d27-4c40-a1f3-1cf58bfd1698"] then
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim2_535f23bc-2d27-4c40-a1f3-1cf58bfd1698"][2] = -424.94104
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim2_535f23bc-2d27-4c40-a1f3-1cf58bfd1698"][3] = -6.0793753
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim2_535f23bc-2d27-4c40-a1f3-1cf58bfd1698"][4] = 553.7084
+		end
+		if PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim3_d7707fd3-301b-49a3-b7f1-2fb92cfa9805"] then
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim3_d7707fd3-301b-49a3-b7f1-2fb92cfa9805"][2] = -411.3832
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim3_d7707fd3-301b-49a3-b7f1-2fb92cfa9805"][3] = -8.0295315
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim3_d7707fd3-301b-49a3-b7f1-2fb92cfa9805"][4] = 555.654
+		end
+		if PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim4_74dcb337-e6d1-4329-ac2b-5a3723346159"] then
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim4_74dcb337-e6d1-4329-ac2b-5a3723346159"][2] = -425.12885
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim4_74dcb337-e6d1-4329-ac2b-5a3723346159"][3] = -5.3301225
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_MaskedVictim4_74dcb337-e6d1-4329-ac2b-5a3723346159"][4] = 573.13226
+		end
 		Osi.SetFlag("HAG_Hag_SummonedVictims_755d8269-7864-b72c-f355-b00aa02cd17e", "NULL_00000000-0000-0000-0000-000000000000")
 	end
 end)
@@ -1992,7 +2053,50 @@ Ext.Osiris.RegisterListener("PROC_LOW_HagRetreatsToOrlop", 0, "after", function(
 		Ext.Timer.WaitFor(3600, function()
 			Osi.TeleportTo("S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d","S_LOW_BlushingMermaid_HagCellarTeleportSpot_78b85f90-81ba-4509-a7d5-b30b836f212c","LOW_HagTeleportedToCellar",1,1,1,1,1)
 			Osi.SetCombatGroupID(rando,"LOW_HagBossFight")
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"][2] = -2328.8264 
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"][3]= 10.826286 
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"][4] = -95.10219
 		end)
+	end
+end)
+
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(item, _)
+	if not MCM.Get("mod_enabled") then
+		return
+	end
+	if item == "S_LOW_BlushingMermaid_HagRegenShroom_01_cd00e76d-ed4b-494f-a42e-877cb79cf4f2" then
+		if PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"] then
+			local rando = PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"][1]
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"][2] = -2328.8264 
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"][3] = 10.826286 
+			PersistentVars.currentlyRandomizedEnemyTable["S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d"][4] = -95.10219
+			Ext.Timer.WaitFor(400, function()
+				Osi.SetCombatGroupID(rando,"LOW_HagBossFight")
+				Osi.TeleportToPosition(rando, -2328.8264 , 10.826286 , -95.10219, "", 0, 0, 0, 0, 1)
+			end)
+		end
+		Osi.RemoveStatus("S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d", "INVISIBLE")
+		if PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_01_453e3292-b7ff-4a13-873a-82da3bfc2511"] then
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_01_453e3292-b7ff-4a13-873a-82da3bfc2511"][2] = -2337.9507
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_01_453e3292-b7ff-4a13-873a-82da3bfc2511"][3] = 10.848387
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_01_453e3292-b7ff-4a13-873a-82da3bfc2511"][4] = -99.259735
+		end
+		if PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_02_518fab8f-2d1d-46c8-9a45-9045156d0053"] then
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_02_518fab8f-2d1d-46c8-9a45-9045156d0053"][2] = -2341.9268
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_02_518fab8f-2d1d-46c8-9a45-9045156d0053"][3] = 6.930114
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_02_518fab8f-2d1d-46c8-9a45-9045156d0053"][4] = -105.664154
+		end
+		if PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_03_0406349d-d0fc-4bf5-8d18-5b8b8c9e6456"] then
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_03_0406349d-d0fc-4bf5-8d18-5b8b8c9e6456"][2] = -2319.422
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_03_0406349d-d0fc-4bf5-8d18-5b8b8c9e6456"][3] = 10.875101
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_MaskedVictim_03_0406349d-d0fc-4bf5-8d18-5b8b8c9e6456"][4] = -104.484505		
+		end
+		if PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_QuenoraGrizly_9d475536-34f0-4a6f-9191-3a635b81a232"] then
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_QuenoraGrizly_9d475536-34f0-4a6f-9191-3a635b81a232"][2] = -2323.9531
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_QuenoraGrizly_9d475536-34f0-4a6f-9191-3a635b81a232"][3] = 10.770866
+			PersistentVars.currentlyRandomizedEnemyTable["S_LOW_BlushingMermaid_QuenoraGrizly_9d475536-34f0-4a6f-9191-3a635b81a232"][4] = -92.633545
+		end
+		Osi.SetFlag("LOW_BlushingMermaid_State_HagSummonedMaskedVictims_9f668b40-cd80-48ea-bca7-ac4c046163f4", "NULL_00000000-0000-0000-0000-000000000000")
 	end
 end)
 
@@ -2187,6 +2291,28 @@ Ext.Osiris.RegisterListener("PROC_HAV_SetupFactionsSpyAlly", 0, "after", functio
 		if keyFaction == "Act2_HAV_FlamingSpy_Ally_e3da5c3f-056c-4391-83c9-7a78b0703856" then
 			Osi.SetFaction(val[1], "Act2_HAV_FlamingSpy_Ally_e3da5c3f-056c-4391-83c9-7a78b0703856")
 		end
+	end
+end)
+
+
+-- Goblin Camp
+Ext.Osiris.RegisterListener("PROC_GOB_BattleStations_Start", 0, "after", function()
+	local success, result = pcall(function()
+		for _, zone in ipairs(C.GoblinCampZones) do
+			for _, lookout in ipairs(C.GoblinCampLookouts) do
+				Osi.TriggerUnregisterForCharacter(zone, lookout)
+			end
+		end
+		Ext.Timer.WaitFor(2000, function()
+			for _, zone in ipairs(C.GoblinCampZones) do
+				for _, lookout in ipairs(C.GoblinCampLookouts) do
+					Osi.TriggerUnregisterForCharacter(zone, lookout)
+				end
+			end
+		end)
+	end)
+	if not success then
+		print("ERROR handling Goblin Camp alarm: ", result)
 	end
 end)
 

@@ -8885,6 +8885,34 @@
 					</children>
 				</node>
 				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="1628c7f5-95c2-4fa4-8204-7972f4893bbd" />
+					<attribute id="Name" type="LSString" value="AER_Redcap_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c27dd409-9c26-458b-a845-03a8de78e330" />
+					<attribute id="Icon" type="FixedString" value="4b4bae15-c3bd-18e7-f0a5-5d7fd468512a-EQP_Redcap_Sickle_(Icon_Redcap)" />
+					<attribute id="Stats" type="FixedString" value="RedCap" />
+					<attribute id="SpellSet" type="FixedString" value="CommonNPCActions_NoThrow_NoShove" />
+					<attribute id="Equipment" type="FixedString" value="EQP_Redcap_Sickle" />
+					<attribute id="LevelOverride" type="int32" value="4" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="4b4bae15-c3bd-18e7-f0a5-5d7fd468512a" />
+					<attribute id="IsLootable" type="bool" value="False" />
+					<attribute id="IsEquipmentLootable" type="bool" value="False" />
+					<attribute id="CanBePickpocketed" type="bool" value="False" />
+					<attribute id="Archetype" type="FixedString" value="melee" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="AiHint" type="guid" value="00000000-0000-0000-0000-000000000000" />
+					<children>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="Empty" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
 					<attribute id="MapKey" type="FixedString" value="671080f4-0020-40a2-989d-ba70e0323c9f" />
 					<attribute id="Name" type="LSString" value="AER_SHA_LastJusticiar" />
 					<attribute id="LevelName" type="FixedString" value="" />

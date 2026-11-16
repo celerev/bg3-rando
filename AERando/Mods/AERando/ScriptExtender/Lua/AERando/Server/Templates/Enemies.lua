@@ -810,6 +810,11 @@ return {
 		Tier = "mid",
 	},
 	{
+		Name = "AER_Redcap_A",
+		TemplateId = "1628c7f5-95c2-4fa4-8204-7972f4893bbd",
+		Tier = "mid",
+	},
+	{
 		Name = "AER_Bugbears_Male_Civil",
 		TemplateId = "e0698e8b-845f-4754-8d44-648481ce2077",
 		Tier = "mid",
