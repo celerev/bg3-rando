@@ -31,9 +31,9 @@
                                 "NameHandle": "h5bc0f9d8g7304g4ceagbb59g5d27d26d76fe",
                                 "DescriptionHandle": "h4b668962g076dg47d4g8d06g2b058b527171"
                             },
-                            "Type": "int",
-                            "Default": 0,
-                            "Description": "The seed for randomization."
+                            "Type": "text",
+                            "Default": "",
+                            "Description": "The seed for randomization. Use button below to reroll. Note: Must be a 32-bit integer."
                         },
 						{
 						  "Id": "reroll_button",

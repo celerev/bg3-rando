@@ -23234,6 +23234,40 @@
 						</node>
 					</children>
 				</node>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="f66d3389-d85c-4419-99ad-815408667d8a" />
+					<attribute id="Name" type="LSString" value="AER_GOB_GoblinSapper " />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="55b35e6f-67e5-47f9-824b-ebf20ecd2b4a" />
+					<attribute id="Icon" type="FixedString" value="e64b4bb7-ec9d-0dc3-ecaf-e6ea237ea111-EQP_Unarmed_(Icon_Goblin_Male)" />
+					<attribute id="Stats" type="FixedString" value="GOB_GoblinSapper" />
+					<attribute id="SpellSet" type="FixedString" value="CommonNPCActions" />
+					<attribute id="LevelOverride" type="int32" value="2" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="e64b4bb7-ec9d-0dc3-ecaf-e6ea237ea111" />
+					<attribute id="IsLootable" type="bool" value="False" />
+					<attribute id="IsEquipmentLootable" type="bool" value="False" />
+					<attribute id="CanBePickpocketed" type="bool" value="False" />
+					<attribute id="Archetype" type="FixedString" value="goblin_sapper" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="AiHint" type="guid" value="00000000-0000-0000-0000-000000000000" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="GLO_BLACKPOWDERKEG" />
+								</node>
+							</children>
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="Empty" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>

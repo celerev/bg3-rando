@@ -310,6 +310,11 @@ return {
 		Tier = "low",
 	},
 	{
+		Name = "AER_GOB_GoblinSapper",
+		TemplateId = "f66d3389-d85c-4419-99ad-815408667d8a",
+		Tier = "mid",
+	},
+	{
 		Name = "MOD_Wolf_Combat",
 		TemplateId = "4924a23f-c87f-4e53-9a2e-ddf450c1cb67",
 		Tier = "zero",

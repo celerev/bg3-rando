@@ -6,8 +6,7 @@ local rootTemplateItemList, aTTRootTemplateItemList, exandriaRootTemplateItemLis
 local startRegex, containsRegex, endsRegex = Ext.Require("AERando/Server/Templates/ItemBlacklist.lua")
 
 local C = Ext.Require("AERando/Constants.lua")
-local Hash = Ext.Require("AERando/Hash.lua")
-local RNG = Ext.Require("AERando/RNG.lua")
+local RNG, Hash = Ext.Require("AERando/RNG.lua")
 local Channels = Ext.Require("AERando/Shared.lua")
 
 mappedUniqueItems = {}
@@ -66,6 +65,10 @@ else
 	MCM.Set("soe_loaded", false)
 end
 
+chaosTable = {
+	{ name = "chaos", weight = 1, enemies = {}},
+}
+
 difficultyTables = { 
 	{ name = "zero", weight = MCM.Get("zero_weight"), enemies = {}},
 	{ name = "low", weight = MCM.Get("one_weight"), enemies = {}},
@@ -80,11 +83,11 @@ difficultyTables = {
 }
 
 rarityTables = { 
-	{ name = "Common", weight = MCM.Get("common_weight"), items = {}},
-	{ name = "Uncommon", weight = MCM.Get("uncommon_weight"), items = {}},
-	{ name = "Rare", weight = MCM.Get("rare_weight"), items = {}},
-	{ name = "VeryRare", weight = MCM.Get("veryrare_weight"), items = {}},
-	{ name = "Legendary", weight = MCM.Get("legendary_weight"), items = {}},
+	Common = { name = "Common", weight = MCM.Get("common_weight"), items = {}},
+	Uncommon = { name = "Uncommon", weight = MCM.Get("uncommon_weight"), items = {}},
+	Rare = { name = "Rare", weight = MCM.Get("rare_weight"), items = {}},
+	VeryRare = { name = "VeryRare", weight = MCM.Get("veryrare_weight"), items = {}},
+	Legendary = { name = "Legendary", weight = MCM.Get("legendary_weight"), items = {}},
 }
 
 
@@ -127,10 +130,14 @@ function setEnemyTables()
 			end
 		end
 	end
+	chaosTable[1].enemies = {}
+	for _, enemy in ipairs(activeMonsterList) do
+		table.insert(chaosTable[1].enemies, enemy.TemplateId)
+	end
 end
 
 function setRarityTables()
-	for _, tier in ipairs(rarityTables) do
+	for _, tier in pairs(rarityTables) do
 		tier.items = {}
 		for _, item in ipairs(nonUniqueItems) do
 			if tier.name == item.Rarity then
@@ -213,22 +220,16 @@ function rerollSeed()
 	local finalseed = math.random(1, 4294967296)
 
 	RNG:init(finalseed)
-
-	for i = 1, math.random(3,23) do
-		RNG:random()
-	end
-	local seed = RNG:random(1, 2147483647)
-	MCM.Set("rando_seed", seed)
-	Hash.gameSeed = seed
+	MCM.Set("rando_seed", tostring(finalseed))
 end
 
 function initializeItemMap()
-	if not Hash.gameSeed then
-		local seed = MCM.Get("rando_seed")
-		if seed == 0 then
+	if not RNG.seed then
+		local seed = tonumber(MCM.Get("rando_seed"))
+		if not seed then
 			rerollSeed()
 		else
-			Hash.gameSeed = seed
+			RNG.setSeed(seed)
 		end
 	end
 	local players = nil
@@ -688,7 +689,7 @@ function trimTable(index, difficultyTables, minimum, maximum)
     
     for i, tier in ipairs(difficultyTables) do
         if keepSet[i] then
-            table.insert(newTable, tier)
+			newTable[tier.name] = tier
         end
     end
     
@@ -725,7 +726,7 @@ function selectCreature(character)
 	local index = nil
 	
 	if MCM.Get("chaos_mode") then
-		return Hash:selectEnemy(character, difficultyTables, true)
+		return Hash:selectChaosEnemy(character, chaosTable)
 	end
 	
 	if Ext.Entity.Get(character).CombatParticipant.Flags.IsBoss then
@@ -861,9 +862,9 @@ function selectCreature(character)
 	local newEnemy = nil
 
 	if apostleFlag then
-		newEnemy = Hash:selectEnemy("KETHERICPHASETWO", newTable, false)
+		newEnemy = Hash:selectEnemy("KETHERICPHASETWO", newTable)
 	else
-		newEnemy = Hash:selectEnemy(character, newTable, false)
+		newEnemy = Hash:selectEnemy(character, newTable)
 	end
 
 	if boss and MCM.Get("unique_bosses") and not ethelFlag then
@@ -875,7 +876,7 @@ function selectCreature(character)
 					return
 				end
 				salt = salt + 373
-				newEnemy = Hash:selectEnemy(salt, newTable, false)
+				newEnemy = Hash:selectEnemy(salt, newTable)
 			end
 		end
 		PersistentVars.usedBossTable[newEnemy] = true
@@ -890,12 +891,12 @@ function selectCreature(character)
 		print(character, " rolled their own template: ", newEnemy, ". Exiting loop without randomizing.")
 		return "returnstring"
 	end
+
 	return newEnemy, aggroFlag
 end
 
 function spawnNewCreature(character, x, y, z, asylum)
 	local spawnId, aggro = selectCreature(character)
-	
 	
 	if spawnId == "returnstring" then
 		return "returnstring"
@@ -1045,13 +1046,11 @@ end
 
 setEnemyTables()
 
-if MCM.Get("rando_seed") == 0 then
+if MCM.Get("rando_seed") == "" then
 	rerollSeed()
-else
-	Hash.gameSeed = MCM.Get("rando_seed")
 end
 
-print("Seed:", Hash.gameSeed)
+print("Seed:", MCM.Get("rando_seed"))
 
 Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
     if not payload or payload.modUUID ~= ModuleUUID or not payload.settingId then
@@ -1174,27 +1173,27 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
 
 	if payload.settingId == "common_weight" then
         if payload.value and not payload.oldValue then
-			rarityTables[1].weight = payload.value
+			rarityTables.Common.weight = payload.value
 		end
     end
 	if payload.settingId == "uncommon_weight" then
         if payload.value and not payload.oldValue then
-			rarityTables[2].weight = payload.value
+			rarityTables.Uncommon.weight = payload.value
 		end
     end
 	if payload.settingId == "rare_weight" then
         if payload.value and not payload.oldValue then
-			rarityTables[3].weight = payload.value
+			rarityTables.Rare.weight = payload.value
 		end
     end
 	if payload.settingId == "veryrare_weight" then
         if payload.value and not payload.oldValue then
-			rarityTables[4].weight = payload.value
+			rarityTables.VeryRare.weight = payload.value
 		end
     end
 	if payload.settingId == "legendary_weight" then
         if payload.value and not payload.oldValue then
-			rarityTables[5].weight = payload.value
+			rarityTables.Legendary.weight = payload.value
 		end
     end
 	
@@ -1267,7 +1266,12 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
 	
 	-- Update game seed if value changes
 	if payload.settingId == "rando_seed" and payload.value ~= payload.oldValue then
-		Hash.gameSeed = MCM.Get("rando_seed")
+		if tonumber(payload.value) == nil then
+			print("Input must be number!")
+			MCM.Set("rando_seed", payload.oldValue)
+			return
+		end
+		RNG:setSeed(tonumber(payload.value))
 		regenerateItemMap()
 	end
 	
@@ -1456,6 +1460,10 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, _)
 			Ext.Timer.WaitFor(1600, startCombat)
 		end
 	elseif MCM.Get("randomize_allies") and map ~= C.Regions.Act3i then
+		if Osi.IsSummon(character) == 1 then
+			return
+		end
+
 		newCreature = randomizeCreature(character)
 		if not newCreature then
 			return
@@ -2341,6 +2349,7 @@ Ext.Osiris.RegisterListener("TurnStarted", 1, "before", function(charId)
 	end
 end)
 
+-- Loot Randomization
 Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, object, owner, addtype)
 	if not MCM.Get("randomize_loot") then
 		return
@@ -2383,6 +2392,16 @@ Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "before", function(template, o
 	local potentialCharacter = Osi.GetOriginalOwner(object)
 	local dead = Osi.IsDead(owner)
 	local partyMember = Osi.IsPartyMember(owner, 1)
+	
+	local success, result = pcall(function()
+		local stats = Ext.Stats.Get(object)
+		if string.match(stats.Slot, "^Vanity") or string.match(stats.Slot, "^Underwear") then
+			return "exit"
+		end
+	end)
+	if result == "exit" then
+		return
+	end
 
 	if mappedUniqueItems[root_template] then
 		if potentialCharacter and Osi.IsPlayer(potentialCharacter) == 0 and Osi.IsPartyMember(potentialCharacter, 1) == 0 and Osi.IsEquipped(object) == 1 then

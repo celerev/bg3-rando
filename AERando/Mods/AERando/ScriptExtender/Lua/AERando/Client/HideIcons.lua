@@ -22,7 +22,7 @@ local function RemoveHelperPortraits(character)
 end
 
 function seedReroller()
-	MCM.Set("rando_seed", 0)
+	MCM.Set("rando_seed", "0")
 	Channels.SeedRoll:SendToServer()
 end
 
